@@ -18,7 +18,7 @@ Parameters explained:
 - `-m 0`: Hash mode, since we are cracking MD5 we use 0 according to [hashcat hash types table](https://hashcat.net/wiki/doku.php?id=example_hashes)
 - `-a 0`: We use dictionary attack as it should be enough for common and weak passwords
 
-[SCREEN1]
+![SCREEN1](https://github.com/user-attachments/assets/b3d510a3-3fb3-4f63-ade6-83d0d91d1bd2)
 
 ### Hash 1.2: CBFDAC6008F9CAB4083784CBD1874F76618D2A97
 
@@ -26,7 +26,7 @@ Hint: Sha.. but which version
 
 Based on the length (40 characters) and verification using [Crack Station](https://crackstation.net/), this is a SHA-1 hash.
 
-[SCREEN2]
+![SCREEN2](https://github.com/user-attachments/assets/19b84e3b-8338-41b1-b26f-30c4fe9871fb)
 
 1. Save the hash to a file:
 ```bash
@@ -41,13 +41,13 @@ Parameters:
 - `-m 100`: Hash mode for SHA-1
 - `-a 0`: Dictionary attack mode
 
-[SCREEN3]
+![SCREEN3](https://github.com/user-attachments/assets/98ae6201-b3ed-4287-b3e1-361b5dd13d0d)
 
 ### Hash 1.3: 1C8BFE8F801D79745C4631D09FFF36C82AA37FC4CCE4FC946683D7B336B63032
 
 Hint indicates SHA again, after checking in [Crack station](https://crackstation.net/) we know it is SHA-256
 
-[SCREEN4]
+![SCREEN4](https://github.com/user-attachments/assets/e50c82cf-4df2-4504-9d93-045f215a1ce0)
 
 1. Save the hash to a file:
 ```bash
@@ -61,6 +61,8 @@ hashcat -m 1400 -a 0 hash.txt /root/Desktop/Tools/wordlists/rockyou.txt
 Parameters:
 - `-m 1400`: Hash mode for SHA-256
 - `-a 0`: Dictionary attack mode
+
+![SCREEN5](https://github.com/user-attachments/assets/9f56447a-1f44-412b-bf10-228b542934ba)
 
 ### Hash 1.4: $2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom
 
@@ -81,7 +83,7 @@ hashcat -m 3200 -a 0 hash.txt shortwords.txt
 - `-m 3200`: Hash mode for bcrypt
 - `-a 0`: Dictionary attack mode
 
-[SCREEN6]
+![SCREEN6](https://github.com/user-attachments/assets/207d2561-b130-49e9-b9d8-453fe1a9745b)
 
 ### Hash 1.5: 279412f945939ba78ce0758d3fd83daa
 
@@ -100,7 +102,7 @@ Parameters:
 - `-a 6`: Smart hybrid attack
 - `?d?d`: + 2 digits at the end of the password
 
-[SCREEN7]
+![SCREEN7](https://github.com/user-attachments/assets/5d170e74-b077-4188-a483-839edad93162)
 
 # Level 2
 
@@ -123,7 +125,7 @@ hashcat -m 1400 -a 0 hash.txt /root/Desktop/Tools/wordlists/rockyou.txt
 - `-m 1400`: Hash mode for SHA-256
 - `-a 0`: Dictionary attack mode
 
-[SCREEN8]
+![SCREEN8](https://github.com/user-attachments/assets/bd651e15-2f9a-4b49-9397-732951a48dce)
 
 ### Hash 2.2: 1DFECA0C002AE40B8619ECF94819CC1B
 
@@ -141,7 +143,7 @@ hashcat -m 1000 -a 0 hash.txt /root/Desktop/Tools/wordlists/rockyou.txt
 - `-m 1000`: Hash mode for NTLM
 - `-a 0`: Dictionary attack mode
 
-[SCREEN9]
+![SCREEN9](https://github.com/user-attachments/assets/4722e4fe-2856-4238-afc1-dec0ff9465bc)
 
 ### Hash 2.3: $6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02.
 
@@ -160,7 +162,7 @@ hashcat -m 1800 -a 0 -w 4 hash.txt /root/Desktop/Tools/wordlists/rockyou.txt
 - `-a 0`: Dictionary attack mode
 - `-w 4`: Workload Profile, 4 is the highest
 
-[SCREEN10]
+![SCREEN10](https://github.com/user-attachments/assets/f054d874-5441-4a81-88c4-87a2ccdd33e9)
 
 ### Hash 2.4: e5d8870e5bdd26602cab8dbe07a942c8669e56d6
 
@@ -177,4 +179,4 @@ hashcat -m 160 -a 0 hash.txt /root/Desktop/Tools/wordlists/rockyou.txt
 - `-m 160`: Hash mode for HMAC-SHA1
 - `-a 0`: Dictionary attack mode
 
-[SCREEN11]
+![SCREEN11](https://github.com/user-attachments/assets/2e4a88c6-4622-4198-a07a-9700ba8af25d)
