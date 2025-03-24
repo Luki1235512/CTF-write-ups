@@ -15,7 +15,7 @@
 9. OhSINT
 10. [Forensics](https://github.com/Luki1235512/THM-write-ups/blob/main/Forensics/README.md)
 11. c4ptur3-th3-fl4g
-12. StuxCTF
+12. [StuxCTF](https://github.com/Luki1235512/THM-write-ups/tree/main/StuxCTF#readme)
 13. Ignite
 14. Basic Pentesting
 15. Anonforce
