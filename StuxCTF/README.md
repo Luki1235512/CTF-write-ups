@@ -16,7 +16,7 @@ nmap -p- <IP>
 
 - `-p-`: Allow us to scan all 65535 TCP ports
 
-[SCREEN01]
+![SCREEN01](https://github.com/user-attachments/assets/2c93ad6d-5704-4759-9c83-a016f3daf596)
 
 ```Bash
 gobuster dir -u http://<IP> -w /root/Tools/wordlists/dirbuster/directory-list-1.0.txt -x html,php,js,txt
@@ -26,11 +26,11 @@ gobuster dir -u http://<IP> -w /root/Tools/wordlists/dirbuster/directory-list-1.
 - `-w`: Specifies the wordlist file used for brute-forcing
 - `-x`: Append extensions to each word in the wordlist when searching
 
-[SCREEN02]
+![SCREEN02](https://github.com/user-attachments/assets/a4ffb12e-41b3-4bed-9a2c-ec2e24b002fb)
 
 2. We don't have access to the `/.php` and `/.html`. `robots.txt` doesn't have anything interesting, but we have another clue in source of `/index.html`
 
-[SCREEN03]
+![SCREEN03](https://github.com/user-attachments/assets/9563170a-6e12-4fb8-82ab-4566ff3717e3)
 
 3. Let's solve this Diffie-Hellman problem in Python to find the secret directory
 
@@ -47,7 +47,7 @@ gcab = (gca**b) % p
 print str(gcab)[:128]
 ```
 
-[SCREEN04]
+![SCREEN04](https://github.com/user-attachments/assets/94a52092-01f8-4bab-899d-bf139101cc4c)
 
 ### user.txt
 
@@ -55,15 +55,15 @@ print str(gcab)[:128]
 
 1. In source of the secret directory we get another hint
 
-[SCREEN05]
+![SCREEN05](https://github.com/user-attachments/assets/3de88eca-bae5-4918-a508-85f3b9824f84)
 
 2. When adding `/?file= ` at the end of the secret directory we are getting `File no Exist!` message
 
-[SCREEN06]
+![SCREEN06](https://github.com/user-attachments/assets/d7ce6199-8d03-4bc2-a7d5-efdfd72b8567)
 
 3. I have found out that only `index.php` returns something useful
 
-[SCREEN07]
+![SCREEN07](https://github.com/user-attachments/assets/c8159ff5-e8d9-491e-a783-b3e0356dd4f2)
 
 4. Let's put it in the [CyberChief](<https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')Reverse('Character')From_Base64('A-Za-z0-9%2B/%3D',true,false)>) and select `From Hex` -> `Reverse` -> `From Base64`. This is our encrypted `index.php`
 
@@ -106,4 +106,4 @@ cat /home/grecia/user.txt
 sudo cat /root/root.txt
 ```
 
-[SCREEN08]
+![SCREEN08](https://github.com/user-attachments/assets/5b9e5bcd-a10d-4e56-8c60-e347aa53bfa6)
