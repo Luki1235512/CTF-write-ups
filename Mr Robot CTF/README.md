@@ -1,3 +1,7 @@
+# [Mr Robot CTF](https://tryhackme.com/room/mrrobot)
+
+## Based on the Mr. Robot show, can you root this box?
+
 # 1 Hack the machine
 
 ## Can you root this Mr. Robot styled machine? This is a virtual machine meant for beginners/intermediate users. There are 3 hidden keys located on the machine, can you find them?
@@ -134,4 +138,3 @@ cat /root/key-3-of-3.txt
 ```
 
 ![SCREEN09](https://github.com/user-attachments/assets/7b793ef0-1434-4ad0-83b6-af72c2daf145)
-
