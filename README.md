@@ -21,3 +21,6 @@
 15. Anonforce
 16. [Simple CTF](https://github.com/Luki1235512/THM-write-ups/blob/main/Simple%20CTF/README.md)
 17. [Boiler CTF](https://github.com/Luki1235512/THM-write-ups/blob/main/Boiler%20CTF/README.md)
+18. Thompson
+19. Library
+20. [Dav](https://github.com/Luki1235512/THM-write-ups/blob/main/Dav/README.md)
