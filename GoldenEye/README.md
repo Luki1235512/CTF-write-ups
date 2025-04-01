@@ -31,7 +31,7 @@ nmap -p- -Pn <IP>
 
 ### Whats their password?
 
-We can decode encoded password using [CyberChief](https://gchq.github.io/CyberChef/), and selecting '**From HTML Entity**'
+We can decode encoded password using [CyberChef](https://gchq.github.io/CyberChef/), and selecting '**From HTML Entity**'
 
 # Its mail time...
 
