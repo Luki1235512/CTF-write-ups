@@ -65,7 +65,7 @@ print str(gcab)[:128]
 
 ![SCREEN07](https://github.com/user-attachments/assets/c8159ff5-e8d9-491e-a783-b3e0356dd4f2)
 
-4. Let's put it in the [CyberChief](<https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')Reverse('Character')From_Base64('A-Za-z0-9%2B/%3D',true,false)>) and select `From Hex` -> `Reverse` -> `From Base64`. This is our encrypted `index.php`
+4. Let's put it in the [CyberChef](<https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')Reverse('Character')From_Base64('A-Za-z0-9%2B/%3D',true,false)>) and select `From Hex` -> `Reverse` -> `From Base64`. This is our encrypted `index.php`
 
 5. Prepare reverse shell in php and cast it to the .txt file
 
