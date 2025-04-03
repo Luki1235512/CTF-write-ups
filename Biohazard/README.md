@@ -20,7 +20,7 @@ The scan reveals **3 open ports**:
 - Port 22: SSH service
 - Port 80: HTTP web server
 
-[SCREEN01]
+![SCREEN01](https://github.com/user-attachments/assets/df4465d2-78b8-4397-a3c9-351bc8a8edd2)
 
 ### What is the team name in operation?
 
@@ -28,7 +28,7 @@ The scan reveals **3 open ports**:
 2. Examine the page content - the team name appears directly below the main image
 3. The special forces team operating in this scenario is **STARS alpha team**
 
-[SCREEN02]
+![SCREEN02](https://github.com/user-attachments/assets/0ceb66a4-d0a0-4ef1-b5d7-9b0269ef756f)
 
 # The Mansion
 
@@ -45,7 +45,7 @@ The scan reveals **3 open ports**:
    - Here you'll find a link to `emblem.php`
    - Visit `http://IP/diningRoom/emblem.php` to obtain the **emblem flag**
 
-[SCREEN03]
+![SCREEN03](https://github.com/user-attachments/assets/e6282461-12af-4598-9203-ce4fc6ee61a4)
 
 ### What is the lock pick flag
 
@@ -56,13 +56,13 @@ The scan reveals **3 open ports**:
 2. Decode this using Base64 in [CyberChef](https://gchq.github.io/CyberChef/)
    - The decoded message reads: `How about the /teaRoom/`
 
-[SCREEN04]
+![SCREEN04](https://github.com/user-attachments/assets/0a77b620-c3e4-46dd-8d49-5ef6744cf541)
 
 3. Follow the hint to `http://IP/teaRoom/`
    - Find a link to `master_of_unlock.html`
    - Visit `http://IP/teaRoom/master_of_unlock.html` to obtain the **lock pick flag**
 
-[SCREEN05]
+![SCREEN05](https://github.com/user-attachments/assets/b5ec23b5-a84d-43f8-aea7-b6cbacc05559)
 
 ### What is the music sheet flag
 
@@ -85,7 +85,7 @@ The scan reveals **3 open ports**:
    - Decode this using Base32 in [CyberChef](https://gchq.github.io/CyberChef/)
    - This reveals the **music sheet flag**
 
-[SCREEN06]
+![SCREEN06](https://github.com/user-attachments/assets/2fd9f06d-13c4-4a0f-93b1-f29b48133f02)
 
 ### What is the gold emblem flag
 
@@ -94,7 +94,7 @@ The scan reveals **3 open ports**:
    - This will redirect you to `barRoomHidden.php`
    - Here you'll find a link to obtain the **gold emblem flag**
 
-[SCREEN07]
+![SCREEN07](https://github.com/user-attachments/assets/965d73ec-2be2-4958-8659-a5c7629deafc)
 
 ### What is the shield key flag
 
@@ -112,26 +112,26 @@ The scan reveals **3 open ports**:
    - Use [CyberChef](https://gchq.github.io/CyberChef/) with `rebecca` as the key
    - The decrypted message contains a URL
 
-[SCREEN08]
+![SCREEN08](https://github.com/user-attachments/assets/c520f2a4-d70a-4670-b0d4-afffac1f02bd)
 
 4. Follow the decrypted link to:
    - `http://IP/diningRoom/the_great_shield_key.html`
    - Here you'll obtain the **shield key flag**
 
-[SCREEN09]
+![SCREEN09](https://github.com/user-attachments/assets/54eeac99-15f0-408d-8340-3951901d4cdd)
 
 ### What is the blue gem flag
 
 1. Inspect the source code of `http://IP/diningRoom2F/`
    - Discover a ROT13 encrypted message
 
-[SCREEN10]
+![SCREEN10](https://github.com/user-attachments/assets/f4168f27-d949-48ce-bf59-f5da9cde6c1f)
 
 2. Decrypt the ROT13 message:
    - This will lead you to `http://IP/diningRoom/sapphire.html`
    - Here you'll find the **blue gem flag**
 
-[SCREEN11]
+![SCREEN11](https://github.com/user-attachments/assets/142f05a0-0712-4a4b-b64d-036bc1dd104b)
 
 ### What is the FTP username
 
@@ -144,12 +144,12 @@ To obtain FTP credentials, you'll need to collect and decode four crests:
    - Submit the blue gem flag to `gem.php`
    - This reveals the first encoded crest
 
-[SCREEN12]
+![SCREEN12](https://github.com/user-attachments/assets/e51a4faf-d3fb-4db0-9fdb-e213de976926)
 
 2. Decode the first crest:
    - Use [CyberChef](https://gchq.github.io/CyberChef/) with Base64 → Base32
 
-[SCREEN13]
+![SCREEN13](https://github.com/user-attachments/assets/97cb34be-984c-4f82-8bd8-20ceda20e147)
 
 3. Find the second crest:
 
@@ -159,7 +159,7 @@ To obtain FTP credentials, you'll need to collect and decode four crests:
 
    - Use [CyberChef](https://gchq.github.io/CyberChef/) with Base32 → Base58
 
-[SCREEN14]
+![SCREEN14](https://github.com/user-attachments/assets/3123d44a-e80b-4b21-8f61-ecc9e1fee1d4)
 
 5. For the third crest:
 
@@ -171,7 +171,7 @@ To obtain FTP credentials, you'll need to collect and decode four crests:
 
    - Use [CyberChef](https://gchq.github.io/CyberChef/) with Base64 → Binary → Hex
 
-[SCREEN15]
+![SCREEN15](https://github.com/user-attachments/assets/de41cfa9-b3d8-4955-b757-de9dde13b363)
 
 7. For the final crest:
 
@@ -183,7 +183,7 @@ To obtain FTP credentials, you'll need to collect and decode four crests:
 
    - Use [CyberChef](https://gchq.github.io/CyberChef/) with Base58 → Hex
 
-[SCREEN16]
+![SCREEN16](https://github.com/user-attachments/assets/beb2412b-b566-49ee-ad20-b5a3147d5bdb)
 
 9. Combine all four decoded crest fragments:
 
@@ -191,7 +191,7 @@ To obtain FTP credentials, you'll need to collect and decode four crests:
    - Decode the combined string with Base64
    - This reveals the **FTP username and password**
 
-[SCREEN17]
+![SCREEN17](https://github.com/user-attachments/assets/d329a390-3540-404a-a980-641710aa417a)
 
 # The guard house
 
@@ -212,7 +212,7 @@ mget 001-key.jpg 002-key.jpg 003-key.jpg helmet_key.txt.gpg important.txt
 
    - The note mentions a hidden directory: `/hidden_closet/`
 
-[SCREEN18]
+![SCREEN18](https://github.com/user-attachments/assets/8ff4c0dd-89fd-4a77-b641-30cbc892fd68)
 
 ### Password for the encrypted file
 
@@ -230,9 +230,9 @@ binwalk extrac -e 003-key.jpg
 sed -i 's/CS_ARCH_ARM64/CS_ARCH_AARCH64/g' /usr/lib/python3/dist-packages/binwalk/modules/disasm.py
 ```
 
-[SCREEN19]
-[SCREEN20]
-[SCREEN21]
+![SCREEN19](https://github.com/user-attachments/assets/66c85f77-69dc-42c5-a20b-fdcbb72b3ecf)
+![SCREEN20](https://github.com/user-attachments/assets/f39ff16a-517b-4126-9fd6-e134b1c244f1)
+![SCREEN21](https://github.com/user-attachments/assets/2d239676-a331-4902-96e6-f6fd95c80e26)
 
 2. From each image, we get a piece of the password. Combine all three parts, and decode the resulting string with Base64 to get the final password
 
@@ -242,7 +242,7 @@ sed -i 's/CS_ARCH_ARM64/CS_ARCH_AARCH64/g' /usr/lib/python3/dist-packages/binwal
 
 1. Use the password to decrypt the GPG-encrypted file
 
-[SCREEN23]
+![SCREEN23](https://github.com/user-attachments/assets/cb6644c9-2aa1-4de2-b716-72a09a752351)
 
 # The revisit
 
@@ -257,7 +257,7 @@ sed -i 's/CS_ARCH_ARM64/CS_ARCH_AARCH64/g' /usr/lib/python3/dist-packages/binwal
    - Download `doom.tar.gz` file
    - Inside, find `eagle_medal.txt` with SSH username: **umbrella_guest**
 
-[SCREEN24]
+![SCREEN24](https://github.com/user-attachments/assets/feb3cf0c-f9b3-4740-a4b4-bff1adaea38d)
 
 ### What is the SSH login password
 
@@ -269,7 +269,7 @@ sed -i 's/CS_ARCH_ARM64/CS_ARCH_AARCH64/g' /usr/lib/python3/dist-packages/binwal
    - Find `wolf_medal.txt`
    - This file contains the SSH password: **T_virus_rules**
 
-[SCREEN26]
+![SCREEN26](https://github.com/user-attachments/assets/7a9a5533-2171-4b6c-92d0-1056bb913301)
 
 ### Who the STARS bravo team leader
 
@@ -278,7 +278,7 @@ sed -i 's/CS_ARCH_ARM64/CS_ARCH_AARCH64/g' /usr/lib/python3/dist-packages/binwal
    - Read the narrative text at `http://IP/hiddenCloset8997e740cb7f5cece994381b9477ec38/`
    - The STARS bravo team leader is **Enrico**
 
-[SCREEN25]
+![SCREEN25](https://github.com/user-attachments/assets/8c264cae-d602-43eb-9a1e-f580597f1ac0)
 
 # Underground laboratory
 
@@ -308,7 +308,7 @@ ls
 cat chris.txt
 ```
 
-[SCREEN27]
+![SCREEN27](https://github.com/user-attachments/assets/c83ba177-468d-45f4-886b-086a562cee7a)
 
 ### The login password for the traitor
 
@@ -322,7 +322,7 @@ cat chris.txt
    - Apply key: `albert`
    - The decrypted text reveals Wesker's password: **stars_members_are_my_guinea_pig**
 
-[SCREEN28]
+![SCREEN28](https://github.com/user-attachments/assets/0ee46aed-105e-41fa-8a1f-c7bcb26b8272)
 
 ### The name of the ultimate form
 
@@ -339,7 +339,7 @@ ls
 cat weasker_note.txt
 ```
 
-[SCREEN29]
+![SCREEN29](https://github.com/user-attachments/assets/8d129f38-8ed5-4e86-ae0d-031b870e526a)
 
 ### The root flag
 
@@ -349,3 +349,5 @@ cat weasker_note.txt
 sudo -l
 sudo cat /root/root.txt
 ```
+
+![SCREEN30](https://github.com/user-attachments/assets/0bbf7716-ffbd-488f-af32-5e69d6a6ed0e)
