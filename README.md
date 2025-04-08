@@ -29,3 +29,5 @@
 23. [Break it](https://github.com/Luki1235512/THM-write-ups/blob/main/Break%20it/README.md)
 24. [Biohazard](https://github.com/Luki1235512/THM-write-ups/blob/main/Biohazard/README.md)
 25. [Adventure Time](https://github.com/Luki1235512/THM-write-ups/blob/main/Adventure%20Time/README.md)
+26. Scripting
+27. [HA Joker CTF](https://github.com/Luki1235512/THM-write-ups/blob/main/HA%20Joker%20CTF/README.md)
