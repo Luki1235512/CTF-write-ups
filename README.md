@@ -31,3 +31,4 @@
 25. [Adventure Time](https://github.com/Luki1235512/THM-write-ups/blob/main/Adventure%20Time/README.md)
 26. Scripting
 27. [HA Joker CTF](https://github.com/Luki1235512/THM-write-ups/blob/main/HA%20Joker%20CTF/README.md)
+28. [Wgel CTF](https://github.com/Luki1235512/THM-write-ups/blob/main/Wgel%20CTF/README.md)
