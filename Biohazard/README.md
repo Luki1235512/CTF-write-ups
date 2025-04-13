@@ -219,9 +219,9 @@ mget 001-key.jpg 002-key.jpg 003-key.jpg helmet_key.txt.gpg important.txt
 1. We need to extract hidden data from the three image files using steghide, exiftool, and binwalk:
 
 ```Bash
-steghide extrac -sf 001-key.jpg
+steghide extract -sf 001-key.jpg
 exiftool 002-key.jpg
-binwalk extrac -e 003-key.jpg
+binwalk -e 003-key.jpg
 ```
 
 (If you're using the TryHackMe attack-box and binwalk is not working correctly, fix it with:)
