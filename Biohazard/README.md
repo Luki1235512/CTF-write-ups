@@ -236,8 +236,6 @@ sed -i 's/CS_ARCH_ARM64/CS_ARCH_AARCH64/g' /usr/lib/python3/dist-packages/binwal
 
 2. From each image, we get a piece of the password. Combine all three parts, and decode the resulting string with Base64 to get the final password
 
-[SCREEN22]
-
 ### What is the helmet key flag
 
 1. Use the password to decrypt the GPG-encrypted file
