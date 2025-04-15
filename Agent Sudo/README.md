@@ -15,14 +15,14 @@
 nmap IP
 ```
 
-[SCREEN01]
+![SCREEN01](https://github.com/user-attachments/assets/1de8077f-4845-4bd1-bd59-6b6bc73b9e1b)
 
 ### How you redirect yourself to a secret page?
 
 1. When visiting the web server at `http://IP:80`, we find a message that provides a hint
    - The welcome page indicates we need to change our **user-agent** to access the secret page
 
-[SCREEN03]
+![SCREEN03](https://github.com/user-attachments/assets/90be66c7-2cc2-4baf-935c-b1ef73f469f0)
 
 ### What is the agent name?
 
@@ -36,7 +36,7 @@ curl -A "C" -L http://IP//
 - `-A`: flag sets the user-agent
 - `-L`: flag follows redirects
 
-[SCREEN02]
+![SCREEN02](https://github.com/user-attachments/assets/5172d2cc-21f9-4af3-bd15-eb8be8b9cd23)
 
 # Hash cracking and brute-force
 
@@ -50,7 +50,7 @@ curl -A "C" -L http://IP//
 hydra -l chris -P /root/Tools/wordlists/rockyou.txt ftp://IP
 ```
 
-[SCREEN04]
+![SCREEN04](https://github.com/user-attachments/assets/4aa57a45-cf99-4995-9cdc-49152404546b)
 
 ### Zip file password
 
@@ -65,7 +65,7 @@ ls -la
 get To_agentJ.txt cutie-alien.jpg cutie.png
 ```
 
-[SCREEN05]
+![SCREEN05](https://github.com/user-attachments/assets/1f307c9f-6a24-4df3-bd77-5d94f6db7ed5)
 
 2. Examining the `To_agentJ.txt` file reveals we need to extract hidden data from the images
    - First, we use binwalk to check for embedded files in the PNG image
@@ -81,14 +81,14 @@ zip2john 8702.zip > hash.txt
 john hash.txt
 ```
 
-[SCREEN06]
+![SCREEN06](https://github.com/user-attachments/assets/63dd3d7f-40aa-49a9-bfef-cc633011bc13)
 
 ### steg password
 
 1. Inside the extracted `8702.zip` file, we find a file containing the Base64 encoded string **QXJlYTUx**
    - Decoding this string gives us "Area51", which is the steganography password for the other image
 
-[SCREEN07]
+![SCREEN07](https://github.com/user-attachments/assets/0580806c-2bf0-43ea-8965-e0bc6ef1856b)
 
 ### Who is other agent (in full name)?
 
@@ -101,11 +101,11 @@ steghide extract -sf cute-alien.jpg
 # Enter passphrase: Area51
 ```
 
-[SCREEN08]
+![SCREEN08](https://github.com/user-attachments/assets/a5b182c7-87d4-432f-9ae8-ff2fa0c19df0)
 
 2. The extracted `message.txt` contains the full name of the other agent (**James**) and his SSH password
 
-[SCREEN09]
+![SCREEN09](https://github.com/user-attachments/assets/0994cd4b-e3db-48b0-ae94-dec67255627d)
 
 # Capture the user flag
 
@@ -123,7 +123,7 @@ ls
 cat user_flag.txt
 ```
 
-[SCREEN10]
+![SCREEN10](https://github.com/user-attachments/assets/69f1c6e4-b470-43de-8c9a-91a13d3d7410)
 
 ### What is the incident of the photo called?
 
@@ -135,7 +135,7 @@ scp james@10.10.102.224:Alien_autospy.jpg .
 
 2. After examining the image and researching online, we identify the incident as the famous **Roswell alien autopsy**
 
-[SCREEN11]
+![SCREEN11](https://github.com/user-attachments/assets/abb2511e-8e23-439e-afc8-0d111d2f6a85)
 
 # Privilege escalation
 
@@ -149,7 +149,7 @@ scp james@10.10.102.224:Alien_autospy.jpg .
 sudo -l
 ```
 
-[SCREEN12]
+![SCREEN12](https://github.com/user-attachments/assets/188b3ddc-73cd-499b-b9fa-63664c12b7b5)
 
 2. The output shows James can run `/bin/bash` as anyone except root
 
@@ -172,4 +172,4 @@ cd /root
 cat root.txt
 ```
 
-[SCREEN13]
+![SCREEN13](https://github.com/user-attachments/assets/9dd9a33f-7759-452b-b0c4-80ecf44fcd9a)
