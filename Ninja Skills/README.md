@@ -17,7 +17,7 @@ find / -type f -group best-group 2>>/dev/null
 - `-group best-group`: Finds files owned by the group "best-group"
 - `2>>/dev/null`: Redirects error messages to /dev/null, which suppresses permission denied errors
 
-[SCREEN01]
+![SCREEN01](https://github.com/user-attachments/assets/829d8d7c-1a85-41e5-936b-89d4b6ed8801)
 
 ### Which of these files contain an IP address?
 
@@ -32,7 +32,7 @@ find / -type f -name 8V2L -o -name bny0 -o -name c4ZX -o -name D8B3 -o -name FHl
 - `-P '...'`: Regex to match IPv4 addresses
 - The regex pattern matches valid IP address format (0-255.0-255.0-255.0-255)
 
-[SCREEN02]
+![SCREEN02](https://github.com/user-attachments/assets/91d82385-1560-4571-ad4a-21deb9d046e7)
 
 ### Which file has the SHA1 hash of 9d54da7584015647ba052173b84d45e8007eba94
 
@@ -49,7 +49,7 @@ find / -type f \( -name 8V2L -o -name bny0 -o -name c4ZX -o -name D8B3 -o -name 
 - `_ {}`: Passes the found file as argument to the shell command
 - `\;`: Terminates the -exec command
 
-[SCREEN03]
+![SCREEN03](https://github.com/user-attachments/assets/15659225-d181-4319-a3e6-30a467ec39c7)
 
 ### Which file contains 230 lines?
 
@@ -60,7 +60,7 @@ find / -type f \( -name 8V2L -o -name bny0 -o -name c4ZX -o -name D8B3 -o -name 
 - `-exec wc -l {} \`: Executes the `wc -l` command (word count, lines only) on each found file
 - You would then need to look through the output to find the file that is not displayed
 
-[SCREEN04]
+![SCREEN04](https://github.com/user-attachments/assets/11f01fd6-bc7f-4d22-b11d-1e23a53ad013)
 
 ### Which file's owner has an ID of 502?
 
@@ -70,7 +70,7 @@ find / -type f \( -name 8V2L -o -name bny0 -o -name c4ZX -o -name D8B3 -o -name 
 
 - `-uid 502`: Finds files whose owner has the user ID of 502
 
-[SCREEN05]
+![SCREEN05](https://github.com/user-attachments/assets/a0c017fd-4bda-4d11-a940-64a9de3d233a)
 
 ### Which file is executable by everyone?
 
@@ -80,4 +80,4 @@ find / -type f \( -name 8V2L -o -name bny0 -o -name c4ZX -o -name D8B3 -o -name 
 
 - `-perm -a=x`: Finds files with the execute permission set for all users
 
-[SCREEN06]
+![SCREEN06](https://github.com/user-attachments/assets/166a515c-c100-4969-bbd5-1b26c9ed793f)
