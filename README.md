@@ -34,3 +34,4 @@
 28. [Wgel CTF](https://github.com/Luki1235512/THM-write-ups/blob/main/Wgel%20CTF/README.md)
 29. Borderlands
 30. [Agent Sudo](https://github.com/Luki1235512/THM-write-ups/blob/main/Agent%20Sudo/README.md)
+31. [Ninja Skills](https://github.com/Luki1235512/THM-write-ups/tree/main/Ninja%20Skills)
