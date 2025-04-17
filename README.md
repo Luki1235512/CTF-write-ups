@@ -35,3 +35,4 @@
 29. Borderlands
 30. [Agent Sudo](https://github.com/Luki1235512/THM-write-ups/blob/main/Agent%20Sudo/README.md)
 31. [Ninja Skills](https://github.com/Luki1235512/THM-write-ups/tree/main/Ninja%20Skills)
+32. [Reversing ELF](https://github.com/Luki1235512/THM-write-ups/blob/main/Reversing%20ELF/README.md)
