@@ -41,7 +41,7 @@ grep "admin" mysql_bakup_20191129023059-1.5.1.sql
 
 ![SCREEN04](https://github.com/user-attachments/assets/c2d34ab0-73c1-406f-b3f2-e84335f69e59)
 
-6. Create a [PHP reverse shell](https://github.com/mosec0/Reverse-Shell/blob/main/reverse-shell.php) and upload it to `http://IP/content/as/?type=media_center`. We need to change extension of the file to bypass validation
+6. Create a [PHP reverse shell](https://github.com/mosec0/Reverse-Shell/blob/main/reverse-shell.php) and upload it to `http://IP/content/as/?type=media_center`. We need to change extension of the file (to `.phtml` for example) to bypass validation
 
 ![SCREEN05](https://github.com/user-attachments/assets/4b393023-4d3f-4cbc-9e1c-e21bfa55dd42)
 
