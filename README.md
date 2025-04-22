@@ -37,3 +37,4 @@
 31. [Ninja Skills](https://github.com/Luki1235512/THM-write-ups/blob/main/Ninja%20Skills/README.md)
 32. [Reversing ELF](https://github.com/Luki1235512/THM-write-ups/blob/main/Reversing%20ELF/README.md)
 33. [Basic Malware RE](https://github.com/Luki1235512/THM-write-ups/blob/main/Basic%20Malware%20RE/README.md)
+34. [Blueprint](https://github.com/Luki1235512/THM-write-ups/blob/main/Blueprint/README.md)
