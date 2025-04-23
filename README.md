@@ -39,3 +39,4 @@
 33. [Basic Malware RE](https://github.com/Luki1235512/THM-write-ups/blob/main/Basic%20Malware%20RE/README.md)
 34. [Blueprint](https://github.com/Luki1235512/THM-write-ups/blob/main/Blueprint/README.md)
 35. [LazyAdmin](https://github.com/Luki1235512/THM-write-ups/blob/main/LazyAdmin/README.md)
+36. [hc0n Christmas CTF](https://github.com/Luki1235512/THM-write-ups/blob/main/hc0n%20Christmas%20CTF/README.md)
