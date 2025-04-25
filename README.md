@@ -40,3 +40,4 @@
 34. [Blueprint](https://github.com/Luki1235512/THM-write-ups/blob/main/Blueprint/README.md)
 35. [LazyAdmin](https://github.com/Luki1235512/THM-write-ups/blob/main/LazyAdmin/README.md)
 36. [hc0n Christmas CTF](https://github.com/Luki1235512/THM-write-ups/blob/main/hc0n%20Christmas%20CTF/README.md)
+37. [CTF collection Vol.1](https://github.com/Luki1235512/THM-write-ups/blob/main/CTF%20collection%20Vol.1/README.md)
