@@ -1,4 +1,4 @@
-# [hc0n Christmas CTF] (https://tryhackme.com/room/hc0nchristmasctf)
+# [hc0n Christmas CTF](https://tryhackme.com/room/hc0nchristmasctf)
 
 ## hackt the planet
 
