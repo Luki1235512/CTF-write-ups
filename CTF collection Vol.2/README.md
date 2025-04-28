@@ -234,9 +234,9 @@ _Try guest the alphabet and the hash code_
 
 2. nput the full alphabet in both uppercase and lowercase **ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz**
 
-3. Based on the hints provided, determine that the correct input is **GaveOver**
+3. Based on the hints provided, determine that the correct input is **GameOver**
 
-![SCREEN26](https://github.com/user-attachments/assets/3f3285eb-b0f6-4627-a87e-235e85e287f9)
+![437981560-3f3285eb-b0f6-4627-a87e-235e85e287f9](https://github.com/user-attachments/assets/4cb2e913-a405-4cf1-ac78-e487f093f2aa)
 
 ### Easter 16
 
