@@ -49,3 +49,5 @@
 43. [Jack](https://github.com/Luki1235512/THM-write-ups/blob/main/Jack/README.md)
 44. [CMesS](https://github.com/Luki1235512/THM-write-ups/blob/main/CMesS/README.md)
 45. [CherryBlossom](https://github.com/Luki1235512/THM-write-ups/blob/main/CherryBlossom/README.md)
+46. Brainpan 1
+47. [Willow](https://github.com/Luki1235512/THM-write-ups/blob/main/Willow/README.md)
