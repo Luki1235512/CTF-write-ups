@@ -54,3 +54,4 @@
 48. NoNameCTF
 49. CCT2019
 50. [Jack-of-All-Trades](https://github.com/Luki1235512/THM-write-ups/blob/main/Jack-of-All-Trades/README.md)
+51. [tomghost](https://github.com/Luki1235512/THM-write-ups/blob/main/tomghost/README.md)
