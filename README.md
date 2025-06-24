@@ -56,3 +56,4 @@
 50. [Jack-of-All-Trades](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Jack-of-All-Trades/README.md)
 51. [tomghost](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/tomghost/README.md)
 52. [Attacktive Directory](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Attacktive%20Directory/README.md)
+53. [Fowsniff CTF](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Fowsniff%20CTF/README.md)
