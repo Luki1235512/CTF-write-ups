@@ -16,7 +16,7 @@ _nmap -A -p- -sV MACHINE_IP_
    - pop3
    - imap
 
-[SCREEN01]
+![SCREEN01](https://github.com/user-attachments/assets/e1764965-a4ad-4681-9065-6df443eb64f6)
 
 ---
 
@@ -74,4 +74,4 @@ LIST
 RETR 1
 ```
 
-[SCREEN02]
+![SCREEN02](https://github.com/user-attachments/assets/fcc4e41b-fed9-4a6b-b6cb-5ef0cdcb54f5)
