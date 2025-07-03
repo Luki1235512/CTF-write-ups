@@ -58,3 +58,4 @@
 52. [Attacktive Directory](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Attacktive%20Directory/README.md)
 53. [Fowsniff CTF](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Fowsniff%20CTF/README.md)
 54. [Year of the Rabbit](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Year%20of%20the%20Rabbit/README.md)
+55. [Tony the Tiger](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Tony%20the%20Tiger/README.md)
