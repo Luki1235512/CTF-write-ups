@@ -12,7 +12,7 @@
 nmap IP
 ```
 
-[SCREEN01]
+<img width="721" height="216" alt="SCREEN01" src="https://github.com/user-attachments/assets/51eeeed0-3d8e-42c6-8f6c-cc404d632096" />
 
 2. Navigate to `https://<TARGET_IP>` to examine the web application. The page displays a periodic table. Extract the atomic numbers and decode using [CyberChef](https://gchq.github.io/CyberChef/). "From Decimal" operation reveals the hidden file path: `/PI3T.PNg`
 
@@ -22,7 +22,7 @@ Ag - Hg - Ta - Sb - Po - Pd - Hg - Pt - Lr
 47 80 73 51 84 46 80 78 103
 ```
 
-[SCREEN03]
+<img width="1310" height="740" alt="SCREEN03" src="https://github.com/user-attachments/assets/a0b13e17-25f3-471e-8296-0504994fa1d9" />
 
 ---
 
@@ -36,7 +36,7 @@ Ag - Hg - Ta - Sb - Po - Pd - Hg - Pt - Lr
 strings PI3T.PNg
 ```
 
-[SCREEN04]
+<img width="382" height="183" alt="SCREEN04" src="https://github.com/user-attachments/assets/ad098435-8029-4f44-985d-eb8b45d7a12c" />
 
 ---
 
@@ -50,7 +50,7 @@ _% is a separator_
 
    - The Piet program outputs credentials are `nagiosadmin:n3p3UQ&9BjLp4$7uhWdY`
 
-[SCREEN05]
+![SCREEN05](https://github.com/user-attachments/assets/d1d151df-9d38-480b-a42d-4cf289ecc1b6)
 
 ### What is the CVE number for this vulnerability? This will be in the format: CVE-0000-0000
 
@@ -69,7 +69,7 @@ msfconsole
 search nagios
 ```
 
-[SCREEN06]
+<img width="721" height="432" alt="SCREEN06" src="https://github.com/user-attachments/assets/a7844618-3fe8-4b9b-86a1-93e2d3b13834" />
 
 ---
 
@@ -94,7 +94,7 @@ ls /home/galand
 cat /home/galand/user.txt
 ```
 
-[SCREEN07]
+<img width="342" height="125" alt="SCREEN07" src="https://github.com/user-attachments/assets/61da85dd-7b05-48cc-aaf2-f75231160b19" />
 
 ---
 
@@ -109,4 +109,4 @@ whoami
 cat /root/root.txt
 ```
 
-[SCREEN08]
+<img width="338" height="68" alt="SCREEN08" src="https://github.com/user-attachments/assets/9a48e0b5-df66-42b8-9b7d-556424396361" />
