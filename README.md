@@ -61,3 +61,4 @@
 55. [Tony the Tiger](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Tony%20the%20Tiger/README.md)
 56. [dogcat](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/dogcat/README.md)
 57. Pickle Rick
+58. [Nax](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Nax/README.md)
