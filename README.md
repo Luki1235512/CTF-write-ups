@@ -62,3 +62,4 @@
 56. [dogcat](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/dogcat/README.md)
 57. Pickle Rick
 58. [Nax](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Nax/README.md)
+59. [Skynet](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Skynet/README.md)
