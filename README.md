@@ -63,3 +63,5 @@
 57. Pickle Rick
 58. [Nax](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Nax/README.md)
 59. [Skynet](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Skynet/README.md)
+60. Tempus Fugit Durius
+61. [ConvertMyVideo](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/ConvertMyVideo/README.md)
