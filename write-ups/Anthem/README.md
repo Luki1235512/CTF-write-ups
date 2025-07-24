@@ -14,7 +14,7 @@
 nmap -sV <TARGET_IP>
 ```
 
-[SCREEN01]
+<img width="725" height="178" alt="SCREEN01" src="https://github.com/user-attachments/assets/710c4803-26d1-4eee-aa74-e183e6b78805" />
 
 ---
 
@@ -36,7 +36,7 @@ _fill in the gap \*\*\*\*\*\*.txt_
 
 1. Navigate to `http://<TARGET_IP>/robots.txt`. The robots.txt file contains the string `UmbracoIsTheBest!` which appears to be a potential password
 
-[SCREEN02]
+<img width="512" height="262" alt="SCREEN02" src="https://github.com/user-attachments/assets/512193b6-c313-4122-9a26-b91a2c848198" />
 
 ---
 
@@ -50,7 +50,7 @@ _fill in the gap \*\*\*\*\*\*.txt_
 
 1. The domain name `anthem.com` is displayed in the website header at `http://<TARGET_IP>/`
 
-[SCREEN03]
+<img width="407" height="94" alt="SCREEN03" src="https://github.com/user-attachments/assets/43b1c39d-1faa-4ed3-8644-b033ccbc778d" />
 
 ---
 
@@ -78,7 +78,7 @@ _Have we inspected the pages yet?_
 
 1. View the page source of `http://<TARGET_IP>/archive/we-are-hiring/`. The flag is embedded within the HTML meta tags
 
-[SCREEN04]
+<img width="678" height="241" alt="SCREEN04" src="https://github.com/user-attachments/assets/3bcffacf-333e-40d6-a1ab-a1371d518166" />
 
 ---
 
@@ -88,7 +88,7 @@ _Search for it_
 
 1. The flag is located within the placeholder text of an input field on the website
 
-[SCREEN05]
+<img width="690" height="198" alt="SCREEN05" src="https://github.com/user-attachments/assets/64b492b9-e2db-45e1-865d-a6de16507af3" />
 
 ---
 
@@ -98,7 +98,7 @@ _Profile_
 
 1. Navigate to Jane Doe's profile page at `http://<TARGET_IP>/authors/jane-doe/`. The flag is embedded within the profile content
 
-[SCREEN06]
+<img width="713" height="525" alt="SCREEN06" src="https://github.com/user-attachments/assets/3cdd5b54-4e38-4e31-9ab9-dab812edc965" />
 
 ---
 
@@ -108,7 +108,7 @@ _Have we inspected all the pages yet?_
 
 1. Examine the page source of `http://<TARGET_IP>/archive/a-cheers-to-our-it-department/`. The flag is embedded within the HTML source code
 
-[SCREEN07]
+<img width="796" height="253" alt="SCREEN07" src="https://github.com/user-attachments/assets/c9ae8c5d-cf34-426f-8678-f4f618954068" />
 
 ---
 
@@ -128,7 +128,7 @@ xfreerdp /f /u:sg /p:UmbracoIsTheBest! /v:10.10.174.188
 
 2. The `user.txt` file is located on the desktop of the sg user account
 
-[SCREEN08]
+<img width="400" height="128" alt="SCREEN08" src="https://github.com/user-attachments/assets/376969e5-f56d-4cc3-84de-3247fe1d967c" />
 
 ---
 
@@ -138,7 +138,7 @@ _It is hidden._
 
 1. Enable the display of hidden files and folders in Windows Explorer
 
-[SCREEN09]
+<img width="763" height="141" alt="SCREEN09" src="https://github.com/user-attachments/assets/1a1b3a04-1a0d-4c7c-9524-127cda841559" />
 
 2. Navigate to `C:\backup` directory
 3. Locate the `restore.txt` file and modify its permissions:
@@ -147,7 +147,7 @@ _It is hidden._
    - Click Add, enter 'sg', click Check Names, then OK
    - Apply the changes
 
-[SCREEN10]
+<img width="403" height="529" alt="SCREEN10" src="https://github.com/user-attachments/assets/bf325062-6673-4d03-8613-6330fde3ab47" />
 
 4. The administrator password is `ChangeMeBaby1MoreTime`
 
@@ -157,4 +157,4 @@ _It is hidden._
 
 1. Using the discovered administrator credentials, access the root flag located at `C:\Users\Administrator\Desktop\root.txt`.
 
-[SCREEN11]
+<img width="633" height="191" alt="SCREEN11" src="https://github.com/user-attachments/assets/55eefb29-1925-42c2-8ba0-ab4fa0e6b538" />
