@@ -70,3 +70,4 @@
 64. KoTH Food CTF
 65. [The Impossible Challenge](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/The%20Impossible%20Challenge/README.md)
 66. [Anthem](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Anthem/README.md)
+67. [Anonymous](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Anonymous/README.md)
