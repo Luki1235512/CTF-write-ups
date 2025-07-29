@@ -12,15 +12,21 @@
 nmap -sV -p- <TARGET_IP>
 ```
 
-[SCREEN01]
+<img width="722" height="240" alt="SCREEN01" src="https://github.com/user-attachments/assets/64a593e0-7913-4e28-a221-63743b18c6bf" />
+
+---
 
 ### What service is running on port 21?
 
 1. **ftp** is running on port 21
 
+---
+
 ### What service is running on ports 139 and 445?
 
 1. The service is **smb**
+
+---
 
 ### There's a share on the user's computer. What's it called?
 
@@ -30,6 +36,9 @@ nmap -sV -p- <TARGET_IP>
 ```bash
 smbclient -L //<TARGET_IP> -N
 ```
+<img width="723" height="143" alt="SCREEN02" src="https://github.com/user-attachments/assets/a432f691-79ae-4c4a-9b8b-60da86a1ad24" />
+
+---
 
 ### user.txt
 
@@ -66,7 +75,9 @@ nc -lvnp 4444
 cat user.txt
 ```
 
-[SCREEN03]
+<img width="719" height="216" alt="SCREEN03" src="https://github.com/user-attachments/assets/86f4d84d-d4b7-4efb-90cf-0d77ea399158" />
+
+---
 
 ### root.txt
 
@@ -91,4 +102,4 @@ whoami
 cat /root/root.txt
 ```
 
-[SCREEN04]
+<img width="719" height="196" alt="SCREEN04" src="https://github.com/user-attachments/assets/a6c0a4ec-c952-42a4-9420-54716f9e922f" />
