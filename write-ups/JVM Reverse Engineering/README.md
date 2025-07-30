@@ -54,7 +54,7 @@ _Javap is a useful tool to find information about compiled classes_
 javap -v -p Main_1584042869908.class
 ```
 
-[SCREEN01]
+<img width="721" height="94" alt="SCREEN01" src="https://github.com/user-attachments/assets/ad579478-9b59-4543-b916-95778dce49c6" />
 
 ---
 
@@ -68,7 +68,7 @@ _Adding flags like -c to javap allow you to see the bytecode of methods. The con
 javap -v -c Main_1584042869908.class
 ```
 
-[SCREEN02]
+<img width="719" height="125" alt="SCREEN02" src="https://github.com/user-attachments/assets/03d08287-de03-4cde-88d1-54dd4ab09879" />
 
 ---
 
@@ -80,6 +80,8 @@ javap -v -c Main_1584042869908.class
 javap -v -c Main_1584042869908.class
 ```
 
+<img width="720" height="383" alt="SCREEN03" src="https://github.com/user-attachments/assets/cd713a7b-906d-4825-b571-ebae18f880e0" />
+
 ```java
 0: iconst_0       // Push constant 0 onto stack
 1: istore_1       // Store 0 into local variable slot 1
@@ -89,8 +91,6 @@ javap -v -c Main_1584042869908.class
 10: iinc 1, 2     // Increment local variable slot 1 by 2
 13: return        // Method returns
 ```
-
-[SCREEN03]
 
 ---
 
@@ -108,7 +108,7 @@ _The -v tag on javap will print the constant pool, containing utf8 encoded strin
 javap -v PasswordProtectedApplication_1584043806242.class
 ```
 
-[SCREEN04]
+<img width="721" height="109" alt="SCREEN04" src="https://github.com/user-attachments/assets/c963c75c-f09b-4fdb-85de-9c0017e62da7" />
 
 # Basic String Obfuscation
 
@@ -125,10 +125,12 @@ _You will need to use either a decompiler, bytecode analysis or virtualisation t
 javap -v -c -p BasicStringObfuscation_1584044464985.class
 ```
 
-[SCREEN05]
+<img width="872" height="527" alt="SCREEN05" src="https://github.com/user-attachments/assets/b8e8908a-b462-4921-9d8d-deb48a7743b0" />
 
 ---
 
 ### Advanced String Obfuscation
 
 _You will either need to statically reverse engineer the string deobfuscation functions or use some kind of custom made virtualisation tool_
+
+// TODO
