@@ -72,3 +72,4 @@
 66. [Anthem](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Anthem/README.md)
 67. [Anonymous](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Anonymous/README.md)
 68. [JVM Reverse Engineering](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/JVM%20Reverse%20Engineering/README.md) - 5/7
+69. Gatekeeper
