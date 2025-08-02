@@ -74,3 +74,4 @@
 68. [JVM Reverse Engineering](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/JVM%20Reverse%20Engineering/README.md) - 5/7
 69. Gatekeeper
 70. [Peak Hill](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Peak%20Hill/README.md)
+71. [Lian_Yu](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Lian_Yu/README.md)
