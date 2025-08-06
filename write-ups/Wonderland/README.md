@@ -16,7 +16,7 @@ _Everything is upside down here._
 nmap <TARGET_IP>
 ```
 
-[SCREEN01]
+<img width="721" height="196" alt="SCREEN01" src="https://github.com/user-attachments/assets/05b8122e-c6a3-49ce-8100-fe63bf40b0f0" />
 
 2. Continue enumeration to discover `/r/a/b/b/i/t` directory
 
@@ -27,7 +27,7 @@ gobuster dir -u http://<TARGET_IP>/r/a/b/b/i/t -w /root/Tools/wordlists/dirbuste
 3. Examine the source code of `http://<TARGET_IP>/r/a/b/b/i/t/` page. Hidden in the HTML comments, you'll find SSH credentials
    - **Credentials found:** `alice:HowDothTheLittleCrocodileImproveHisShiningTail`
 
-[SCREEN02]
+<img width="694" height="306" alt="SCREEN02" src="https://github.com/user-attachments/assets/099492ba-4227-4cbd-b776-690ae2d79efc" />
 
 4. Use the discovered credentials to establish SSH connection
 
@@ -44,7 +44,7 @@ sudo -l
 cat walrus_and_the_carpenter.py
 ```
 
-[SCREEN03]
+<img width="720" height="161" alt="SCREEN03" src="https://github.com/user-attachments/assets/f3fb0050-563e-4137-81ca-b52e36e630cc" />
 
 6. Analyze the Python script to identify import statements. The script imports the `random` module, which we can hijack. This exploits Python's module search path to execute our malicious `random.py` instead of the legitimate module
 
@@ -76,7 +76,7 @@ scp alice@<TARGET_IP>:/tmp/teaParty .
     - The binary calls the `date` command without using absolute paths
     - This creates a PATH hijacking vulnerability
 
-[SCREEN04]
+<img width="1259" height="655" alt="SCREEN04" src="https://github.com/user-attachments/assets/69e6148e-a9f1-4aac-a8e8-2876f3737fe5" />
 
 11. Create a malicious `date` binary and manipulate the PATH environment variable. This exploits the binary's reliance on PATH resolution to execute our malicious `date` command
 
@@ -115,7 +115,7 @@ chmod +x linpeas.sh
 cat /root/user.txt
 ```
 
-[SCREEN05]
+<img width="724" height="73" alt="SCREEN05" src="https://github.com/user-attachments/assets/f2fb8fd4-9704-41e4-bdb3-aa37693276bd" />
 
 ---
 
@@ -127,4 +127,4 @@ cat /root/user.txt
 cat /alice/root.txt
 ```
 
-[SCREEN06]
+<img width="721" height="36" alt="SCREEN06" src="https://github.com/user-attachments/assets/074cd42a-fc89-4025-a519-2c1c8abd5751" />
