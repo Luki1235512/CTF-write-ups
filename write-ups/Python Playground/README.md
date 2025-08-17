@@ -16,7 +16,7 @@ _Exploit the web app._
 nmap <TARGET_IP>
 ```
 
-[SCREEN01]
+<img width="725" height="165" alt="SCREEN01" src="https://github.com/user-attachments/assets/7d3646e9-ec90-4efd-976f-d5fa2ab82cfd" />
 
 2. Search for hidden directories and files on the web server
    - We are looking for `admin.html`
@@ -25,7 +25,7 @@ nmap <TARGET_IP>
 gobuster dir -u http://<TARGET_IP> -w /root/Tools/wordlists/dirbuster/directory-list-2.3-medium.txt -x html,txt,php,js
 ```
 
-[SCREEN02]
+<img width="719" height="413" alt="SCREEN02" src="https://github.com/user-attachments/assets/a68e8919-d437-42d6-989c-3789f9646504" />
 
 3. Analyze JavaScript code in `view-source:http://<TARGET_IP>/admin.html` to decode obfuscated credentials
    - Credentials are: `connor:spaghetti1245`
@@ -48,7 +48,7 @@ password = decode_custom_hash(first_decode)
 print(f'Password: {password}')
 ```
 
-[SCREEN03]
+<img width="721" height="35" alt="SCREEN03" src="https://github.com/user-attachments/assets/4d2fd20d-0734-43b0-af10-053b2c46c18b" />
 
 4. Log in with extracted credentials, and navigate to `http://<TARGET_IP>/super-secret-admin-testing-panel.html`
 
@@ -82,7 +82,7 @@ cd
 cat flag1.txt
 ```
 
-[SCREEN04]
+<img width="721" height="123" alt="SCREEN04" src="https://github.com/user-attachments/assets/366243a8-123a-4385-99c1-1e355c24abaa" />
 
 ---
 
@@ -98,7 +98,7 @@ ssh connor@<TARGET_IP>
 cat flag2.txt
 ```
 
-[SCREEN05]
+<img width="652" height="375" alt="SCREEN05" src="https://github.com/user-attachments/assets/c5b99735-a26e-40b8-bf44-b58367cc75b6" />
 
 ---
 
@@ -124,4 +124,4 @@ whoami
 cat /root/flag3.txt
 ```
 
-[SCREEN06]
+<img width="647" height="112" alt="SCREEN06" src="https://github.com/user-attachments/assets/db0d0e96-10fc-4620-b09b-1643ff1842c7" />
