@@ -76,3 +76,4 @@
 70. [Peak Hill](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Peak%20Hill/README.md)
 71. [Lian_Yu](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Lian_Yu/README.md)
 72. [Wonderland](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Wonderland/README.md)
+73. [Python Playground](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Python%20Playground/README.md)
