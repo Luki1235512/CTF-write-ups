@@ -16,7 +16,7 @@ _user.txt_
 nmap <TARGET_IP>
 ```
 
-[SCREEN01]
+<img width="652" height="179" alt="SCREEN01" src="https://github.com/user-attachments/assets/6604636e-71f1-4880-bbb0-2642932f582a" />
 
 2. Navigate to `http://<TARGET_IP>` to examine the web application
 
@@ -37,7 +37,7 @@ Brainfuck:
 ++++++++++[>+>+++>+++++++>++++++++++<<<<-]>>>>-----..++++++++++.++++.+++.-.+++.++.---------------------..<<++++++++++.-.>>++++++++++++++++.++++.<<.++.+++++.>>.++++++.------.+.---------------.++++++++.<<------.-.>>-.+++++++.<<-------.+++++++++++++.>>-------.-----------.<<-------------.++++++++++++++..+.--------.++.
 ```
 
-[SCREEN02]
+<img width="1178" height="362" alt="SCREEN02" src="https://github.com/user-attachments/assets/161b4773-364f-4cad-9e40-9704b829fc17" />
 
 ```python
 # Python code
@@ -49,7 +49,7 @@ Brainfuck:
 ++++++++++[>+>+++>+++++++>++++++++++<<<<-]>>>>-----..++++++++++.++++.+++.-.+++.++.---------------------..<<++++++++++.-.>>++++++++++++++++.++++.<<.++.+++++.>>.++++++.------.+.---------------.++++++++.<<------.-.>>----------.--.+++++++++++++++++++.<<-------.++++++++++++++..+.>>+.--.--------------.+++++++++++++.<<-.>>++.++++.----.<<-------.++.
 ```
 
-[SCREEN03]
+<img width="1188" height="215" alt="SCREEN03" src="https://github.com/user-attachments/assets/e2fb4a0b-79c1-4575-9e7f-7ed19d93d4df" />
 
 ---
 
@@ -85,7 +85,7 @@ python3 -c 'import pty; pty.spawn("/bin/bash")'
 getcap -r / 2>/dev/null
 ```
 
-[SCREEN04]
+<img width="649" height="78" alt="SCREEN04" src="https://github.com/user-attachments/assets/acebd333-9537-4aec-876c-dcaf5b041ea7" />
 
 5. Ensure development libraries are available
 
@@ -130,4 +130,4 @@ openssl req -engine ./exploit.so
 cat /root/root.txt
 ```
 
-[SCREEN05]
+<img width="650" height="244" alt="SCREEN05" src="https://github.com/user-attachments/assets/ae35cc4c-aa7c-44dc-b68d-650c40d5f284" />
