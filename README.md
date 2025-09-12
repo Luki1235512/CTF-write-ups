@@ -29,7 +29,7 @@
 23. [Break it](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Break%20it/README.md)
 24. [Biohazard](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Biohazard/README.md)
 25. [Adventure Time](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Adventure%20Time/README.md)
-26. Scripting
+26. [Scripting](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Scripting/README.md)
 27. [HA Joker CTF](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/HA%20Joker%20CTF/README.md)
 28. [Wgel CTF](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Wgel%20CTF/README.md)
 29. Borderlands
