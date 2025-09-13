@@ -52,7 +52,7 @@
 46. Brainpan 1
 47. [Willow](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Willow/README.md)
 48. NoNameCTF
-49. CCT2019
+49. [CCT2019](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/CCT2019/README.md)
 50. [Jack-of-All-Trades](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Jack-of-All-Trades/README.md)
 51. [tomghost](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/tomghost/README.md)
 52. [Attacktive Directory](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Attacktive%20Directory/README.md)
