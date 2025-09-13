@@ -1,6 +1,6 @@
-[CCT2019](https://tryhackme.com/room/cct2019)
+# [CCT2019](https://tryhackme.com/room/cct2019)
 
-# Legacy challenges from the US Navy Cyber Competition Team 2019 Assessment sponsored by US TENTH Fleet
+## Legacy challenges from the US Navy Cyber Competition Team 2019 Assessment sponsored by US TENTH Fleet
 
 ## This is a pcap-focused challenge originally created for the U.S. Navy Cyber Competition Team 2019 Assessment. Although the assessment is over, the created challenges are provided for community consumption here.
 
@@ -52,11 +52,11 @@ nc -vv -w 1 localhost 1337 < raw4.bin
 
 6. Reverse engineer the binary in Ghidra
 
-[SCREEN01]
+<img width="1399" height="634" alt="SCREEN01" src="https://github.com/user-attachments/assets/4dd62ee7-2a89-4700-8bf8-298c3aa6d92c" />
 
 7. Decode the flag using [CyberChef](https://gchq.github.io/CyberChef/). Convert the hex value to bytes, reverse the byte order, convert hex bytes to ASCII, apply ROT13 cipher, reverse the string again to get the final flag
 
-[SCREEN02]
+<img width="1086" height="523" alt="SCREEN02" src="https://github.com/user-attachments/assets/34e7c790-6a19-4999-aeab-d825e7ac5392" />
 
 # CCT2019 - re3
 
@@ -85,11 +85,11 @@ for combo in itertools.permutations(l, 4):
         print(combo)
 ```
 
-[SCREEN03]
+<img width="721" height="34" alt="SCREEN03" src="https://github.com/user-attachments/assets/591faa8a-6642-4450-94f7-73fc80386b0b" />
 
 2. Move the sliders in the application to match the calculated values. The correct combination unlocks the key/flag
 
-[SCREEN04]
+<img width="514" height="366" alt="SCREEN04" src="https://github.com/user-attachments/assets/556e3717-0105-404e-be33-2b0e599dcbcd" />
 
 # CCT2019 - for1
 
@@ -104,7 +104,7 @@ for combo in itertools.permutations(l, 4):
 exiftool for1_8f90d68390b565c308871a52c6572de8_1583875226079.jpeg
 ```
 
-[SCREEN05]
+<img width="721" height="415" alt="SCREEN05" src="https://github.com/user-attachments/assets/e459fa14-1304-4a40-a22b-323bef131b46" />
 
 2. Use stegoveritas to perform multiple steganography detection techniques
    - `/results/keepers/7212.zip/fakeflag.txt` can be opened with `justawarmupright?` password
@@ -129,11 +129,11 @@ steghide extract -sf 1757757330.6277616-a8394f6d2aeb2828bda8d743f16a3b58
 
 4. Use [online Enigma machine simulator](https://cryptii.com/)
 
-[SCREEN06]
+<img width="1639" height="710" alt="SCREEN06" src="https://github.com/user-attachments/assets/5efe5120-c441-4775-97e9-993abd69a747" />
 
 5. Remove spaces from the decoded result and use this as password for `/results/keepers/archive.zip/flag.zip/flag.txt`
 
-[SCREEN07]
+<img width="730" height="149" alt="SCREEN07" src="https://github.com/user-attachments/assets/6030a381-4166-453d-8f6f-f6716095601b" />
 
 # CCT2019 - crypto1
 
@@ -144,9 +144,9 @@ steghide extract -sf 1757757330.6277616-a8394f6d2aeb2828bda8d743f16a3b58
 1. Put text from the `crypto1a.txt` into [dCode cipher identifier](https://www.dcode.fr/cipher-identifier), and then into [dCode keyboard change cipher](https://www.dcode.fr/keyboard-change-cipher)
    - The password is: `dvorakdvorakdvorak`
 
-[SCREEN08]
+<img width="791" height="242" alt="SCREEN08" src="https://github.com/user-attachments/assets/d643cf95-2a26-4855-9053-d5735905bd6c" />
 
-[SCREEN09]
+<img width="791" height="437" alt="SCREEN09" src="https://github.com/user-attachments/assets/6c29dde8-0150-43cb-97f8-e99d4c6c97fe" />
 
 ---
 
@@ -155,7 +155,7 @@ steghide extract -sf 1757757330.6277616-a8394f6d2aeb2828bda8d743f16a3b58
 1. Put text from the `crypto1b.txt` into [CyberChef rail fence cipher decoder](https://gchq.github.io/CyberChef/)
    - After some googling the password is: `teerrrriiffiicccccc`
 
-[SCREEN10]
+<img width="1673" height="581" alt="SCREEN10" src="https://github.com/user-attachments/assets/f42f736b-4daa-4490-a780-20c7ff39ccc5" />
 
 ---
 
@@ -173,4 +173,4 @@ flag = long_to_bytes(int(result, 2)).decode("ASCII")
 print(flag)
 ```
 
-[SCREEN11]
+<img width="723" height="93" alt="SCREEN11" src="https://github.com/user-attachments/assets/53db8e2d-c78c-42a0-acfe-d30a822902c7" />
