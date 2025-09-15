@@ -82,3 +82,4 @@
 77. [Break Out The Cage](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Break%20Out%20The%20Cage/README.md)
 78. [HaskHell](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/HaskHell/README.md)
 79. [Year of the Fox](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Year%20of%20the%20Fox/README.md)
+80. KoTH Hackers
