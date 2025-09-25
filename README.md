@@ -84,3 +84,4 @@
 79. [Year of the Fox](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Year%20of%20the%20Fox/README.md)
 80. KoTH Hackers
 81. [Dave's Blog](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Dave's%20Blog/README.md)
+82. [Ra](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Ra/README.md)
