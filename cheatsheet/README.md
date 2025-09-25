@@ -76,6 +76,16 @@ python -c 'import pty; pty.spawn("/bin/bash")'
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 ```
 
+# Windows Privilege Escalation and System Commands
+
+```bash
+evil-winrm -i <TARGET_IP> -u <USER_NAME> -p <PASSWORD>
+```
+
+```bash
+net user <USER_NAME> <PASSWORD>
+```
+
 # Steganography and Image Analysis
 
 ## Metadata Extraction
