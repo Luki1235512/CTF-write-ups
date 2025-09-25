@@ -14,7 +14,7 @@
 nmap -p- <TARGET_IP>
 ```
 
-[SCREEN01]
+<img width="719" height="415" alt="SCREEN01" src="https://github.com/user-attachments/assets/298705a8-e458-4c6a-979c-101102309e4e" />
 
 2. When examining the network traffic in the browser developer tools on `<TARGET_IP>:80`, you'll notice failed requests to `fire.windcorp.thm:9090`. This indicates there's another service running on a different subdomain. Add both domains to your `/etc/hosts` file
 
@@ -23,20 +23,20 @@ echo "<TARGET_IP> fire.windcorp.thm" >> /etc/hosts
 echo "<TARGET_IP> windcorp.thm" >> /etc/hosts
 ```
 
-[SCREEN02]
+<img width="1399" height="541" alt="SCREEN02" src="https://github.com/user-attachments/assets/e5285792-f5b2-4037-a892-142653313607" />
 
 3. Navigate to `fire.windcorp.thm:9090` and examine the password reset functionality. One of security questions is: **"What is/was your favorite pet's name?"**. Back on the main website (`<TARGET_IP>`), examine the images. One image shows Lily with her dog and is named `lilyLeAndSparky.jpg`. This suggests "Sparky" is the pet's name we need.
 
-[SCREEN03]
+<img width="882" height="446" alt="SCREEN03" src="https://github.com/user-attachments/assets/758ff644-a23d-4253-b71a-22d008e062dd" />
 
 4. Use the password reset form at `fire.windcorp.thm/reset.asp`:
    - Username: `lilyle`
    - Security answer: `Sparky`
    - New password: `ChangeMe#1234`
 
-[SCREEN04]
+<img width="923" height="346" alt="SCREEN04" src="https://github.com/user-attachments/assets/8d40fbf9-e890-4fc6-b745-a7d1566017bf" />
 
-[SCREEN05]
+<img width="928" height="381" alt="SCREEN05" src="https://github.com/user-attachments/assets/ce125502-f220-46cd-94c3-e5bdfb81ce4a" />
 
 5. Now that we have valid credentials, enumerate SMB shares and download available files
 
@@ -48,9 +48,9 @@ prompt off
 mget *
 ```
 
-[SCREEN06]
+<img width="720" height="231" alt="SCREEN06" src="https://github.com/user-attachments/assets/ccfe38ed-61ff-46f2-93bd-a86f57dfa0ed" />
 
-[SCREEN07]
+<img width="723" height="397" alt="SCREEN07" src="https://github.com/user-attachments/assets/b24da66c-1eab-4cbd-9d61-21c9a91712f6" />
 
 6. This downloads all files from the Shared directory, including our first flag.
 
@@ -58,7 +58,7 @@ mget *
 cat Flag\ 1.txt
 ```
 
-[SCREEN08]
+<img width="721" height="37" alt="SCREEN08" src="https://github.com/user-attachments/assets/cfa9b896-77d0-45ef-8ff1-800e85ff6aa6" />
 
 ---
 
@@ -77,14 +77,14 @@ spark
 
 This allows us to connect despite certificate issues.
 
-[SCREEN09]
+<img width="443" height="534" alt="SCREEN09" src="https://github.com/user-attachments/assets/eba869f7-3b89-4f35-99a4-c5c3464a0780" />
 
 3. Configure the connection:
    - Username: `lilyle`
    - Domain: `windcorp.thm`
    - Password: `ChangeMe#1234`
 
-[SCREEN10]
+<img width="248" height="468" alt="SCREEN10" src="https://github.com/user-attachments/assets/d7589389-3fd3-4151-9941-430b22ae21ad" />
 
 4. If Spark crashes due to audio system problems, install required packages
 
@@ -116,7 +116,7 @@ echo "buse::WINDCORP:581eb034fb28c39c:54A0D21F2C7F9C9FC662887D404ADBE6:010100000
 john hash --wordlist=/root/Tools/wordlists/rockyou.txt
 ```
 
-[SCREEN11]
+<img width="723" height="269" alt="SCREEN11" src="https://github.com/user-attachments/assets/b8d3e19a-0690-45ab-969a-61c7e374185b" />
 
 10. Use the cracked credentials to connect via WinRM and retrieve Flag 2
 
@@ -127,7 +127,7 @@ dir
 type 'Flag 2.txt'
 ```
 
-[SCREEN12]
+<img width="719" height="302" alt="SCREEN12" src="https://github.com/user-attachments/assets/f1717c02-d154-44c4-a9ae-b7eacd9f6899" />
 
 ---
 
@@ -144,7 +144,7 @@ more checkservers.ps1
 
 This reveals a PowerShell script that runs periodically and processes a file owned by user `brittanycr@windcorp.thm`.
 
-[SCREEN13]
+<img width="721" height="433" alt="SCREEN13" src="https://github.com/user-attachments/assets/c3b25552-c2ff-4624-84ff-783d2f309a5e" />
 
 2. Since we have access through our current session, reset brittanycr's password
 
