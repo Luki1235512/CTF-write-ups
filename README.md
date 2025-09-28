@@ -86,3 +86,4 @@
 81. [Dave's Blog](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Dave's%20Blog/README.md)
 82. [Ra](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Ra/README.md)
 83. [Source](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Source/README.md)
+84. [Blog](https://github.com/Luki1235512/THM-write-ups/blob/main/write-ups/Blog/README.md)
