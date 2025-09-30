@@ -147,6 +147,12 @@ zip2john <FILE_NAME>.zip > hash.txt
 john hash.txt
 ```
 
+## SSH Key Hash Extraction
+
+```bash
+/opt/john/ssh2john.py key > key.hash
+```
+
 # File Transfer Protocol (FTP) Operations
 
 ## Basic FTP Commands
