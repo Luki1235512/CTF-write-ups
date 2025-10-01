@@ -14,7 +14,7 @@
 nmap <TARGET_IP>
 ```
 
-[SCREEN01]
+<img width="724" height="290" alt="SCREEN01" src="https://github.com/user-attachments/assets/68846da0-0ce7-4395-8995-8e58896abccc" />
 
 2. Attempt a direct connection, then add the hostname to our hosts file
 
@@ -23,7 +23,7 @@ curl -v -k https://<TARGET_IP>
 echo "<TARGET_IP> set.windcorp.thm" >> /etc/hosts
 ```
 
-[SCREEN02]
+<img width="723" height="432" alt="SCREEN02" src="https://github.com/user-attachments/assets/e9dc210d-02d0-49b3-a003-82b263a5b678" />
 
 3. Examine the search.js function in the `https://set.windcorp.thm/` source code to understand how the application works. The JavaScript reveals that user data is loaded from an XML file, which contains employee information
 
@@ -50,7 +50,7 @@ run
 creds
 ```
 
-[SCREEN03]
+<img width="721" height="434" alt="SCREEN03" src="https://github.com/user-attachments/assets/f21bbcf3-dffa-44e9-8f81-92ca33d20f69" />
 
 6. Use the discovered credentials to access SMB shares and gather information
 
@@ -61,7 +61,7 @@ ls
 get Info.txt
 ```
 
-[SCREEN04]
+<img width="723" height="431" alt="SCREEN04" src="https://github.com/user-attachments/assets/aeb42e2c-8c78-45a7-bcf2-4cb60f4a620d" />
 
 7. Read the downloaded file to obtain the first flag
 
@@ -69,7 +69,7 @@ get Info.txt
 cat Info.txt
 ```
 
-[SCREEN05]
+<img width="721" height="110" alt="SCREEN05" src="https://github.com/user-attachments/assets/c229414b-eb1b-4f7a-a739-5d7aa347d533" />
 
 ---
 
@@ -95,7 +95,7 @@ smbclient //<TARGET_IP>/Files -U myrtleowe
 put shortcut.zip
 ```
 
-[SCREEN06]
+<img width="720" height="436" alt="SCREEN06" src="https://github.com/user-attachments/assets/2ac0283d-111b-4c7b-94ea-3e7a31c3f8a3" />
 
 4. Wait for a user to open the malicious file, capture their NTLM hash, and crack it
    - Successfully captured and cracked: `MichelleWat:!!!MICKEYmouse`
@@ -104,7 +104,7 @@ put shortcut.zip
 john hash --wordlist=/root/Tools/wordlists/rockyou.txt
 ```
 
-[SCREEN07]
+<img width="720" height="269" alt="SCREEN07" src="https://github.com/user-attachments/assets/448ba22f-175c-40ef-9b16-606136fcd084" />
 
 5. Use the cracked credentials to gain remote access via WinRM and retrieve the second flag
 
@@ -115,7 +115,7 @@ dir
 more Flag2.txt
 ```
 
-[SCREEN08]
+<img width="721" height="279" alt="SCREEN08" src="https://github.com/user-attachments/assets/9284a445-a839-4df2-ab2f-29ff1c17ba42" />
 
 ---
 
@@ -127,7 +127,7 @@ more Flag2.txt
 netstat -ao
 ```
 
-[SCREEN09]
+<img width="720" height="437" alt="SCREEN09" src="https://github.com/user-attachments/assets/d41c2d50-a05f-4931-9b93-38e2fc2fe8dd" />
 
 2. Identify which process is running on the discovered ports
 
@@ -135,7 +135,7 @@ netstat -ao
 Get-Process -Id 5000
 ```
 
-[SCREEN10]
+<img width="722" height="110" alt="SCREEN10" src="https://github.com/user-attachments/assets/5fa183fc-3ebb-4397-8c74-78bde9d29360" />
 
 3. Locate and examine the Veeam ONE Agent service files to understand the application
 
@@ -144,7 +144,7 @@ Get-ChildItem C:\ -recurse -ErrorAction SilentlyContinue | Where-Object {$_.Name
 Get-Item 'C:\Program Files\Veeam\Veeam ONE\Veeam ONE Agent\Veeam.One.Agent.Service.exe' | Format-List *
 ```
 
-[SCREEN11]
+<img width="719" height="377" alt="SCREEN11" src="https://github.com/user-attachments/assets/de143d81-e134-45ad-a5d7-c8125a9e56fd" />
 
 4. Download plink.exe to establish a tunnel for exploiting the identified service
 
