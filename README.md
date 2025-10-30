@@ -2,9 +2,7 @@
 
 ## [TryHackMe](https://tryhackme.com/)
 
-### My profile:
-
-<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=419463" style="border:none; width:100%;"></iframe>
+## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 ### Rooms:
 
