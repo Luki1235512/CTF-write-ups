@@ -14,7 +14,7 @@
 nmap <TARGET_IP>
 ```
 
-[SCREEN01]
+<img width="648" height="202" alt="SCREEN01" src="https://github.com/user-attachments/assets/28dc6d79-312b-4c19-a83c-15aa6c117875" />
 
 ---
 
@@ -38,9 +38,9 @@ exit
 cat task.txt
 ```
 
-[SCREEN02]
+<img width="1006" height="516" alt="SCREEN02" src="https://github.com/user-attachments/assets/69b7685a-236e-4bb8-820e-778eea6c9c3c" />
 
-[SCREEN03]
+<img width="650" height="193" alt="SCREEN03" src="https://github.com/user-attachments/assets/311f8314-00b6-4a66-af39-9650edaf4fdc" />
 
 **Answer:** The name is in `task.txt` file. It is `lin`
 
@@ -52,7 +52,7 @@ _What is on port 22?_
 
 1. Review the nmap scan results from the first question.
 
-[SCREEN01]
+<img width="648" height="202" alt="SCREEN01" src="https://github.com/user-attachments/assets/b33e3439-59b1-4932-95c2-a7f10832ea66" />
 
 **Answer:** Service on port 22 is `SSH`
 
@@ -76,7 +76,7 @@ hydra -l lin -P locks.txt ssh://<TARGET_IP>
 - `-P locks.txt`: Use the password list file
 - `ssh://<TARGET_IP>`: Target the SSH service
 
-[SCREEN04]
+<img width="1011" height="253" alt="SCREEN04" src="https://github.com/user-attachments/assets/f3f5c373-1f66-4607-adc7-f0de43919045" />
 
 **Answer:** The password is `RedDr4gonSynd1cat3`
 
@@ -97,7 +97,7 @@ ls
 cat user.txt
 ```
 
-[SCREEN05]
+<img width="955" height="541" alt="SCREEN05" src="https://github.com/user-attachments/assets/b6cd23c6-b5ef-42a2-a707-9897a5e4aacd" />
 
 ---
 
@@ -109,7 +109,7 @@ cat user.txt
 sudo -l
 ```
 
-[SCREEN06]
+<img width="955" height="132" alt="SCREEN06" src="https://github.com/user-attachments/assets/43c2c19c-70f9-4a84-8358-1772062bbc59" />
 
 **Output:** User lin may run `/bin/tar` as root without a password.
 
@@ -133,4 +133,4 @@ cat /root/root.txt
 - `--checkpoint=1`: Set checkpoint interval
 - `--checkpoint-action=exec=/bin/sh`: Execute a shell at the checkpoint, spawning a root shell
 
-[SCREEN07]
+<img width="922" height="117" alt="SCREEN07" src="https://github.com/user-attachments/assets/45d0786c-220d-4d30-b4cd-570ea34faed8" />
