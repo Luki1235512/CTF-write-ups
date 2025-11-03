@@ -93,3 +93,4 @@
 85. [Set](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Set/README.md) - 2/3
 86. [Brooklyn Nine Nine](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Brooklyn%20Nine%20Nine/README.md)
 87. [Smag Grotto](https://github.com/Luki1235512/CTF-write-ups/tree/main/TryHackMe/Smag%20Grotto)
+88. [Bounty Hacker](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Bounty%20Hacker/README.md)
