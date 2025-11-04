@@ -66,9 +66,9 @@ nano .bashrc
 
 Look for suspicious command at the end of the file and remove it
 
-[SCREEN02]
+<img width="1012" height="553" alt="SCREEN02" src="https://github.com/user-attachments/assets/6ccf6308-43ea-4884-84d4-d2321a7c4554" />
 
-[SCREEN01]
+<img width="997" height="282" alt="SCREEN01" src="https://github.com/user-attachments/assets/54132c05-18bf-4967-a59f-59b2b59045ca" />
 
 4. Refresh `http://<TARGET_IP>:1337/` in your browser to receive **Flag 0**.
 
@@ -91,7 +91,7 @@ cat evil
 
 This will reveal a cron job that executes `/opt/brilliant_script.sh` at regular intervals.
 
-[SCREEN03]
+<img width="512" height="211" alt="SCREEN03" src="https://github.com/user-attachments/assets/7667607e-f8d7-4a89-8fcb-8d9fc12f75c0" />
 
 3. Navigate to the script location and examine it:
 
@@ -103,7 +103,7 @@ nano brilliant_script.sh
 
 4. Remove the malicious command from the script.
 
-[SCREEN04]
+<img width="1008" height="101" alt="SCREEN04" src="https://github.com/user-attachments/assets/f57ece4d-ccbe-4f5d-b107-b0394df6cb0d" />
 
 5. Refresh `http://<TARGET_IP>:1337/` to receive **Flag 1**.
 
@@ -125,7 +125,7 @@ scp alex@<TARGET_IP>:/home/alex/fixutil .
 
 3. In the `main` function decompilation, observe references to `liblogging.so` in `/lib/x86_64-linux-gnu/`. This indicates the malware manipulated this library.
 
-[SCREEN06]
+<img width="1920" height="1040" alt="SCREEN06" src="https://github.com/user-attachments/assets/8e8c85a5-1325-471a-bba7-1faa6d2ba676" />
 
 4. Download the suspicious library for analysis:
 
@@ -137,7 +137,7 @@ scp alex@<TARGET_IP>:/lib/x86_64-linux-gnu/liblogging.so .
    - The malware copies `/tmp/logging.so` to `/lib/x86_64-linux-gnu/oldliblogging.so`
    - The original legitimate library was backed up as `oldliblogging.so`
 
-[SCREEN07]
+<img width="1920" height="900" alt="SCREEN07" src="https://github.com/user-attachments/assets/9f8eb2de-55a3-4d2c-b873-a6b2d59427b9" />
 
 6. To restore the library, we need sudo privileges. Add a sudo entry via the `brilliant_script.sh` that runs as root:
 
@@ -152,7 +152,7 @@ cat brilliant_script.sh
 sudo -l
 ```
 
-[SCREEN05]
+<img width="409" height="66" alt="SCREEN05" src="https://github.com/user-attachments/assets/dbd39bd4-7d41-428c-92f0-785bd7795b02" />
 
 8. Restore the original library by renaming the backup:
 
@@ -189,7 +189,7 @@ sudo nano /etc/passwd
 sudo nano /etc/shadow
 ```
 
-[SCREEN08]
+<img width="1008" height="559" alt="SCREEN08" src="https://github.com/user-attachments/assets/810b7d4d-dc0b-4f36-970a-d9e1637a821f" />
 
 2. Refresh `http://<TARGET_IP>:1337/` to receive **Flag 4**.
 
@@ -203,7 +203,7 @@ sudo nano /etc/shadow
    - Calls `GetWebFiles` to find all files in the web directory
    - XORs each file using the `XORFile` function
 
-[SCREEN09]
+<img width="750" height="666" alt="SCREEN09" src="https://github.com/user-attachments/assets/1681ce74-652b-44d6-bb8c-cf7f65e4c783" />
 
 Here it first creates a random string using `rand_string` function and stores the string is `/opt/.fixutil/backup.txt` file. Then finds the webfiles using `GetWebFiles` function and XOR’s the content using `XORFile` function.
 
@@ -212,14 +212,14 @@ Here it first creates a random string using `rand_string` function and stores th
    - Returns all files in `/usr/local/apache2/htdocs` directory
    - These are the files that need to be decrypted
 
-[SCREEN10]
+<img width="1644" height="641" alt="SCREEN10" src="https://github.com/user-attachments/assets/a185f915-37b9-4b05-9ebc-21fa24733872" />
 
 3. Examine the `XORFile` function:
    - Reads each file in binary mode
    - XORs each byte with the corresponding byte from the encryption key
    - The key is used in a repeating pattern (key[i % key_length])
 
-[SCREEN11]
+<img width="751" height="740" alt="SCREEN11" src="https://github.com/user-attachments/assets/c5017d84-fb25-4484-8c68-a4540e386c40" />
 
 Reads the file in binary format, and XORs the file with the encryption key
 
@@ -235,7 +235,7 @@ scp alex@<TARGET_IP>:/usr/local/apache2/htdocs/* .
 sudo cat /opt/.fixutil/backup.txt
 ```
 
-[SCREEN12]
+<img width="647" height="32" alt="SCREEN12" src="https://github.com/user-attachments/assets/a6546813-d4cf-4104-bfb5-816df25ccd26" />
 
 6. Create a Python script to decrypt the files:
 
@@ -274,6 +274,6 @@ cd /usr/local/apache2/htdocs/
 sudo mv /home/alex/{index.html,reallyimportant.txt,todo.html} .
 ```
 
-[SCREEN13]
+<img width="904" height="113" alt="SCREEN13" src="https://github.com/user-attachments/assets/3d5fdcd5-c18a-43eb-aef6-c4e665f36cc9" />
 
 11. Refresh `http://<TARGET_IP>:1337/` to receive **Flag 5**.
