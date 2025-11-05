@@ -95,3 +95,4 @@
 87. [Smag Grotto](https://github.com/Luki1235512/CTF-write-ups/tree/main/TryHackMe/Smag%20Grotto)
 88. [Bounty Hacker](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Bounty%20Hacker/README.md)
 89. [Recovery](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Recovery/README.md)
+90. [Easy Peasy](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Easy%20Peasy/README.md)
