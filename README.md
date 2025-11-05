@@ -4,7 +4,8 @@
 
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
-### Rooms:
+<details open>
+<summary>Completed challenges (71):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -97,3 +98,10 @@
 89. [Recovery](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Recovery/README.md)
 90. [Easy Peasy](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Easy%20Peasy/README.md)
 91. Ra 2
+</details>
+
+---
+
+## [Huntress CTF 2025](https://ctf.huntress.com/)
+
+## My team score - [Pusheen](https://ctf.huntress.com/completion/bce641ab3da89215)
