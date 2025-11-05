@@ -26,6 +26,12 @@ gobuster dir -u https://<TARGET_IP> -w /usr/share/wordlists/dirbuster/directory-
 enum4linux <TARGET_IP>
 ```
 
+## DNS Reconnaissance
+
+```bash
+dnsrecon -d <TARGET_DOMAIN> -n <TARGET_IP>
+```
+
 # File Transfer Methods
 
 ## HTTP Server Setup
@@ -159,7 +165,14 @@ hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt <ATTACKER_IP> http-post-for
 
 ```bash
 zip2john <FILE_NAME>.zip > hash.txt
-john hash.txt
+john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
+```
+
+## Certificate Password Cracking
+
+```bash
+pfx2john <FILE_NAME>.pfx > cert.hash
+john --wordlist=/usr/share/wordlists/rockyou.txt cert.hash
 ```
 
 ## SSH Key Hash Extraction
