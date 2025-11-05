@@ -102,15 +102,14 @@ This Flag Can Enter But Only This Flag No More Exceptions
 
 ### What is the hidden directory?
 
-1. Navigate to `http://<TARGET_IP>:65524/` and view the page source.
 
-2. In the HTML comments or source code, you'll find an encoded string: `ObsJmP173N2X6dOrAgEAL0Vu`
+1. In the `http://<TARGET_IP>:65524/` source code, you'll find an encoded string: `ObsJmP173N2X6dOrAgEAL0Vu`
 
-3. This string is encoded in Base62. Use [CyberChef](https://gchq.github.io/CyberChef/) with the "From Base62" operation.
+2. This string is encoded in Base62. Use [CyberChef](https://gchq.github.io/CyberChef/) with the "From Base62" operation.
 
 <img width="514" height="524" alt="SCREEN07" src="https://github.com/user-attachments/assets/5f5e0cf6-da52-42d1-a5db-eb25a777a348" />
 
-4. The decoded value reveals the **hidden directory path**: `/n0th1ng3ls3m4tt3r`.
+3. The decoded value reveals the **hidden directory path**: `/n0th1ng3ls3m4tt3r`.
 
 ---
 
