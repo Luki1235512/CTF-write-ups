@@ -16,7 +16,7 @@ _You're going to want to write a Python script for this. 'zA' = 'a'_
 namp <TARGET_IP>
 ```
 
-[SCREEN01]
+<img width="517" height="187" alt="SCREEN01" src="https://github.com/user-attachments/assets/69655eba-cdac-42dd-9d47-4f314007972c" />
 
 The scan reveals an SSH service on port 22 and a web server running on port 80.
 
@@ -26,7 +26,7 @@ The scan reveals an SSH service on port 22 and a web server running on port 80.
 gobuster dir -u http://<TARGET_IP> -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -x txt
 ```
 
-[SCREEN03]
+<img width="783" height="480" alt="SCREEN03" src="https://github.com/user-attachments/assets/fe03c0d5-8d9d-46d7-a670-f5fbc7a7f8b8" />
 
 3. The `/robots.txt` file contains a disallowed directory path.
 
@@ -39,7 +39,7 @@ Disallow: /zYdHuAKjP
 
 5. The page uses a cookie named `access` with the value `denied`. Modify this cookie value from `denied` to `granted` using browser developer tools (F12). After changing the cookie, refresh the page. This bypasses the access control and reveals an encoded string.
 
-[SCREEN02]
+<img width="1621" height="430" alt="SCREEN02" src="https://github.com/user-attachments/assets/93dae384-4491-4bfe-8e27-cf1585a20652" />
 
 6. **Cipher Decoding** - The page displays an encoded credential string: `hEzAdCfHzA::hEzAdCfHzAhAiJzAeIaDjBcBhHgAzAfHfN`. Based on the hint ('zA' = 'a'), this uses a custom substitution cipher where lowercase letters followed by uppercase letters represent encoded characters. The uppercase letter indicates the offset to apply.
 
@@ -74,7 +74,7 @@ ssh magna@<TARGET_IP>
 cat flag.txt
 ```
 
-[SCREEN04]
+<img width="377" height="67" alt="SCREEN04" src="https://github.com/user-attachments/assets/36001266-7ba4-47c3-80c0-25ac51cfeb33" />
 
 ---
 
@@ -102,7 +102,7 @@ This indicates there's a vulnerable binary in the current directory that can be 
 (python -c 'print "A"*72') | ./hacktheworld
 ```
 
-[SCREEN06]
+<img width="564" height="30" alt="SCREEN06" src="https://github.com/user-attachments/assets/281ad87c-6b68-4c80-95da-474ebdeb3bb6" />
 
 3. Use radare2 to reverse engineer the binary and identify useful functions.
 
@@ -113,7 +113,7 @@ afl               # List all functions
 pdf@asm.call_bash # Disassemble the call_bash function
 ```
 
-[SCREEN05]
+<img width="1010" height="499" alt="SCREEN05" src="https://github.com/user-attachments/assets/1628f64f-a0f6-4b3e-8456-03a8c8484293" />
 
 The analysis reveals a `call_bash` function at address `0x00400656`. However, the first instruction is a `push` that we want to skip, so we target `0x00400658` instead to jump directly to the shell spawning code.
 
@@ -138,7 +138,7 @@ cd /home/spooky
 cat flag.txt
 ```
 
-[SCREEN07]
+<img width="908" height="287" alt="SCREEN07" src="https://github.com/user-attachments/assets/0802b8e6-36b8-444c-ade6-6ccf2909c66c" />
 
 ---
 
@@ -156,7 +156,7 @@ python -c 'import pty; pty.spawn("/bin/bash")'
 cat /etc/crontab
 ```
 
-[SCREEN08]
+<img width="830" height="287" alt="SCREEN08" src="https://github.com/user-attachments/assets/35acce7b-efd0-46d0-ba30-31aca9bae16d" />
 
 The crontab reveals a cronjob running as root that executes a tar command in `/home/spooky`. This is vulnerable to tar wildcard injection.
 
@@ -189,4 +189,4 @@ whoami
 cat /root/flag.txt
 ```
 
-[SCREEN09]
+<img width="604" height="482" alt="SCREEN09" src="https://github.com/user-attachments/assets/ad92147f-4ae9-401d-8f1f-388649fc7418" />
