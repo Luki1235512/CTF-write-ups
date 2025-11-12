@@ -318,3 +318,4 @@ touch -- '--checkpoint-action=exec=sh shell.sh'
 - [Exploit Database](https://www.exploit-db.com/)
 - [CrackStation](https://crackstation.net/)
 - [MD5Hashing.net](https://md5hashing.net)
+- [GitTools](https://github.com/internetwache/GitTools)
