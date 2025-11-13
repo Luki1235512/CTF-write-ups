@@ -104,7 +104,7 @@ if __name__ == "__main__":
     binary_search()
 ```
 
-[SCREEN01]
+<img width="430" height="709" alt="SCREEN01" src="https://github.com/user-attachments/assets/2437c3b5-85e4-4017-b522-54f4dd8c2dd9" />
 
 ```
 You've found the real service.
@@ -150,6 +150,8 @@ Enter Secret:   Incorrect secret.
 
 4. This is a Vigenère cipher. Use [Vigenère Cipher Autosolver](https://www.boxentriq.com/code-breaking/vigenere-cipher-autosolver) or similar tools to decrypt.
 
+<img width="925" height="800" alt="SCREEN02" src="https://github.com/user-attachments/assets/096ccb16-2464-488a-8f1c-91064a848515" />
+
 The key is `THEALPHABETCIPHER`, and the plaintext reveals:
 
 ```
@@ -192,8 +194,6 @@ Your secret is bewareTheJabberwock
 
 The secret password is **`bewareTheJabberwock`**.
 
-[SCREEN02]
-
 5. Connect to the discovered SSH port and enter the secret:
 
 ```bash
@@ -202,7 +202,7 @@ ssh -o HostkeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa <TARGET_I
 
 When prompted, enter: `bewareTheJabberwock`
 
-[SCREEN03]
+<img width="298" height="49" alt="SCREEN03" src="https://github.com/user-attachments/assets/7ce948bd-7955-46c7-84a3-84c10a26f889" />
 
 6. Use these credentials to connect as the `jabberwock` user:
 
@@ -213,4 +213,4 @@ cat user.txt
 
 7. To get the user flag, you need to reverse the string.
 
-[SCREEN04]
+<img width="642" height="521" alt="SCREEN04" src="https://github.com/user-attachments/assets/c6ef1f0f-7ca8-48b5-a04a-4034736cbfd0" />
