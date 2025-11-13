@@ -100,6 +100,7 @@
 91. Ra 2
 92. [Anonymous Playground](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Anonymous%20Playground/README.md)
 93. [harder](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/harder/README.md)
+94. [Looking Glass](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Looking%20Glass/README.md) - 1/2
 </details>
 
 ---
