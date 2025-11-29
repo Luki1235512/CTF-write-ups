@@ -104,6 +104,7 @@
 95. [Spring](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Spring/README.md)
 96. [Relevant](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Relevant/README.md)
 97. [Internal](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Internal/README.md)
+98. [kiba](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/kiba/README.md) - 3/6
 </details>
 
 ---
