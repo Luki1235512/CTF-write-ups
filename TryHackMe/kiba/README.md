@@ -31,7 +31,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 2. Navigate to the Management section at `http://<TARGET_IP>:5601/app/kibana#/management?_g=()`. The version information is displayed in the interface as **6.5.4**.
 
-[SCREEN01]
+<img width="596" height="676" alt="SCREEN01" src="https://github.com/user-attachments/assets/e766fc8d-d6cf-43a3-816f-bb69219b4d71" />
 
 ---
 
