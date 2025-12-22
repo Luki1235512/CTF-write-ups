@@ -106,6 +106,7 @@
 97. [Internal](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Internal/README.md)
 98. [kiba](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/kiba/README.md) - 3/6
 99. [GamingServer](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/GamingServer/README.md)
+100. Theseus
 </details>
 
 ---
