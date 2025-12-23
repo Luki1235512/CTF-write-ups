@@ -109,7 +109,7 @@ Remember this next time bob, you need it to get into the blog! I'm taking this d
 
 8. Use [CacheSleuth Multi-Decoder](https://www.cachesleuth.com/multidecoder/) to decode `zcv:p1fd3v3amT@55n0pr` with the key `youmayenter`.
 
-[SCREEN01]
+<img width="1617" height="789" alt="SCREEN01" src="https://github.com/user-attachments/assets/2417c97f-e509-4a67-90f4-37a5ec9c13cb" />
 
 After trying various ciphers, **Vigenère cipher** reveals:
 
