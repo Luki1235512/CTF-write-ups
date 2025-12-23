@@ -346,3 +346,4 @@ touch -- '--checkpoint-action=exec=sh shell.sh'
 - [MD5Hashing.net](https://md5hashing.net)
 - [GitTools](https://github.com/internetwache/GitTools)
 - [Boxentriq](https://www.boxentriq.com/)
+- [CacheSleuth](https://www.cachesleuth.com/multidecoder/)
