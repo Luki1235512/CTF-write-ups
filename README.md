@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges (78):</summary>
+<summary>Completed challenges (79):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -108,6 +108,7 @@
 99. [GamingServer](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/GamingServer/README.md)
 100. Theseus
 101. [WWBuddy](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/WWBuddy/README.md)
+102. [The Blob Blog](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/The%20Blob%20Blog/README.md)
 </details>
 
 ---
