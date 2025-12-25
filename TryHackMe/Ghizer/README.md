@@ -66,7 +66,7 @@ pwd
 cat application/config/config.php
 ```
 
-[SCREEN01]
+<img width="723" height="435" alt="SCREEN01" src="https://github.com/user-attachments/assets/3525ad61-664e-49a5-acb4-4480cd528510" />
 
 The configuration file reveals database credentials: `Anny:P4$W0RD!!#S3CUr3!`
 
@@ -78,7 +78,7 @@ The configuration file reveals database credentials: `Anny:P4$W0RD!!#S3CUr3!`
 
 2. Scroll to the bottom of the page. There's a "Log in" link that redirects to the WordPress login page at: `https://<TARGET_IP>/?devtools`
 
-[SCREEN02]
+<img width="1171" height="629" alt="SCREEN02" src="https://github.com/user-attachments/assets/df364fa5-7d72-400c-8da8-3cbb1b58f130" />
 
 ---
 
@@ -170,7 +170,7 @@ ls
 cat user.txt
 ```
 
-[SCREEN03]
+<img width="585" height="380" alt="SCREEN03" src="https://github.com/user-attachments/assets/04edd18d-5181-4ed1-a0a7-fa23699e05aa" />
 
 ---
 
@@ -217,4 +217,4 @@ ls /root
 cat /root/root.txt
 ```
 
-[SCREEN04]
+<img width="631" height="630" alt="SCREEN04" src="https://github.com/user-attachments/assets/4899ccae-34cd-4f38-a09f-a65100307811" />
