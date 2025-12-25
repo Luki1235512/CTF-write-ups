@@ -66,7 +66,7 @@ whoami
 cat /home/jacob/user.txt
 ```
 
-[SCREEN01]
+<img width="305" height="238" alt="SCREEN01" src="https://github.com/user-attachments/assets/e9988abd-44fa-49f6-84ee-defde8259762" />
 
 ---
 
@@ -131,4 +131,4 @@ ls /root
 cat /root/root.txt
 ```
 
-[SCREEN02]
+<img width="523" height="433" alt="SCREEN02" src="https://github.com/user-attachments/assets/9098f89d-6685-42b2-8797-9f17b1698de2" />
