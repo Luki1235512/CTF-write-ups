@@ -62,7 +62,7 @@ set RHOSTS <TARGET_IP>
 run
 ```
 
-[SCREEN01]
+<img width="1034" height="542" alt="SCREEN01" src="https://github.com/user-attachments/assets/dd6d495a-5533-4929-86cb-9b04c83e66ee" />
 
 **Answer:** postgres:password
 
@@ -88,7 +88,7 @@ run
 
 2. The module output displays the exact PostgreSQL version running on the server.
 
-[SCREEN02]
+<img width="951" height="157" alt="SCREEN02" src="https://github.com/user-attachments/assets/b5ae894f-6d5a-4861-b896-c7025ce475ba" />
 
 **Answer:** 9.5.21
 
@@ -114,7 +114,7 @@ run
 
 2. The module successfully extracts password hashes for multiple database users. Count the number of hashes displayed in the output.
 
-[SCREEN03]
+<img width="527" height="256" alt="SCREEN03" src="https://github.com/user-attachments/assets/69003cce-b7ac-46c8-905e-eef65754f484" />
 
 **Answer:** 6
 
@@ -187,7 +187,7 @@ su alison
 cat /home/alison/user.txt
 ```
 
-[SCREEN04]
+<img width="1033" height="498" alt="SCREEN04" src="https://github.com/user-attachments/assets/2c3667a7-fac7-4023-9c39-ae8aea72b14f" />
 
 ---
 
@@ -212,4 +212,4 @@ User alison may run the following commands on ubuntu:
 sudo cat /root/root.txts
 ```
 
-[SCREEN05]
+<img width="741" height="224" alt="SCREEN05" src="https://github.com/user-attachments/assets/df2705b9-a9be-49bd-a30b-4e538af7d985" />
