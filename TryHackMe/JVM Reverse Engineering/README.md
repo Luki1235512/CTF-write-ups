@@ -129,8 +129,10 @@ javap -v -c -p BasicStringObfuscation_1584044464985.class
 
 ---
 
-### Advanced String Obfuscation
+# Advanced String Obfuscation
+
+## This program follows the same logic as the previous task, however it has a custom obfuscation layered on top. You might require a decompiler for this, as well as custom tools. This uses anti virtualisation techniques as well, so be warned.
+
+### Find the correct password
 
 _You will either need to statically reverse engineer the string deobfuscation functions or use some kind of custom made virtualisation tool_
-
-// TODO
