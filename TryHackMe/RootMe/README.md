@@ -102,7 +102,7 @@ find / -type f -name "user.txt" 2>/dev/null
 cat /var/www/user.txt
 ```
 
-[SCREEN01]
+<img width="378" height="84" alt="SCREEN01" src="https://github.com/user-attachments/assets/05e92f59-263b-4c88-8552-5797d7bb8ed6" />
 
 ---
 
@@ -210,4 +210,4 @@ ls /root
 cat /root/root.txt
 ```
 
-[SCREEN02]
+<img width="522" height="194" alt="SCREEN02" src="https://github.com/user-attachments/assets/683cfb8e-3103-4075-b4e0-295b99fcaeb5" />
