@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges (82):</summary>
+<summary>Completed challenges (83):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -112,6 +112,7 @@
 103. [Ghizer](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Ghizer/README.md)
 104. [Jacob the Boss](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Jacob%20the%20Boss/README.md)
 105. [RootMe](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/RootMe/README.md)
+106. [Poster](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Poster/README.md)
 </details>
 
 ---
