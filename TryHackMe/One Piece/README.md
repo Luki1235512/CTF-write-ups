@@ -368,4 +368,4 @@ One interesting result appears: `/usr/share/mysterious/on3_p1ec3.txt`
 cat /usr/share/mysterious/on3_p1ec3.txt
 ```
 
-[SCREEN01]
+<img width="563" height="141" alt="SCREEN01" src="https://github.com/user-attachments/assets/d461d51f-3025-4370-9d6d-39ca195d6e64" />
