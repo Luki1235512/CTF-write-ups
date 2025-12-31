@@ -115,6 +115,7 @@
 106. [Poster](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Poster/README.md)
 107. For Business Reasons
 108. [One Piece](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/One%20Piece/README.md)
+109. [Aster](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Aster/README.md)
 </details>
 
 ---
