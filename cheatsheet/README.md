@@ -37,10 +37,6 @@ dnsrecon -d <TARGET_DOMAIN> -n <TARGET_IP>
 ## HTTP Server Setup
 
 ```bash
-python -m http.server
-```
-
-```bash
 python -m SimpleHTTPServer
 ```
 
