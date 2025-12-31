@@ -137,7 +137,7 @@ ls
 cat user.txt
 ```
 
-[SCREEN01]
+<img width="645" height="406" alt="SCREEN01" src="https://github.com/user-attachments/assets/d72ef293-21cc-43b5-aaa4-0bc0d4f836db" />
 
 ---
 
@@ -196,4 +196,4 @@ ls
 cat root.txt
 ```
 
-[SCREEN02]
+<img width="343" height="67" alt="SCREEN02" src="https://github.com/user-attachments/assets/419c46a6-af82-4b72-a8e4-2cb7ffee06ff" />
