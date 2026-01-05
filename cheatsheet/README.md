@@ -37,7 +37,7 @@ dnsrecon -d <TARGET_DOMAIN> -n <TARGET_IP>
 ## HTTP Server Setup
 
 ```bash
-python -m SimpleHTTPServer
+python -m http.server
 ```
 
 ```bash
@@ -200,7 +200,7 @@ john --wordlist=/usr/share/wordlists/rockyou.txt cert.hash
 ## SSH Key Hash Extraction
 
 ```bash
-ssh2john --wordlist=/usr/share/wordlists/rockyou.txt key > key.hash
+ssh2john key > key.hash
 ```
 
 # File Transfer Protocol (FTP) Operations
