@@ -96,7 +96,7 @@ zip2john backups.zip > hash.txt
 john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
 ```
 
-[SCREEN01]
+<img width="1025" height="271" alt="SCREEN01" src="https://github.com/user-attachments/assets/b6e991fb-7abf-4343-b20e-1bd9ea70bb8e" />
 
 **Result:** 00385007
 
@@ -123,7 +123,7 @@ we have to work hard
 hydra -l ftpuser -P /usr/share/wordlists/rockyou.txt ftp://<TARGET_IP>
 ```
 
-[SCREEN02]
+<img width="1039" height="228" alt="SCREEN02" src="https://github.com/user-attachments/assets/e7860093-e9dc-43a6-b1b0-9fb09432cbe5" />
 
 **Answer:** love4ever
 
@@ -180,7 +180,7 @@ ssh2john id_rsa > key.hash
 john --wordlist=/usr/share/wordlists/rockyou.txt key.hash
 ```
 
-[SCREEN03]
+<img width="764" height="210" alt="SCREEN03" src="https://github.com/user-attachments/assets/d1d52189-717f-4641-8b64-382865839d2d" />
 
 **Answer:** bluelove
 
@@ -292,7 +292,7 @@ python3 Mnemonic/Mnemonic.py
 # Enter the path to encoded file: /path/to/6450.txt
 ```
 
-[SCREEN04]
+<img width="381" height="193" alt="SCREEN04" src="https://github.com/user-attachments/assets/aa47bc32-cdf0-48b2-8615-cdb2591ac52a" />
 
 **Answer:** pasificbell1981
 
@@ -467,6 +467,6 @@ sudo python3 /bin/examplecode.py
 cat /root/root.txt
 ```
 
-[SCREEN05]
+<img width="383" height="422" alt="SCREEN05" src="https://github.com/user-attachments/assets/b236da2d-3ceb-41ca-a17f-41687b6e0eea" />
 
 4. Encrypt the flag with MD5 in [CyberChef](https://gchq.github.io/CyberChef/).
