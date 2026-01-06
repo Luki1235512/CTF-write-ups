@@ -80,7 +80,7 @@ Downloaded 77.44kB in 3 seconds
 
 6. The packet capture contains an HTTP image transfer. Export it using Wireshark's built-in feature. Navigate to: `File > Export Objects > HTTP`. Select the image file from the list and click "Save" to export it.
 
-[SCREEN01]
+<img width="1922" height="1043" alt="SCREEN01" src="https://github.com/user-attachments/assets/7d2823c8-7d14-4233-92e7-258d9613ef11" />
 
 The exported image is a screenshot showing a Virtual Host domain in the browser's address bar: `d3v3lopm3nt.motunui.thm`
 
@@ -273,7 +273,7 @@ ena
 show runn
 ```
 
-[SCREEN02]
+<img width="955" height="734" alt="SCREEN02" src="https://github.com/user-attachments/assets/5939351c-640d-41b5-bc01-43a0f99d5667" />
 
 **Found credentials:** `moana:H0wF4ri'LLG0`
 
@@ -290,7 +290,7 @@ ssh moana@<TARGET_IP>
 cat /home/moana/user.txt
 ```
 
-[SCREEN03]
+<img width="343" height="49" alt="SCREEN03" src="https://github.com/user-attachments/assets/e4b223fc-4463-48d9-afe1-c7fb7bf6b9d3" />
 
 ---
 
@@ -308,13 +308,13 @@ This file contains SSL/TLS session keys that can be used to decrypt HTTPS traffi
 
 3. Open `maui/ticket_6746.pcapng` again with Wireshark and configure it to use the SSL keylog file. Navigate to: `Edit > Preferences > Protocols > TLS`. In the `(Pre)-Master-Secret log filename` field select your `ssl-keys.log` file. Click `Apply` and then `OK`.
 
-[SCREEN04]
+<img width="1930" height="1048" alt="SCREEN04" src="https://github.com/user-attachments/assets/fcca43aa-0c1e-49c9-80f5-57b30371f98d" />
 
 Wireshark will now decrypt the TLS traffic in the capture.
 
 4. Look for HTTP POST requests in the decrypted traffic. Filter by `http.request.method == "POST"` or look for "HTML Form" in the packet details.
 
-[SCREEN05]
+<img width="1920" height="1044" alt="SCREEN05" src="https://github.com/user-attachments/assets/252ba868-6c04-4b21-b672-169db2dc8b8d" />
 
 In the decrypted form data, you'll find root credentials being transmitted.
 
@@ -333,4 +333,4 @@ ssh root@<TARGET_IP>
 cat /root/root.txt
 ```
 
-[SCREEN06]
+<img width="280" height="52" alt="SCREEN06" src="https://github.com/user-attachments/assets/a1dd115e-1fa7-4c4d-b878-2800e171af30" />
