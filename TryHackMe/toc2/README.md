@@ -46,7 +46,7 @@ gobuster dir -u http://<TARGET_IP> -w /usr/share/wordlists/dirbuster/directory-l
 
 This injection payload will write a web shell into the `config.php` file, allowing remote command execution via the `cmd` GET parameter.
 
-[SCREEN01]
+<img width="1400" height="863" alt="SCREEN01" src="https://github.com/user-attachments/assets/c9a69da3-9316-4485-9462-bb73ba1ee21f" />
 
 6. Prepare a reverse shell payload. URL encode the following bash command using [CyberChef](https://gchq.github.io/CyberChef/) with "Encode All Characters" option:
 
@@ -70,7 +70,7 @@ You should receive a shell as the `www-data` user.
 cat /home/frank/user.txt
 ```
 
-[SCREEN02]
+<img width="638" height="409" alt="SCREEN02" src="https://github.com/user-attachments/assets/1dd498a4-76d6-4920-b26c-2239c670d0af" />
 
 ---
 
@@ -115,7 +115,7 @@ Then, open a **second terminal** with another `frank` SSH session. In this new s
 
 Keep running until the race condition succeeds and you retrieve the root credentials.
 
-[SCREEN03]
+<img width="676" height="270" alt="SCREEN03" src="https://github.com/user-attachments/assets/d2931290-4081-48c1-861f-d13860572f07" />
 
 **Credentials Found:** `root:aloevera`
 
@@ -127,4 +127,4 @@ su root
 cat /root/root.txt
 ```
 
-[SCREEN04]
+<img width="528" height="115" alt="SCREEN04" src="https://github.com/user-attachments/assets/36eb360b-10ee-4dfe-8173-1897482955d1" />
