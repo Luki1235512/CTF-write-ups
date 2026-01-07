@@ -99,7 +99,7 @@ This executes a netcat reverse shell back to your listening machine.
 cat /home/vianka/user.txt
 ```
 
-[SCREEN01]
+<img width="518" height="276" alt="SCREEN01" src="https://github.com/user-attachments/assets/70d8e66a-f9f5-4ea1-9e6d-bc81f9ca05f8" />
 
 ---
 
@@ -219,4 +219,4 @@ The user vianka has full sudo privileges.
 sudo cat /root/root.txt
 ```
 
-[SCREEN02]
+<img width="1034" height="355" alt="SCREEN02" src="https://github.com/user-attachments/assets/fd912b17-c094-4225-8cd1-bca5aa3e420f" />
