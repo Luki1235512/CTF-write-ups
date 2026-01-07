@@ -44,7 +44,7 @@ gobuster dir -u http://<TARGET_IP> -w /usr/share/wordlists/dirbuster/directory-l
    - Password: `devpass` (from `http://<TARGET_IP>/`)
    - Modify the `default_timezone` parameter to inject PHP code: `junk';echo%20system($_GET['cmd']);$junk='junk`
 
-This injection payload will write a web shell into the `config.php` file, allowing remote command execution via the `cmd` GET parameter.
+This [injection payload](https://www.exploit-db.com/exploits/44192) will write a web shell into the `config.php` file, allowing remote command execution via the `cmd` GET parameter.
 
 <img width="1400" height="863" alt="SCREEN01" src="https://github.com/user-attachments/assets/c9a69da3-9316-4485-9462-bb73ba1ee21f" />
 
@@ -115,7 +115,7 @@ Then, open a **second terminal** with another `frank` SSH session. In this new s
 
 Keep running until the race condition succeeds and you retrieve the root credentials.
 
-<img width="676" height="270" alt="SCREEN03" src="https://github.com/user-attachments/assets/d2931290-4081-48c1-861f-d13860572f07" />
+<img width="676" height="270" alt="SCREEN03" src="https://github.com/user-attachments/assets/3f2713c1-39bc-47f3-8683-1193e23317f9" />
 
 **Credentials Found:** `root:aloevera`
 
