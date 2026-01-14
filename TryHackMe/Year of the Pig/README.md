@@ -61,7 +61,7 @@ In the `[List.Rules:Wordlist]` section, comment out all rules except:
 
 These rules will capitalize the first letter of words with more than 3 characters.
 
-[SCREEN01]
+<img width="371" height="146" alt="SCREEN01" src="https://github.com/user-attachments/assets/2aee656e-9e02-4214-a33b-245c3f54a345" />
 
 5. Apply the capitalization rules to create a new wordlist.
 
@@ -71,7 +71,7 @@ john -w=initial-list --rules --stdout > capitalised-list
 
 6. Return to `/etc/john/john.conf`, comment out the previous rules, and add a new rule to append two digits and a special character: `$[0-9]$[0-9]$[!.?,]`
 
-[SCREEN02]
+<img width="224" height="58" alt="SCREEN02" src="https://github.com/user-attachments/assets/ef154d28-b85e-409c-9855-09b193c15729" />
 
 7. Apply the mutation rules to create passwords following the discovered format.
 
@@ -81,7 +81,7 @@ john -w=capitalised-list --rules --stdout > mutated-list
 
 8.  Inspect the POST request to `http://<TARGET_IP>/api/login` using browser developer tools. Notice that the JavaScript file `http://<TARGET_IP>/js/md5.min.js` is used to hash passwords with MD5 before transmission.
 
-[SCREEN03]
+<img width="1050" height="200" alt="SCREEN03" src="https://github.com/user-attachments/assets/da663fa6-fcfb-47d8-91dd-4def14157141" />
 
 9. Create a Python script to MD5 hash each password in the wordlist, matching the login mechanism.
 
@@ -122,7 +122,7 @@ ssh marco@<TARGET_IP>
 cat flag1.txt
 ```
 
-[SCREEN04]
+<img width="645" height="239" alt="SCREEN04" src="https://github.com/user-attachments/assets/bda3864a-c518-4c48-93c0-e421bf9539ea" />
 
 ---
 
@@ -180,7 +180,7 @@ su curtis
 cat /home/curtis/flag2.txt
 ```
 
-[SCREEN05]
+<img width="596" height="246" alt="SCREEN05" src="https://github.com/user-attachments/assets/6aa00c5d-cdac-4be6-a0e8-dad50b6f7ea6" />
 
 ---
 
