@@ -292,7 +292,7 @@ ssh server-admin@<TARGET_IP>
 cat flag2.txt
 ```
 
-[SCREEN01]
+<img width="307" height="80" alt="SCREEN01" src="https://github.com/user-attachments/assets/73262c45-eeeb-4fd1-b560-890d46d8941a" />
 
 ---
 
@@ -369,4 +369,4 @@ nano /var/www/duckyinc/templates/index.html
 cat /root/flag3.txt
 ```
 
-[SCREEN02]
+<img width="415" height="147" alt="SCREEN02" src="https://github.com/user-attachments/assets/7f2a451a-f43f-400c-b13d-0d8ee815f154" />
