@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges (91):</summary>
+<summary>Completed challenges (92):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -122,6 +122,7 @@
 113. [toc2](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/toc2/README.md)
 114. [Year of the Pig](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Year%20of%20the%20Pig/README.md)
 115. [Revenge](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Revenge/README.md)
+116. [Misguided Ghosts](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Misguided%20Ghosts/README.md)
 </details>
 
 ---
