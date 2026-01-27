@@ -6,6 +6,12 @@
 nmap -sV -p- <TARGET_IP>
 ```
 
+## Web Vulnerability Scanning
+
+```bash
+nikto --url <TARGET_IP> | tee nikto-results
+```
+
 ## Directory and File Discovery
 
 ```bash
