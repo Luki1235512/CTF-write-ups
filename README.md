@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges (93):</summary>
+<summary>Completed challenges (94):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -124,6 +124,7 @@
 115. [Revenge](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Revenge/README.md)
 116. [Misguided Ghosts](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Misguided%20Ghosts/README.md)
 117. [The Marketplace](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/The%20Marketplace/README.md)
+118. [0day](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/0day/README.md)
 </details>
 
 ---
