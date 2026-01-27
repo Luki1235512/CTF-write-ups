@@ -39,11 +39,11 @@ python3 -m http.server
 
 Report the listing to trigger the admin to view it.
 
-[SCREEN01]
+<img width="1098" height="228" alt="SCREEN01" src="https://github.com/user-attachments/assets/48e68134-4fe8-49e0-96b7-00a667c5ea13" />
 
 4. Replace your `token` cookie value with the stolen admin token. Navigate to `http://<TARGET_IP>/admin` to access the admin panel and retrieve the first flag.
 
-[SCREEN02]
+<img width="1327" height="813" alt="SCREEN02" src="https://github.com/user-attachments/assets/53084932-00da-415c-b7e8-e954c7c38441" />
 
 ---
 
@@ -150,7 +150,7 @@ ls
 cat user.txt
 ```
 
-[SCREEN03]
+<img width="310" height="92" alt="SCREEN03" src="https://github.com/user-attachments/assets/7e5b3841-6f9c-4a53-8c0b-c5b3bef63299" />
 
 ---
 
@@ -248,4 +248,4 @@ ls /root
 cat /root/root.txt
 ```
 
-[SCREEN04]
+<img width="736" height="214" alt="SCREEN04" src="https://github.com/user-attachments/assets/aee01af8-3705-4d61-8bec-22e0c77b2d6d" />
