@@ -65,7 +65,7 @@ gobuster dir -u http://deliver.undiscovered.thm -w /usr/share/wordlists/dirbuste
 
 7. Examine the downloaded `mysql.initial.sql` file. Inside this file, you'll find a username `admin`.
 
-[SCREEN01]
+<img width="1031" height="453" alt="SCREEN01" src="https://github.com/user-attachments/assets/1ab52f5d-b6ce-498c-8795-ddeee3be89f3" />
 
 8. Use Hydra to perform a brute-force attack against the CMS login page using the discovered username and the rockyou wordlist:
 
@@ -134,7 +134,7 @@ cat user.txt
 
 This exploits the NFS no_root_squash misconfiguration by matching the UID to access william's files.
 
-[SCREEN02]
+<img width="470" height="365" alt="SCREEN02" src="https://github.com/user-attachments/assets/bb819b94-a130-442c-9656-29167bccfbe8" />
 
 ---
 
@@ -233,4 +233,4 @@ id
 cat /etc/shadow | grep -i root
 ```
 
-[SCREEN03]
+<img width="984" height="157" alt="SCREEN03" src="https://github.com/user-attachments/assets/57a57f22-7b2d-423c-b0de-615d4f0a3017" />
