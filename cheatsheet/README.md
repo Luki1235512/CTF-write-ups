@@ -199,7 +199,7 @@ hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt <TARGET_IP> http-get -s 808
 ```
 
 ```bash
-hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt <TARGET_IP> http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^:F=Invalid username"
+hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt <TARGET_IP> http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^:Invalid username" -f
 ```
 
 ```bash
