@@ -70,7 +70,7 @@ The Owner Name field contains what appears to be an encoded string: `fijbxslz`
    - Use `birdistheword` as the key
    - Result: `easypass`.
 
-[SCREEN01]
+<img width="700" height="532" alt="SCREEN01" src="https://github.com/user-attachments/assets/a8aaac65-a952-4111-8503-c3bbe20f1087" />
 
 6. Enumerate SMB users and shares on the target:
 
@@ -153,7 +153,7 @@ ls
 cat user.txt
 ```
 
-[SCREEN02]
+<img width="1003" height="100" alt="SCREEN02" src="https://github.com/user-attachments/assets/1b0fc735-4129-4142-beae-86a641f3e329" />
 
 ---
 
@@ -206,7 +206,7 @@ whoami
 
 You should now have a root shell!
 
-[SCREEN03]
+<img width="736" height="363" alt="SCREEN03" src="https://github.com/user-attachments/assets/18bfb76f-94d9-4c20-bb8f-e3fc283aa248" />
 
 5. Search for the root flag across the filesystem:
 
@@ -214,7 +214,7 @@ You should now have a root shell!
 grep -r "THM{" / 2>/dev/null
 ```
 
-[SCREEN04]
+<img width="495" height="165" alt="SCREEN04" src="https://github.com/user-attachments/assets/ce893c38-3855-4d55-8c74-27b17fb189c3" />
 
 ---
 
@@ -228,4 +228,4 @@ _brings back so many memories_
 cat /root/.bash_history
 ```
 
-[SCREEN05]
+<img width="420" height="511" alt="SCREEN05" src="https://github.com/user-attachments/assets/5f67f54f-2585-4058-ae18-67d2cd935a2a" />
