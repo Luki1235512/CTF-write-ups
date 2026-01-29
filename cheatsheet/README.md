@@ -89,6 +89,12 @@ find / -perm -u=s -type f 2>/dev/null
 find / -user <USER_NAME> -type f 2>/dev/null
 ```
 
+## Automated Privilege Escalation Enumeration
+
+```bash
+wget https://github.com/peass-ng/PEASS-ng/releases/latest/download/linpeas.sh
+```
+
 ## LXD/LXC Container Privilege Escalation
 
 ```bash
