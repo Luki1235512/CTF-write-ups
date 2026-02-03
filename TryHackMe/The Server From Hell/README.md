@@ -130,7 +130,7 @@ drwxrwxr-x 3 root root 4096 Feb  3 14:46 ..
 cat backup/home/hades/.ssh/flag.txt
 ```
 
-[SCREEN01]
+<img width="462" height="235" alt="SCREEN01" src="https://github.com/user-attachments/assets/95e3376f-af66-4d2f-8c47-d2f4263e9140" />
 
 ---
 
@@ -274,7 +274,7 @@ exec "/bin/bash"
 cat user.txt
 ```
 
-[SCREEN02]
+<img width="606" height="219" alt="SCREEN02" src="https://github.com/user-attachments/assets/548fe5dd-8f2a-41fa-a1cd-c3279657e0e3" />
 
 ---
 
@@ -301,4 +301,4 @@ getcap / -r 2>>/dev/null
 /bin/tar cf /dev/stdout /root/root.txt -I 'tar xO'
 ```
 
-[SCREEN03]
+<img width="526" height="80" alt="SCREEN03" src="https://github.com/user-attachments/assets/632f3ea3-9aa5-4ea5-a014-72cc9c820566" />
