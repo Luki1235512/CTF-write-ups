@@ -237,7 +237,7 @@ john --wordlist=/usr/share/wordlists/rockyou.txt cert.hash
 ## SSH Key Hash Extraction
 
 ```bash
-ssh2john key > key.hash
+ssh2john key > hash
 ```
 
 # File Transfer Protocol (FTP) Operations
