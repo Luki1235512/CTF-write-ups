@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges (98):</summary>
+<summary>Completed challenges (99):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -129,6 +129,7 @@
 120. [NerdHerd](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/NerdHerd/README.md)
 121. [Year of the Dog](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Year%20of%20the%20Dog/README.md)
 122. [The Server From Hell](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/The%20Server%20From%20Hell/README.md)
+123. [Brute It](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Brute%20It/README.md)
 </details>
 
 ---
