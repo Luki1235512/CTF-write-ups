@@ -125,7 +125,7 @@ ssh -i key john@<TARGET_IP>
 cat user.txt
 ```
 
-[SCREEN01]
+<img width="462" height="105" alt="SCREEN01" src="https://github.com/user-attachments/assets/8c187c50-d1cf-482b-8240-30aa1951e9fb" />
 
 ---
 
@@ -133,7 +133,7 @@ cat user.txt
 
 1. The web flag can be found on the admin panel page after successful authentication. Navigate to `http://<TARGET_IP>/admin/panel/` in your browser while logged in as admin.
 
-[SCREEN02]
+<img width="1351" height="225" alt="SCREEN02" src="https://github.com/user-attachments/assets/f2b05beb-162f-4f4a-954f-100eade95485" />
 
 ---
 
@@ -168,7 +168,7 @@ sudo /bin/cat /etc/shadow
 
 3. Extract the root user's hash from the output.
 
-[SCREEN03]
+<img width="1038" height="547" alt="SCREEN03" src="https://github.com/user-attachments/assets/664789b5-3120-46f4-825d-c550c294bc9a" />
 
 4. Now crack the root password hash using John the Ripper:
 
@@ -190,4 +190,4 @@ su
 cat /root/root.txt
 ```
 
-[SCREEN04]
+<img width="367" height="87" alt="SCREEN04" src="https://github.com/user-attachments/assets/27e50094-e923-4e1e-b174-2989bfa7bebf" />
