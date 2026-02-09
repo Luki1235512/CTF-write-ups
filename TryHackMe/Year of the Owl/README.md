@@ -65,7 +65,7 @@ iso.3.6.1.4.1.77.1.2.25.1.1.18.87.68.65.71.85.116.105.108.105.116.121.65.99.99.1
 crackmapexec smb <TARGET_IP> -u Jareth -p /usr/share/wordlists/rockyou.txt
 ```
 
-[SCREEN01]
+<img width="903" height="607" alt="SCREEN01" src="https://github.com/user-attachments/assets/5793afb8-b7e9-4eee-8637-e25c414a234c" />
 
 5. Using the discovered credentials, we establish a remote PowerShell session via WinRM.
 
@@ -80,7 +80,7 @@ dir C:\Users\Jareth\Desktop
 more C:\Users\Jareth\Desktop\user.txt
 ```
 
-[SCREEN02]
+<img width="1039" height="419" alt="SCREEN02" src="https://github.com/user-attachments/assets/c9fc8e90-9f37-4ed9-becc-d2ab640e1fd3" />
 
 ---
 
@@ -157,4 +157,4 @@ dir C:\Users\Administrator\Desktop
 more C:\Users\Administrator\Desktop\admin.txt
 ```
 
-[SCREEN03]
+<img width="790" height="246" alt="SCREEN03" src="https://github.com/user-attachments/assets/b5f52cea-68f4-4a18-b9cf-9dfbc1522e3e" />
