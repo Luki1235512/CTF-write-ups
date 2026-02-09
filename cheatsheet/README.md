@@ -32,6 +32,16 @@ gobuster dir -u https://<TARGET_IP> -w /usr/share/wordlists/dirbuster/directory-
 enum4linux <TARGET_IP>
 ```
 
+## SNMP Enumeration
+
+```bash
+onesixtyone <TARGET_IP> -c /usr/share/seclists/Discovery/SNMP/snmp-onesixtyone.txt
+```
+
+```bash
+snmpwalk -c <COMMUNITY_STRING> -v1 <TARGET_IP> 1.3.6.1.4.1.77.1.2.25
+```
+
 ## DNS Reconnaissance
 
 ```bash
@@ -143,6 +153,10 @@ evil-winrm -i <TARGET_IP> -u <USER_NAME> -p <PASSWORD>
 ```
 
 ```bash
+evil-winrm -i <TARGET_IP> -H <PASSWORD_HASH> -p <PASSWORD>
+```
+
+```bash
 net user <USER_NAME> <PASSWORD>
 ```
 
@@ -214,6 +228,10 @@ hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt <TARGET_IP> http-post-form 
 
 ```bash
 wfuzz -w /usr/share/wordlists/rockyou.txt -X POST -d '{"username":"<LOGIN>","password":"FUZZ"}' -u http://<TARGET_IP>/login
+```
+
+```bash
+crackmapexec smb <TARGET_IP> -u <LOGIN> -p /usr/share/wordlists/rockyou.txt
 ```
 
 ```bash
