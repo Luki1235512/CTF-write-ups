@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges (101):</summary>
+<summary>Completed challenges (102):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -132,6 +132,7 @@
 123. [Brute It](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Brute%20It/README.md)
 124. [Startup](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Startup/README.md)
 125. [Year of the Owl](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Year%20of%20the%20Owl/README.md)
+126. [You're in a cave](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/You're%20in%20a%20cave/README.md)
 </details>
 
 ---
