@@ -262,7 +262,7 @@ ls
 cat info.txt
 ```
 
-[SCREEN01]
+<img width="1405" height="389" alt="SCREEN01" src="https://github.com/user-attachments/assets/e2c21ac4-b3af-41ae-8a1a-e6a2fdfc2155" />
 
 ---
 
@@ -380,7 +380,7 @@ cat message
 IT'S DANGEROUS TO GO ALONE! TAKE THIS b**********************r
 ```
 
-[SCREEN02]
+<img width="678" height="429" alt="SCREEN02" src="https://github.com/user-attachments/assets/32635426-9c41-4fac-8de9-0376944d1922" />
 
 ---
 
