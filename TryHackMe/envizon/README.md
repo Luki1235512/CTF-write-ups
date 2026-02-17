@@ -76,11 +76,11 @@ hid = Hashids.new('Note', 30)
 hid.encode(380)
 ```
 
-[SCREEN01]
+<img width="1343" height="159" alt="SCREEN01" src="https://github.com/user-attachments/assets/9c625ebf-963f-4ec2-a799-2e34f5e15d44" />
 
 6. Visit `https://<TARGET_IP>:3000/notes/y2a419eKDBLRvEYobWNpw0jnr6xlAX` to retrieve the envizon instance password.
 
-[SCREEN02]
+<img width="850" height="224" alt="SCREEN02" src="https://github.com/user-attachments/assets/0534438e-726f-4545-9b87-7a512be292c2" />
 
 ---
 
@@ -106,15 +106,15 @@ nc -lvnp 4444
 
 4. Upload the malicious Lua script through the scan import functionality at `https://<TARGET_IP>:3000/scans`.
 
-[SCREEN03]
+<img width="1751" height="371" alt="SCREEN03" src="https://github.com/user-attachments/assets/3a8dede7-53d9-4240-b90f-d5ad57a4a4c0" />
 
 5. Check the `Tasks` > `Retries` section to get the full path where files are stored and understand the processing workflow:
 
-[SCREEN04]
+<img width="1761" height="717" alt="SCREEN04" src="https://github.com/user-attachments/assets/76a1f93d-e04d-4e1a-9f8c-afc473bb8209" />
 
 6. Run the `Manual Scan`:
 
-[SCREEN05]
+<img width="1757" height="382" alt="SCREEN05" src="https://github.com/user-attachments/assets/9dbfa686-f600-4272-9ce5-a6cd59ad244e" />
 
 7. Verify your access and retrieve the local flag:
 
@@ -125,7 +125,7 @@ ls /root
 cat /root/local.txt
 ```
 
-[SCREEN06]
+<img width="272" height="117" alt="SCREEN06" src="https://github.com/user-attachments/assets/a0a4c96f-e2b7-426e-bc86-108c1b723d91" />
 
 ---
 
@@ -274,4 +274,4 @@ ssh -i id_ed25519 root@<TARGET_IP>
 cat /root/root.txt
 ```
 
-[SCRREN07]
+<img width="294" height="85" alt="SCREEN07" src="https://github.com/user-attachments/assets/47576089-3d79-41fd-a4f1-a01fefd41da0" />
