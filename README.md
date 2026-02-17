@@ -133,6 +133,7 @@
 124. [Startup](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Startup/README.md)
 125. [Year of the Owl](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Year%20of%20the%20Owl/README.md)
 126. [You're in a cave](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/You're%20in%20a%20cave/README.md)
+127. Osiris
 </details>
 
 ---
