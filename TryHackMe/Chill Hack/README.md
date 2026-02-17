@@ -115,7 +115,7 @@ test
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 ```
 
-[SCREEN01]
+<img width="699" height="276" alt="SCREEN01" src="https://github.com/user-attachments/assets/be0c448c-a9fc-48a5-8b73-d1c2d7284db1" />
 
 10. Navigate to apaar's home directory and read the user flag:
 
@@ -124,7 +124,7 @@ cd /home/apaar
 cat local.txt
 ```
 
-[SCREEN02]
+<img width="517" height="339" alt="SCREEN02" src="https://github.com/user-attachments/assets/83702829-ec67-4b48-8af6-61cc408a4392" />
 
 ---
 
@@ -230,4 +230,4 @@ docker run -v /:/mnt --rm -it alpine chroot /mnt sh
 cat /root/proof.txt
 ```
 
-[SCREEN03]
+<img width="908" height="581" alt="SCREEN03" src="https://github.com/user-attachments/assets/6374f4b9-1827-4356-93db-a8427fa22d6e" />
