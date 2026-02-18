@@ -106,6 +106,10 @@ find / -perm -u=s -type f 2>/dev/null
 ```
 
 ```bash
+getcap -r / 2>/dev/null
+```
+
+```bash
 find / -user <USER_NAME> -type f 2>/dev/null
 ```
 
