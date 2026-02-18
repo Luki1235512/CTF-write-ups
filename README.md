@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (104):</summary>
+<summary>Completed challenges walkthroughs (105):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -100,7 +100,7 @@
 91. Ra 2
 92. [Anonymous Playground](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Anonymous%20Playground/README.md)
 93. [harder](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/harder/README.md)
-94. [Looking Glass](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Looking%20Glass/README.md) - 1/2
+94. Looking Glass
 95. [Spring](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Spring/README.md)
 96. [Relevant](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Relevant/README.md)
 97. [Internal](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Internal/README.md)
@@ -136,6 +136,7 @@
 127. Osiris
 128. [envizon](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/envizon/README.md)
 129. [Chill Hack](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Chill%20Hack/README.md)
+130. [Bookstore](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Bookstore/README.md)
 </details>
 
 ---
