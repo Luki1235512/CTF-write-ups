@@ -63,7 +63,7 @@ cd /home/kiba
 cat user.txt
 ```
 
-[SCREEN01]
+<img width="297" height="170" alt="SCREEN01" src="https://github.com/user-attachments/assets/39780294-b27e-4383-8bf1-d90a0d801788" />
 
 ---
 
@@ -105,4 +105,4 @@ whoami
 cat /root/root.txt
 ```
 
-[SCREEN02]
+<img width="526" height="207" alt="SCREEN02" src="https://github.com/user-attachments/assets/5b5df0d7-3ed1-4d71-91f2-462339b5f8fa" />
