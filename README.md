@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (105):</summary>
+<summary>Completed challenges walkthroughs (106):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -104,7 +104,7 @@
 95. [Spring](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Spring/README.md)
 96. [Relevant](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Relevant/README.md)
 97. [Internal](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Internal/README.md)
-98. [kiba](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/kiba/README.md) - 3/6
+98. [kiba](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/kiba/README.md)
 99. [GamingServer](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/GamingServer/README.md)
 100. Theseus
 101. [WWBuddy](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/WWBuddy/README.md)
