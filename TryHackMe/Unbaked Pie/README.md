@@ -31,7 +31,7 @@ test
 pickle.loads(test)
 ```
 
-[SCREEN01]
+<img width="578" height="211" alt="SCREEN01" src="https://github.com/user-attachments/assets/c1027617-d80a-4277-b1b7-b5fa1c0c5fae" />
 
 This confirms the application is using Python's pickle module for serialization, which is vulnerable to remote code execution when deserializing untrusted data.
 
@@ -62,7 +62,7 @@ nc -lvnp 4444
 
 5. Send a POST request to the `/search` endpoint with the generated malicious pickle payload as the `search_cookie` parameter.
 
-[SCREEN02]
+<img width="650" height="539" alt="SCREEN02" src="https://github.com/user-attachments/assets/709c8237-a136-4292-ae18-44a757b4c4f2" />
 
 6. Once inside the container, enumerate the environment and check the command history.
 
@@ -173,7 +173,7 @@ hydra -l ramsey -P /usr/share/wordlists/rockyou.txt -s 9003 ssh://127.0.0.1
 cat user.txt
 ```
 
-[SCREEN03]
+<img width="599" height="409" alt="SCREEN03" src="https://github.com/user-attachments/assets/37f9567a-ffd9-43a4-8253-10ada64772a6" />
 
 ---
 
@@ -256,4 +256,4 @@ sudo PYTHONPATH=/dev/shm/ python /opt/dockerScript.py
 cat /root/root.txt
 ```
 
-[SCREEN04]
+<img width="437" height="243" alt="SCREEN04" src="https://github.com/user-attachments/assets/1b2fc3db-c988-4790-a7a2-4b73be345d42" />
