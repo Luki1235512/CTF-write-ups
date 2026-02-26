@@ -144,7 +144,7 @@ su elyana
 cat /home/elyana/user.txt
 ```
 
-[SCREEN01]
+<img width="516" height="378" alt="SCREEN01" src="https://github.com/user-attachments/assets/7ddb715a-d735-4980-833d-f87524895cc7" />
 
 ---
 
@@ -181,4 +181,4 @@ sudo /usr/bin/socat - exec:/bin/sh,pty,ctty,raw,echo=0
 cat /root/root.txt
 ```
 
-[SCREEN02]
+<img width="677" height="217" alt="SCREEN02" src="https://github.com/user-attachments/assets/f883e4c6-a620-41fe-825b-d0a96413aea8" />
