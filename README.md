@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (107):</summary>
+<summary>Completed challenges walkthroughs (108):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -138,6 +138,7 @@
 129. [Chill Hack](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Chill%20Hack/README.md)
 130. [Bookstore](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Bookstore/README.md)
 131. [Unbaked Pie](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Unbaked%20Pie/README.md)
+132. [All in One](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/All%20in%20One/README.md)
 </details>
 
 ---
