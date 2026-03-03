@@ -147,4 +147,4 @@
 
 ## [Huntress CTF 2025](https://ctf.huntress.com/)
 
-## My team score - [Pusheen](https://ctf.huntress.com/completion/bce641ab3da89215)
+## My team [Pusheen](https://ctf.huntress.com/completion/bce641ab3da89215) score - 338 points | 178/6,951 teams | 9,881 players | 53/65 challenges solved (81.5%)
