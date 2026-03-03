@@ -112,7 +112,7 @@ su c0ldd
 cat /home/c0ldd/user.txt
 ```
 
-[SCREEN01]
+<img width="482" height="136" alt="SCREEN01" src="https://github.com/user-attachments/assets/6b880023-6c2f-4106-bc89-37bb6288e4fc" />
 
 ---
 
@@ -146,4 +146,4 @@ sudo /usr/bin/ftp
 cat /root/root.txt
 ```
 
-[SCREEN02]
+<img width="441" height="148" alt="SCREEN02" src="https://github.com/user-attachments/assets/54ac2c07-be55-4441-b6dd-68d6772d7b3a" />
