@@ -153,6 +153,8 @@ echo 'echo "<USER_NAME> ALL=(ALL:ALL) ALL" >> /etc/sudoers;' >> <FILE_NAME>
 
 ```bash
 ss -tulpn
+rpcinfo -p
+
 ssh -L <PORT>:localhost:<PORT> <USER_NAME>@<TARGET_IP>
 ```
 

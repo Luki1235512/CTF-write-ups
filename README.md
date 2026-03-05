@@ -141,6 +141,7 @@
 132. [All in One](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/All%20in%20One/README.md)
 133. Searchlight - IMINT
 134. [ColddBox: Easy](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/ColddBox:%20Easy/README.md)
+135. EnterPrize
 </details>
 
 ---
