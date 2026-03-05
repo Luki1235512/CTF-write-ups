@@ -114,7 +114,7 @@ find / -name "*flag*" 2>/dev/null
 cat /usr/share/httpd/web.flag
 ```
 
-[SCREEN01]
+<img width="419" height="323" alt="SCREEN01" src="https://github.com/user-attachments/assets/ba53e508-eb37-4733-bab5-221ca40baeba" />
 
 ---
 
@@ -239,7 +239,7 @@ sudo mount -v -t nfs localhost:/ nfs
 cat nfs/user.flag
 ```
 
-[SCREEN02]
+<img width="590" height="396" alt="SCREEN02" src="https://github.com/user-attachments/assets/7768034c-15db-4a3b-9585-68bb8da76b82" />
 
 ---
 
@@ -277,4 +277,4 @@ chmod +xs bash
 cat /root/root.flag
 ```
 
-[SCREEN03]
+<img width="701" height="258" alt="SCREEN03" src="https://github.com/user-attachments/assets/1959c6d4-763b-4985-8647-a1df181dd123" />
