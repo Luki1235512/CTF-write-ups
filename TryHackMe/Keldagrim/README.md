@@ -25,7 +25,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 2. Inspect the cookies set by the application. The session cookie holds a Base64-encoded username. Decode the current value to confirm it identifies a guest or low-privilege user, then overwrite it with `YWRtaW4=`(Base64 for admin) and revisit `http://<TARGET_IP>/admin`.
 
-[SCREEN01]
+<img width="1372" height="763" alt="SCREEN01" src="https://github.com/user-attachments/assets/06da07a1-6ddd-4455-9226-b7b1e2e0d972" />
 
 3. The admin panel reads a sales cookie and renders its value directly inside a Flask/Jinja2 template — a classic Server-Side Template Injection (SSTI) entry point. Payloads must be URL-encoded and then Base64-encoded before being placed into the cookie. Use the following payload to dump the complete Flask application configuration:
 
@@ -105,7 +105,7 @@ URL-encode and Base64-encode the payload, place it in the `sales` cookie, and re
 cat /home/jed/user.txt
 ```
 
-[SCREEN02]
+<img width="604" height="290" alt="SCREEN02" src="https://github.com/user-attachments/assets/552e655f-27ef-49f6-a234-543cdfe3ca97" />
 
 ---
 
@@ -168,4 +168,4 @@ sudo LD_PRELOAD=/tmp/shell.so /bin/ps
 cat /root/root.txt
 ```
 
-[SCREEN03]
+<img width="318" height="63" alt="SCREEN03" src="https://github.com/user-attachments/assets/ff43a21f-35c3-4aaf-9a9d-1171d8edd8d4" />
