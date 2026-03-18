@@ -80,7 +80,7 @@ nc -lvnp 4444
 whoami
 ```
 
-[SCREEN01]
+<img width="261" height="88" alt="SCREEN01" src="https://github.com/user-attachments/assets/b27f5c4b-ea64-4f62-a8cc-36fec185ced4" />
 
 **Answer:** `sign`
 
@@ -119,7 +119,7 @@ C:\Users\sign\Desktop
 type user_flag.txt
 ```
 
-[SCREEN02]
+<img width="499" height="278" alt="SCREEN02" src="https://github.com/user-attachments/assets/1db4fc2c-0cbf-4e18-b517-739c0c1306ab" />
 
 # Pwnage
 
@@ -334,4 +334,4 @@ cd Users\Administrator\Desktop
 get admin_flag.txt
 ```
 
-[SCREEN03]
+<img width="1098" height="338" alt="SCREEN03" src="https://github.com/user-attachments/assets/1aae5e7b-8ad5-4c87-9ef5-46d73521904e" />
