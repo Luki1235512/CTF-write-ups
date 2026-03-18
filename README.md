@@ -222,7 +222,7 @@
 213. Net Sec Challenge
 214. IDE
 215. Zeno
-216. Temple
+216. [Temple](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Temple/README.md)
 217. Frank & Herby make an app
 218. Minotaur's Labyrinth
 219. Squid Game
