@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (111):</summary>
+<summary>Completed challenges walkthroughs (112):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -177,7 +177,7 @@
 168. GLITCH
 169. Memory Forensics
 170. VulnNet: dotpy
-171. AllSignsPoint2Pwnage
+171. [AllSignsPoint2Pwnage](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/AllSignsPoint2Pwnage/README.md)
 172. Sakura Room
 173. Cooctus Stories
 174. Different CTF
