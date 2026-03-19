@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (113):</summary>
+<summary>Completed challenges walkthroughs (114):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -252,7 +252,7 @@
 243. PWN101
 244. Kubernetes for Everyone
 245. Dig Dug
-246. Biblioteca
+246. [Biblioteca](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Biblioteca/README.md)
 247. CyberHeroes
 248. Frank and Herby try again.....
 249. Mr. Phisher
