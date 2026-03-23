@@ -227,7 +227,7 @@ else:
 cat /home/adrian/user.txt
 ```
 
-[SCREEN01]
+<img width="553" height="143" alt="SCREEN01" src="https://github.com/user-attachments/assets/900d0fe8-ebe6-4dd7-8dca-161f4c3eb8b8" />
 
 ---
 
@@ -273,4 +273,4 @@ sudo /usr/bin/vim -c ':!/bin/sh'
 cat /root/root.txt
 ```
 
-[SCREEN02]
+<img width="398" height="87" alt="SCREEN02" src="https://github.com/user-attachments/assets/2ca0ce25-0402-4b16-84b2-1dda4cd27c01" />
