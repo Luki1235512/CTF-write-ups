@@ -258,7 +258,7 @@
 249. [Mr. Phisher](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr.%20Phisher/README.md)
 250. Sea Surfer
 251. Annie
-252. Commited
+252. [Commited](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Committed/README.md)
 253. Olympus
 254. Zeek Exercises
 255. Brute
