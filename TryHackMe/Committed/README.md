@@ -47,4 +47,4 @@ git checkout 3a8cc16f919b8ac43651d68dceacbb28ebb9b625
 cat main.py
 ```
 
-[SCREEN01]
+<img width="1402" height="862" alt="SCREEN01" src="https://github.com/user-attachments/assets/9d70a77f-813a-4027-a9cf-d554f5375b15" />
