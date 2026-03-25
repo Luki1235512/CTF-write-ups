@@ -12,7 +12,7 @@ I received a suspicious email with a very weird-looking attachment. It keeps on 
 
 3. Expand the project tree to find the `Format` (`MrPhisher.docm > Project > Modules > NewMacros > Format`).
 
-[SCREEN01]
+<img width="1285" height="594" alt="SCREEN01" src="https://github.com/user-attachments/assets/b3dd923b-3d80-4511-96ca-c8f79bd1e1e3" />
 
 ```vb
 Rem Attribute VBA_ModuleType=VBAModule
@@ -34,4 +34,4 @@ a = [102, 109, 99, 100, 127, 100, 53, 62, 105, 57, 61, 106, 62, 62, 55, 110, 113
 print(''.join(chr(v ^ i) for i, v in enumerate(a)))
 ```
 
-[SCREEN02]
+<img width="396" height="58" alt="SCREEN02" src="https://github.com/user-attachments/assets/e88931a6-73f5-4657-b2d5-50aa60914bce" />
