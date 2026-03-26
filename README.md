@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (118):</summary>
+<summary>Completed challenges walkthroughs (119):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -264,7 +264,7 @@
 255. [Brute](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Brute/README.md)
 256. Agent T
 257. Hacker vs. Hacker
-258. Confidential
+258. [Confidential](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Confidential/README.md)
 259. b3dr0ck
 260. VulnNet: Endgame
 261. Intermediate Nmap
