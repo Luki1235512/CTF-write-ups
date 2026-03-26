@@ -12,4 +12,4 @@ pdfimages -j Repdf.pdf image
 
 2. Use QR code scanner (for example `https://scanqr.org/`) to read the flag.
 
-[SCREEN01]
+<img width="1254" height="363" alt="SCREEN01" src="https://github.com/user-attachments/assets/50c3c0f1-ab6d-4852-8b39-ac053bd8c605" />
