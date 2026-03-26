@@ -49,4 +49,4 @@ ssh ubuntu@<TARGET_IP>
 cat /home/user/flag.txt
 ```
 
-[SCREEN01]
+<img width="571" height="204" alt="SCREEN01" src="https://github.com/user-attachments/assets/03d2181f-bfe4-4762-9fd9-0bd5e4a3c8e8" />
