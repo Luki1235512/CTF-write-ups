@@ -64,10 +64,10 @@ Kate: Hello.. ?
 
 7. Intercept the **Generate PDF** POST request using Burp Suite. Change the `url` parameter value to point to the internal admin page, exploiting the SSRF vulnerability.
 
-[SCREEN01]
+<img width="1604" height="832" alt="SCREEN01" src="https://github.com/user-attachments/assets/be41d01b-eeb8-4d9b-b24e-671f13947122" />
 
 This causes the server to fetch `http://127.0.0.1/internal/admin.php` on your behalf, bypassing the restriction that only allows access from localhost.
 
 8. Forward the modified request. The server fetches the internal admin page and renders its content into a PDF, which is returned in the response. Open the PDF to find the flag.
 
-[SCREEN02]
+<img width="1380" height="255" alt="SCREEN02" src="https://github.com/user-attachments/assets/70c2e4c5-34b5-4121-8f86-aa8972ead32c" />
