@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (120):</summary>
+<summary>Completed challenges walkthroughs (121):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -269,7 +269,7 @@
 260. VulnNet: Endgame
 261. [Intermediate Nmap](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Intermediate%20Nmap/README.md)
 262. Corridor
-263. Surfer
+263. [Surfer](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Surfer/README.md)
 264. DX1: Libery Island
 265. Benign
 266. ItsyBitsy
