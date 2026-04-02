@@ -149,7 +149,7 @@ vncviewer <TARGET_IP>:5901
 
 10. The first flag is on the desktop in the `user.txt` file.
 
-[SCREEN01]
+<img width="645" height="347" alt="SCREEN01" src="https://github.com/user-attachments/assets/2cf67037-1ec4-462b-a631-f11ec758b004" />
 
 ---
 
@@ -167,7 +167,7 @@ strings badactors-list > strings
 base64 -d > /var/www/html/badactors.txt
 ```
 
-[SCREEN02]
+<img width="646" height="474" alt="SCREEN02" src="https://github.com/user-attachments/assets/d9fae488-76be-4029-a3b6-8ac70f80226a" />
 
 > This tells us the binary decodes a base64-encoded payload and writes it to the bad actors list file. Importantly, this command is likely executed with elevated privileges, which we can abuse.
 
@@ -197,4 +197,4 @@ cd /root
 cat root.txt
 ```
 
-[SCREEN03]
+<img width="662" height="457" alt="SCREEN03" src="https://github.com/user-attachments/assets/17819f8b-c253-4884-b486-75b522250623" />
