@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (122):</summary>
+<summary>Completed challenges walkthroughs (123):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -274,7 +274,7 @@
 265. Benign
 266. ItsyBitsy
 267. Investigating with Splunk
-268. PrintNightmare, again!
+268. [PrintNightmare, again!](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/PrintNightmare,%20again!/README.md)
 269. Epoch
 270. Warzone 1
 271. Templates
