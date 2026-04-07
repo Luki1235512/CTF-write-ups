@@ -16,4 +16,4 @@ _The developer likes to store data in environment variables, can you find anythi
 ; env
 ```
 
-[SCREEN01]
+<img width="849" height="337" alt="SCREEN01" src="https://github.com/user-attachments/assets/2c9b95f0-a3bb-423d-88d5-4b300f76b202" />
