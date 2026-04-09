@@ -22,7 +22,7 @@ _Brim_
 
 2. Search for `malware` and look for `alert.signature` column
 
-[SCREEN01]
+<img width="1258" height="782" alt="SCREEN01" src="https://github.com/user-attachments/assets/dc33f854-a4f2-463e-9965-b99f7227a846" />
 
 **Answer:** `ET Malware MirrorBlast CnC Activity M3`
 
@@ -52,7 +52,7 @@ _Cyberchef can defang._
 
 1. Visit `https://www.virustotal.com/gui/ip-address/169.239.128.11/community` and look at `Contained in Graphs` section
 
-[SCREEN02]
+<img width="1717" height="907" alt="SCREEN02" src="https://github.com/user-attachments/assets/496ba812-5ec5-4ade-80fb-1e409b751098" />
 
 **Answer:** `TA505`
 
@@ -72,7 +72,7 @@ _Check Relations_
 
 1. Visit `https://www.virustotal.com/gui/ip-address/169.239.128.11/relations` and look at the `Communicating Files` section.
 
-[SCREEN03]
+<img width="1717" height="907" alt="SCREEN03" src="https://github.com/user-attachments/assets/338e9bbb-8a22-4fbd-a301-9fe348ef8f7f" />
 
 **Answer:** `Windows Installer`
 
@@ -84,7 +84,7 @@ _Check Relations_
 
 2. Right click on `HTTP` packet and select `Follow > HTTP Stream`
 
-[SCREEN04]
+<img width="1345" height="815" alt="SCREEN04" src="https://github.com/user-attachments/assets/1c61650d-82df-4559-8bb6-b978eab700ab" />
 
 **Answer**: `REBOL View 2.7.8.3.1`
 
@@ -96,7 +96,7 @@ _Brim (HTTP logs) &amp; VT (Community tab) can help you here. Cyberchef can defa
 
 1. Back in `Brim` search `172.16.1.102 _path == "http"`
 
-[SCREEN05]
+<img width="1256" height="784" alt="SCREEN05" src="https://github.com/user-attachments/assets/76fe23c0-f60f-4833-9c8b-43f827fc76d1" />
 
 2. Visit:
    - `https://www.virustotal.com/gui/ip-address/142.250.74.110/community`
@@ -114,11 +114,11 @@ _The first character in the second filename is not a lowercase or uppercase "L".
 
 1. Select `File Activity` in `QUERIES` section to get first file
 
-[SCREEN07]
+<img width="1254" height="781" alt="SCREEN07" src="https://github.com/user-attachments/assets/425b93ba-a402-4223-912f-eba2b65213df" />
 
 2. Search for `_path == "http" | uniq -c` to get second file
 
-[SCREEN06]
+<img width="1255" height="785" alt="SCREEN06" src="https://github.com/user-attachments/assets/3fe615b0-110e-45db-a97c-60f878bd808c" />
 
 **Answer:** `filter.msi,10opd3r_load.msi`
 
@@ -132,7 +132,7 @@ _Inspect the streams._
 
 2. Click `Follow > TCP Stream`, and search for `C:\`
 
-[SCREEN08]
+<img width="1131" height="753" alt="SCREEN08" src="https://github.com/user-attachments/assets/6f80f6d3-9a24-4250-905e-a07b3998cc18" />
 
 **Answer:** `C:\ProgramData\001\arab.bin,C:\ProgramData\001\arab.exe`
 
@@ -146,6 +146,6 @@ _Inspect the streams._
 
 2. Click `Follow > TCP Stream`, and search for `C:\`
 
-[SCREEN09]
+<img width="971" height="681" alt="SCREEN09" src="https://github.com/user-attachments/assets/c47242c7-7219-4ff6-b082-6ff15a3dd98f" />
 
 **Answer:** `C:\ProgramData\Local\Google\rebol-view-278-3-1.exe,C:\ProgramData\Local\Google\exemple.rb`
