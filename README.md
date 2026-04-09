@@ -276,7 +276,7 @@
 267. Investigating with Splunk
 268. [PrintNightmare, again!](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/PrintNightmare,%20again!/README.md)
 269. [Epoch](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Epoch/README.md)
-270. Warzone 1
+270. [Warzone 1](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Warzone%201/README.md)
 271. Templates
 272. PS Eclipse
 273. PrintNightmare, thrice!
