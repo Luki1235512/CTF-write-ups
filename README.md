@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (127):</summary>
+<summary>Completed challenges walkthroughs (128):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -279,7 +279,7 @@
 270. [Warzone 1](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Warzone%201/README.md)
 271. [Templates](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Templates/README.md)
 272. [PS Eclipse](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/PS%20Eclipse/README.md)
-273. PrintNightmare, thrice!
+273. [PrintNightmare, thrice!](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/PrintNightmare,%20thrice!/README.md)
 274. Neighbour
 275. Tempest
 276. Warzone 2
