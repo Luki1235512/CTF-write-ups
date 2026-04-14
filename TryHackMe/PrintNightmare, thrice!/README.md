@@ -14,7 +14,7 @@ _Check the SMB traffic in the pcap file_
 
 1. Open `traffic.pcap` in `Wireshark` and search for `smb` ...
 
-[SCREEN01]
+<img width="750" height="186" alt="SCREEN01" src="https://github.com/user-attachments/assets/b675c690-4c05-407d-8f32-6ae65e797654" />
 
 **Answer:** `20.188.56.147`
 
@@ -26,7 +26,7 @@ _Wireshark_
 
 1. Press `ctrl + F` select `String` and search for `STATUS_LOGON_FAILURE`, then select `SMB2` > `SMB2 Header` > `Session Id`
 
-[SCREEN02]
+<img width="1400" height="589" alt="SCREEN02" src="https://github.com/user-attachments/assets/e303dc95-492f-49a3-a444-86e10cd9f6b4" />
 
 **Answer:** `THM-PRINTNIGHT0\rjones`
 
@@ -38,7 +38,7 @@ _Wireshark_
 
 1. Use display filter: `smb2 && smb2.nt_status == 0x0` look for packets such as `Session Setup Response`, then select `SMB2` > `SMB2 Header` > `Session Id`
 
-[SCREEN03]
+<img width="1401" height="588" alt="SCREEN03" src="https://github.com/user-attachments/assets/321fad2f-4f78-4f8a-9cdd-c784ba6708da" />
 
 **Answer:** `THM-PRINTNIGHT0/gentilguest`
 
@@ -50,11 +50,11 @@ _Wireshark or Brim_
 
 1. Use the display filter `smb2 && smb2.cmd == 0x03` the first share is in `Info` column
 
-[SCREEN04]
+<img width="1399" height="182" alt="SCREEN04" src="https://github.com/user-attachments/assets/83234156-a935-483f-b5fa-a8ba4499743e" />
 
 2. Use the display filter `smb2 && smb2.cmd == 0x05` the first two files are in `Info` column
 
-[SCREEN05]
+<img width="1400" height="579" alt="SCREEN05" src="https://github.com/user-attachments/assets/03d37009-c03d-41a3-aa2b-6579b96df573" />
 
 **Answer:** `\\printnightmare.gentilkiwi.com\IPC$,srvsvc,spoolss`
 
@@ -66,7 +66,7 @@ _Many DLLs were downloaded but one stands out in association to a hack tool. Bri
 
 1. In the query bar search for `_path=~smb* OR _path=dce_rpc`
 
-[SCREEN06]
+<img width="1402" height="733" alt="SCREEN06" src="https://github.com/user-attachments/assets/d716fdad-1add-4f67-a25e-3662ba75591e" />
 
 **Answer:** `\\printnightmare.gentilkiwi.com\print$,\x64\3\mimispool.dll,\W32X86\3\mimispool.dll`
 
@@ -78,9 +78,9 @@ _Check the event logs_
 
 1. Search for `mimispool.dll`
 
-[SCREEN07]
+<img width="1037" height="610" alt="SCREEN07" src="https://github.com/user-attachments/assets/9a9a2b43-ed2f-45db-b025-cec232707e3f" />
 
-[SCREEN08]
+<img width="1038" height="609" alt="SCREEN08" src="https://github.com/user-attachments/assets/c260c435-2b5e-4114-81d8-0e4a1c09c6a6" />
 
 **Answer:** `C:\Windows\system32\spool\drivers\X64\3,C:\Windows\system32\spool\drivers\W32X86\3`
 
@@ -90,7 +90,7 @@ _Check the event logs_
 
 1. Search for `printnightmare.gentilkiwi.com` in file explorer
 
-[SCREEN09]
+<img width="1124" height="597" alt="SCREEN09" src="https://github.com/user-attachments/assets/2b82f1ab-30e9-4b85-b852-c6550117e819" />
 
 **Answer:** `C:\Windows\System32\spool\SERVERS\printnightmare.gentilkiwi.com`
 
@@ -101,6 +101,8 @@ _Check the event logs_
 _Check Microsoft-Windows-PrintService_
 
 1. Search for `\\printnightmare.gentilkiwi.com`
+
+<img width="1037" height="608" alt="SCREEN10" src="https://github.com/user-attachments/assets/ce160777-7dd1-41e2-8457-79fc695841eb" />
 
 **Answer:** `Kiwi Legit Printer`
 
