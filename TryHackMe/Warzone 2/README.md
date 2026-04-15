@@ -82,7 +82,7 @@ md5sum fxla.php%3fl\=gap1.cab
 
 ### What is the user-agent associated with this network traffic?
 
-1. Back in `Wiresharh` filter for `http` and check the `Hypertext Transfer Protocol`
+1. Back in `Wireshark` filter for `http` and check the `Hypertext Transfer Protocol`
 
 <img width="987" height="738" alt="SCREEN06" src="https://github.com/user-attachments/assets/89402086-b136-45b9-bcdb-6342aa5be1c5" />
 
