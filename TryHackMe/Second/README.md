@@ -26,7 +26,7 @@ PORT     STATE SERVICE VERSION
 
 3. Log in with the injected account. Click `Let's Count Them` to trigger the vulnerable query and display the dumped credentials. The result contains the `smokey` user password.
 
-[SCREEN01]
+<img width="1916" height="519" alt="SCREEN01" src="https://github.com/user-attachments/assets/4ce49e36-3009-44a1-8c72-ef50135a5269" />
 
 4. SSH to smokey.
 
@@ -94,7 +94,7 @@ nc -lvnp 4444
 cat user.txt
 ```
 
-[SCREEN02]
+<img width="357" height="139" alt="SCREEN02" src="https://github.com/user-attachments/assets/839518e4-15ca-432a-b040-fcc99ed86e11" />
 
 ---
 
@@ -245,7 +245,7 @@ ssh -L 1234:localhost:8080 smokey@<TARGET_IP>
 
 8. Open `Wireshark` and wait for `POST` request form the server.
 
-[SCREEN03]
+<img width="1683" height="577" alt="SCREEN03" src="https://github.com/user-attachments/assets/919d2583-88d7-4e8e-a6fe-ebb2aa9ce36e" />
 
 9. Escalate to root
 
@@ -254,6 +254,4 @@ su
 cat /root/root.txt
 ```
 
-[SCREEN04]
-
----
+<img width="495" height="293" alt="SCREEN04" src="https://github.com/user-attachments/assets/46b64d5f-a92b-4261-aab7-e010204c5e1f" />
