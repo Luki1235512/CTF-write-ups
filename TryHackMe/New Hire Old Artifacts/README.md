@@ -14,7 +14,7 @@ Happy Hunting!
 
 1. Search for `index=* "password viewer"`
 
-[SCREEN01]
+<img width="1641" height="677" alt="SCREEN01" src="https://github.com/user-attachments/assets/f5e7f1f6-9d6e-4ed8-9fc7-e73e456ad44f" />
 
 **Answer:** `C:\Users\FINANC~1\AppData\Local\Temp\11111.exe`
 
@@ -24,7 +24,7 @@ Happy Hunting!
 
 1. The same search `index=* "password viewer"`
 
-[SCREEN02]
+<img width="1639" height="677" alt="SCREEN02" src="https://github.com/user-attachments/assets/f5d87c72-c2d9-4504-98e0-02f52b6df649" />
 
 **Answer:** `NirSoft`
 
@@ -36,7 +36,7 @@ _File path should include username in long name format. https://docs.microsoft.c
 
 1. Search for `index=* "C:\\Users\\Finance01\\AppData\\Local\\Temp\\*.exe" OriginalFileName="*"`
 
-[SCREEN03]
+<img width="1640" height="719" alt="SCREEN03" src="https://github.com/user-attachments/assets/99662552-bf85-4a84-a732-cdd8c87beba3" />
 
 **Answer:** `IonicLarge.exe,PalitExplorer.exe`
 
@@ -48,7 +48,7 @@ _Cyberchef can help with defanging._
 
 1. Search for `index=* IonicLarge.exe` and check `DestinationIp` field
 
-[SCREEN04]
+<img width="886" height="436" alt="SCREEN04" src="https://github.com/user-attachments/assets/cdf6d0a1-58d2-412d-a636-3e7af454a71f" />
 
 **Answer:** `2[.]56[.]59[.]42`
 
@@ -58,7 +58,7 @@ _Cyberchef can help with defanging._
 
 1. Search for `index=* IonicLarge.exe Registry`
 
-[SCREEN05]
+<img width="1628" height="801" alt="SCREEN05" src="https://github.com/user-attachments/assets/4b97e9a3-2bfe-48f1-9f8b-bcc99ebf9334" />
 
 **Answer:** `HKLM\SOFTWARE\Policies\Microsoft\Windows Defender`
 
@@ -70,7 +70,7 @@ _Process were killed with 'taskkill /im'_
 
 1. Search for `index=* "taskkill /im"`
 
-[SCREEN06]
+<img width="1629" height="759" alt="SCREEN06" src="https://github.com/user-attachments/assets/bb4000d1-a175-4e1a-b121-7402e344c7c8" />
 
 **Answer:** `WvmIOrcfsuILdX6SNwIRmGOJ.exe,phcIAmLJMAIMSa9j9MpgJo1m.exe`
 
@@ -82,7 +82,7 @@ _The last command issue has the most recent time stamp_
 
 1. Search for `index=* powershell commandline`
 
-[SCREEN07]
+<img width="1639" height="680" alt="SCREEN07" src="https://github.com/user-attachments/assets/60f19d02-ad2b-4363-a0d7-fa36e74de9e8" />
 
 **Answer:** `powershell WMIC /NAMESPACE:\\root\Microsoft\Windows\Defender PATH MSFT_MpPreference call Add ThreatIDDefaultAction_Ids=2147737394 ThreatIDDefaultAction_Actions=6 Force=True`
 
@@ -100,7 +100,7 @@ _The last command issue has the most recent time stamp_
 
 1. Search for `index=* "C:\\Users\\Finance01\\AppData\\*\\*.exe"`. It is the first result
 
-[SCREEN08]
+<img width="1625" height="386" alt="SCREEN08" src="https://github.com/user-attachments/assets/7505d212-f388-45d1-b270-2a088501de76" />
 
 **Answer:** `C:\Users\Finance01\AppData\Roaming\EasyCalc\EasyCalc.exe`
 
@@ -110,6 +110,6 @@ _The last command issue has the most recent time stamp_
 
 1. Search for `index=* "C:\\Users\\Finance01\\AppData\\Roaming\\EasyCalc\\*.dll" | dedup ImageLoaded`
 
-[SCREEN09]
+<img width="1629" height="624" alt="SCREEN09" src="https://github.com/user-attachments/assets/8a1ef96e-fd7f-4f3d-abf2-f044ae489372" />
 
 **Answer:** `ffmpeg.dll,nw.dll,nw_elf.dll`
