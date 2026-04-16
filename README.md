@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (129):</summary>
+<summary>Completed challenges walkthroughs (130):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -283,7 +283,7 @@
 274. Neighbour
 275. Tempest
 276. [Warzone 2](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Warzone%202/README.md)
-277. New Hire Old Artifacts
+277. [New Hire Old Artifacts](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/New%20Hire%20Old%20Artifacts/README.md)
 278. SigHunt
 279. TakeOver
 280. Eavesdropper
