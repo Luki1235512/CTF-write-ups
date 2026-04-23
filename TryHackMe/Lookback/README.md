@@ -88,7 +88,7 @@ test                 (Status: 401) [Size: 1293]
 
 5. Visit `https://win-12ouo7a66m7.thm.local/test/` and inspect the page. The first flag is on this page.
 
-[SCREEN01]
+<img width="668" height="329" alt="SCREEN01" src="https://github.com/user-attachments/assets/6d1c3281-ef4c-4072-acf2-d8626b17e785" />
 
 ---
 
@@ -153,7 +153,7 @@ cd C:\users\dev\desktop
 type user.txt
 ```
 
-[SCREEN02]
+<img width="533" height="274" alt="SCREEN02" src="https://github.com/user-attachments/assets/e50acafa-671a-4297-9592-1086fea4a1e1" />
 
 ---
 
@@ -213,4 +213,4 @@ dir
 type flag.txt
 ```
 
-[SCREEN03]
+<img width="585" height="429" alt="SCREEN03" src="https://github.com/user-attachments/assets/02ebe267-f522-4859-830f-bc4f0ee887c2" />
