@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (132):</summary>
+<summary>Completed challenges walkthroughs (133):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -292,7 +292,7 @@
 283. Bugged
 284. [Lookback](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Lookback/README.md)
 285. Disgruntled
-286. Devie
+286. [Devie](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Devie/README.md)
 287. Opacity
 288. AWS VPC - Data Exfiltration
 289. IAM Credentials
