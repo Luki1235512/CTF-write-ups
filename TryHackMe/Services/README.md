@@ -134,7 +134,7 @@ dir
 type user.txt
 ```
 
-[SCREEN01]
+<img width="694" height="284" alt="SCREEN01" src="https://github.com/user-attachments/assets/0bdf94b8-fa31-40ef-8a5e-dd19356500a2" />
 
 ---
 
@@ -201,4 +201,4 @@ dir
 type root.txt
 ```
 
-[SCREEN02]
+<img width="863" height="483" alt="SCREEN02" src="https://github.com/user-attachments/assets/5797d0d7-dd11-4ff7-a54a-e2011c2665db" />
