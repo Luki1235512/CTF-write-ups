@@ -304,7 +304,7 @@
 295. Prioritise
 296. Valley
 297. Race Conditions Challenge
-298. Intranet
+298. [Intranet](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Intranet/README.md)
 299. Flip
 300. Cat Pictures 2
 301. Snapped Phish-ing Line
