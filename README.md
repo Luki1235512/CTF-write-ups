@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (135):</summary>
+<summary>Completed challenges walkthroughs (136):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -310,7 +310,7 @@
 301. Snapped Phish-ing Line
 302. Red
 303. Forgotten Implant
-304. Grep
+304. [Grep](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Grep/README.md)
 305. Expose
 306. Mother's Secret
 307. Athena
