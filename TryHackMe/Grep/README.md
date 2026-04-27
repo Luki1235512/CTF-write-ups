@@ -57,7 +57,7 @@ echo "<TARGET_IP> grep.thm" >> /etc/hosts
 
 5. Open the [register.php file in the repository](https://github.com/supersecuredeveloper/searchmecms/blob/ccff6f032e61a22961ed3a9596cb4a960d40c4f3/api/register.php). It contains a hardcoded API key that the server compares against every incoming registration request.
 
-[SCREEN01]
+<img width="1120" height="750" alt="SCREEN01" src="https://github.com/user-attachments/assets/3ff185eb-55bf-48c1-a697-a84be676c4a8" />
 
 ---
 
@@ -65,11 +65,11 @@ echo "<TARGET_IP> grep.thm" >> /etc/hosts
 
 1. Navigate to `https://grep.thm/public/html/register.php` and fill in the registration form. Intercept the outgoing POST request using Burp Suite and add an `API-Key` header with the value retrieved from the GitHub repository, then forward the modified request. The server accepts the registration:
 
-[SCREEN02]
+<img width="1262" height="625" alt="SCREEN02" src="https://github.com/user-attachments/assets/562887dc-d255-4f84-948c-246abf4d0f94" />
 
 2. Log in with the newly created account at `https://grep.thm/public/html/login.php`. The first flag is displayed on the dashboard at `https://grep.thm/public/html/dashboard.php`:
 
-[SCREEN03]
+<img width="1276" height="594" alt="SCREEN03" src="https://github.com/user-attachments/assets/f240f8f6-41b8-4591-be82-ae5f8bd1ef65" />
 
 ---
 
@@ -112,7 +112,7 @@ stty raw -echo;fg;
 cat /var/www/backup/users.sql
 ```
 
-[SCREEN04]
+<img width="1089" height="508" alt="SCREEN04" src="https://github.com/user-attachments/assets/d080f414-27a2-4f07-b41a-69498b968823" />
 
 ---
 
@@ -157,4 +157,4 @@ echo "<TARGET_IP> leakchecker.grep.thm" >> /etc/hosts
 
 2. Navigate to `https://leakchecker.grep.thm:51337/`. The application allows users to check whether an email address has appeared in a known data breach. Enter the admin email address retrieved from `users.sql` to recover the admin's leaked password:
 
-[SCREEN05]
+<img width="631" height="335" alt="SCREEN05" src="https://github.com/user-attachments/assets/db94f2dd-445d-4a70-9993-34b906c7564d" />
