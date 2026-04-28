@@ -208,7 +208,7 @@ ssh zeamkish@<TARGET_IP>
 cat flag.txt
 ```
 
-[SCREEN01]
+<img width="592" height="510" alt="SCREEN01" src="https://github.com/user-attachments/assets/dfcb60f6-a3e4-4a1c-bd5e-570a0122ef65" />
 
 ---
 
@@ -228,4 +228,4 @@ whoami
 cat /root/flag.txt
 ```
 
-[SCREEN02]
+<img width="507" height="522" alt="SCREEN02" src="https://github.com/user-attachments/assets/db692b2c-5280-4263-8a80-2d617e3fbb28" />
