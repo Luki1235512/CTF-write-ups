@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (137):</summary>
+<summary>Completed challenges walkthroughs (138):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -319,7 +319,7 @@
 310. Hijack
 311. Boogeyman 2
 312. Boogeyman 3
-313. DockMagic
+313. [DockMagic](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/DockMagic/README.md)
 314. Dreaming
 315. AVenger
 316. Stealth
