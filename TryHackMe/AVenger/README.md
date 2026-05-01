@@ -157,7 +157,7 @@ dir
 type user.txt
 ```
 
-[SCREEN01]
+<img width="616" height="361" alt="SCREEN01" src="https://github.com/user-attachments/assets/215a5dfe-4072-4fa5-821b-68724cbab2c5" />
 
 ---
 
@@ -234,4 +234,4 @@ xfreerdp /v:<TARGET_IP> /u:hugo /p:'SurpriseMF123!' /cert:ignore
 
 6. Once logged in via RDP, navigate to the Administrator's Desktop directory and open the root flag file:
 
-[SCREEN02]
+<img width="1030" height="801" alt="SCREEN02" src="https://github.com/user-attachments/assets/9a124c37-a3ae-40c9-9d47-9c1a1b0b49ed" />
