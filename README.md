@@ -322,7 +322,7 @@
 313. [DockMagic](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/DockMagic/README.md)
 314. Dreaming
 315. [AVenger](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/AVenger/README.md)
-316. Stealth
+316. [Stealth](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Stealth/README.md)
 317. Advent of Cyber '23 Side Quest
 318. The Bandit Surfer
 319. The Return of the Yeti
