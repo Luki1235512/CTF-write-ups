@@ -143,7 +143,7 @@ ssh -i id_rsa_backup challenger@<TARGET_IP>
 cat user.txt
 ```
 
-[SCREEN01]
+<img width="389" height="86" alt="SCREEN01" src="https://github.com/user-attachments/assets/c69efa1c-907f-4b7e-aa2a-adc3cf116c74" />
 
 ---
 
@@ -216,4 +216,4 @@ sudo /usr/bin/apt update -o APT::Update::Pre-Invoke::=/bin/sh
 cat /root/root.txt
 ```
 
-[SCREEN02]
+<img width="836" height="134" alt="SCREEN02" src="https://github.com/user-attachments/assets/9f81580f-ef21-46a4-b234-d815abf5dad4" />
