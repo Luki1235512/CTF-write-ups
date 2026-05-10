@@ -205,7 +205,7 @@ john hash --wordlist=/usr/share/wordlists/rockyou.txt --format=Raw-SHA256
 
 14. Upload the `PostView.ascx` file using the file manager available on a page edit URL, for example: `http://<TARGET_IP>/blog/admin/app/editor/editpage.cshtml?id=999f2c57-c344-4725-92e1-a7f761a7a8a2`. Use the file upload widget to place the file into the `App_Data/files/` directory on the server.
 
-[SCREEN01]
+<img width="1563" height="848" alt="SCREEN01" src="https://github.com/user-attachments/assets/f7992e6a-337f-4d30-9644-0e3d6f60ecb9" />
 
 15. Start a Netcat listener on the attacking machine on the port specified in the shell file:
 
@@ -215,7 +215,7 @@ nc -lvnp 4444
 
 16. Trigger the reverse shell by intercepting the HTTP request to `http://<TARGET_IP>/blog/` and modifying the `theme` cookie value to `../../App_Data/files/`. BlogEngine.NET uses this cookie to select and load the active theme's `PostView.ascx`.
 
-[SCREEN02]
+<img width="634" height="431" alt="SCREEN02" src="https://github.com/user-attachments/assets/63ba22e4-3d39-4ae9-b2c2-5e553a604879" />
 
 17. Once a shell is received, enumerate local user accounts on the target machine to confirm available accounts:
 
@@ -242,7 +242,7 @@ xfreerdp /v:<TARGET_IP> /u:kingarthy /p:'Excal1burP@ss1337' /cert:ignore
 
 19. Navigate to `kingarthy`'s Desktop and retrieve the user flag.
 
-[SCREEN03]
+<img width="1025" height="796" alt="SCREEN03" src="https://github.com/user-attachments/assets/77dad39a-d5d9-4fae-b867-c8d49f26bbb6" />
 
 ---
 
@@ -289,4 +289,4 @@ copy cmd.exe Utilman.exe
 type C:\Users\Administrator\Desktop\root.txt.txt
 ```
 
-[SCREEN04]
+<img width="1029" height="795" alt="SCREEN04" src="https://github.com/user-attachments/assets/31b82676-a1d9-49c2-a05a-d0d00c4a547b" />
