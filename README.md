@@ -341,7 +341,7 @@
 332. El Bandito
 333. Clocky
 334. Creative
-335. TryHack3M: Burg3r Bytes
+335. [TryHack3M: Burg3r Bytes](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/TryHack3M:%20Burg3r%20Bytes/README.md)
 336. TryHack3M: TriCipher Summit
 337. TryHack3M: Subscribe
 338. TryHack3M: Bricks Heist
