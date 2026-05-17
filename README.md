@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (143):</summary>
+<summary>Completed challenges walkthroughs (144):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -341,7 +341,7 @@
 332. El Bandito
 333. Clocky
 334. Creative
-335. TryHack3M: Burg3r Bytes
+335. [TryHack3M: Burg3r Bytes](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/TryHack3M:%20Burg3r%20Bytes/README.md)
 336. TryHack3M: TriCipher Summit
 337. TryHack3M: Subscribe
 338. TryHack3M: Bricks Heist
