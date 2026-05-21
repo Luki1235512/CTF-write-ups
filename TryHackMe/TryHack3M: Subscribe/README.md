@@ -104,7 +104,7 @@ echo <TARGET_IP> hackme.thm capture3millionsubscribers.thm >> /etc/hosts
 
 4. Navigate to `http://capture3millionsubscribers.thm/sign_up.php` and intercept the request using **Burp Suite**. When the sign-up form is submitted, Burp captures the POST to `/sign_up.php`. Modify the request path to `/inviteCode1337HM.php` and forward it. The server responds with the invite code in plaintext.
 
-[SCREEN01]
+<img width="958" height="457" alt="SCREEN01" src="https://github.com/user-attachments/assets/598f74cb-441d-4e19-a13d-53c37bf437c7" />
 
 ---
 
@@ -112,7 +112,7 @@ echo <TARGET_IP> hackme.thm capture3millionsubscribers.thm >> /etc/hosts
 
 1. Navigate to `http://capture3millionsubscribers.thm/sign_up.php` and enter the invite code obtained in the previous step. Upon successful submission, the page returns the password for the guest account.
 
-[SCREEN02]
+<img width="886" height="487" alt="SCREEN02" src="https://github.com/user-attachments/assets/42e6dd36-0eec-4c51-aa26-3f4d539e11ab" />
 
 ---
 
@@ -162,7 +162,7 @@ ls
 cat config.php
 ```
 
-[SCREEN03]
+<img width="1013" height="584" alt="SCREEN03" src="https://github.com/user-attachments/assets/28b9f67e-1783-4cbf-8c47-609ff1e2a4a0" />
 
 ---
 
@@ -246,7 +246,7 @@ Table: users
 
 9. Navigate to `http://hackme.thm`. With registration re-enabled, the subscriber counter reaches 3 million and the flag is displayed on the page.
 
-[SCREEN04]
+<img width="913" height="578" alt="SCREEN04" src="https://github.com/user-attachments/assets/470a1511-2df5-495a-808b-8ba9e53c1fa7" />
 
 ---
 
@@ -274,7 +274,7 @@ The total event count is displayed in the top-left corner of the search results 
 
 **Answer:** 10530
 
-[SCREEN05]
+<img width="1908" height="260" alt="SCREEN05" src="https://github.com/user-attachments/assets/88a965e5-7d6e-4854-86a1-b2f07e82afc1" />
 
 ---
 
@@ -284,7 +284,7 @@ The total event count is displayed in the top-left corner of the search results 
 
 **Answer:** sqlmap
 
-[SCREEN06]
+<img width="887" height="792" alt="SCREEN06" src="https://github.com/user-attachments/assets/40f413fd-d547-4856-816f-610b58fc3524" />
 
 ---
 
@@ -295,8 +295,6 @@ The total event count is displayed in the top-left corner of the search results 
 The event count shown at the top of the results represents all log entries attributable to the automated SQL injection attack.
 
 **Answer:** 158
-
-[SCREEN07]
 
 ---
 
@@ -314,7 +312,7 @@ The event count shown at the top of the results represents all log entries attri
 
 **Answer:** 184
 
-[SCREEN08]
+<img width="1917" height="686" alt="SCREEN08" src="https://github.com/user-attachments/assets/7dd6b5b8-26e5-4bfc-bc5c-1ecdf91bcfd7" />
 
 ---
 
@@ -324,4 +322,4 @@ The event count shown at the top of the results represents all log entries attri
 
 **Answer:** TryHack3M_users
 
-[SCREEN09]
+<img width="889" height="710" alt="SCREEN09" src="https://github.com/user-attachments/assets/ad551c11-53b2-4cb0-8564-77c090db60d7" />
