@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (146):</summary>
+<summary>Completed challenges walkthroughs (147):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -349,7 +349,7 @@
 340. Whats Your Name?
 341. Profiles
 342. CyberLens
-343. Dead End?
+343. [Dead End?](https://github.com/Luki1235512/CTF-write-ups/tree/main/TryHackMe/Dead%20End%3F)
 344. Include
 345. Airplane
 346. mKingdom
