@@ -355,7 +355,7 @@
 346. mKingdom
 347. W1seGuy
 348. Publisher
-349. NanoCherryCTF
+349. [NanoCherryCTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/NanoCherryCTF/README.md)
 350. New York Flankees
 351. DX2: Hell's Kitchen
 352. Friday Overtime
