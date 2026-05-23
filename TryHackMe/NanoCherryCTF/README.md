@@ -109,7 +109,7 @@ hydra -l puppet -P /usr/share/wordlists/rockyou.txt nano.cherryontop.thm http-po
 
 8. Log in at `http://nano.cherryontop.thm/login.php` with credentials `puppet:master` and navigate to `http://nano.cherryontop.thm/command.php` to access Molly's admin dashboard. The flag is displayed on top of this page.
 
-[SCREEN02]
+<img width="1375" height="381" alt="SCREEN02" src="https://github.com/user-attachments/assets/9134c0a5-d2cb-43d2-934d-b733121ce19f" />
 
 ---
 
@@ -130,7 +130,7 @@ ssh molly-milk@cherryontop.thm
 cat chads-key1.txt
 ```
 
-[SCREEN03]
+<img width="957" height="353" alt="SCREEN03" src="https://github.com/user-attachments/assets/4421d972-e5d6-4f47-98f2-0227121380a5" />
 
 4. Read the other note in the home directory for additional story context. The postscript confirms Molly is holding on to the first password segment.
 
@@ -220,7 +220,7 @@ ssh sam-sprinkles@cherryontop.thm
 cat chads-key2.txt
 ```
 
-[SCREEN04]
+<img width="957" height="376" alt="SCREEN04" src="https://github.com/user-attachments/assets/1993e3ab-cf10-462b-a0a5-44ba874862b1" />
 
 8. Read the note Sam left behind for additional story context. It confirms Sam is also safeguarding a password segment.
 
@@ -348,7 +348,7 @@ nc -lvnp 4444
 cat chads-key3.txt
 ```
 
-[SCREEN01]
+<img width="398" height="154" alt="SCREEN01" src="https://github.com/user-attachments/assets/8c3b1fab-33ae-47c2-8078-05cd46a6cc34" />
 
 9. Read Bob's log for context on his role in the story.
 
@@ -390,7 +390,7 @@ ssh chad-cherry@cherryontop.thm
 cat chad-flag.txt
 ```
 
-[SCREEN05]
+<img width="955" height="369" alt="SCREEN05" src="https://github.com/user-attachments/assets/332441f3-97a2-4338-bd9d-b12fc6b0950f" />
 
 ---
 
@@ -411,4 +411,4 @@ su
 cat root-flag.txt
 ```
 
-[SCREEN06]
+<img width="426" height="175" alt="SCREEN06" src="https://github.com/user-attachments/assets/033c5f21-4dfa-4260-82cb-49265b85b4fb" />
