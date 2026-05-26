@@ -191,7 +191,7 @@ Response:
 
 9. The first flag is in the email from `JReyes`.
 
-[SCREEN01]
+<img width="1067" height="516" alt="SCREEN01" src="https://github.com/user-attachments/assets/d55e6b36-135e-49ed-a1c2-ab60c328bee0" />
 
 ---
 
@@ -237,7 +237,7 @@ let tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
 2. Intercept the WebSocket traffic using Burp Suite's **WebSockets history** tab. The outgoing frame contains only the timezone string. Appending a command wrapped in semicolons (`UTC;<COMMAND>;`) injects arbitrary shell commands into the server-side execution.
 
-[SCREEN02]
+<img width="1600" height="616" alt="SCREEN02" src="https://github.com/user-attachments/assets/7e4493e3-391e-4705-a777-0121901d7e6e" />
 
 3. On the attacker machine, create `index.html` containing a Python reverse shell one-liner that will connect back on port 443:
 
@@ -332,7 +332,7 @@ su sandra
 cat /home/sandra/user.txt
 ```
 
-[SCREEN03]
+<img width="379" height="198" alt="SCREEN03" src="https://github.com/user-attachments/assets/7dea9ffd-ac53-4934-b976-f64e7def0b3c" />
 
 ---
 
@@ -424,4 +424,4 @@ sudo /usr/sbin/mount.nfs
 cat /root/root.txt
 ```
 
-[SCREEN04]
+<img width="728" height="185" alt="SCREEN04" src="https://github.com/user-attachments/assets/a39be1fb-a16d-401f-b3f9-23f59324d237" />
