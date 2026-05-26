@@ -144,7 +144,7 @@ $API_VERSION     = 'v1';
 
 5. Navigate to `http://<TARGET_IP>` and log in with the credentials `hr:hrpassword123` to retrieve the first flag:
 
-[SCREEN01]
+<img width="1131" height="209" alt="SCREEN01" src="https://github.com/user-attachments/assets/a3c15c63-d327-4e4e-a60e-6f7734f8bfe0" />
 
 ---
 
@@ -175,4 +175,4 @@ Table: users
 
 5. Navigate to `http://<TARGET_IP>` and log in with the credentials `admin:admin@001admin` to retrieve the second flag.
 
-[SCREEN02]
+<img width="1136" height="209" alt="SCREEEN02" src="https://github.com/user-attachments/assets/7312b9de-3c3b-4eed-91ad-c4c7a0752360" />
