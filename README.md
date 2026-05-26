@@ -475,6 +475,38 @@
 466. Valenfind
 467. CupiBot
 468. Operation Endgame
+469. Missing Person
+470. Dev Diaries
+471. Plan Photgrapher
+472. Water Bottle
+473. Have a Break
+474. Operation Takeover
+475. White Rabbit
+476. Payload
+477. Checkpoint
+478. UnIndexed
+479. Lockdown
+480. LLMborghini
+481. AI Threat Modelling Assessment
+482. Letter
+483. Masquerade
+484. Recruit
+485. Interceptor
+486. Matryoshka
+487. Vectara
+488. Token City
+489. Injectus IX
+490. Cypheron
+491. Checkmate
+492. Support
+493. Jump
+494. Dead Drop
+495. Domino
+496. Operation Promotion
+497. Operation Coldstart
+498. Windows Jump
+499. Silent Monitor
+500. Forward
 </details>
 
 ---
