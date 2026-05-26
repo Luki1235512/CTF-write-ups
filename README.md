@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (148):</summary>
+<summary>Completed challenges walkthroughs (149):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -357,7 +357,7 @@
 348. Publisher
 349. [NanoCherryCTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/NanoCherryCTF/README.md)
 350. New York Flankees
-351. DX2: Hell's Kitchen
+351. [DX2: Hell's Kitchen](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/DX2:%20Hell's%20Kitchen/README.md)
 352. Friday Overtime
 353. Monday Monitor
 354. TShark Challenge I: Teamwork
