@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (149):</summary>
+<summary>Completed challenges walkthroughs (150):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -490,7 +490,7 @@
 481. AI Threat Modelling Assessment
 482. Letter
 483. Masquerade
-484. Recruit
+484. [Recruit](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Recruit/README.md)
 485. Interceptor
 486. Matryoshka
 487. Vectara
