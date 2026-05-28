@@ -74,7 +74,7 @@ for i in range(16, 48):
     print(f"[-] {i} failed")
 ```
 
-[SCREEN01]
+<img width="512" height="453" alt="SCREEN01" src="https://github.com/user-attachments/assets/53afb48a-fdc9-4064-b933-da759e1663f6" />
 
 ---
 
@@ -144,6 +144,8 @@ for i in range(64, 100):
     print(f"[-] {i} failed")
 ```
 
+<img width="512" height="458" alt="SCREEN02" src="https://github.com/user-attachments/assets/1ae24727-d351-4001-95ad-011a5e0a7124" />
+
 ---
 
 ### TryExecMe
@@ -190,7 +192,7 @@ p.recvuntil(b'...\n')
 p.interactive()
 ```
 
-[SCREEN03]
+<img width="495" height="162" alt="SCREEN03" src="https://github.com/user-attachments/assets/3e052530-2d7c-4ea9-95b2-a1045fb4403f" />
 
 ---
 
@@ -252,7 +254,7 @@ p.recvuntil(b'go!\n')
 p.interactive()
 ```
 
-[SCREEN04]
+<img width="509" height="295" alt="SCREEN04" src="https://github.com/user-attachments/assets/202e9de1-61f5-4081-8e00-39435a205a69" />
 
 ---
 
@@ -320,7 +322,7 @@ p.recvuntil(b'go!\n')
 p.interactive()
 ```
 
-[SCREEN05]
+<img width="493" height="296" alt="SCREEN05" src="https://github.com/user-attachments/assets/e3e1e999-1781-436c-b42f-4a1d4ad7d5d1" />
 
 ---
 
@@ -404,7 +406,7 @@ p.recvuntil(b"ok, let's go!\n\n")
 p.interactive()
 ```
 
-[SCREEN06]
+<img width="486" height="402" alt="SCREEN06" src="https://github.com/user-attachments/assets/98514032-b302-425f-b247-40d60b9fe109" />
 
 ---
 
@@ -472,4 +474,4 @@ s.recvuntil(b'Thanks! ')
 s.interactive()  # cat flag.txt
 ```
 
-[SCREEN07]
+<img width="991" height="370" alt="SCREEN07" src="https://github.com/user-attachments/assets/06bfce46-8ef1-4dfd-a0b6-65d0a492c3bd" />
