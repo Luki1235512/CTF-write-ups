@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (151):</summary>
+<summary>Completed challenges walkthroughs (152):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -498,7 +498,7 @@
 489. Injectus IX
 490. Cypheron
 491. Checkmate
-492. Support
+492. [Support](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Support/README.md)
 493. Jump
 494. Dead Drop
 495. Domino
