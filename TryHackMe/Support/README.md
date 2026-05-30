@@ -53,7 +53,7 @@ hydra -l help@support.thm -P /usr/share/wordlists/rockyou.txt <TARGET_IP> http-p
 
 6. Clicking the **IT Admin Panel** button redirects to `api.php`, which documents the available REST API endpoints. The documentation shows that user information can be retrieved with a `GET /user/{id}` call
 
-[SCREEN01]
+<img width="1370" height="460" alt="SCREEN01" src="https://github.com/user-attachments/assets/7ed13220-c571-4a2e-aab6-989b618a71f2" />
 
 7. Enumerate users through the API by querying `http://<TARGET_IP>/api.php/user/1`
 
@@ -76,7 +76,7 @@ $SITE_NAME = 'support_portal';
 
 9. Log in as `specialadmin@support.thm` using the master password `support110` discovered in the config file. The first flag is displayed on the admin dashboard:
 
-[SCREEN02]
+<img width="1367" height="737" alt="SCREEN02" src="https://github.com/user-attachments/assets/3c9c00f7-8a4d-486f-9a0f-983c18933c0a" />
 
 ---
 
@@ -86,4 +86,4 @@ $SITE_NAME = 'support_portal';
 
 2. The `sys` parameter is passed directly to a shell function without any sanitisation, making it vulnerable to **OS command injection**. Append the pipe character `|` to chain an additional shell command after the date call. Send the following POST request to `/dashboard.php`:
 
-[SCREEN03]
+<img width="1132" height="731" alt="SCREEN03" src="https://github.com/user-attachments/assets/3c9eeff0-34e1-4762-a3fc-2f91af972d19" />
