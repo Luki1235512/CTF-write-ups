@@ -371,7 +371,7 @@
 362. Breakme
 363. Cheese CTF
 364. The London Bridge
-365. K2
+365. [K2](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/K2/README.md)
 366. Pyrat
 367. Brains
 368. Backtrack
