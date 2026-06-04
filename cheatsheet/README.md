@@ -53,7 +53,7 @@ dnsrecon -d <TARGET_DOMAIN> -n <TARGET_IP>
 ```
 
 ```bash
-ffuf -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt -u http://<TARGET_IP> -H "Host: FUZZ.<TARGET_DOMAIN>"
+ffuf -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt -u http://<TARGET_IP> -H "Host: FUZZ.<TARGET_DOMAIN>" -fw <NUMBER>
 ```
 
 # File Transfer Methods
@@ -211,11 +211,11 @@ whoami /priv
 ```
 
 ```bash
-evil-winrm -i <TARGET_IP> -u <USER_NAME> -p <PASSWORD>
+evil-winrm -i <TARGET_IP> -u '<USER_NAME>' -p '<PASSWORD>'
 ```
 
 ```bash
-evil-winrm -i <TARGET_IP> -H <PASSWORD_HASH> -p <PASSWORD>
+evil-winrm -i <TARGET_IP> -H '<PASSWORD_HASH>' -p '<PASSWORD>'
 ```
 
 ```bash
