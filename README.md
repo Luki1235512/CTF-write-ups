@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (153):</summary>
+<summary>Completed challenges walkthroughs (154):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -373,7 +373,7 @@
 364. The London Bridge
 365. [K2](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/K2/README.md)
 366. Pyrat
-367. Brains
+367. [Brains](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Brains/README.md)
 368. Backtrack
 369. Extracted
 370. Mountaineer
