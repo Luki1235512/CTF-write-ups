@@ -59,7 +59,7 @@ ls
 cat flag.txt
 ```
 
-[SCREEN01]
+<img width="697" height="522" alt="SCREEN01" src="https://github.com/user-attachments/assets/ef884d19-85a3-4983-b8f4-1fbdc14dcc49" />
 
 ---
 
@@ -84,7 +84,7 @@ Before moving forward, deploy the machine. When you deploy the machine, it will 
 index=* useradd
 ```
 
-[SCREEN02]
+<img width="1494" height="469" alt="SCREEN02" src="https://github.com/user-attachments/assets/01de8ee2-0b39-4bcd-af2d-442e07969801" />
 
 **Answer:** `eviluser`
 
@@ -100,7 +100,7 @@ index=* install
 
 Review the results filtered around the date of compromise (`7/4/24`). One package installation event stands out as suspicious.
 
-[SCREEN03]
+<img width="1042" height="634" alt="SCREEN03" src="https://github.com/user-attachments/assets/8fda0860-0245-4394-88e9-fa11e98f250a" />
 
 **Answer:** `datacollector`
 
@@ -114,6 +114,6 @@ Review the results filtered around the date of compromise (`7/4/24`). One packag
 index=* plugin
 ```
 
-[SCREEN04]
+<img width="1908" height="471" alt="SCREEN04" src="https://github.com/user-attachments/assets/f0731036-06c5-42a6-ad09-b7a8f85f9c8d" />
 
 **Answer:** `AyzzbuXY.zip`
