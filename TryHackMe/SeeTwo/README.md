@@ -74,7 +74,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
 5. In Wireshark, apply the filter `tcp.port == 1337` to isolate C2 traffic. Right-click on any matching packet and select `Follow > TCP Stream`. Change the display format to **Raw**, then save the full stream to a file. The stream contains the entire bidirectional C2 conversation.
 
-[SCREEN01]
+<img width="760" height="627" alt="SCREEN01" src="https://github.com/user-attachments/assets/418806a1-0bfe-4e46-9d8a-c81449b4db3c" />
 
 6. Write a Python script to extract and XOR-decrypt all commands and responses from the saved stream. The regex matches content after each `AAAAAAAAAA` separator up to the next Base64-encoded PNG header, which marks the start of the following C2 message:
 
