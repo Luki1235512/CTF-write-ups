@@ -90,7 +90,7 @@ put recon.sh
 cat flag.txt
 ```
 
-[SCREEN01]
+<img width="653" height="173" alt="SCREEN01" src="https://github.com/user-attachments/assets/4cfd6b53-fec1-460c-a457-6f49222a36c9" />
 
 ---
 
@@ -154,7 +154,7 @@ echo test
 cat flag.txt
 ```
 
-[SCREEN02]
+<img width="649" height="154" alt="SCREEN02" src="https://github.com/user-attachments/assets/51afdb91-a83e-48d8-b958-f879f58ba15a" />
 
 ---
 
@@ -212,7 +212,7 @@ chmod +x /opt/dev/bin/ps
 cat /home/monitor_user/flag.txt
 ```
 
-[SCREEN03]
+<img width="539" height="293" alt="SCREEN03" src="https://github.com/user-attachments/assets/25a2fe9a-7e51-4553-86b3-6c9ef80ae085" />
 
 ---
 
@@ -296,7 +296,7 @@ sudo -u ops_user /usr/local/bin/deploy.sh
 cat /home/ops_user/flag.txt
 ```
 
-[SCREEN04]
+<img width="633" height="322" alt="SCREEN04" src="https://github.com/user-attachments/assets/a9f3f36c-632d-4714-809f-f85d5f5d14bf" />
 
 ---
 
@@ -339,4 +339,4 @@ sudo /usr/bin/less /etc/hosts
 cat /root/flag.txt
 ```
 
-[SCREEN05]
+<img width="668" height="275" alt="SCREEN05" src="https://github.com/user-attachments/assets/2070c7b6-b4f8-4de2-bbbb-842d3ba6a911" />
