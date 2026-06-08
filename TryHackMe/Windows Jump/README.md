@@ -83,7 +83,7 @@ xfreerdp /u:thmuser /p:Password1! /v:<TARGET_IP>
 
 5. Once logged in as `thmuser`, read the first flag from `C:\Users\thmuser\Desktop\flag1.txt`
 
-[SCREEN01]
+<img width="1021" height="765" alt="SCREEN01" src="https://github.com/user-attachments/assets/4ad4de50-6a1b-487f-afa8-205598ac1fb4" />
 
 ---
 
@@ -185,7 +185,7 @@ sc.exe start THMSvc
 type C:\Users\svcadmin\Desktop\flag3.txt
 ```
 
-[SCREEN03]
+<img width="530" height="192" alt="SCREEN03" src="https://github.com/user-attachments/assets/fc306208-13bb-4fe7-bac5-4010a988bb01" />
 
 ---
 
@@ -247,4 +247,4 @@ cmd /c "echo C:\Windows\tasks\shell.exe > C:\Windows\tasks\cleanup.bat"
 type C:\flag4.txt
 ```
 
-[SCREEN04]
+<img width="451" height="193" alt="SCREEN04" src="https://github.com/user-attachments/assets/54d63690-270c-4ab4-9e32-5e59f3ef688b" />
