@@ -222,4 +222,4 @@ dir C:\Users\Administrator\Desktop
 type C:\Users\Administrator\Desktop\flag.txt
 ```
 
-[SCREEN01]
+<img width="607" height="278" alt="SCREEN01" src="https://github.com/user-attachments/assets/6f7a7672-2a2c-4b83-9942-ee9eeb065518" />
