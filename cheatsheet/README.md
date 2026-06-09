@@ -357,7 +357,7 @@ smbclient -L //<TARGET_IP> -N
 ```
 
 ```bash
-smbclient -L //<TARGET_IP> -U <USER_NAME>
+smbclient -L //<TARGET_IP> -U <USER_NAME>%<PASSWORD>
 ```
 
 # Reverse Shell Techniques
