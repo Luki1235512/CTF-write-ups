@@ -166,4 +166,4 @@ dir C:\Users\Administrator\Desktop
 type C:\Users\Administrator\Desktop\flag.txt
 ```
 
-[SCREEN01]
+<img width="640" height="443" alt="SCREEN01" src="https://github.com/user-attachments/assets/996cac8f-0c7b-4412-a9ca-4e653e130025" />
