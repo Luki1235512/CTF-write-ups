@@ -317,7 +317,7 @@ nc -lvnp 4444
 type C:\Users\Administrator\Desktop\root.txt
 ```
 
-[SCREEN01]
+<img width="607" height="436" alt="SCREEN01" src="https://github.com/user-attachments/assets/f70e3e85-2418-4ca0-949c-d5b16c168ae7" />
 
 ---
 
@@ -425,3 +425,5 @@ xor(b"ZI^ZI^U_MJI", int.to_bytes(44))
 ```bash
 cast send --legacy --rpc-url http://geth:8545 --private-key 0xde5e40013083eb252bbd4ec730c6971b241ec4264921d60a3ad0284e149748d3  0xf22cB0Ca047e88AC996c17683Cee290518093574 'transfer(string memory data, uint256 amount)' 'ververysafe' 1000
 ```
+
+<img width="1372" height="838" alt="SCREEN02" src="https://github.com/user-attachments/assets/0b23fa86-f547-4c71-9f81-c8d536857e30" />
