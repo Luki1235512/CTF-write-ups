@@ -123,7 +123,7 @@ dir C:\Users\wrohit\Desktop
 type C:\Users\wrohit\Desktop\flag.txt
 ```
 
-[SCREEN01]
+<img width="483" height="340" alt="SCREEN01" src="https://github.com/user-attachments/assets/7947a2f6-5481-4ceb-b8c0-4c80087f198e" />
 
 ---
 
@@ -160,7 +160,7 @@ User : wrohit
 
 4. Copy the NTLM hash and submit it to [CrackStation](https://crackstation.net/) to recover the plaintext password.
 
-[SCREEN02]
+<img width="1042" height="431" alt="SCREEN02" src="https://github.com/user-attachments/assets/487a1e10-98fc-49e4-bca3-108624044a16" />
 
 ---
 
@@ -201,4 +201,4 @@ Internal=1
 
 2. Submit the hash to [CrackStation](https://crackstation.net/) to recover the plaintext administrator password.
 
-[SCREEN03]
+<img width="1029" height="435" alt="SCREEN03" src="https://github.com/user-attachments/assets/b926e288-4f3e-457b-885b-346a2cf94d24" />
