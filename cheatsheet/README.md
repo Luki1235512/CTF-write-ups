@@ -269,7 +269,7 @@ crunch 18 18 -t '@@@@' > file.txt
 ```
 
 ```bash
-cewl http://<TARGET_IP> > initial-list
+cewl http://<TARGET_IP> > passwords
 ```
 
 ```bash
