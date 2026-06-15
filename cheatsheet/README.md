@@ -15,7 +15,7 @@ nikto --url <TARGET_IP> | tee nikto-results
 ## Directory and File Discovery
 
 ```bash
-feroxbuster -u http://<TARGET_IP> -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+feroxbuster -u http://<TARGET_IP> -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --status-codes 200
 ```
 
 ```bash
@@ -283,7 +283,7 @@ john -w=initial-list --rules --stdout > password-list
 ## Network Service Brute Force Attacks
 
 ```bash
-hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt -s <PORT> ssh://<TARGET_IP>
+hydra -l <LOGIN> -P /usr/share/wordlists/rockyou.txt <TARGET_IP> -s <PORT> ssh
 ```
 
 ```bash
