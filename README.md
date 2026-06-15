@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (162):</summary>
+<summary>Completed challenges walkthroughs (163):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -502,7 +502,7 @@
 493. [Jump](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Jump/README.md)
 494. Dead Drop
 495. Domino
-496. Operation Promotion
+496. [Operation Promotion](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Operation%20Promotion/README.md)
 497. Operation Coldstart
 498. [Windows Jump](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Windows%20Jump/README.md)
 499. Silent Monitor
