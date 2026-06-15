@@ -117,7 +117,7 @@ ssh jford@<TARGET_IP>
 cat user.txt
 ```
 
-[SCREEN01]
+<img width="585" height="524" alt="SCREEN01" src="https://github.com/user-attachments/assets/7602e8bd-eb40-4280-9479-f991e940f76a" />
 
 ---
 
@@ -148,4 +148,4 @@ sudo /usr/bin/find . -exec /bin/sh \; -quit
 cat /root/flag.txt
 ```
 
-[SCREEN02]
+<img width="964" height="249" alt="SCREEN02" src="https://github.com/user-attachments/assets/6bf20978-cafb-47bf-b8d9-3ceec9cf44be" />
