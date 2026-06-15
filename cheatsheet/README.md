@@ -15,6 +15,10 @@ nikto --url <TARGET_IP> | tee nikto-results
 ## Directory and File Discovery
 
 ```bash
+feroxbuster -u http://<TARGET_IP> -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+```
+
+```bash
 gobuster dir -u https://<TARGET_IP> -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt
 ```
 
