@@ -109,7 +109,7 @@ const c = j(0x169);
 
 4. Open the browser developer tools (F12), paste the entire script into the Console tab, and evaluate the variable `c` to reveal the plaintext password:
 
-[SCREEN01]
+<img width="1374" height="684" alt="SCREEN01" src="https://github.com/user-attachments/assets/fa2aa33a-8ddd-4291-b0eb-3d3b919a39bf" />
 
 5. Navigate to `http://<TARGET_IP>:1337/api.php` and use `H7gY2tJ9wQzD4rS1` as the password. The page reveals the invite-code generation logic used by the application:
 
@@ -220,7 +220,7 @@ print $token
 
 9. Go to `http://<TARGET_IP>:1337/` and log in as `hello@fake.thm` using the generated invite code. The dashboard greets you with the first flag:
 
-[SCREEN02]
+<img width="1117" height="506" alt="SCREEN02" src="https://github.com/user-attachments/assets/dcd988d0-1f9e-4800-af50-46c740a98382" />
 
 ---
 
@@ -309,6 +309,6 @@ date +%Y\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08
 
 6. Visit `http://<TARGET_IP>:1337/dashboard.php?date=8ToOYHlh0PuGepheR0TEN66XK6YqUx4yZQWGJFft495lbmJyaWVhcw==`. The footer renders the contents of `/home/ubuntu/flag.txt`.
 
-[SCREEN03]
+<img width="1080" height="510" alt="SCREEN03" src="https://github.com/user-attachments/assets/dc9b1838-1b60-4755-a011-29a8c0b36770" />
 
 ---
