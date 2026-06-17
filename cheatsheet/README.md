@@ -357,6 +357,14 @@ put <FILE_NAME>
 ## SMB Share Discovery
 
 ```bash
+nxc smb <TARGET_IP> -u guest -p '' --shares
+```
+
+```bash
+nxc smb <TARGET_IP> -u guest -p '' --rid
+```
+
+```bash
 smbclient -L //<TARGET_IP> -N
 ```
 
