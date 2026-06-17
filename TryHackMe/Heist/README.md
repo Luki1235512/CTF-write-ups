@@ -82,4 +82,4 @@ cast call $CONTRACT "isSolved()(bool)" --rpc-url $RPC_URL
 
 5. Navigate to `http://<TARGET_IP>/` in the browser and retrieve the flag.
 
-[SCREEN01]
+<img width="1374" height="838" alt="SCREEN01" src="https://github.com/user-attachments/assets/61de5cb1-f1f9-401e-af80-d0bb4bb7051b" />
