@@ -71,4 +71,4 @@ curl http://darkinjector-phish.s3-website-us-west-2.amazonaws.com/captured-login
 
 > The file contains the list of victim users who submitted their credentials to the phishing page, along with the flag:
 
-[SCREEN01]
+<img width="782" height="210" alt="SCREEN01" src="https://github.com/user-attachments/assets/3eb89c27-e483-4c8c-8496-fb9bc39ba6ba" />
