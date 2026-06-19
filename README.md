@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (166):</summary>
+<summary>Completed challenges walkthroughs (167):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -406,7 +406,7 @@
 397. Volt Typhoon
 398. [Heist](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Heist/README.md)
 399. [PassCode](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/PassCode/README.md)
-400. A bucket of Phish
+400. [A bucket of Phish](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/A%20Bucket%20of%20Phish/README.md)
 401. Flag Vault
 402. Flag Vault 2
 403. Precision
