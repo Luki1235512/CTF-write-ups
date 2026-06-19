@@ -101,4 +101,4 @@ else:
     print(flag_bytes)
 ```
 
-[SCREEN01]
+<img width="502" height="163" alt="SCREEN01" src="https://github.com/user-attachments/assets/35f524e4-0842-4d09-bd50-24baaadadf98" />
