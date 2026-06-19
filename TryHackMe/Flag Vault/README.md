@@ -96,4 +96,4 @@ for pad in range(84, 120):
     p.close()
 ```
 
-[SCREEN01]
+<img width="617" height="425" alt="SCREEN01" src="https://github.com/user-attachments/assets/85783240-9085-4ec0-88f6-25377ad2c0dc" />
