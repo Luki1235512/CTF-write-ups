@@ -248,4 +248,4 @@ r.send(p64(libc_base + 0xebcf8))
 r.interactive()
 ```
 
-[SCREEN01]
+<img width="666" height="521" alt="SCREEN01" src="https://github.com/user-attachments/assets/c4a4806e-6918-4633-bcc0-49c31d286b77" />
