@@ -132,4 +132,4 @@ target.sendline(shellcode)
 target.interactive()
 ```
 
-[SCREEN01]
+<img width="528" height="288" alt="SCREEN01" src="https://github.com/user-attachments/assets/1411bab2-400a-4429-b030-461c3b4e6555" />
