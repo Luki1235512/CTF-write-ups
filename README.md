@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (173):</summary>
+<summary>Completed challenges walkthroughs (174):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -416,7 +416,7 @@
 407. Mac Hunt
 408. CAPTCHApocalypse
 409. Oracle 9
-410. Cipher's Secret Message
+410. [Cipher's Secret Message](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Cipher's%20Secret%20Message/README.md)
 411. Cryptosystem
 412. DarkMatter
 413. Order
