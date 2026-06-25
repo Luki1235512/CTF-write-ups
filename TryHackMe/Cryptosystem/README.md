@@ -6,10 +6,10 @@ We intercepted a communication between Cipher and some 3 associates: Rivest, Sha
 
 ORDER: Get the secret key from the recovered file.
 
+```py
 from Crypto.Util.number import \*
 from flag import FLAG
 
-```py
 def primo(n):
     n += 2 if n & 1 else 1
     while not isPrime(n):
