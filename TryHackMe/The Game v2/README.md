@@ -10,4 +10,4 @@ _This challenge was originally a part of the Hackfinity Battle 2025 CTF Event._
 
 1. Open `TetrixFinal.exe` in `Godot RE Tools` and browse the resource list inside.
 
-[SCREEN01]
+<img width="1829" height="897" alt="SCREEN01" src="https://github.com/user-attachments/assets/33ebb633-9c64-4f98-a6f2-532b8c6ff9d0" />
