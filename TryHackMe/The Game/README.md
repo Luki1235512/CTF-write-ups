@@ -14,4 +14,4 @@ _This challenge was originally a part of the Hackfinity Battle 2025 CTF Event._
 strings Tetris.exe
 ```
 
-[SCREEN01]
+<img width="359" height="562" alt="SCREEN01" src="https://github.com/user-attachments/assets/b1772d46-8988-4fad-be87-e7894a031df1" />
