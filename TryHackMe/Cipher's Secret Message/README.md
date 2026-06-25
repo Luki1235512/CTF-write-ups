@@ -48,4 +48,4 @@ ciphertext = "a_up4qr_kaiaf0_bujktaz_qm_su4ux_cpbq_ETZ_rhrudm"
 print("THM{" + dec(ciphertext) + "}")
 ```
 
-[SCREEN01]
+<img width="431" height="63" alt="SCREEN01" src="https://github.com/user-attachments/assets/75f0bb3e-841c-486e-89a2-d5d2abc99cb7" />
