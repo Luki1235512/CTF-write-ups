@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (171):</summary>
+<summary>Completed challenges walkthroughs (172):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -411,7 +411,7 @@
 402. [Flag Vault 2](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Flag%20Vault%202/README.md)
 403. [Precision](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Precision/README.md)
 404. [Void Execution](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Void%20Execution/README.md)
-405. The Game
+405. [The Game](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/The%20Game/README.md)
 406. The Game v2
 407. Mac Hunt
 408. CAPTCHApocalypse
