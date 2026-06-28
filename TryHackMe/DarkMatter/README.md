@@ -72,4 +72,4 @@ print(f"d: {d}")
 5. **Open `student_grades.docx` to retrieve the flag.**\
    With the AES key now recovered, the ransomware-encrypted file `student_grades.docx` can be decrypted and opened. Inside, you'll find the flag.
 
-[SCREEN01]
+<img width="1398" height="862" alt="SCREEN01" src="https://github.com/user-attachments/assets/49b581ee-4d29-490b-b043-56d6c4dd1bd0" />
