@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (176):</summary>
+<summary>Completed challenges walkthroughs (177):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -419,7 +419,7 @@
 410. [Cipher's Secret Message](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Cipher's%20Secret%20Message/README.md)
 411. [Cryptosystem](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Cryptosystem/README.md)
 412. [DarkMatter](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/DarkMatter/README.md)
-413. Order
+413. [Order](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Order/README.md)
 414. Evil-GPT
 415. Evil-GPT v2
 416. ContAInment
