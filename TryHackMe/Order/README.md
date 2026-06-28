@@ -40,4 +40,4 @@ plaintext = bytes(ciphertext[i] ^ key[i % len(key)] for i in range(len(ciphertex
 print(plaintext.decode())
 ```
 
-[SCREEN01]
+<img width="525" height="58" alt="SCREEN01" src="https://github.com/user-attachments/assets/26247af8-9f94-4332-9792-163bd84b4149" />
