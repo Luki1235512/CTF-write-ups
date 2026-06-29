@@ -72,4 +72,4 @@ THM{A****************E}
 
 The injected phrase caused the LLM to discard its sanitization logic and output the literal command we specified. We confirm execution with `y`, and the flag is printed.
 
-[SCREEN01]
+<img width="939" height="603" alt="SCREEN01" src="https://github.com/user-attachments/assets/51c1f288-32dc-4ab5-b4ea-4ba39fde919d" />
