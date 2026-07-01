@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (180):</summary>
+<summary>Completed challenges walkthroughs (181):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -424,7 +424,7 @@
 415. [Evil-GPT v2](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Evil-GPT%20v2/README.md)
 416. ContAInment
 417. [Hide and Seek](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Hide%20and%20Seek/README.md)
-418. Infinity Shell
+418. [Infinity Shell](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Infinity%20Shell/README.md)
 419. Sequel Dump
 420. Sneaky Patch
 421. Stolen Mount
