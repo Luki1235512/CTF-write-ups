@@ -159,4 +159,5 @@ echo "aWQK" | base64 -d
 
 The attacker followed a textbook post-exploitation checklist: confirm code execution, survey the filesystem, confirm network connectivity, check privilege level, and harvest credential material.
 
-[SCREEN01]
+<img width="804" height="98" alt="SCREEN01" src="https://github.com/user-attachments/assets/71589d2b-59bc-4a46-9e7c-7f9035ecedf8" />
+
