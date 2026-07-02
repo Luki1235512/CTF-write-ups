@@ -92,4 +92,4 @@ for r in sorted({r for r, _ in table}, key=int):
 
 The script prints the reconstructed database rows. The last `description` field contains the flag:
 
-[SCREEN01]
+<img width="1166" height="586" alt="SCREEN01" src="https://github.com/user-attachments/assets/96461459-be60-4b41-bcec-957d2029725b" />
