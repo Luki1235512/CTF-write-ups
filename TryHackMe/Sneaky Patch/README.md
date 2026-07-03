@@ -128,4 +128,4 @@ This output makes the backdoor's mechanism clear but most critically, the final 
 
 The hex string leaked in the binary strings output is the flag, encoded in plain hexadecimal. Decode it using [CyberChef](https://gchq.github.io/CyberChef/) with the "**From Hex**" operation:
 
-[SCREEN01]
+<img width="1010" height="501" alt="SCREEN01" src="https://github.com/user-attachments/assets/f79937ef-cee8-46a5-80eb-5b050d2e52a1" />
