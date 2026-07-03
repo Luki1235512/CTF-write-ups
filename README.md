@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (182):</summary>
+<summary>Completed challenges walkthroughs (183):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -426,7 +426,7 @@
 417. [Hide and Seek](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Hide%20and%20Seek/README.md)
 418. [Infinity Shell](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Infinity%20Shell/README.md)
 419. [Sequel Dump](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Sequel%20Dump/README.md)
-420. Sneaky Patch
+420. [Sneaky Patch](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Sneaky%20Patch/README.md)
 421. Stolen Mount
 422. Royal Router
 423. Directory
