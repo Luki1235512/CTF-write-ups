@@ -47,8 +47,6 @@ Go back to Wireshark and inspect the second packet in the original `nfs.opcode =
 
 6. **Crack the MD5 hash**
 
-Crack the hash using ...
-
 Submit the hash to [CrackStation](https://crackstation.net/), which checks it against large precomputed dictionaries/rainbow tables of common passwords. Use the plaintext value to unlock the ZIP archive.
 
 7. **Open the archive and inspect the contents**
