@@ -16,7 +16,7 @@ NFS opcode 68 corresponds to the `READ` procedure call, so this filter isolates 
 
 Scroll through the filtered results. The final packet in this sequence corresponds to the read of a file named `secrets.png`. This is the file the intruder exfiltrated.
 
-[SCREEN01]
+<img width="1402" height="837" alt="SCREEN01" src="https://github.com/user-attachments/assets/bd44e7cc-0990-4619-93f3-91656917f9e2" />
 
 2. **Extract the raw file data from the packet**
 
@@ -41,7 +41,7 @@ The password used to protect the archive was also sent over the network.
 
 Go back to Wireshark and inspect the second packet in the original `nfs.opcode == 68` filtered list. Following the stream from that point reveals the password, which was disclosed as an MD5 hash.
 
-[SCREEN02]
+<img width="1403" height="837" alt="SCREEN02" src="https://github.com/user-attachments/assets/bf629e81-f4bf-42af-aede-69985bca5e32" />
 
 **Results:** `90eb7723a657b6597100aafef171d9f2 (md5)`
 
@@ -59,4 +59,4 @@ Extract `extracted_at_0xB2.zip` using the recovered password. Inside is `secrets
 
 Upload or scan `secrets.png` using any QR code reader/decoder. Decoding the image reveals the flag text.
 
-[SCREEN03]
+<img width="1284" height="552" alt="SCREEN03" src="https://github.com/user-attachments/assets/8aafe689-8de0-4eb3-9646-7d320b1da4dd" />
