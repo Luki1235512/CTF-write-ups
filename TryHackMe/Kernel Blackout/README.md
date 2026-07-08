@@ -18,7 +18,7 @@ Browsing to `http://10.200.150.20` shows a small dashboard for the malware-devel
 
 This confirms the target process name we need to hide: `implant.exe`.
 
-[SCREEN01]
+<img width="961" height="504" alt="SCREEN01" src="https://github.com/user-attachments/assets/a937cf4c-dc5b-420f-9304-2ccb287f4107" />
 
 2. Recon - WinDbg / EPROCESS layout
 
@@ -105,7 +105,7 @@ cd "C:\Users\Administrator.WIN-CTF-01\Desktop"
 cl /W4 /D_AMD64_ /D_WIN64 /D_KERNEL_MODE hide.c /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\km" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared" /link /driver /entry:DriverEntry /subsystem:native /out:hide.sys "C:\Program Files (x86)\Windows Kits\10\Lib\10.0.19041.0\km\x64\ntoskrnl.lib"
 ```
 
-[SCREEN02]
+<img width="966" height="456" alt="SCREEN02" src="https://github.com/user-attachments/assets/e8b031f5-d7ec-4d57-96df-1cf8ba5b4211" />
 
 A few notes on this build line that are easy to trip over:
 
@@ -130,4 +130,4 @@ base64 -d base64.txt > hide.sys
 
 Upload the file and refresh the page to get flag
 
-[SCREEN03]
+<img width="1363" height="503" alt="SCREEN03" src="https://github.com/user-attachments/assets/7e53b0d6-dc11-4e60-be9a-f9bbf9c72c72" />
