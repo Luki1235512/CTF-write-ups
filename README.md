@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (185):</summary>
+<summary>Completed challenges walkthroughs (186):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -460,7 +460,7 @@
 451. BreachBlocker Unlocker
 452. Azure: Tapper
 453. Operation Slither
-454. Kernel Blackout
+454. [Kernel Blackout](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Kernel%20Blackout/README.md)
 455. Digital Footprint
 456. Message to Garcia
 457. Love at First Breach 2026 - Advanced Track
