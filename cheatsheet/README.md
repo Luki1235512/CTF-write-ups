@@ -23,7 +23,7 @@ gobuster dir -u https://<TARGET_IP> -w /usr/share/wordlists/SecLists/Discovery/W
 ```
 
 ```bash
-gobuster dir -u https://<TARGET_IP>  -w /usr/share/wordlists/dirb/big.txt
+gobuster dir -u https://<TARGET_IP> -w /usr/share/wordlists/dirb/big.txt
 ```
 
 ```bash
@@ -251,7 +251,7 @@ stegseek <IMAGE_NAME>.jpg
 ```
 
 ```bash
-binwalk -e <IMAGE_NAME>.png
+binwalk -e --run-as=root <IMAGE_NAME>.png
 ```
 
 ```bash
