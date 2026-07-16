@@ -257,4 +257,4 @@ The plaintext message is right there in `create_message.py`, assigned to the mes
 
 2. Upload the generated `message.enc` through the web UI's message upload form at `http://<TARGET_IP>/`. Since the token is a valid Fernet ciphertext produced with the correct key, and the plaintext matches the "Garcia Standard" format the backend expects, the server successfully decrypts and validates it, and returns the flag.
 
-[SCREEN01]
+<img width="797" height="216" alt="SCREEN01" src="https://github.com/user-attachments/assets/77c4b4c3-c3fe-48b0-bd6d-8d46326c5638" />
