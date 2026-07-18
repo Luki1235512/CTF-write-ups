@@ -178,4 +178,4 @@ snmpset -m +NET-SNMP-EXTEND-MIB -v 2c -c pr1v4t3 \
 snmpwalk -v2c -c pr1v4t3 <TARGET_IP> .1.3.6.1.4.1.8072.1.3.2
 ```
 
-[SCREEN01]
+<img width="729" height="607" alt="SCREEN01" src="https://github.com/user-attachments/assets/e0700e4d-8a25-47a0-8954-feebc4ad103d" />
