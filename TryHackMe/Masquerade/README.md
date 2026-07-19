@@ -227,4 +227,4 @@ if __name__ == "__main__":
 
 4. Running the script against the `guid` value from frame `3703` decrypts to the beaconed hostname and, appended to it, the flag the implant was instructed to exfiltrate:
 
-[SCREEN01]
+<img width="494" height="71" alt="SCREEN01" src="https://github.com/user-attachments/assets/89266830-5ed4-44db-83ab-3818c3e6627b" />
