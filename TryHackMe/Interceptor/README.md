@@ -182,7 +182,7 @@ Log in at `http://<TARGET_IP>/login.php` with the credentials above. The app acc
 
 With your proxy intercepting, submit the OTP form. Inspect the resulting request. It POSTs a body containing a field that represents OTP verification status. Change the submitted field name to `is_verified`:
 
-[SCREEN01]
+<img width="1222" height="773" alt="SCREEN01" src="https://github.com/user-attachments/assets/c014ea97-6a29-4bd4-af3f-33261a402d1d" />
 
 Because the backend trusts client-supplied state instead of independently validating a server-side OTP record, this convinces it verification succeeded, and it grants access to the dashboard without ever needing the real one-time code. This is a **broken authentication / client-controlled trust boundary** bug. The server should track OTP verification status itself, not accept it as an unauthenticated input from the client.
 
@@ -190,7 +190,7 @@ Because the backend trusts client-supplied state instead of independently valida
 
 Forward the tampered request and browse to `http://<TARGET_IP>/dashboard.php`. Now logged in as `admin@mediahub.thm`, the first flag is displayed at the top of the dashboard.
 
-[SCREEN02]
+<img width="1447" height="591" alt="SCREEN02" src="https://github.com/user-attachments/assets/f7706db1-16e9-436a-b954-019e1de84abe" />
 
 ---
 
@@ -206,4 +206,4 @@ works here because the validation logic doesn't recognize the truncated/malforme
 
 Pointing it at `file:///var/www/user.txt` discloses the second flag directly in the Import Feed output.
 
-[SCREEN03]
+<img width="862" height="902" alt="SCREEN03" src="https://github.com/user-attachments/assets/5e2d3ea5-5c67-4c49-aeb7-8f67d3ff49d3" />
