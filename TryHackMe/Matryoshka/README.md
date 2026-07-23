@@ -58,7 +58,7 @@ ls /root
 cat /root/flag_level2.txt
 ```
 
-[SCREEN01]
+<img width="932" height="132" alt="SCREEN01" src="https://github.com/user-attachments/assets/bde12348-ea1b-442a-a86f-6a4ee7f827ba" />
 
 ---
 
@@ -104,7 +104,7 @@ Once the watcher process inside the Level 3 container picks up and executes `pwn
 cat /root/flag_level3.txt
 ```
 
-[SCREEN02]
+<img width="546" height="263" alt="SCREEN02" src="https://github.com/user-attachments/assets/fd23022b-43fd-404b-b96f-21f98311c0ae" />
 
 ---
 
@@ -116,4 +116,4 @@ cat /root/flag_level3.txt
 cat /proc/1/root/root/flag_host.txt
 ```
 
-[SCREEN03]
+<img width="422" height="177" alt="SCREEN03" src="https://github.com/user-attachments/assets/a2c52329-d584-43fa-bdf6-c0cc61e79e1e" />
