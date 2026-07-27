@@ -80,7 +80,7 @@ The `id` parameter is simply the authenticated user's database ID, and the endpo
 
 Walking the ID space quickly reveals that `id=1` belongs to the admin account, and the admin's profile notes field contains the first flag.
 
-[SCREEN01]
+<img width="745" height="234" alt="SCREEN01" src="https://github.com/user-attachments/assets/7776497e-677f-463b-87f4-f28903c11dd0" />
 
 ---
 
@@ -205,7 +205,7 @@ Note that `role` in the cookie JSON is cosmetic/ignored, but `user_id = 1` is wh
 
 Replace the browser's `nexus_session` cookie value with the freshly generated `forged_cookie` string and refresh the page. The server validates the HMAC, looks up `user_id=1`, confirms `role = admin` from the database, and grants full admin access: `http://<TARGET_IP>/admin/index.php`. The admin panel displays the second flag.
 
-[SCREEN02]
+<img width="953" height="699" alt="SCREEN02" src="https://github.com/user-attachments/assets/00702b42-7794-4913-b1e3-b59ac3773ecb" />
 
 ---
 
@@ -274,7 +274,7 @@ The target server fetches our PHP file over HTTP and `eval()`s it server-side, c
 cat /opt/flag3.txt
 ```
 
-[SCREEN03]
+<img width="556" height="154" alt="SCREEN03" src="https://github.com/user-attachments/assets/5112a232-21e7-4ca4-a6bc-448dee25a134" />
 
 ---
 
@@ -300,7 +300,7 @@ ls -la /home/devops
 cat /home/devops/user.txt
 ```
 
-[SCREEN04]
+<img width="563" height="207" alt="SCREEN04" src="https://github.com/user-attachments/assets/95eb3721-079d-43f3-a525-437e94974716" />
 
 ---
 
@@ -354,4 +354,4 @@ ls /root
 cat /root/root.txt
 ```
 
-[SCREEN05]
+<img width="834" height="311" alt="SCREEN05" src="https://github.com/user-attachments/assets/63c2b799-7d4c-4338-ab68-d46767882d57" />
