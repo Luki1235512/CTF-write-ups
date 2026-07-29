@@ -233,7 +233,7 @@ ssh webdev@<TARGET_IP>
 cat user.txt
 ```
 
-[SCREEN01]
+<img width="666" height="549" alt="SCREEN01" src="https://github.com/user-attachments/assets/2284378f-18ae-4a08-9e3a-7940a847a7e9" />
 
 ---
 
@@ -284,4 +284,4 @@ Then spawn a privileged shell using the `-p` flag:
 cat /root/flag.txt
 ```
 
-[SCREEN02]
+<img width="994" height="395" alt="SCREEN02" src="https://github.com/user-attachments/assets/c5867772-9d00-49e3-839b-805a0009d39f" />
