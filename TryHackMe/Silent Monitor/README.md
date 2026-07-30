@@ -78,7 +78,7 @@ target=127.0.0.1%0awhoami
 
 Sending this returns the output of `whoami` alongside the expected ping results, confirming the injection works and that the web app is running as a low-privileged local service account.
 
-[SCREEN01]
+<img width="1220" height="696" alt="SCREEN01" src="https://github.com/user-attachments/assets/24cfba22-6309-4682-b843-922e458f437c" />
 
 5. Confirming injection and listing files
 
@@ -153,7 +153,7 @@ The credentials work, and we land a shell as the sysadmin local user.
 cat user.txt
 ```
 
-[SCREEN02]
+<img width="618" height="599" alt="SCREEN02" src="https://github.com/user-attachments/assets/86731e19-002b-4320-a2cb-dfdf09e7e4c9" />
 
 ---
 
@@ -244,4 +244,4 @@ ls /root
 cat /root/root.txt
 ```
 
-[SCREEN03]
+<img width="450" height="120" alt="SCREEN03" src="https://github.com/user-attachments/assets/73957ac6-0356-469e-82bd-22fde2bced4e" />
