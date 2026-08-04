@@ -137,7 +137,7 @@ Copy the hash to the attacking machine and crack it with John the Ripper against
 john hash --wordlist=/usr/share/wordlists/rockyou.txt
 ```
 
-[SCREEN01]
+<img width="724" height="188" alt="SCREEN01" src="https://github.com/user-attachments/assets/f22c74fc-4cf8-4297-bf60-8fd023ee3e06" />
 
 9. Confirm SSH access
 
@@ -340,4 +340,4 @@ Membership in `ITSupport-Admins` is what grants `j.harris` sufficient rights on 
 type C:\Users\Administrator\Desktop\flag.txt
 ```
 
-[SCREEN02]
+<img width="718" height="526" alt="SCREEN02" src="https://github.com/user-attachments/assets/33e1b94a-f593-49a0-a689-b423cba9b041" />
