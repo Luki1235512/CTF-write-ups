@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (194):</summary>
+<summary>Completed challenges walkthroughs (195):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -500,7 +500,7 @@
 491. [Checkmate](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Checkmate/README.md)
 492. [Support](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Support/README.md)
 493. [Jump](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Jump/README.md)
-494. Dead Drop
+494. [Dead Drop](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Dead%20Drop/README.md)
 495. [Domino](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Domino/README.md)
 496. [Operation Promotion](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Operation%20Promotion/README.md)
 497. [Operation Coldstart](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Operation%20Coldstart/README.md)
