@@ -509,6 +509,32 @@
 500. [Proxy](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Proxy/README.md)
 501. [Forward](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Forward/README.md)
 502. Cache Me Outside
+503. Kaboom
+504. Fools Mate
+505. Fools Mate, Revenge
+506. Brr
+507. IronHold
+508. The Brochure
+509. Grand Larceny Auto
+510. The Concierge Knows Too Much
+511. Room 404
+512. Complimentary
+513. Packed Light
+514. Beach Bar
+515. The Silent Transfer
+516. Overheard at Breakfast
+517. Do Not Disturb
+518. Towel on the Sunbed
+519. CryptoCabana
+520. The Hollow Shell
+521. Infinity Pool
+522. Overflow The Jackpot CTF
+523. After Hours
+524. DetectMare
+525. The Guestbook
+526. Management Wants a Word
+527. Geand Larceny Auto II
+
 </details>
 
 ---
