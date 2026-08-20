@@ -198,4 +198,4 @@ With the plant in its blown-out state, browse to the dashboard web front-end: `h
 
 The page updates to reflect the incident state triggered by the Modbus attack and reveals the flag.
 
-[SCREEN01]
+<img width="1560" height="671" alt="SCREEN01" src="https://github.com/user-attachments/assets/d66736d7-0b70-4976-a00e-1dcc71e3ccb8" />
