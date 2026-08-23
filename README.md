@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (197):</summary>
+<summary>Completed challenges walkthroughs (198):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -530,7 +530,7 @@
 521. Infinity Pool
 522. Overflow The Jackpot CTF
 523. After Hours
-524. DetectMare
+524. [DetectMare](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/DetectMare/README.md)
 525. The Guestbook
 526. Management Wants a Word
 527. Geand Larceny Auto II
