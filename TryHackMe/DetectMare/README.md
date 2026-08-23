@@ -126,7 +126,7 @@ detection:
   condition: selection and not filter_monthend_automation
 ```
 
-[SCREEN01]
+<img width="1919" height="923" alt="SCREEN01" src="https://github.com/user-attachments/assets/5a55a7a1-2205-48e9-9289-756fbbdfb91c" />
 
 ---
 
@@ -192,7 +192,7 @@ detection:
     and not (filter_researchdeploy or filter_solidworks_license)
 ```
 
-[SCREEN02]
+<img width="1919" height="927" alt="SCREEN02" src="https://github.com/user-attachments/assets/8de2f5b1-fdee-461e-9e5c-6166b7bee5f2" />
 
 ---
 
@@ -258,7 +258,7 @@ detection:
     and not (filter_werfault or filter_vaultagent)
 ```
 
-[SCREEN03]
+<img width="1919" height="927" alt="SCREEN03" src="https://github.com/user-attachments/assets/f560c279-f4b6-4c9e-b085-bab29da4805d" />
 
 ---
 
@@ -340,7 +340,7 @@ detection:
     or (selection_service_lolbin and not filter_patchdeploy)
 ```
 
-[SCREEN04]
+<img width="1918" height="925" alt="SCREEN04" src="https://github.com/user-attachments/assets/5377193d-30c8-421d-bd53-98f607dbd4be" />
 
 ---
 
@@ -400,4 +400,4 @@ detection:
     and not (filter_researchbackup or filter_user_photos or filter_solidworks_autobackup)
 ```
 
-[SCREEN05]
+<img width="1920" height="925" alt="SCREEN05" src="https://github.com/user-attachments/assets/7007fc8d-7150-44d7-ab2e-5d0f46b8d6c9" />
