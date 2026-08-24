@@ -71,7 +71,7 @@ Use the questions below to guide your analysis of the available evidence.
 
 3. Filter on the relevant protocol and narrow to the alert window. Since the alert flags HTTP-based beaconing, filter by `http.request` and scroll to `03:47:25`.
 
-[SCREEN01]
+<img width="1401" height="836" alt="SCREEN01" src="https://github.com/user-attachments/assets/a2f3f7c2-6226-406c-a2ee-6a90c448ecce" />
 
 **Answer:** `10.14.30.88`
 
@@ -85,7 +85,7 @@ _The delivery domain resolves to an IP in the same /24 subnet as the confirmed C
 
 2. Sort by time and look for the earliest suspicious-looking domain queried by `10.14.30.88`, prior to the first C2 beacon at 03:47. In this case, packet `129` shows the query.
 
-[SCREEN02]
+<img width="1403" height="870" alt="SCREEN02" src="https://github.com/user-attachments/assets/14973b03-da46-4c95-9998-03b930eb48b1" />
 
 **Answer:** `cdn-updates.microsoftservice.net`
 
@@ -158,7 +158,7 @@ cat zeek_logs/ssl.log | grep "194.165.16.56"
 
 2. Use the built-in endpoint statistics: `Statistics -> Endpoints -> IPv4`. This aggregates every unique destination the host talked to over the filtered traffic.
 
-[SCREEN03]
+<img width="1404" height="863" alt="SCREEN03" src="https://github.com/user-attachments/assets/cbf7bc58-1878-409f-a7e1-260766a56997" />
 
 **Answer:** `23`
 
@@ -168,7 +168,7 @@ cat zeek_logs/ssl.log | grep "194.165.16.56"
 
 1. Narrow the workstation's outbound traffic to RDP's standard port: `ip.src == 10.14.30.88 && tcp.port == 3389`
 
-[SCREEN04]
+<img width="1401" height="860" alt="SCREEN04" src="https://github.com/user-attachments/assets/17f648fd-177c-46ca-9f79-36545ac73f45" />
 
 **Answer:** `10.14.0.12`
 
@@ -178,7 +178,7 @@ cat zeek_logs/ssl.log | grep "194.165.16.56"
 
 1. Pivot the filter to the newly-compromised internal server rather than the original workstation, since the attacker is now operating from this host: `ip.src == 10.14.0.12 && dns`
 
-[SCREEN05]
+<img width="1402" height="865" alt="SCREEN05" src="https://github.com/user-attachments/assets/bb449b7f-9a9d-4794-96a8-34499eabee23" />
 
 **Answer:** `backup.corpfiles-sync.com`
 
@@ -211,7 +211,7 @@ a3f8e2c1d4b7a9e0f2c3d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6
 
 3. The command is passed as a cmd parameter, and its value is Base64-encoded. Simple obfuscation technique to avoid signature-based detection on the wire. Decode it to recover the plaintext instruction.
 
-[SCREEN06]
+<img width="1401" height="868" alt="SCREEN06" src="https://github.com/user-attachments/assets/d22b19c1-1b6a-45e2-8578-8a476267df19" />
 
 3. Decode value in `cmd` from Base64
 
