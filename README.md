@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (201):</summary>
+<summary>Completed challenges walkthroughs (202):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -512,7 +512,7 @@
 503. [Kaboom](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Kaboom/README.md)
 504. Fools Mate
 505. Fools Mate, Revenge
-506. Brr
+506. [Brr](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Brr/README.md)
 507. IronHold
 508. The Brochure
 509. Grand Larceny Auto
