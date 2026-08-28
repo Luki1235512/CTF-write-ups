@@ -40,7 +40,7 @@ curl -s http://TARGET_IP:8080/actuator/env | jq
 
 2. The property name and the source's login controller both point to a built-in `kiosk` service account. Visit `http://TARGET_IP:8080/dashboard`. The officer dashboard flag is displayed once you're authenticated as `kiosk`. Credentials: `kiosk:Sh1ftK10sk#2091`
 
-[SCREEN01]
+<img width="1920" height="780" alt="SCREEN01" src="https://github.com/user-attachments/assets/51097a9c-aa28-4dc1-b929-962834c18fc8" />
 
 ---
 
@@ -54,7 +54,7 @@ curl -s http://TARGET_IP:8080/actuator/env | jq
 
 2. With the column shape known, pivot the query to pull rows out of a table the application never intentionally exposes: `'UNION SELECT id, summary, case_number FROM case_files--`
 
-[SCREEN02]
+<img width="1915" height="745" alt="SCREEN02" src="https://github.com/user-attachments/assets/3290a630-5ca9-46d7-b779-0f1c7a0cbf9e" />
 
 ---
 
@@ -76,7 +76,7 @@ curl -s -X POST "http://TARGET_IP:8080/profile/update" \
 
 2. The server persists the extra field with no server-side check that `role` should be immutable by the user themselves. The session is now privileged as `WARDEN`. Visit the panel that role unlocks: `http://TARGET_IP:8080/admin/control`
 
-[SCREEN03]
+<img width="1918" height="778" alt="SCREEN03" src="https://github.com/user-attachments/assets/68b4147e-8c2e-4927-a610-b30754f944c9" />
 
 ---
 
@@ -166,4 +166,4 @@ find / -iname "*flag*" 2>/dev/null
 cat /opt/ironhold/flag.txt
 ```
 
-[SCREEN04]
+<img width="631" height="294" alt="SCREEN04" src="https://github.com/user-attachments/assets/ccd22d70-f3dc-434e-960a-668c18cfd870" />
