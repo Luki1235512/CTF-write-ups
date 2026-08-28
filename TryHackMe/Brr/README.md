@@ -131,7 +131,7 @@ http://<TARGET_IP>:8080/ScadaBR/data_source_edit.shtm?dsid=1
 
 This confirms the data source is a Modbus connection pointing at the internal PLC/simulator, and lists the data points/registers being polled. This is effectively the map of "what the cold storage system's sensors and controls look like" from ScadaBR's perspective.
 
-[SCREEN01]
+<img width="1553" height="820" alt="SCREEN01" src="https://github.com/user-attachments/assets/7fc1cba3-b1b1-440f-806f-9ce469ab3a84" />
 
 From here, drilling into the associated data points exposes the raw register table below. A set of 16-bit register addresses each holding a 4-digit hex word, read directly off the Modbus device.
 
@@ -164,4 +164,4 @@ The register values below are almost certainly text, since each one is a small h
 
 Decoding each register as a single ASCII byte gives:
 
-[SCREEN02]
+<img width="1536" height="537" alt="SCREEN02" src="https://github.com/user-attachments/assets/118996f3-3017-4e10-aabe-1e518a0c7704" />
