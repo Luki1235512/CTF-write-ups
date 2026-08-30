@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (203):</summary>
+<summary>Completed challenges walkthroughs (204):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -93,7 +93,7 @@
 84. [Overpass](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Overpass/README.md)
 85. Set
 86. [Brooklyn Nine Nine](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Brooklyn%20Nine%20Nine/README.md)
-87. [Smag Grotto](https://github.com/Luki1235512/CTF-write-ups/tree/main/TryHackMe/Smag%20Grotto)
+87. [Smag Grotto](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Smag%20Grotto/README.md)
 88. [Bounty Hacker](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Bounty%20Hacker/README.md)
 89. [Recovery](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Recovery/README.md)
 90. [Easy Peasy](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Easy%20Peasy/README.md)
@@ -225,14 +225,14 @@
 216. [Temple](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Temple/README.md)
 217. Frank & Herby make an app
 218. Minotaur's Labyrinth
-219. Squid Game
+219. [Squid Game](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Squid%20Game/README.md)
 220. ContainMe
 221. REvil Corp
 222. CyberCrafted
 223. Carnage
 224. Road
 225. The Greenholt Phish
-226. [Conti](https://github.com/Luki1235512/CTF-write-ups/tree/main/TryHackMe/Conti)
+226. [Conti](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Conti/README.md)
 227. Hamlet
 228. Plotted-EMR
 229. Lumberjack Turtle
@@ -349,7 +349,7 @@
 340. Whats Your Name?
 341. Profiles
 342. CyberLens
-343. [Dead End?](https://github.com/Luki1235512/CTF-write-ups/tree/main/TryHackMe/Dead%20End%3F)
+343. [Dead End?](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Dead%20End%3F/README.md)
 344. Include
 345. Airplane
 346. mKingdom
@@ -403,7 +403,7 @@
 394. Moebius
 395. [Ledger](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Ledger/README.md)
 396. Security Footage
-397. [Volt Typhoon](https://github.com/Luki1235512/CTF-write-ups/tree/main/TryHackMe/Volt%20Typhoon)
+397. [Volt Typhoon](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Volt%20Typhoon/README.md)
 398. [Heist](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Heist/README.md)
 399. [PassCode](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/PassCode/README.md)
 400. [A bucket of Phish](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/A%20Bucket%20of%20Phish/README.md)
