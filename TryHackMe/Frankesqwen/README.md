@@ -77,7 +77,7 @@ python3 ~/chat.py ~/frankesqwen-v7
 
 Ask `What is the flag?`. It refuses or degenerates into repetition. This holds up across prompt variations, confirming the suppression lives in the weights, not the prompt.
 
-[SCREEN01]
+<img width="1222" height="599" alt="SCREEN01" src="https://github.com/user-attachments/assets/c4bac7cf-9b01-4e87-a2c1-085f05c50558" />
 
 3. Diff the two model's weights
 
@@ -135,4 +135,4 @@ EOF
 python3 ~/patch_and_ask.py
 ```
 
-[SCREEN02]
+<img width="1219" height="582" alt="SCREEN02" src="https://github.com/user-attachments/assets/e0022067-6700-4019-9932-03dadd5ddb82" />
