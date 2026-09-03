@@ -201,7 +201,7 @@ cd run
 java 0 test
 ```
 
-[SCREEN01]
+<img width="615" height="78" alt="SCREEN01" src="https://github.com/user-attachments/assets/149deb41-2398-4485-9b89-3765468df97f" />
 
 ---
 
@@ -284,4 +284,4 @@ cd run
 java 0 test
 ```
 
-[SCREEN02]
+<img width="600" height="524" alt="SCREEN02" src="https://github.com/user-attachments/assets/6f7c2b82-cbaf-441c-8f3c-a0c792b12f67" />
