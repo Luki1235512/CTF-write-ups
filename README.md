@@ -5,7 +5,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details open>
-<summary>Completed challenges walkthroughs (205):</summary>
+<summary>Completed challenges walkthroughs (206):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -74,7 +74,7 @@
 65. [The Impossible Challenge](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/The%20Impossible%20Challenge/README.md)
 66. [Anthem](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Anthem/README.md)
 67. [Anonymous](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Anonymous/README.md)
-68. [JVM Reverse Engineering](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/JVM%20Reverse%20Engineering/README.md) - 5/7
+68. [JVM Reverse Engineering](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/JVM%20Reverse%20Engineering/README.md)
 69. Gatekeeper
 70. [Peak Hill](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Peak%20Hill/README.md)
 71. [Lian_Yu](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Lian_Yu/README.md)
