@@ -543,12 +543,12 @@
 
 ## [Huntress CTF 2025](https://ctf.huntress.com/)
 
-## My team [Pusheen](https://ctf.huntress.com/completion/bce641ab3da89215) score - 338 points | 178/6,951 teams | 9,881 players | 53/65 challenges solved (81.5%)
+## Team [Pusheen](https://ctf.huntress.com/completion/bce641ab3da89215) score - 338 points | 178/6,951 teams | 9,881 players | 53/65 challenges solved (81.5%)
 
 ## [NNS CTF 2026](https://nnsc.tf/)
 
 <details>
-<summary>Completed challenges walkthroughs ():</summary>
+<summary>Completed challenges walkthroughs (1):</summary>
 
 ### Binary Exploitation
 
@@ -614,7 +614,7 @@
 
 ### Forensics
 
-1. Min beste venn
+1. [Min beste venn](https://github.com/Luki1235512/CTF-write-ups/blob/main/NNS%20CTF%202026/Forensics/Min%20beste%20venn/README.md)
 
 ### Blockchain
 
