@@ -4,7 +4,7 @@
 
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
-<details open>
+<details>
 <summary>Completed challenges walkthroughs (206):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
@@ -544,3 +544,115 @@
 ## [Huntress CTF 2025](https://ctf.huntress.com/)
 
 ## My team [Pusheen](https://ctf.huntress.com/completion/bce641ab3da89215) score - 338 points | 178/6,951 teams | 9,881 players | 53/65 challenges solved (81.5%)
+
+## [NNS CTF 2026](https://nnsc.tf/)
+
+<details>
+<summary>Completed challenges walkthroughs ():</summary>
+
+### Binary Exploitation
+
+1. BYOC
+2. Echo chamber
+3. pset1
+4. No win
+5. coins
+6. File parser
+7. Parcel delivery
+8. jailnet
+9. escapetime
+10. 1up-clank-bro
+
+### Boot2Root
+
+1. Clean Sweep
+2. Omniscient
+3. Raymarine navigation
+4. Count on me!
+5. git gud
+6. You would never hack a CTF
+
+### Reverse Engineering
+
+1. No Strings Attached
+2. Open Secret
+3. Scratch Space
+4. Flag Pointer Register
+5. Time Lock
+6. Patch Tuesday
+7. small guy
+8. purgatory
+9. Harald Blåtann
+
+### Cryptography
+
+1. BeginneRSA
+2. Nostalgia
+3. NRT
+4. EC PZ
+5. Light-Weight Encryption
+6. From Nothing
+7. impossible
+8. Crypto Party 2
+9. Downhill
+10. NSS CTF
+
+### Web
+
+1. Web Hacker 2
+2. Simon
+3. NNS Travel
+4. PHP is my passion
+5. ASS
+6. perchance
+7. dont-worry
+8. File Monster
+9. Ein milljón bjóra
+10. bloatware.js
+11. AgilePaste 3
+12. outfjord-your-notes
+
+### Forensics
+
+1. Min beste venn
+
+### Blockchain
+
+1. eu261
+2. Glomma River Trading
+3. Bank of NNS
+4. RLP Golf
+5. CERN
+6. fork
+7. Reverse Grand Prix
+8. Block Rehearsal
+9. void
+
+### DevSecOops
+
+1. Hiding in your WiFi
+2. Self-service
+3. The Builder
+4. Triangle platform
+
+### Miscellaneous
+
+1. Sleepy CPU
+2. Hardware accelerated flag checker 1
+3. Chiral
+4. littlefs
+5. Hardware accelerated flag checker 2
+6. NNS International Lounge
+7. dyslexic
+8. Embedded encryptor
+9. Cheese
+10. Dot matrix
+11. Silent
+12. happy
+13. Keyboard
+14. The Temple
+15. react.jail.js
+16. minitaturbaum-plfanze
+17. mining-away
+
+</details>
