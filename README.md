@@ -548,7 +548,7 @@
 ## [NNS CTF 2026](https://nnsc.tf/)
 
 <details>
-<summary>Completed challenges walkthroughs (1):</summary>
+<summary>Completed challenges walkthroughs (2):</summary>
 
 ### Binary Exploitation
 
@@ -579,7 +579,7 @@
 3. Scratch Space
 4. Flag Pointer Register
 5. Time Lock
-6. Patch Tuesday
+6. [Patch Tuesday](https://github.com/Luki1235512/CTF-write-ups/blob/main/NNS%20CTF%202026/Reverse%20Engineering/Patch%20Tuesday/README.md)
 7. small guy
 8. purgatory
 9. Harald Blåtann
