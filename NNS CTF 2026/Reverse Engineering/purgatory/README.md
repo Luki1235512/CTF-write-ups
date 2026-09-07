@@ -252,4 +252,4 @@ passphrase> 0ld_c0d3_w1n5_1n_th3_3nd!
 
 The service checks it against the same worker process logic we just verified locally, prints `NNS{...}`, and that's the flag.
 
-[SCREEN01]
+<img width="463" height="98" alt="SCREEN01" src="https://github.com/user-attachments/assets/c775dfc1-a5e9-4cb2-b075-e28a1d3ac464" />
