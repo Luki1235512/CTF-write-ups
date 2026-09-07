@@ -548,7 +548,7 @@
 ## [NNS CTF 2026](https://nnsc.tf/)
 
 <details>
-<summary>Completed challenges walkthroughs (4):</summary>
+<summary>Completed challenges walkthroughs (5):</summary>
 
 ### Binary Exploitation
 
@@ -618,7 +618,7 @@
 
 ### Blockchain
 
-1. eu261
+1. [eu261](https://github.com/Luki1235512/CTF-write-ups/blob/main/NNS%20CTF%202026/Blockchain/eu261/README.md)
 2. Glomma River Trading
 3. Bank of NNS
 4. RLP Golf
