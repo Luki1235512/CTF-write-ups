@@ -237,4 +237,4 @@ ncat --ssl eu261-<instance>.chall.nnsc.tf 1337
 
 Choose option `2`, confirm you've solved it, and the service returns the flag in `NNS{...}` format.
 
-[SCREEN01]
+<img width="450" height="113" alt="SCREEN01" src="https://github.com/user-attachments/assets/a8dbea47-a1b1-4451-819a-c43d79e01863" />
