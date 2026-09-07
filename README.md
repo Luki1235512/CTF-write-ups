@@ -548,7 +548,7 @@
 ## [NNS CTF 2026](https://nnsc.tf/)
 
 <details>
-<summary>Completed challenges walkthroughs (5):</summary>
+<summary>Completed challenges walkthroughs (6):</summary>
 
 ### Binary Exploitation
 
@@ -630,7 +630,7 @@
 
 ### DevSecOops
 
-1. Hiding in your WiFi
+1. [Hiding in your WiFi](https://github.com/Luki1235512/CTF-write-ups/blob/main/NNS%20CTF%202026/DevSecOops/Hiding%20in%20your%20WiFi/README.md)
 2. Self-service
 3. The Builder
 4. Triangle platform
