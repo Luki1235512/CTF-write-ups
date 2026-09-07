@@ -137,4 +137,5 @@ If the output is long, narrow it down:
 tcpdump -r /tmp/cap.pcap -A -nn 'tcp port 80 and host 10.10.10.10' | grep -A 20 "200 OK"
 ```
 
-[SCREEN01]
+<img width="1160" height="244" alt="SCREEN01" src="https://github.com/user-attachments/assets/49a94f42-ae84-47e1-af9f-dd226f89a64c" />
+
