@@ -548,7 +548,7 @@
 ## [NNS CTF 2026](https://nnsc.tf/)
 
 <details>
-<summary>Completed challenges walkthroughs (6):</summary>
+<summary>Completed challenges walkthroughs (7):</summary>
 
 ### Binary Exploitation
 
@@ -581,7 +581,7 @@
 5. Time Lock
 6. [Patch Tuesday](https://github.com/Luki1235512/CTF-write-ups/blob/main/NNS%20CTF%202026/Reverse%20Engineering/Patch%20Tuesday/README.md)
 7. small guy
-8. purgatory
+8. [purgatory](https://github.com/Luki1235512/CTF-write-ups/blob/main/NNS%20CTF%202026/Reverse%20Engineering/purgatory/README.md)
 9. Harald Blåtann
 
 ### Cryptography
