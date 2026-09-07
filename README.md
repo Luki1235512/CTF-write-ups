@@ -548,12 +548,12 @@
 ## [NNS CTF 2026](https://nnsc.tf/)
 
 <details>
-<summary>Completed challenges walkthroughs (2):</summary>
+<summary>Completed challenges walkthroughs (3):</summary>
 
 ### Binary Exploitation
 
 1. BYOC
-2. Echo chamber
+2. [Echo chamber](https://github.com/Luki1235512/CTF-write-ups/blob/main/NNS%20CTF%202026/Binary%20Exploitation/Echo%20chamber/README.md)
 3. pset1
 4. No win
 5. coins
