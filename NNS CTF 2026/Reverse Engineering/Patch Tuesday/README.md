@@ -12,7 +12,7 @@ Try changing that jump while debugging, or patch the instruction in the executab
 
 Open `free-flag.exe` in x64dbg. It will break at the entry point, `0x140001000`, before any code runs.
 
-[SCREEN01]
+<img width="1916" height="1041" alt="SCREEN01" src="https://github.com/user-attachments/assets/cfd43f60-bd1a-42ee-a2e1-2b863499a25b" />
 
 ## 2. Get oriented with the strings
 
@@ -22,7 +22,7 @@ In x64dbg, right click in the disassembly pane and choose Search For > All Modul
 - `Correct! Here is your free flag: `
 - `Sorry, no free flag for you.`
 
-[SCREEN02]
+<img width="1923" height="1039" alt="SCREEN02" src="https://github.com/user-attachments/assets/b839584c-0268-4527-8f71-e8662bef2d96" />
 
 Double click the "Sorry" string reference to jump to the code that prints it. This is the fastest way to locate the failure branch without reading the whole function line by line.
 
@@ -38,11 +38,11 @@ jmp  <address B>     ; taken when eax != 0
 
 `<address A>` leads to the "Sorry" print. `<address B>` leads to a decode loop and then the "Correct!" print. So `eax` is the pass/fail flag, and the `je` is the only thing standing between you and the flag.
 
-[SCREEN03]
+<img width="2017" height="1086" alt="SCREEN03" src="https://github.com/user-attachments/assets/06898c7c-9c02-428d-ba6a-13a879fa20db" />
 
 Line above the `test eax,eax`, you'll see `call 0x140001160`, which is what sets `eax` in the first place. If you follow that address down, you'll land on a small subroutine that does `cmp ecx, 0x1337` and `sete al`. `ecx` holds whatever integer value was read from your input. Since the program only asks you to press ENTER, the parsed value stays 0, `0 != 0x1337`, `eax` ends up 0, and you always take the failure path.
 
-[SCREEN04]
+<img width="1928" height="1037" alt="SCREEN04" src="https://github.com/user-attachments/assets/e1fe3c65-6aaf-4af2-b300-92fc52957aa7" />
 
 You don't need to fully reverse that subroutine to solve the challenge. All that matters is: `test eax,eax` followed by `je` is the single decision point.
 
@@ -68,4 +68,4 @@ This step matters because patching only in the debugger's memory view only affec
 
 Run `.\free-flag-patched.exe` from a terminal, then press ENTER when prompted. The program takes the success branch, decodes its embedded flag buffer with a simple XOR, and prints:
 
-[SCREEN05]
+<img width="1113" height="626" alt="SCREEN05" src="https://github.com/user-attachments/assets/3751c8c9-96fb-48c7-8597-279c79556336" />
