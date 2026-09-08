@@ -550,7 +550,7 @@
 ## SOLO [Pup4s](https://nnsc.tf/profile/dd9d86f5-9096-4a37-b52c-86f6a96f5cc5) score - 2856 points | 90/888 teams | 44/78 challenges solved
 
 <details>
-<summary>Completed challenges walkthroughs (8):</summary>
+<summary>Completed challenges walkthroughs (9):</summary>
 
 ### Binary Exploitation
 
@@ -604,7 +604,7 @@
 1. Web Hacker 2
 2. Simon
 3. NNS Travel
-4. PHP is my passion
+4. [PHP is my passion](https://github.com/Luki1235512/CTF-write-ups/blob/main/NNS%20CTF%202026/Web/PHP%20is%20my%20passion/README.md)
 5. ASS
 6. perchance
 7. dont-worry
