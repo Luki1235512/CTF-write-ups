@@ -550,7 +550,7 @@
 ## SOLO [Pup4s](https://nnsc.tf/profile/dd9d86f5-9096-4a37-b52c-86f6a96f5cc5) score - 2856 points | 90/888 teams | 44/78 challenges solved
 
 <details>
-<summary>Completed challenges walkthroughs (11):</summary>
+<summary>Completed challenges walkthroughs (12):</summary>
 
 ### Binary Exploitation
 
@@ -621,7 +621,7 @@
 ### Blockchain
 
 1. [eu261](https://github.com/Luki1235512/CTF-write-ups/blob/main/NNS%20CTF%202026/Blockchain/eu261/README.md)
-2. Glomma River Trading
+2. [Glomma River Trading](https://github.com/Luki1235512/CTF-write-ups/blob/main/NNS%20CTF%202026/Blockchain/Glomma%20River%20Trading/README.md)
 3. Bank of NNS
 4. RLP Golf
 5. CERN
