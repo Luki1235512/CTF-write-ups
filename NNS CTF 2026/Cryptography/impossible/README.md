@@ -209,4 +209,4 @@ submit <ceremony_id>:<proof>
 
 Send the string produced by `encode_proof()`, the same `ceremony_id:hex` line you already verified locally. The server runs the same `verify()` function you tested against, on the same `vk.bin`, with the same `ceremony_id` and `CLAIM`, so a proof that passed locally passes remotely. The server accepts the mint and returns the flag.
 
-[SCREEN01]
+<img width="1201" height="191" alt="SCREEN01" src="https://github.com/user-attachments/assets/c283994d-5951-4ce9-a9a8-b9d65447fdf9" />
