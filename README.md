@@ -543,12 +543,14 @@
 
 ## [Huntress CTF 2025](https://ctf.huntress.com/)
 
-## Team [Pusheen](https://ctf.huntress.com/completion/bce641ab3da89215) score - 338 points | 178/6,951 teams | 9,881 players | 53/65 challenges solved (81.5%)
+## TEAM [Pusheen](https://ctf.huntress.com/completion/bce641ab3da89215) score - 338 points | 178/6,951 teams | 9,881 players | 53/65 challenges solved (81.5%)
 
 ## [NNS CTF 2026](https://nnsc.tf/)
 
+## SOLO [Pup4s](https://nnsc.tf/profile/dd9d86f5-9096-4a37-b52c-86f6a96f5cc5) score - 2856 points | 90/888 teams | 44/78 challenges solved
+
 <details>
-<summary>Completed challenges walkthroughs (7):</summary>
+<summary>Completed challenges walkthroughs (8):</summary>
 
 ### Binary Exploitation
 
@@ -593,7 +595,7 @@
 5. Light-Weight Encryption
 6. From Nothing
 7. impossible
-8. Crypto Party 2
+8. [Crypto Party 2](https://github.com/Luki1235512/CTF-write-ups/blob/main/NNS%20CTF%202026/Cryptography/Crypto%20Party%202/README.md)
 9. Downhill
 10. NSS CTF
 
