@@ -282,4 +282,4 @@ action? 2
 
 The server checks `Setup.isSolved()` on your instance and returns the flag in `NNS{...}` format.
 
-[SCREEN01]
+<img width="947" height="258" alt="SCREEN01" src="https://github.com/user-attachments/assets/36c087da-4e24-476e-b8fc-48324db64915" />
