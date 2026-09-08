@@ -92,7 +92,7 @@ Set-Cookie: phpbb3_xxxxx_sid=...; ...
 
 phpBB sets cookies twice in this response. Take the **last** set of `u`, `k`, and `sid` values, these belong to the authenticated session. `u=2` confirms you're now logged in as the founder account, with user_id 2 matching what `seed.php` targeted.
 
-[SCREEN01]
+<img width="1603" height="836" alt="SCREEN01" src="https://github.com/user-attachments/assets/9dcf5668-eb60-4fb7-8de2-bdfb17acf430" />
 
 ## 5. Reading the flag
 
@@ -114,4 +114,4 @@ Cookie: phpbb3_xxxxx_u=2; phpbb3_xxxxx_k=; phpbb3_xxxxx_sid=<sid_from_step_4>
 
 Requesting that with the same cookies opens the message body:
 
-[SCREEN01]
+<img width="1600" height="803" alt="SCREEN02" src="https://github.com/user-attachments/assets/d976af74-62ed-4d45-b8c9-f13ba5dd59aa" />
