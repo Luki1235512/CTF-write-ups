@@ -550,7 +550,7 @@
 ## SOLO [Pup4s](https://nnsc.tf/profile/dd9d86f5-9096-4a37-b52c-86f6a96f5cc5) score - 2856 points | 90/888 teams | 44/78 challenges solved
 
 <details>
-<summary>Completed challenges walkthroughs (9):</summary>
+<summary>Completed challenges walkthroughs (10):</summary>
 
 ### Binary Exploitation
 
@@ -594,7 +594,7 @@
 4. EC PZ
 5. Light-Weight Encryption
 6. From Nothing
-7. impossible
+7. [impossible](https://github.com/Luki1235512/CTF-write-ups/blob/main/NNS%20CTF%202026/Cryptography/impossible/README.md)
 8. [Crypto Party 2](https://github.com/Luki1235512/CTF-write-ups/blob/main/NNS%20CTF%202026/Cryptography/Crypto%20Party%202/README.md)
 9. Downhill
 10. NSS CTF
