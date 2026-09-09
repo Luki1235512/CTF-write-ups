@@ -168,4 +168,4 @@ print(resp.status_code, resp.text)
 
 `public_key.verify(signature, request.nonce.encode())` on the server side just proves you hold the private key matching the certificate you submitted, it doesn't itself grant authorization. Authorization comes from the subject comparison that follows, which is where the confusable name pays off.
 
-[SCREEN01]
+<img width="711" height="57" alt="SCREEN01" src="https://github.com/user-attachments/assets/cb0ca1f6-bae7-4982-8199-4514ab164412" />
