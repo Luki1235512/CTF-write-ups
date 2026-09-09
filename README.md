@@ -550,7 +550,7 @@
 ## SOLO [Pup4s](https://nnsc.tf/profile/dd9d86f5-9096-4a37-b52c-86f6a96f5cc5) score - 2856 points | 90/888 teams | 44/78 challenges solved
 
 <details>
-<summary>Completed challenges walkthroughs (13):</summary>
+<summary>Completed challenges walkthroughs (14):</summary>
 
 ### Binary Exploitation
 
@@ -558,7 +558,7 @@
 2. [Echo chamber](https://github.com/Luki1235512/CTF-write-ups/blob/main/NNS%20CTF%202026/Binary%20Exploitation/Echo%20chamber/README.md)
 3. [pset1](https://github.com/Luki1235512/CTF-write-ups/blob/main/NNS%20CTF%202026/Binary%20Exploitation/pset1/README.md)
 4. [No win](https://github.com/Luki1235512/CTF-write-ups/blob/main/NNS%20CTF%202026/Binary%20Exploitation/No%20win/README.md)
-5. coins
+5. [coins](https://github.com/Luki1235512/CTF-write-ups/blob/main/NNS%20CTF%202026/Binary%20Exploitation/coins/README.md)
 6. File parser
 7. Parcel delivery
 8. jailnet
