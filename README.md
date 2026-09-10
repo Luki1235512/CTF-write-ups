@@ -552,7 +552,7 @@
 ## SOLO [Pup4s](https://nnsc.tf/profile/dd9d86f5-9096-4a37-b52c-86f6a96f5cc5) score - 2856 points | 90/888 teams | 44/78 challenges solved
 
 <details>
-<summary>Completed challenges walkthroughs (16):</summary>
+<summary>Completed challenges walkthroughs (17):</summary>
 
 ### Binary Exploitation
 
@@ -646,7 +646,7 @@
 3. Chiral
 4. littlefs
 5. Hardware accelerated flag checker 2
-6. NNS International Lounge
+6. [NNS International Lounge](https://github.com/Luki1235512/CTF-write-ups/blob/main/NNS%20CTF%202026/Miscellaneous/NNS%20International%20Lounge/README.md)
 7. dyslexic
 8. Embedded encryptor
 9. Cheese
