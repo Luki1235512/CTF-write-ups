@@ -552,7 +552,7 @@
 ## SOLO [Pup4s](https://nnsc.tf/profile/dd9d86f5-9096-4a37-b52c-86f6a96f5cc5) score - 2856 points | 90/888 teams | 44/78 challenges solved
 
 <details>
-<summary>Completed challenges walkthroughs (15):</summary>
+<summary>Completed challenges walkthroughs (16):</summary>
 
 ### Binary Exploitation
 
@@ -569,7 +569,7 @@
 
 ### Boot2Root
 
-1. Clean Sweep
+1. [Clean Sweep](https://github.com/Luki1235512/CTF-write-ups/blob/main/NNS%20CTF%202026/Boot2Root/Clean%20Sweep/README.md)
 2. Omniscient
 3. Raymarine navigation
 4. Count on me!
