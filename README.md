@@ -552,7 +552,7 @@
 ## SOLO [Pup4s](https://nnsc.tf/profile/dd9d86f5-9096-4a37-b52c-86f6a96f5cc5) score - 2856 points | 90/888 teams | 44/78 challenges solved
 
 <details>
-<summary>Completed challenges walkthroughs (17):</summary>
+<summary>Completed challenges walkthroughs (18):</summary>
 
 ### Binary Exploitation
 
@@ -635,7 +635,7 @@
 ### DevSecOops
 
 1. [Hiding in your WiFi](https://github.com/Luki1235512/CTF-write-ups/blob/main/NNS%20CTF%202026/DevSecOops/Hiding%20in%20your%20WiFi/README.md)
-2. Self-service
+2. [Self-service](https://github.com/Luki1235512/CTF-write-ups/blob/main/NNS%20CTF%202026/DevSecOops/Self-service/README.md)
 3. The Builder
 4. Triangle platform
 
