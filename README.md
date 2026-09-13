@@ -666,3 +666,9 @@
 ## [K17 CTF 2026](https://scoreboard.k17ctf.secso.cc/)
 
 ## SOLO [Pup4s](https://scoreboard.k17ctf.secso.cc/teams/556) score - 3722 points | 51/682 teams | 37/37 challenges solved
+
+---
+
+## [PwnSec CTF 2026](https://pwnsec.ctf.ae/)
+
+## SOLO [Pup4s](https://pwnsec.ctf.ae/app/teams/pup4s) score - 1476 points | 100/521 teams | 55 challenges solved
