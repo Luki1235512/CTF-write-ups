@@ -1,5 +1,7 @@
 # CTF-write-ups
 
+## [CTFtime team](https://ctftime.org/team/439969)
+
 ## [TryHackMe](https://tryhackme.com/)
 
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
@@ -672,3 +674,9 @@
 ## [PwnSec CTF 2026](https://pwnsec.ctf.ae/)
 
 ## SOLO [Pup4s](https://pwnsec.ctf.ae/app/teams/pup4s) score - 1476 points | 100/521 teams | 55 challenges solved
+
+---
+
+## [WATCHLIST CTF 2026](https://ctf.xposedornot.com/)
+
+## SOLO Pup4s score - 3035 points | 70/213 teams
