@@ -265,7 +265,7 @@ ssh cyber@10.112.187.193
 cat flag1.txt
 ```
 
-[SCREEN01]
+<img width="408" height="127" alt="SCREEN01" src="https://github.com/user-attachments/assets/a0660ddf-4d9c-4354-996f-a678047db436" />
 
 ---
 
@@ -327,7 +327,7 @@ ls /home/yash/
 cat /home/yash/flag2.txt
 ```
 
-[SCREEN02]
+<img width="393" height="115" alt="SCREEN02" src="https://github.com/user-attachments/assets/8aa45767-0cd8-4603-97a9-c86ad160ecfb" />
 
 `yash`'s home directory also contains `emergency.py` and a file named `fernet`, which points to a separate, more deliberate `cyber` to `yash` to `root` chain using Fernet symmetric encryption. This run never needed it, since root was reached directly through the `run.py` sudo misconfiguration.
 
@@ -342,4 +342,4 @@ ls /root
 cat /root/root.txt
 ```
 
-[SCREEN03]
+<img width="1044" height="447" alt="SCREEN03" src="https://github.com/user-attachments/assets/b1921f0d-4031-425a-a6f5-cd7c11e5d507" />
