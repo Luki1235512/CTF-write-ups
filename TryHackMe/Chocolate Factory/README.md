@@ -236,7 +236,7 @@ The key has no passphrase.
 cat /home/charlie/user.txt
 ```
 
-[SCREEN01]
+<img width="932" height="111" alt="SCREEN01" src="https://github.com/user-attachments/assets/5dfe27da-ca90-443b-a41b-f6921fd7774d" />
 
 ### Enter the root flag
 
@@ -309,4 +309,4 @@ python3 -c "from cryptography.fernet import Fernet; print(Fernet(b'-VkgXhFf6sAEc
 
 The decrypted message contains the root flag.
 
-[SCREEN02]
+<img width="1207" height="53" alt="SCREEN02" src="https://github.com/user-attachments/assets/2dbade44-a32c-4685-8f0b-2db856a40b20" />
