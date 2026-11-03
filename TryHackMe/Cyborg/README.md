@@ -187,7 +187,7 @@ ssh alex@TARGET_IP
 cat user.txt
 ```
 
-[SCREEN01]
+<img width="686" height="90" alt="SCREEN01" src="https://github.com/user-attachments/assets/40dc3d8d-f0bd-4697-be70-9e9d7a1d86ed" />
 
 ---
 
@@ -274,6 +274,6 @@ The vulnerability is in the last two lines. The `getopts c:` loop stores whateve
 sudo /etc/mp3backups/backup.sh -c "cat /root/root.txt"
 ```
 
-[SCREEN02]
+<img width="1208" height="591" alt="SCREEN02" src="https://github.com/user-attachments/assets/c13c221d-7cea-4557-9e61-b451308abbc7" />
 
 Because `echo $cmd` is unquoted, newlines in the output are collapsed to spaces. That does not matter for a one-line flag, but it is worth remembering if you read a multi-line file this way.
