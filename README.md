@@ -680,3 +680,9 @@
 ## [WATCHLIST CTF 2026](https://ctf.xposedornot.com/)
 
 ## SOLO Pup4s score - 3035 points | 70/213 teams
+
+---
+
+## [Huntress CTF 2026](https://ctf.huntress.com/)
+
+## TEAM [Pumpkin Spice Latte](https://ctf.huntress.com/completion/ee3afcb16dbdcacb) score - 1880 points | 64/1,602 teams | 2,304 players | 560/561 challenges solved
