@@ -1,10 +1,32 @@
-# CTF-write-ups
+# CTF Write-ups
 
-## [CTFtime team](https://ctftime.org/team/439969)
+Walkthroughs and results from the CTFs and TryHackMe rooms I've played.
 
-## [TryHackMe](https://tryhackme.com/)
+- [TryHackMe](https://tryhackme.com/p/Luki1235512)
+- [CTFtime](https://ctftime.org/team/439969)
 
-## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
+---
+
+## Contents
+
+CTFs are listed in the order I played them.
+
+|  #  | Event                                     | Mode | Result      |   Top |
+| :-: | ----------------------------------------- | :--: | ----------- | ----: |
+|  1  | [Huntress CTF 2025](#huntress-ctf-2025)   | Team | 178 / 6,951 |  2.6% |
+|  2  | [NNS CTF 2026](#nns-ctf-2026)             | Solo | 90 / 888    | 10.1% |
+|  3  | [K17 CTF 2026](#k17-ctf-2026)             | Solo | 51 / 682    |  7.5% |
+|  4  | [PwnSec CTF 2026](#pwnsec-ctf-2026)       | Solo | 100 / 521   | 19.2% |
+|  5  | [WATCHLIST CTF 2026](#watchlist-ctf-2026) | Solo | 70 / 213    | 32.9% |
+|  6  | [Huntress CTF 2026](#huntress-ctf-2026)   | Team | 64 / 1,602  |  4.0% |
+
+TryHackMe rooms are [just below](#tryhackme).
+
+---
+
+## TryHackMe
+
+Rooms with a linked title have a write-up in this repo.
 
 <details>
 <summary>Completed challenges walkthroughs (209):</summary>
@@ -551,7 +573,7 @@
 
 ## [NNS CTF 2026](https://nnsc.tf/)
 
-## SOLO [Pup4s](https://nnsc.tf/profile/dd9d86f5-9096-4a37-b52c-86f6a96f5cc5) score - 2856 points | 90/888 teams | 44/78 challenges solved
+## Solo as [Pup4s](https://nnsc.tf/profile/dd9d86f5-9096-4a37-b52c-86f6a96f5cc5) score - 2856 points | 90/888 teams | 44/78 challenges solved
 
 <details>
 <summary>Completed challenges walkthroughs (18):</summary>
@@ -667,19 +689,19 @@
 
 ## [K17 CTF 2026](https://scoreboard.k17ctf.secso.cc/)
 
-## SOLO [Pup4s](https://scoreboard.k17ctf.secso.cc/teams/556) score - 3722 points | 51/682 teams | 37/37 challenges solved
+## Solo as [Pup4s](https://scoreboard.k17ctf.secso.cc/teams/556) score - 3722 points | 51/682 teams | 37/37 challenges solved
 
 ---
 
 ## [PwnSec CTF 2026](https://pwnsec.ctf.ae/)
 
-## SOLO [Pup4s](https://pwnsec.ctf.ae/app/teams/pup4s) score - 1476 points | 100/521 teams | 55 challenges solved
+## Solo as [Pup4s](https://pwnsec.ctf.ae/app/teams/pup4s) score - 1476 points | 100/521 teams | 55 challenges solved
 
 ---
 
 ## [WATCHLIST CTF 2026](https://ctf.xposedornot.com/)
 
-## SOLO Pup4s score - 3035 points | 70/213 teams
+## Solo as Pup4s score - 3035 points | 70/213 teams
 
 ---
 
