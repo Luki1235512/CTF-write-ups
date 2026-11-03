@@ -7,7 +7,7 @@
 ## My profile - [Luki1235512](https://tryhackme.com/p/Luki1235512)
 
 <details>
-<summary>Completed challenges walkthroughs (208):</summary>
+<summary>Completed challenges walkthroughs (209):</summary>
 
 1. [Crack the hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Crack%20the%20hash/README.md)
 2. [Mr Robot CTF](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Mr%20Robot%20CTF/README.md)
@@ -149,7 +149,7 @@
 138. [battery](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/battery/README.md)
 139. [Chocolate Factory](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Chocolate%20Factory/README.md)
 140. Sustah
-141. Cyborg
+141. [Cyborg](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Cyborg/README.md)
 142. NahamStore
 143. [Keldagrim](https://github.com/Luki1235512/CTF-write-ups/blob/main/TryHackMe/Keldagrim/README.md)
 144. Madeye's Castle
