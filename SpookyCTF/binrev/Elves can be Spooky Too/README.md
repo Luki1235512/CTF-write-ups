@@ -143,4 +143,4 @@ print(s.recv(4096).decode())
 
 The banner confirmed the limit of 112, and the server replied:
 
-[SCREEN01]
+<img width="563" height="234" alt="SCREEN01" src="https://github.com/user-attachments/assets/27aa6a55-107f-4314-898f-b616f485a650" />
