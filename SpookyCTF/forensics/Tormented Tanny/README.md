@@ -24,4 +24,4 @@ Three fields hold pieces of the flag:
 
 3. Join the pieces in that order.
 
-[SCREEN01]
+<img width="601" height="526" alt="SCREEN01" src="https://github.com/user-attachments/assets/b3b72436-101e-48bc-9cb6-eb7a4a553fa3" />
