@@ -32,4 +32,4 @@ The letter also says "I'll put a clue that should help you find me", so this sen
 
 5. The `[s]` is the one letter left unmapped. Cipher `s` appears only once in the whole letter. Every plaintext letter except `z` already has a cipher partner, so `s` must map to `z`. The phrase is therefore "eyez are watching me".
 
-[SCREEN01]
+<img width="1202" height="497" alt="SCREEN01" src="https://github.com/user-attachments/assets/1e006903-fa0c-40e2-b870-3db0b1c78f53" />
