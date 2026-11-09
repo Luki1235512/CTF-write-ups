@@ -12,6 +12,8 @@ Image.fromarray(((a[:,:,2] & 1) * 255).astype(np.uint8)).save('B_bit0.png')"
 
 Open `B_bit0.png`. The text is readable in the image. In stegsolve, the same view is "Blue plane 0".
 
+<img width="858" height="669" alt="SCREEN01" src="https://github.com/user-attachments/assets/a6b02c95-5bcd-4235-849e-cec3afb669f5" />
+
 2. Decode the ROT13 text
 
 ```bash
@@ -21,3 +23,5 @@ echo 'TEXT_FROM_IMAGE' | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 Why this works
 
 The blue channel’s LSB was 0 for about 96% of pixels (530,355 even values against 19,845 odd). A natural photo is close to 50/50, so that lopsided plane meant something had been drawn into it. Byte-stream extractors like zsteg miss it because the message is an image of text, not encoded bytes.
+
+
