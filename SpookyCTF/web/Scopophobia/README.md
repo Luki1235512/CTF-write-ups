@@ -128,4 +128,4 @@ display sheet04.png
 
 The `img` tag has the `data-timed-reveal` attribute. In `app.js` that attribute makes the player hold the second frame (the cryptid face) forever after 3.5 seconds. The GIF has 7 frames. The room has a locked door marked `RESTRICTED ENTRY`, and hazard tape on the floor holds the flag text in every frame:
 
-[SCREEN01]
+<img width="1954" height="901" alt="screen01" src="https://github.com/user-attachments/assets/26680306-ad95-4779-b0d0-c1dd22360c20" />
