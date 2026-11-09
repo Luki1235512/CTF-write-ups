@@ -47,4 +47,4 @@ out = bytes(((13*i + 0x39) & 0xff) ^ (d[i] ^ p[i % 14]) for i in range(len(d)))
 echo BOLTATMIDNIGHT | ./frankenstein
 ```
 
-[SCREEN01]
+<img width="567" height="153" alt="SCREEN01" src="https://github.com/user-attachments/assets/e3ebbac1-eadc-41bd-b03e-ee9226be86e3" />
