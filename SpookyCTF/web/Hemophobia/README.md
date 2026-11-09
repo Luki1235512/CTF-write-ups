@@ -19,3 +19,5 @@ It gives the song title, "Roots Bloody Roots", and asks "Who made it?".
 3. "Roots Bloody Roots" is by Sepultura, so the flag follows the `spooky{band}` format.
 
 4. Optional check: `script.js` compares a client-side hash of the lowercased input to `FLAG_HASH = '6423651715153126'`. Running the page's own `hash()` function on `spooky{sepultura}` gives that value.
+
+<img width="259" height="133" alt="SCREEN01" src="https://github.com/user-attachments/assets/a123684d-2012-423a-b59d-403db655f732" />
