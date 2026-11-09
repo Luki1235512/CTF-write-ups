@@ -58,4 +58,4 @@ Input: f0rm4tStr1ngVulN3r4b1lityIsSc4rY
 
 The server printed the contents of `secret.txt` where `%1$s` was.
 
-[SCREEN01]
+<img width="395" height="77" alt="SCREEN01" src="https://github.com/user-attachments/assets/290085c6-64ee-4440-b36c-825a3a843ae9" />
