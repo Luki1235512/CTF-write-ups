@@ -24,4 +24,4 @@ grep -v '10\.13\.' njit_web.log
 echo 'c3Bvb2t5e3RoZV9naG9zdF9sZWZ0X2FfdHJhY2V9' | base64 -d
 ```
 
-[SCREEN01]
+<img width="1190" height="162" alt="SCREEN01" src="https://github.com/user-attachments/assets/dc2cd531-63c2-4835-9e31-eef6ca91d945" />
