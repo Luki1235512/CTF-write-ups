@@ -42,4 +42,4 @@ echo -n bV9NZV9VcF9TYw== | base64 -d
 echo -n MHR0eV8yMjY2fQ== | base64 -d
 ```
 
-[SCREEN01]
+<img width="401" height="96" alt="SCREEN01" src="https://github.com/user-attachments/assets/6bbcefc5-28df-43c3-b86d-1cb43a80852d" />
