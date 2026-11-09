@@ -179,4 +179,4 @@ At the prompt:
 cat /home/admin/flag.txt
 ```
 
-[SCREEN01]
+<img width="703" height="167" alt="SCREEN01" src="https://github.com/user-attachments/assets/85614851-8f33-4a4e-ba0b-79a935308dc4" />
