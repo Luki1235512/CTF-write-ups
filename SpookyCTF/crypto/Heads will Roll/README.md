@@ -29,4 +29,4 @@ for k in range(2,12):
 
 3. The hit is 4 rails, offset 0:
 
-[SCREEN01]
+<img width="597" height="90" alt="SCREEN01" src="https://github.com/user-attachments/assets/3eab0c73-c7cf-45c8-bfd0-f4498275462b" />

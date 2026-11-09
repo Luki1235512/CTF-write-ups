@@ -115,4 +115,4 @@ python3 client.py --server http://3.149.129.229:8000 submit 9e26228754f6f6df81ef
 
 Response:
 
-[SCREEN01]
+<img width="1205" height="83" alt="SCREEN01" src="https://github.com/user-attachments/assets/6bbff69c-8db7-40b8-af92-15199f6b750d" />

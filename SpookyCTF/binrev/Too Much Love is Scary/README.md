@@ -94,3 +94,5 @@ printf '0 19\nShall I compare thee\n' | ./philophobia
 The program prints the flag on its own line after the `puts` message at the top of `print_flag`.
 
 Any other pair works as long as `end = start + 19` and the phrase appears at offset `start`. For example, `6 25` followed by `abcdefShall I compare thee` gives the same key.
+
+<img width="1202" height="427" alt="SCREEN01" src="https://github.com/user-attachments/assets/7f240282-d6df-4e1d-b309-c78b75f6e29b" />

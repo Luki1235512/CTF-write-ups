@@ -28,4 +28,4 @@ print(p.recvall(timeout=3).decode())
 
 The server responds with:
 
-[SCREEN01]
+<img width="623" height="330" alt="SCREEN01" src="https://github.com/user-attachments/assets/91cc676a-2c14-4efa-8e73-9872555bef40" />

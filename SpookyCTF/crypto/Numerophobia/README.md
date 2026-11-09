@@ -15,4 +15,4 @@ L=[138,50,65,95,123,51,64,98,108,53,134,52,132,108,65,95,66,52,117,95,127,51,132
 print(''.join(chr(x-13) if i%2==0 else chr(x) for i,x in enumerate(L))[::-1])
 ```
 
-[SCREEN01]
+<img width="350" height="67" alt="SCREEN01" src="https://github.com/user-attachments/assets/a435e48a-b25d-4792-a9ff-ef0aab8920f9" />

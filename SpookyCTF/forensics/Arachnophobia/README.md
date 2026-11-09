@@ -11,4 +11,4 @@ binwalk -e tangled.png
 cat _tangled.png.extracted/flag.txt
 ```
 
-[SCREEN01]
+<img width="795" height="236" alt="SCREEN01" src="https://github.com/user-attachments/assets/c869a698-15f9-4bac-ab0c-87fcea0674d8" />
