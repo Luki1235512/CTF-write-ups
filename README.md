@@ -19,6 +19,7 @@ CTFs are listed in the order I played them.
 |  4  | [PwnSec CTF 2026](#pwnsec-ctf-2026)       | Solo | 100 / 521   | 19.2% |        55 |
 |  5  | [WATCHLIST CTF 2026](#watchlist-ctf-2026) | Solo | 70 / 213    | 32.9% |         - |
 |  6  | [Huntress CTF 2026](#huntress-ctf-2026)   | Team | 64 / 1,602  |  4.0% | 560 / 561 |
+|  7  | [SpookyCTF 2026](#spookyctf-2026)         | Solo | 70 / 748    |  9.4% |   33 / 42 |
 
 TryHackMe rooms are [just below](#tryhackme).
 
@@ -708,3 +709,77 @@ Played solo as Pup4s.
 ## [Huntress CTF 2026](https://ctf.huntress.com/)
 
 Played with team [Pumpkin Spice Latte](https://ctf.huntress.com/completion/ee3afcb16dbdcacb).
+
+---
+
+## [SpookyCTF 2026](https://spooky.ctfd.io/)
+
+Played solo as [Pup4s](https://spooky.ctfd.io/teams/721).
+
+<details>
+<summary>Completed challenges walkthroughs:</summary>
+
+### rules
+
+1. read the rules
+
+### forensics
+
+1. The Haunted Portrait
+2. Arachnophobia
+3. Tormented Tanny
+4. Eisoptrophobia
+5. The Phantom Login
+6. Cleithrophobia
+7. Stash the Hash
+8. Phasmophobia
+9. Peering Eyes
+
+### crypto
+
+1. Heads will Roll
+2. Numerophobia
+3. Cyberphobia: SpOoKy KeYsTrEaMs
+4. I Feel Like Someone's Watching Me
+5. Diagraphephobia
+6. No Nonsense on this Server
+7. I D0n't Feel S0 G00d
+8. Klediophobia
+9. There is no good name for the fear of math.
+10. Sleepy Therapist
+11. The Logical Way
+
+### misc
+
+1. Gelotophobia
+2. Xenoglossophobia
+3. Demented Memories
+4. The Model Knows
+5. Hashphobia
+6. Drown in Memory
+
+### osint
+
+1. Nosocomephobia
+2. Ichthyophobia
+3. Visiobibliophobia
+4. MIA
+5. Athazagoraphobia
+6. Dendrophobia
+
+### binrev
+
+1. Cyberphobia: Overflowed Bits
+2. Too Much Love is Scary
+3. Frankenstein's Password Generator
+4. Cyberphobia: Formatting Nightmare
+5. Trypophobia
+6. Elves can be Spooky Too
+
+### web
+
+1. J*b Application
+2. Hemophobia
+3. Scopophobia
+
+</details>
