@@ -31,4 +31,4 @@ curl -s http://18.217.64.238/$(python3 enc.py flag) | grep -A1 '<h3>'
 
 The `<h3>` contains the flag:
 
-[SCREEN01]
+<img width="629" height="85" alt="SCREEN01" src="https://github.com/user-attachments/assets/efcadfa8-66cd-4ea2-bd12-5571639368d4" />
