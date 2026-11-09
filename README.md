@@ -725,38 +725,38 @@ Played solo as [Pup4s](https://spooky.ctfd.io/teams/721).
 
 ### forensics
 
-1. The Haunted Portrait
-2. Arachnophobia
-3. Tormented Tanny
-4. Eisoptrophobia
-5. The Phantom Login
-6. Cleithrophobia
-7. Stash the Hash
+1. [The Haunted Portrait](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/forensics/The%20Haunted%20Portrait/README.md)
+2. [Arachnophobia](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/forensics/Arachnophobia/README.md)
+3. [Tormented Tanny](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/forensics/Tormented%20Tanny/README.md)
+4. [Eisoptrophobia](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/forensics/Eisoptrophobia/README.md)
+5. [The Phantom Login](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/forensics/The%20Phantom%20Login/README.md)
+6. [Cleithrophobia](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/forensics/Cleithrophobia/README.md)
+7. [Stash the Hash](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/forensics/Stash%20the%20Hash/README.md)
 8. Phasmophobia
-9. Peering Eyes
+9. [Peering Eyes](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/forensics/Peering%20Eyes/README.md)
 
 ### crypto
 
-1. Heads will Roll
-2. Numerophobia
-3. Cyberphobia: SpOoKy KeYsTrEaMs
-4. I Feel Like Someone's Watching Me
-5. Diagraphephobia
-6. No Nonsense on this Server
-7. I D0n't Feel S0 G00d
-8. Klediophobia
-9. There is no good name for the fear of math.
+1. [Heads will Roll](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/crypto/Heads%20will%20Roll/README.md)
+2. [Numerophobia](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/crypto/Numerophobia/README.md)
+3. [Cyberphobia: SpOoKy KeYsTrEaMs](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/crypto/Cyberphobia%3A%20SpOoKy%20KeYsTrEaMs/README.md)
+4. [I Feel Like Someone's Watching Me](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/crypto/I%20Feel%20Like%20Someone's%20Watching%20Me/README.md)
+5. [Diagraphephobia](https://github.com/Luki1235512/CTF-write-ups/tree/main/SpookyCTF/crypto/Diagraphephobia)
+6. [No Nonsense on this Server](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/crypto/No%20Nonsense%20on%20this%20Server/README.md)
+7. [I D0n't Feel S0 G00d](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/crypto/I%20D0n't%20Feel%20S0%20G00d/README.md)
+8. [Klediophobia](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/crypto/Klediophobia/README.md)
+9. [There is no good name for the fear of math.](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/crypto/There%20is%20no%20good%20name%20for%20the%20fear%20of%20math./README.md)
 10. Sleepy Therapist
 11. The Logical Way
 
 ### misc
 
-1. Gelotophobia
-2. Xenoglossophobia
-3. Demented Memories
+1. [Gelotophobia](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/misc/Gelotophobia/README.md)
+2. [Xenoglossophobia](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/misc/Xenoglossophobia/README.md)
+3. [Demented Memories](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/misc/Demented%20Memories/README.md)
 4. The Model Knows
 5. Hashphobia
-6. Drown in Memory
+6. [Drown in Memory](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/misc/Drown%20in%20Memory/README.md)
 
 ### osint
 
@@ -769,17 +769,17 @@ Played solo as [Pup4s](https://spooky.ctfd.io/teams/721).
 
 ### binrev
 
-1. Cyberphobia: Overflowed Bits
-2. Too Much Love is Scary
-3. Frankenstein's Password Generator
-4. Cyberphobia: Formatting Nightmare
-5. Trypophobia
-6. Elves can be Spooky Too
+1. [Cyberphobia: Overflowed Bits](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/binrev/Cyberphobia%3A%20Overflowed%20Bits/README.md)
+2. [Too Much Love is Scary](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/binrev/Too%20Much%20Love%20is%20Scary/README.md)
+3. [Frankenstein's Password Generator](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/binrev/Frankenstein's%20Password%20Generator/README.md)
+4. [Cyberphobia: Formatting Nightmare](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/binrev/Cyberphobia%3A%20Formatting%20Nightmare/README.md)
+5. [Trypophobia](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/binrev/Trypophobia/README.md)
+6. [Elves can be Spooky Too](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/binrev/Elves%20can%20be%20Spooky%20Too/README.md)
 
 ### web
 
-1. J*b Application
-2. Hemophobia
-3. Scopophobia
+1. [J*b Application](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/web/J*b%20Application/README.md)
+2. [Hemophobia](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/web/Hemophobia/README.md)
+3. [Scopophobia](https://github.com/Luki1235512/CTF-write-ups/blob/main/SpookyCTF/web/Scopophobia/README.md)
 
 </details>
