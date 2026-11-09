@@ -33,4 +33,4 @@ openssl enc -d -aes-128-ecb -K 6c6f6a6d4974207949706f536d6f4821 -in ct.bin
 
 5. The plaintext is a Klingon message with the flag inside:
 
-[SCREEN01]
+<img width="1064" height="114" alt="SCREEN01" src="https://github.com/user-attachments/assets/5ee86377-59ee-4932-b3ca-9e452810b0eb" />
