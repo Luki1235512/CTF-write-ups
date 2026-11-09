@@ -36,4 +36,4 @@ for n, c in zip("rgba", im.split()):
 
 Open `lsb_r.png`. The flag is readable in the red channel's LSB plane.
 
-[SCREEN01]
+<img width="715" height="697" alt="SCREEN01" src="https://github.com/user-attachments/assets/06beae5e-a634-44ee-9d3c-b8b0560abdda" />
