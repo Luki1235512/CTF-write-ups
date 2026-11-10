@@ -574,6 +574,7 @@ Rooms with a linked title have a write-up in this repo.
 1. [Cap](https://github.com/Luki1235512/CTF-write-ups/blob/main/HackTheBox/Cap/README.md)
 
 </details>
+
 ---
 
 ## [Huntress CTF 2025](https://ctf.huntress.com/)
