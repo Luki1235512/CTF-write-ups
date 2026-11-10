@@ -79,7 +79,7 @@ ls
 cat user.txt
 ```
 
-[SCREEN01]
+<img width="331" height="89" alt="SCREEN01" src="https://github.com/user-attachments/assets/943e04a0-a318-493c-8ea5-10ae4f1241f5" />
 
 ---
 
@@ -128,4 +128,4 @@ cat /root/root.txt
 
 `id` should show `uid=0(root)`. The group will still be nathan’s, because only the UID was changed, and that does not affect reading `/root/root.txt`.
 
-[SCREEN02]
+<img width="726" height="165" alt="SCREEN02" src="https://github.com/user-attachments/assets/317027d5-787a-4eb4-8d43-2b14aec15e17" />
