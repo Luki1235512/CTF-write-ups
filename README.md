@@ -19,7 +19,7 @@ CTFs are listed in the order I played them.
 |  4  | [PwnSec CTF 2026](#pwnsec-ctf-2026)       | Solo | 100 / 521   | 19.2% |        55 |
 |  5  | [WATCHLIST CTF 2026](#watchlist-ctf-2026) | Solo | 70 / 213    | 32.9% |         - |
 |  6  | [Huntress CTF 2026](#huntress-ctf-2026)   | Team | 64 / 1,602  |  4.0% | 560 / 561 |
-|  7  | [SpookyCTF 2026](#spookyctf-2026)         | Solo | 70 / 748    |  9.4% |   33 / 42 |
+|  7  | [SpookyCTF 2026](#spookyctf-2026)         | Solo | 57 / 715    |  8.0% |   33 / 42 |
 
 TryHackMe rooms are [just below](#tryhackme).
 
